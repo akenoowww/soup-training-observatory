@@ -1,0 +1,276 @@
+{
+  "ciRunId": 42703340902,
+  "scope": "Original public synthetic-app Linux/WebKit CI artifacts; application code is unchanged. These are trace observations, not a rerun.",
+  "cases": [
+    {
+      "artifact": "evidence/linux-ci/initial-failure/observatory-a-worker-failu-9010e-nd-has-a-working-retry-path-webkit/trace.zip",
+      "actions": [
+        {
+          "callId": "wcgi@1949",
+          "startTime": 142188.007,
+          "class": "Page",
+          "method": "setNetworkInterceptionPatterns",
+          "params": {
+            "patterns": [
+              {
+                "regexSource": "data\\.worker-[^/]+\\.js(?:\\?.*)?$",
+                "regexFlags": ""
+              }
+            ]
+          }
+        },
+        {
+          "callId": "wcgi@1951",
+          "startTime": 142194.095,
+          "class": "Frame",
+          "method": "goto",
+          "params": {
+            "url": "/#/runs/run-001",
+            "waitUntil": "load"
+          }
+        },
+        {
+          "callId": "wcgi@1953",
+          "startTime": 142362.379,
+          "class": "Frame",
+          "method": "expect",
+          "params": {
+            "selector": "internal:role=heading[name=\"We couldn\u2019t load this run\"i]",
+            "expression": "to.be.visible",
+            "expectedValue": {
+              "value": {
+                "v": "undefined"
+              },
+              "handles": []
+            },
+            "isNot": false,
+            "timeout": 10000
+          }
+        },
+        {
+          "callId": "wcgi@1957",
+          "startTime": 142900.413,
+          "class": "Frame",
+          "method": "expect",
+          "params": {
+            "selector": "internal:testid=[data-testid=\"chart-loss\"s]",
+            "expression": "to.have.count",
+            "expectedNumber": 0,
+            "expectedValue": {
+              "value": {
+                "v": "undefined"
+              },
+              "handles": []
+            },
+            "isNot": false,
+            "timeout": 10000
+          }
+        },
+        {
+          "callId": "wcgi@1959",
+          "startTime": 142907.214,
+          "class": "Page",
+          "method": "setNetworkInterceptionPatterns",
+          "params": {
+            "patterns": []
+          }
+        },
+        {
+          "callId": "wcgi@1961",
+          "startTime": 142908.921,
+          "class": "Frame",
+          "method": "click",
+          "params": {
+            "selector": "internal:role=button[name=\"Try again\"i]",
+            "strict": true
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "callId": "wcgi@1951",
+          "phase": "before",
+          "timestamp": 142198.671,
+          "serializedHtmlLength": 71,
+          "explicitRunListHeadingPresent": false,
+          "explicitWorkerErrorHeadingPresent": false,
+          "explicitRootEmpty": false
+        },
+        {
+          "callId": "wcgi@1951",
+          "phase": "after",
+          "timestamp": 142360.617,
+          "serializedHtmlLength": 1029,
+          "explicitRunListHeadingPresent": false,
+          "explicitWorkerErrorHeadingPresent": false,
+          "explicitRootEmpty": true
+        },
+        {
+          "callId": "wcgi@1953",
+          "phase": "before",
+          "timestamp": 142798.274,
+          "serializedHtmlLength": 14141,
+          "explicitRunListHeadingPresent": false,
+          "explicitWorkerErrorHeadingPresent": false,
+          "explicitRootEmpty": false
+        },
+        {
+          "callId": "wcgi@1953",
+          "phase": "after",
+          "timestamp": 142898.964,
+          "serializedHtmlLength": 2322,
+          "explicitRunListHeadingPresent": false,
+          "explicitWorkerErrorHeadingPresent": true,
+          "explicitRootEmpty": false
+        },
+        {
+          "callId": "wcgi@1957",
+          "phase": "before",
+          "timestamp": 142901.958,
+          "serializedHtmlLength": 524,
+          "explicitRunListHeadingPresent": false,
+          "explicitWorkerErrorHeadingPresent": false,
+          "explicitRootEmpty": false
+        },
+        {
+          "callId": "wcgi@1957",
+          "phase": "after",
+          "timestamp": 142906.552,
+          "serializedHtmlLength": 8,
+          "explicitRunListHeadingPresent": false,
+          "explicitWorkerErrorHeadingPresent": false,
+          "explicitRootEmpty": false
+        },
+        {
+          "callId": "wcgi@1961",
+          "phase": "before",
+          "timestamp": 142917.273,
+          "serializedHtmlLength": 8,
+          "explicitRunListHeadingPresent": false,
+          "explicitWorkerErrorHeadingPresent": false,
+          "explicitRootEmpty": false
+        }
+      ],
+      "workerFetches": [
+        {
+          "monotonicTime": 142809.893,
+          "startedDateTime": "2026-11-09T21:35:11.155Z",
+          "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+          "status": -1
+        },
+        {
+          "monotonicTime": 142937.596,
+          "startedDateTime": "2026-11-09T21:35:11.287Z",
+          "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+          "status": 200
+        }
+      ],
+      "logs": [
+        {
+          "time": 142893.466,
+          "message": "  locator resolved to <h2>We couldn\u2019t load this run</h2>"
+        },
+        {
+          "time": 142922.881,
+          "message": "  locator resolved to <button class=\"button button--primary\">\u2026</button>"
+        },
+        {
+          "time": 143093.675,
+          "message": "element was detached from the DOM, retrying"
+        }
+      ]
+    },
+    {
+      "artifact": "evidence/linux-ci/initial-failure/observatory-keyboard-searc-d5f6b-ion-reveals-measured-values-webkit/trace.zip",
+      "actions": [
+        {
+          "callId": "rwfu@2098",
+          "startTime": 138147.83,
+          "class": "Frame",
+          "method": "goto",
+          "params": {
+            "url": "/#/",
+            "waitUntil": "load"
+          }
+        },
+        {
+          "callId": "rwfu@2100",
+          "startTime": 138916.092,
+          "class": "Page",
+          "method": "keyboardPress",
+          "params": {
+            "key": "Control+k"
+          }
+        },
+        {
+          "callId": "rwfu@2102",
+          "startTime": 139189.352,
+          "class": "Frame",
+          "method": "expect",
+          "params": {
+            "selector": "internal:role=dialog",
+            "expression": "to.be.visible",
+            "expectedValue": {
+              "value": {
+                "v": "undefined"
+              },
+              "handles": []
+            },
+            "isNot": false,
+            "timeout": 10000
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "callId": "rwfu@2098",
+          "phase": "after",
+          "timestamp": 138906.787,
+          "serializedHtmlLength": 51195,
+          "explicitRunListHeadingPresent": true,
+          "explicitWorkerErrorHeadingPresent": false,
+          "explicitRootEmpty": false
+        },
+        {
+          "callId": "rwfu@2100",
+          "phase": "action",
+          "timestamp": 139023.477,
+          "serializedHtmlLength": 11,
+          "explicitRunListHeadingPresent": false,
+          "explicitWorkerErrorHeadingPresent": false,
+          "explicitRootEmpty": false
+        },
+        {
+          "callId": "rwfu@2100",
+          "phase": "after",
+          "timestamp": 139187.743,
+          "serializedHtmlLength": 11,
+          "explicitRunListHeadingPresent": false,
+          "explicitWorkerErrorHeadingPresent": false,
+          "explicitRootEmpty": false
+        },
+        {
+          "callId": "rwfu@2102",
+          "phase": "before",
+          "timestamp": 139201.912,
+          "serializedHtmlLength": 11,
+          "explicitRunListHeadingPresent": false,
+          "explicitWorkerErrorHeadingPresent": false,
+          "explicitRootEmpty": false
+        },
+        {
+          "callId": "rwfu@2102",
+          "phase": "after",
+          "timestamp": 149214.814,
+          "serializedHtmlLength": 11,
+          "explicitRunListHeadingPresent": false,
+          "explicitWorkerErrorHeadingPresent": false,
+          "explicitRootEmpty": false
+        }
+      ],
+      "workerFetches": [],
+      "logs": []
+    }
+  ],
+  "limits": "Playwright snapshots can reference preceding snapshot nodes; a missing explicit text in a compressed snapshot does not establish that the text was absent. The keyboard trace contains the run-list DOM before Control+K, but does not observe installation of the app effect listener. No specific worker width transition is inferred as a directly recorded request payload."
+}

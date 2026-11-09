@@ -1,16 +1,21 @@
 {
-  "status": "awaiting-export-and-publication-authorization",
+  "status": "published-awaiting-green-linux-ci",
   "applicationBundle": "assets/app-DsJyw_oe.js",
   "localCandidateCommit": "9626fbe",
-  "repositoryUrl": null,
-  "deployedUrl": null,
-  "hostedSmokePassed": false,
+  "repositoryUrl": "https://github.com/akenoowww/soup-training-observatory",
+  "deployedUrl": "https://akenoowww.github.io/soup-training-observatory/",
+  "hostedSmokePassed": true,
   "checks": "evidence/round2/checks-final.txt",
   "browserResults": "evidence/round2/e2e-results.json",
   "browserScenarios": 45,
   "browserExecutions": 135,
   "performanceResults": "evidence/round2/performance-fixed/results.json",
   "sustainedUse": "evidence/round2/soak/final-native-gc/latest.json",
-  "linuxCi": "configured-not-executed",
-  "exportApproval": "automatic-review-rejected-pending-explicit-user-authorization"
+  "linuxCi": {
+    "conclusion": "failure",
+    "runUrl": "https://github.com/akenoowww/soup-training-observatory/actions/runs/42703898004",
+    "note": "Initial parallel Linux run failed; strict readiness assertions and isolated CI rerun are being prepared."
+  },
+  "exportApproval": "explicit-user-public-github-and-pages-akenoowww",
+  "hostedSmokeResults": "evidence/hosted/2026-11-09T21-36-49-440Z/results.json"
 }

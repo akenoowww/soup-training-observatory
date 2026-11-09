@@ -1,0 +1,50 @@
+
+Running 15 tests using 3 workers
+
+(node:69202) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:69204) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:69203) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   2 [chromium] › tests/e2e/observatory.spec.ts:47:1 › run browser filters, searches, sorts, persists URL state, and recovers from empty results (904ms)
+  ✓   3 [chromium] › tests/e2e/observatory.spec.ts:47:1 › run browser filters, searches, sorts, persists URL state, and recovers from empty results (926ms)
+  ✓   1 [chromium] › tests/e2e/observatory.spec.ts:47:1 › run browser filters, searches, sorts, persists URL state, and recovers from empty results (994ms)
+(node:69273) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:69274) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:69275) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   4 [chromium] › tests/e2e/observatory.spec.ts:47:1 › run browser filters, searches, sorts, persists URL state, and recovers from empty results (761ms)
+  ✓   5 [chromium] › tests/e2e/observatory.spec.ts:47:1 › run browser filters, searches, sorts, persists URL state, and recovers from empty results (813ms)
+(node:69326) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:69328) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   6 [firefox] › tests/e2e/observatory.spec.ts:47:1 › run browser filters, searches, sorts, persists URL state, and recovers from empty results (1.3s)
+(node:69344) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   7 [firefox] › tests/e2e/observatory.spec.ts:47:1 › run browser filters, searches, sorts, persists URL state, and recovers from empty results (1.4s)
+  ✓   8 [firefox] › tests/e2e/observatory.spec.ts:47:1 › run browser filters, searches, sorts, persists URL state, and recovers from empty results (1.5s)
+(node:69367) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:69372) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   9 [firefox] › tests/e2e/observatory.spec.ts:47:1 › run browser filters, searches, sorts, persists URL state, and recovers from empty results (1.5s)
+(node:69404) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  11 [webkit] › tests/e2e/observatory.spec.ts:47:1 › run browser filters, searches, sorts, persists URL state, and recovers from empty results (1.0s)
+(node:69407) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  10 [firefox] › tests/e2e/observatory.spec.ts:47:1 › run browser filters, searches, sorts, persists URL state, and recovers from empty results (1.7s)
+(node:69424) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  12 [webkit] › tests/e2e/observatory.spec.ts:47:1 › run browser filters, searches, sorts, persists URL state, and recovers from empty results (756ms)
+(node:69428) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  13 [webkit] › tests/e2e/observatory.spec.ts:47:1 › run browser filters, searches, sorts, persists URL state, and recovers from empty results (788ms)
+  ✓  14 [webkit] › tests/e2e/observatory.spec.ts:47:1 › run browser filters, searches, sorts, persists URL state, and recovers from empty results (739ms)
+  ✓  15 [webkit] › tests/e2e/observatory.spec.ts:47:1 › run browser filters, searches, sorts, persists URL state, and recovers from empty results (719ms)
+
+  15 passed (10.3s)

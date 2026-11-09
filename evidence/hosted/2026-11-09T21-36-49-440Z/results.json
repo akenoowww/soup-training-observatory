@@ -1,0 +1,704 @@
+{
+  "observedAt": "2026-11-09T21:37:00.655Z",
+  "baseUrl": "https://akenoowww.github.io/soup-training-observatory/",
+  "outputDirectory": "/Users/noname/Desktop/personal-projects/soup/evidence/hosted/2026-11-09T21-36-49-440Z",
+  "scope": "Hosted functional/CDN/base-path smoke in fresh anonymous browser contexts. These observations do not establish uptime, physical-device usability, real training integration, or performance comparable with local CPU-throttled traces.",
+  "pass": true,
+  "engines": [
+    {
+      "engine": "chromium",
+      "baseUrl": "https://akenoowww.github.io/soup-training-observatory/",
+      "checks": [
+        "repository-prefix document loads with20 runs",
+        "filter, empty state and clear-filter recovery",
+        "real module worker prepares1M points and overview spike is painted",
+        "shared actual490000..510000 viewport and sampled CSV preserve9.4",
+        "NaN is an actual pixel gap; all-invalid range remains unavailable",
+        "390px navigation, guide, run and document width",
+        "unknown-run recovery keeps the repository prefix",
+        "public assets, self-hosted fonts and module worker succeed without4xx, failed requests or page errors"
+      ],
+      "http": [
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/",
+          "status": 200,
+          "resourceType": "document",
+          "underRepositoryPrefix": true,
+          "contentType": "text/html; charset=utf-8",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-36a\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/client-Saz_VHki.css",
+          "status": 200,
+          "resourceType": "stylesheet",
+          "underRepositoryPrefix": true,
+          "contentType": "text/css; charset=utf-8",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-65b\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/app-DfZOBv6h.css",
+          "status": 200,
+          "resourceType": "stylesheet",
+          "underRepositoryPrefix": true,
+          "contentType": "text/css; charset=utf-8",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-8962\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/client-C5dJojYl.js",
+          "status": 200,
+          "resourceType": "script",
+          "underRepositoryPrefix": true,
+          "contentType": "application/javascript; charset=utf-8",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-e871\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/app-DsJyw_oe.js",
+          "status": 200,
+          "resourceType": "script",
+          "underRepositoryPrefix": true,
+          "contentType": "application/javascript; charset=utf-8",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-55263\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/favicon.svg",
+          "status": 200,
+          "resourceType": "other",
+          "underRepositoryPrefix": true,
+          "contentType": "image/svg+xml",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-110\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/dm-sans-latin-700-normal-DvUfVpUG.woff2",
+          "status": 200,
+          "resourceType": "font",
+          "underRepositoryPrefix": true,
+          "contentType": "font/woff2",
+          "cacheControl": "max-age=600",
+          "etag": "\"6af23c47-380c\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/dm-sans-latin-600-normal-Aqo67rzb.woff2",
+          "status": 200,
+          "resourceType": "font",
+          "underRepositoryPrefix": true,
+          "contentType": "font/woff2",
+          "cacheControl": "max-age=600",
+          "etag": "\"6af23c47-3740\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/dm-sans-latin-400-normal-CW0RaeGs.woff2",
+          "status": 200,
+          "resourceType": "font",
+          "underRepositoryPrefix": true,
+          "contentType": "font/woff2",
+          "cacheControl": "max-age=600",
+          "etag": "\"6af23c47-3778\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/dm-sans-latin-500-normal-B9HHJjqV.woff2",
+          "status": 200,
+          "resourceType": "font",
+          "underRepositoryPrefix": true,
+          "contentType": "font/woff2",
+          "cacheControl": "max-age=600",
+          "etag": "\"6af23c47-37e0\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "status": 200,
+          "resourceType": "font",
+          "underRepositoryPrefix": true,
+          "contentType": "font/woff2",
+          "cacheControl": "max-age=600",
+          "etag": "\"6af23c47-3974\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/favicon.svg",
+          "status": 200,
+          "resourceType": "other",
+          "underRepositoryPrefix": true,
+          "contentType": "image/svg+xml",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-110\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/favicon.svg",
+          "status": 200,
+          "resourceType": "other",
+          "underRepositoryPrefix": true,
+          "contentType": "image/svg+xml",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-110\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/favicon.svg",
+          "status": 200,
+          "resourceType": "other",
+          "underRepositoryPrefix": true,
+          "contentType": "image/svg+xml",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-110\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/favicon.svg",
+          "status": 200,
+          "resourceType": "other",
+          "underRepositoryPrefix": true,
+          "contentType": "image/svg+xml",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-110\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/data.worker-BHtkh95n.js",
+          "status": 200,
+          "resourceType": "script",
+          "underRepositoryPrefix": true,
+          "contentType": "application/javascript; charset=utf-8",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-1d5d\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/ibm-plex-mono-latin-500-normal-DSY6xOcd.woff2",
+          "status": 200,
+          "resourceType": "font",
+          "underRepositoryPrefix": true,
+          "contentType": "font/woff2",
+          "cacheControl": "max-age=600",
+          "etag": "\"6af23c47-3a28\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/favicon.svg",
+          "status": 200,
+          "resourceType": "other",
+          "underRepositoryPrefix": true,
+          "contentType": "image/svg+xml",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-110\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/favicon.svg",
+          "status": 200,
+          "resourceType": "other",
+          "underRepositoryPrefix": true,
+          "contentType": "image/svg+xml",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-110\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/favicon.svg",
+          "status": 200,
+          "resourceType": "other",
+          "underRepositoryPrefix": true,
+          "contentType": "image/svg+xml",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-110\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/favicon.svg",
+          "status": 200,
+          "resourceType": "other",
+          "underRepositoryPrefix": true,
+          "contentType": "image/svg+xml",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-110\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/favicon.svg",
+          "status": 200,
+          "resourceType": "other",
+          "underRepositoryPrefix": true,
+          "contentType": "image/svg+xml",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-110\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/favicon.svg",
+          "status": 200,
+          "resourceType": "other",
+          "underRepositoryPrefix": true,
+          "contentType": "image/svg+xml",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-110\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/favicon.svg",
+          "status": 200,
+          "resourceType": "other",
+          "underRepositoryPrefix": true,
+          "contentType": "image/svg+xml",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-110\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        }
+      ],
+      "requestFailures": [],
+      "pageErrors": [],
+      "bundles": [
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/app-DsJyw_oe.js",
+          "status": 200,
+          "contentType": "application/javascript; charset=utf-8",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-55263\"",
+          "sha256": "27319b4729c5ae6effc970393b72603ba4fd87ed58197a4bf3d8f1a82471184d",
+          "bytes": 348771
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/data.worker-BHtkh95n.js",
+          "status": 200,
+          "contentType": "application/javascript; charset=utf-8",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-1d5d\"",
+          "sha256": "97c9636318dd269526993e7a20bdc97955c7e203de6eb25bb13654d3400ae9c2",
+          "bytes": 7517
+        }
+      ],
+      "screenshots": {
+        "desktop": "chromium-desktop.png",
+        "mobile": "chromium-mobile.png"
+      },
+      "error": null,
+      "browserVersion": "156.0.8078.81",
+      "overviewSpikePixels": 176,
+      "zoomSpikePixels": 159,
+      "nanGapPixels": [
+        402,
+        0,
+        351
+      ],
+      "status": "pass"
+    },
+    {
+      "engine": "firefox",
+      "baseUrl": "https://akenoowww.github.io/soup-training-observatory/",
+      "checks": [
+        "repository-prefix document loads with20 runs",
+        "filter, empty state and clear-filter recovery",
+        "real module worker prepares1M points and overview spike is painted",
+        "shared actual490000..510000 viewport and sampled CSV preserve9.4",
+        "NaN is an actual pixel gap; all-invalid range remains unavailable",
+        "390px navigation, guide, run and document width",
+        "unknown-run recovery keeps the repository prefix",
+        "public assets, self-hosted fonts and module worker succeed without4xx, failed requests or page errors"
+      ],
+      "http": [
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/",
+          "status": 200,
+          "resourceType": "document",
+          "underRepositoryPrefix": true,
+          "contentType": "text/html; charset=utf-8",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-36a\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/app-DfZOBv6h.css",
+          "status": 200,
+          "resourceType": "stylesheet",
+          "underRepositoryPrefix": true,
+          "contentType": "text/css; charset=utf-8",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-8962\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/client-C5dJojYl.js",
+          "status": 200,
+          "resourceType": "script",
+          "underRepositoryPrefix": true,
+          "contentType": "application/javascript; charset=utf-8",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-e871\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/client-Saz_VHki.css",
+          "status": 200,
+          "resourceType": "stylesheet",
+          "underRepositoryPrefix": true,
+          "contentType": "text/css; charset=utf-8",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-65b\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/app-DsJyw_oe.js",
+          "status": 200,
+          "resourceType": "script",
+          "underRepositoryPrefix": true,
+          "contentType": "application/javascript; charset=utf-8",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-55263\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/dm-sans-latin-400-normal-CW0RaeGs.woff2",
+          "status": 200,
+          "resourceType": "font",
+          "underRepositoryPrefix": true,
+          "contentType": "font/woff2",
+          "cacheControl": "max-age=600",
+          "etag": "\"6af23c47-3778\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/dm-sans-latin-600-normal-Aqo67rzb.woff2",
+          "status": 200,
+          "resourceType": "font",
+          "underRepositoryPrefix": true,
+          "contentType": "font/woff2",
+          "cacheControl": "max-age=600",
+          "etag": "\"6af23c47-3740\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "status": 200,
+          "resourceType": "font",
+          "underRepositoryPrefix": true,
+          "contentType": "font/woff2",
+          "cacheControl": "max-age=600",
+          "etag": "\"6af23c47-3974\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/dm-sans-latin-500-normal-B9HHJjqV.woff2",
+          "status": 200,
+          "resourceType": "font",
+          "underRepositoryPrefix": true,
+          "contentType": "font/woff2",
+          "cacheControl": "max-age=600",
+          "etag": "\"6af23c47-37e0\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/dm-sans-latin-700-normal-DvUfVpUG.woff2",
+          "status": 200,
+          "resourceType": "font",
+          "underRepositoryPrefix": true,
+          "contentType": "font/woff2",
+          "cacheControl": "max-age=600",
+          "etag": "\"6af23c47-380c\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/favicon.svg",
+          "status": 200,
+          "resourceType": "image",
+          "underRepositoryPrefix": true,
+          "contentType": "image/svg+xml",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-110\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/data.worker-BHtkh95n.js",
+          "status": 200,
+          "resourceType": "script",
+          "underRepositoryPrefix": true,
+          "contentType": "application/javascript; charset=utf-8",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-1d5d\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/ibm-plex-mono-latin-500-normal-DSY6xOcd.woff2",
+          "status": 200,
+          "resourceType": "font",
+          "underRepositoryPrefix": true,
+          "contentType": "font/woff2",
+          "cacheControl": "max-age=600",
+          "etag": "\"6af23c47-3a28\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        }
+      ],
+      "requestFailures": [],
+      "pageErrors": [],
+      "bundles": [
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/app-DsJyw_oe.js",
+          "status": 200,
+          "contentType": "application/javascript; charset=utf-8",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-55263\"",
+          "sha256": "27319b4729c5ae6effc970393b72603ba4fd87ed58197a4bf3d8f1a82471184d",
+          "bytes": 348771
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/data.worker-BHtkh95n.js",
+          "status": 200,
+          "contentType": "application/javascript; charset=utf-8",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-1d5d\"",
+          "sha256": "97c9636318dd269526993e7a20bdc97955c7e203de6eb25bb13654d3400ae9c2",
+          "bytes": 7517
+        }
+      ],
+      "screenshots": {
+        "desktop": "firefox-desktop.png",
+        "mobile": "firefox-mobile.png"
+      },
+      "error": null,
+      "browserVersion": "159.0",
+      "overviewSpikePixels": 173,
+      "zoomSpikePixels": 160,
+      "nanGapPixels": [
+        345,
+        0,
+        340
+      ],
+      "status": "pass"
+    },
+    {
+      "engine": "webkit",
+      "baseUrl": "https://akenoowww.github.io/soup-training-observatory/",
+      "checks": [
+        "repository-prefix document loads with20 runs",
+        "filter, empty state and clear-filter recovery",
+        "real module worker prepares1M points and overview spike is painted",
+        "shared actual490000..510000 viewport and sampled CSV preserve9.4",
+        "NaN is an actual pixel gap; all-invalid range remains unavailable",
+        "390px navigation, guide, run and document width",
+        "unknown-run recovery keeps the repository prefix",
+        "public assets, self-hosted fonts and module worker succeed without4xx, failed requests or page errors"
+      ],
+      "http": [
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/",
+          "status": 200,
+          "resourceType": "document",
+          "underRepositoryPrefix": true,
+          "contentType": "text/html; charset=utf-8",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-36a\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/app-DsJyw_oe.js",
+          "status": 200,
+          "resourceType": "script",
+          "underRepositoryPrefix": true,
+          "contentType": "application/javascript; charset=utf-8",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-55263\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/client-Saz_VHki.css",
+          "status": 200,
+          "resourceType": "stylesheet",
+          "underRepositoryPrefix": true,
+          "contentType": "text/css; charset=utf-8",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-65b\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/client-C5dJojYl.js",
+          "status": 200,
+          "resourceType": "script",
+          "underRepositoryPrefix": true,
+          "contentType": "application/javascript; charset=utf-8",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-e871\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/app-DfZOBv6h.css",
+          "status": 200,
+          "resourceType": "stylesheet",
+          "underRepositoryPrefix": true,
+          "contentType": "text/css; charset=utf-8",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-8962\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/dm-sans-latin-400-normal-CW0RaeGs.woff2",
+          "status": 200,
+          "resourceType": "font",
+          "underRepositoryPrefix": true,
+          "contentType": "font/woff2",
+          "cacheControl": "max-age=600",
+          "etag": "\"6af23c47-3778\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/dm-sans-latin-500-normal-B9HHJjqV.woff2",
+          "status": 200,
+          "resourceType": "font",
+          "underRepositoryPrefix": true,
+          "contentType": "font/woff2",
+          "cacheControl": "max-age=600",
+          "etag": "\"6af23c47-37e0\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/dm-sans-latin-600-normal-Aqo67rzb.woff2",
+          "status": 200,
+          "resourceType": "font",
+          "underRepositoryPrefix": true,
+          "contentType": "font/woff2",
+          "cacheControl": "max-age=600",
+          "etag": "\"6af23c47-3740\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "status": 200,
+          "resourceType": "font",
+          "underRepositoryPrefix": true,
+          "contentType": "font/woff2",
+          "cacheControl": "max-age=600",
+          "etag": "\"6af23c47-3974\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/dm-sans-latin-700-normal-DvUfVpUG.woff2",
+          "status": 200,
+          "resourceType": "font",
+          "underRepositoryPrefix": true,
+          "contentType": "font/woff2",
+          "cacheControl": "max-age=600",
+          "etag": "\"6af23c47-380c\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/data.worker-BHtkh95n.js",
+          "status": 200,
+          "resourceType": "xhr",
+          "underRepositoryPrefix": true,
+          "contentType": "application/javascript; charset=utf-8",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-1d5d\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/ibm-plex-mono-latin-500-normal-DSY6xOcd.woff2",
+          "status": 200,
+          "resourceType": "font",
+          "underRepositoryPrefix": true,
+          "contentType": "font/woff2",
+          "cacheControl": "max-age=600",
+          "etag": "\"6af23c47-3a28\"",
+          "lastModified": "Mon, 09 Nov 2026 21:33:59 GMT",
+          "server": "GitHub.com"
+        }
+      ],
+      "requestFailures": [],
+      "pageErrors": [],
+      "bundles": [
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/app-DsJyw_oe.js",
+          "status": 200,
+          "contentType": "application/javascript; charset=utf-8",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-55263\"",
+          "sha256": "27319b4729c5ae6effc970393b72603ba4fd87ed58197a4bf3d8f1a82471184d",
+          "bytes": 348771
+        },
+        {
+          "url": "https://akenoowww.github.io/soup-training-observatory/assets/data.worker-BHtkh95n.js",
+          "status": 200,
+          "contentType": "application/javascript; charset=utf-8",
+          "cacheControl": "max-age=600",
+          "etag": "W/\"6af23c47-1d5d\"",
+          "sha256": "97c9636318dd269526993e7a20bdc97955c7e203de6eb25bb13654d3400ae9c2",
+          "bytes": 7517
+        }
+      ],
+      "screenshots": {
+        "desktop": "webkit-desktop.png",
+        "mobile": "webkit-mobile.png"
+      },
+      "error": null,
+      "browserVersion": "27.2",
+      "overviewSpikePixels": 174,
+      "zoomSpikePixels": 160,
+      "nanGapPixels": [
+        356,
+        0,
+        348
+      ],
+      "status": "pass"
+    }
+  ]
+}

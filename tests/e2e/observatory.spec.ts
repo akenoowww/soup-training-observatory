@@ -1,6 +1,7 @@
 import { test, expect, type Page } from '@playwright/test';
 import { readFile } from 'node:fs/promises';
 import { waitRenderedViewport } from './support/chart-assertions';
+import { waitForRunBrowser } from './support/app-readiness';
 
 async function openRun(page: Page, id = 'run-001', query = '') {
   await page.goto(`/#/runs/${id}${query}`);
@@ -61,9 +62,19 @@ test('run browser filters, searches, sorts, persists URL state, and recovers fro
   await page.reload();
   await expect(page.getByRole('combobox', { name: 'Sort runs' })).toHaveValue('name');
   await page.getByRole('combobox', { name: 'Sort runs' }).selectOption('loss');
-  const losses = await page.locator('.runs-table tbody tr td:nth-child(3)').allTextContents();
-  const numeric = losses.map((text) => Number(text.replaceAll(',', '')));
-  expect(numeric).toEqual([...numeric].sort((a, b) => a - b));
+  await expect(page).toHaveURL(/sort=loss/);
+  await expect
+    .poll(async () => {
+      const losses = await page.locator('.runs-table tbody tr td:nth-child(3)').allTextContents();
+      const numeric = losses.map((text) => Number(text.replaceAll(',', '')));
+      return {
+        rows: numeric.length,
+        populated: losses.every((text) => text.trim() !== ''),
+        finite: numeric.every(Number.isFinite),
+        ascending: numeric.every((value, index) => index === 0 || numeric[index - 1]! <= value),
+      };
+    })
+    .toEqual({ rows: 20, populated: true, finite: true, ascending: true });
 });
 
 test('million-point spike remains painted in overview, narrow zoom and reset', async ({ page }) => {
@@ -157,6 +168,7 @@ test('keyboard search opens a run and chart keyboard inspection reveals measured
   page,
 }) => {
   await page.goto('/#/');
+  await waitForRunBrowser(page);
   await page.keyboard.press('Control+k');
   await expect(page.getByRole('dialog')).toBeVisible();
   await page.getByRole('textbox', { name: 'Find a training run' }).fill('whisper');
@@ -165,7 +177,7 @@ test('keyboard search opens a run and chart keyboard inspection reveals measured
   await page.keyboard.press('Enter');
   await expect(page.getByRole('dialog')).toHaveCount(0);
   await expect(page.getByRole('heading', { name: 'whisper-small-en' })).toBeVisible();
-  await expect(page.locator('[data-ready="true"]')).toBeVisible();
+  await waitRenderedViewport(page, 0, 21599);
   await page.getByTestId('chart-loss').focus();
   await page.keyboard.press('Home');
   await expect(page.locator('.metric-chart--loss .metric-chart__tooltip')).toContainText(
@@ -223,9 +235,14 @@ test('a worker failure never substitutes fabricated values and has a working ret
   await expect(page.getByRole('heading', { name: 'We couldn’t load this run' })).toBeVisible();
   await expect(page.getByTestId('chart-loss')).toHaveCount(0);
   await page.unroute(/data\.worker-[^/]+\.js(?:\?.*)?$/);
-  await page.getByRole('button', { name: 'Try again', exact: false }).click();
-  await expect(page.locator('[data-run-id="run-001"]')).toHaveAttribute('data-ready', 'true');
+  // The initial measured-width query may already restart successfully once the
+  // network fault is removed. This persistent public control remains available
+  // throughout error/loading/success, unlike the conditional error-body button.
+  await page.getByRole('button', { name: 'Reload snapshot', exact: true }).click();
+  await waitRenderedViewport(page, 0, 999999);
+  await expect(page.getByTestId('chart-loss')).toHaveAttribute('data-source-points', '1000000');
   await expect(page.getByTestId('chart-loss')).toHaveAttribute('data-max-value', '9.4');
+  await assertSpikeActuallyDrawn(page);
 });
 
 test('an entirely invalid viewport shows unavailable values and never fabricates a zero curve', async ({

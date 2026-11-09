@@ -6,8 +6,10 @@ export default defineConfig({
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: 0,
-  workers: 3,
+  // Isolate functional checks on the shared CI runner; performance has its own collector.
+  workers: process.env.CI ? 1 : 3,
   timeout: 30_000,
+  globalTimeout: process.env.CI ? 15 * 60_000 : undefined,
   expect: { timeout: 10_000 },
   reporter: [
     ['list'],

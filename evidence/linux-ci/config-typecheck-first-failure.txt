@@ -1,0 +1,7 @@
+
+> soup-training-observatory@1.0.0 typecheck
+> tsc -b
+
+playwright.config.ts(40,5): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Object literal may only specify known properties, and 'globalTimeout' does not exist in type 'TestConfigWebServer | TestConfigWebServer[]'.

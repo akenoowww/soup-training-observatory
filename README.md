@@ -2,6 +2,8 @@
 
 A complete frontend for inspecting 20 synthetic training runs, including a million-point run and deliberately malformed measurements. Built with React, TypeScript, Vite, TanStack Query, a dedicated Web Worker, and uPlot.
 
+[Open the deployed app](https://akenoowww.github.io/soup-training-observatory/) · [Two-page note](docs/submission-note.pdf) · [Linux CI](https://github.com/akenoowww/soup-training-observatory/actions/workflows/ci.yml)
+
 ## Run locally
 
 Requires Node.js 24+ and npm.

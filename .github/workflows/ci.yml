@@ -1,12 +1,20 @@
 name: Quality checks
 on:
   push:
+    paths-ignore:
+      - 'docs/**'
+      - 'evidence/**'
+      - 'README.md'
   pull_request:
+    paths-ignore:
+      - 'docs/**'
+      - 'evidence/**'
+      - 'README.md'
 permissions:
   contents: read
 jobs:
   verify:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
