@@ -89,3 +89,11 @@ The fixed-build 30-second active / 15-second idle probe completed 24 iterations 
 - Final sustained use: 180 seconds activity plus 35 seconds idle, 136 cycles across all 20 runs, 546 counted actions, no browser/console errors. Retained V8/backing stores: 38.82 MB warmup -> 44.93 MB peak -> 41.43 MB after idle. No recurrence of the rejected custom-pruner failure was observed; multi-hour leak freedom is not claimed.
 - The final two-page PDF was rendered and visually inspected; final desktop/mobile screenshots and a production ZIP are prepared.
 - **External delivery is still open.** Automatic approval review rejected remote repository creation and push because explicit export authorization was absent. No remote repository, Linux CI execution or public deployment is claimed. Local technical work is complete; export/publication authorization and hosted smoke verification remain the actual remaining acceptance conditions.
+
+## Final external delivery closure
+
+The owner explicitly authorized public GitHub and Pages for `akenoowww`. Repository and HTTPS site are live; deployed-site smoke passed eight groups in all three engines with no asset/worker/font/JavaScript failures and an identical production bundle SHA256.
+
+The final actual Linux workflow [42712785795](https://github.com/akenoowww/soup-training-observatory/actions/runs/42712785795), code commit `76fd9d6`, passed all three isolated jobs. Each ran the same 45 scenarios and all configured axe rules: **135 passed, zero skipped/flaky/unexpected, zero retries**. Canonical Chromium/WebKit use SDK/core 1.65.0; Firefox uses an internally aligned 1.64.1 job to avoid the independently reproduced upstream regression. No test events, app ARIA or source values were rewritten. Machine-readable reports and actual driver graphs are in `evidence/linux-ci/final/`.
+
+Release verdict is **SHIP within the requested generated-data monitor scope**. Physical devices, full screen-reader usability, multi-hour retention and a real training source remain explicitly outside the demonstrated evidence; no hiring outcome is guaranteed. No email was sent because the user authorized publication, not external messaging.

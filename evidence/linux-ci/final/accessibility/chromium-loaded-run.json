@@ -1,0 +1,31 @@
+{
+  "capturedAt": "2026-11-09T22:33:27.659Z",
+  "project": "chromium",
+  "browserVersion": "158.0.8127.18",
+  "url": "http://127.0.0.1:4173/#/runs/run-001",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "state": "loaded-run",
+  "tags": [
+    "wcag2a",
+    "wcag2aa",
+    "wcag21a",
+    "wcag21aa"
+  ],
+  "axeVersion": "4.14.0",
+  "counts": {
+    "passes": 28,
+    "inapplicable": 35,
+    "violations": 0,
+    "incomplete": 0
+  },
+  "violations": [],
+  "incomplete": [],
+  "limits": [
+    "Automated WCAG rule checks on this captured browser state only; not an accessibility conformance claim.",
+    "Incomplete checks require manual assessment and are not silently treated as passes.",
+    "No physical-device ergonomics, assistive-technology usability or full application-state coverage is established by this artifact."
+  ]
+}

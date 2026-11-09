@@ -17,7 +17,7 @@ Open the Local URL printed by Vite. Routes use a hash router, so direct run link
 
 ```sh
 npm run check        # strict types, lint, unit tests, production build
-npm run test:e2e     # browser integration scenarios, production preview
+npm run test:e2e     # local macOS matrix; Linux uses the isolated profiles below
 npm run test:perf    # actual Chrome CPU ×4 traces and before/after memory
 ```
 
@@ -65,7 +65,7 @@ docs/                  design and engineering decisions
 
 Rendering, data acquisition and pure transformations are separated. `loadRun` is the replaceable data boundary for a future real API. TanStack Query keys include run identity and viewport; AbortSignal plus worker request IDs prevent late replies from populating a different run. Worker timeout/crash invalidates the worker so retry can recover.
 
-The local/current SDK is Playwright **1.65.0**. Linux CI isolates one internally consistent SDK per browser: Chromium/WebKit use 1.65.0; Firefox uses 1.64.1 until the [Firefox ARIA-reflection regression](https://github.com/microsoft/playwright/issues/43967) is fixed in a published roll. WebKit needs 1.65's [native input-delta fix](https://github.com/microsoft/playwright/issues/43417). Each disposable CI checkout runs the same 45 scenarios and all axe rules, with matching driver/core packages; no Page objects cross versions. Linux full-matrix reproduction follows the exact per-engine steps in [.github/workflows/ci.yml](.github/workflows/ci.yml). The compatibility rationale and original failures are in [the investigation](docs/axe-linux-investigation.md).
+The local/current SDK is Playwright **1.65.0**. Linux CI isolates one internally consistent SDK per browser: Chromium/WebKit use 1.65.0; Firefox uses 1.64.1 until the [Firefox ARIA-reflection regression](https://github.com/microsoft/playwright/issues/43967) is fixed in a published roll. WebKit needs 1.65's [native input-delta fix](https://github.com/microsoft/playwright/issues/43417). Each disposable CI checkout runs the same 45 scenarios and all axe rules, with matching driver/core packages; no Page objects cross versions. Linux full-matrix reproduction follows the exact per-engine steps in [.github/workflows/ci.yml](.github/workflows/ci.yml); [fresh-checkout commands](evidence/linux-ci/README.md#reproduce-the-isolated-linux-profiles) are also provided. The compatibility rationale and original failures are in [the investigation](docs/axe-linux-investigation.md).
 
 ## Deployment
 
@@ -88,7 +88,7 @@ The hardened candidate passes **71 unit tests** and **45 browser scenarios acros
 - [Requirements and evidence matrix](docs/acceptance-matrix.md)
 - [Two-page submission note](docs/submission-note.pdf)
 
-Original failed tests and the original performance results remain in `evidence/`; the hardening round has separate files under `evidence/round2/`. Automated accessibility findings and manually examined incomplete checks are reported separately. CI configuration is provided; a local pass is not represented as an executed GitHub Actions pass.
+Original failed tests and the original performance results remain in `evidence/`; the hardening round has separate files under `evidence/round2/`. Automated accessibility findings and manually examined incomplete checks are reported separately. [Actual Linux CI passed all three isolated jobs](https://github.com/akenoowww/soup-training-observatory/actions/runs/42712785795): **45 scenarios per engine, 135 passed in total**, zero retries or skipped tests. The original failed runs and their diagnoses remain in `evidence/linux-ci/`. The [deployed-site smoke report](evidence/hosted/2026-11-09T21-36-49-440Z/results.json) separately confirms eight check groups in each of three engines.
 
 ## Evidence and delivery limits
 

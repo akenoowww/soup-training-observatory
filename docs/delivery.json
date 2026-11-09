@@ -1,7 +1,7 @@
 {
-  "status": "published-awaiting-green-linux-ci",
+  "status": "ready",
   "applicationBundle": "assets/app-DsJyw_oe.js",
-  "localCandidateCommit": "9626fbe",
+  "localCandidateCommit": "76fd9d62f74ecf97795cab030c389a288e641df2",
   "repositoryUrl": "https://github.com/akenoowww/soup-training-observatory",
   "deployedUrl": "https://akenoowww.github.io/soup-training-observatory/",
   "hostedSmokePassed": true,
@@ -12,9 +12,15 @@
   "performanceResults": "evidence/round2/performance-fixed/results.json",
   "sustainedUse": "evidence/round2/soak/final-native-gc/latest.json",
   "linuxCi": {
-    "conclusion": "failure",
-    "runUrl": "https://github.com/akenoowww/soup-training-observatory/actions/runs/42703898004",
-    "note": "Initial parallel Linux run failed; strict readiness assertions and isolated CI rerun are being prepared."
+    "conclusion": "success",
+    "runUrl": "https://github.com/akenoowww/soup-training-observatory/actions/runs/42712785795",
+    "runId": 42712785795,
+    "codeCommit": "76fd9d62f74ecf97795cab030c389a288e641df2",
+    "resultSummary": "evidence/linux-ci/final/summary.json",
+    "passedExecutions": 135,
+    "uniqueScenarios": 45,
+    "retries": 0,
+    "skipped": 0
   },
   "exportApproval": "explicit-user-public-github-and-pages-akenoowww",
   "hostedSmokeResults": "evidence/hosted/2026-11-09T21-36-49-440Z/results.json"
