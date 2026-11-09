@@ -30,7 +30,7 @@
   "devDependencies": {
     "@axe-core/playwright": "4.14.0",
     "@eslint/js": "^9.39.0",
-    "@playwright/test": "^1.56.0",
+    "@playwright/test": "1.64.1",
     "@types/node": "^24.0.0",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
@@ -47,7 +47,8 @@
   "overrides": {
     "@typescript-eslint/typescript-estree": {
       "minimatch": "^11.0.1"
-    }
+    },
+    "playwright-core": "1.64.1"
   },
   "engines": {
     "node": ">=24.0.0"

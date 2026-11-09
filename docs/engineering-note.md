@@ -4,7 +4,7 @@ The canonical short submission note is [the two-page PDF](submission-note.pdf). 
 
 ## Verdict
 
-**DON'T SHIP the submission yet: the externally accessible repository and deployed URL are not yet available. Public publication still requires the owner’s authorization.** The final local candidate passed the checks below, including the repeated post-fix sustained-use run. No remaining known P1 defect was found in the requested generated-data scenarios. The final delivery step is a hosted smoke check and a repository the reviewer can access. The next technical improvement is an explicit render-workload policy for extreme discontinuities. The chart benchmark is kept separate from complete application behavior.
+**DON'T SHIP the submission yet: final Linux CI is still being verified.** The [public repository](https://github.com/akenoowww/soup-training-observatory) and [deployed application](https://akenoowww.github.io/soup-training-observatory/) are available, and hosted smoke checks passed in all three engines. The final local candidate passed the checks below, including the repeated post-fix sustained-use run. No remaining known P1 defect was found in the requested generated-data scenarios. The remaining delivery step is a green, reproducible Linux browser run and an updated release note. The next technical improvement is an explicit render-workload policy for extreme discontinuities. The chart benchmark is kept separate from complete application behavior.
 
 ## Truthfulness
 
@@ -54,6 +54,8 @@ A retained outlier was still invisible when it was the only finite point between
 
 Codex with Frontend Workbench authored the implementation and independent agent reviews. Accepted suggestions included uPlot, worker ownership, extrema sampling, explicit fixture provenance and native dialogs. Corrected suggestions included invented trends, mixed-scope summaries, collapsed labels, invisible singleton/zero rendering and mistaken CPU/memory attribution. Verification was executed through tests, browser pixels/labels and Chrome traces. The recorded verification is tool-driven test execution and source/browser inspection. Human acceptance and physical-device/assistive-technology studies remain separate evidence.
 
-## Delivery authorization
+## Delivery and independent platform evidence
 
-Remote repository creation and push were rejected by automatic approval review because exporting the project/evidence had not been explicitly authorized. No remote repository or public deployment was created. The local package is complete; explicit export/publication authorization is the remaining external step. The Linux workflow is configured but has not been executed, and local macOS results are not relabeled as Linux CI evidence.
+The owner explicitly approved public GitHub and Pages under `akenoowww`. The repository and HTTPS site were created; the deployed JavaScript SHA256 matches the measured local bundle. Hosted smoke passed eight groups in each of Chromium, Firefox and WebKit, including real spike/gap pixels, source counts, module worker, fonts, CSV, mobile routes and error recovery. No HTTP 4xx, request failure or JavaScript error was observed. See `evidence/hosted/2026-11-09T21-36-49-440Z/results.json`.
+
+Initial real Linux CI failures are preserved in `evidence/linux-ci/`: missing test readiness conditions, an immediate sort read, and one unexplained Firefox renderer crash under parallel execution. The final pipeline uses pinned Ubuntu 24.04 and one worker with all 135 executions and zero retries. Its conclusion is recorded only after the actual run completes.

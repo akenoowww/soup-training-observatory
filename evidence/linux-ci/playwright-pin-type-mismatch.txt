@@ -1,0 +1,30 @@
+
+> soup-training-observatory@1.0.0 check
+> npm run format:check && npm run typecheck && npm run lint && npm test && npm run build
+
+
+> soup-training-observatory@1.0.0 format:check
+> prettier --check src tests scripts *.ts *.js *.json *.html README.md docs/*.md
+
+Checking formatting...
+All matched files use Prettier code style!
+
+> soup-training-observatory@1.0.0 typecheck
+> tsc -b
+
+tests/e2e/accessibility.spec.ts(18,42): error TS2322: Type 'import("/Users/noname/Desktop/personal-projects/soup/node_modules/playwright/node_modules/playwright-core/types/types").Page' is not assignable to type 'import("/Users/noname/Desktop/personal-projects/soup/node_modules/playwright-core/types/types").Page'.
+  The types returned by 'evaluateHandle(...)' are incompatible between these types.
+    Type 'Promise<import("/Users/noname/Desktop/personal-projects/soup/node_modules/playwright/node_modules/playwright-core/types/types").ElementHandle<any>>' is not assignable to type 'Promise<import("/Users/noname/Desktop/personal-projects/soup/node_modules/playwright-core/types/types").ElementHandle<any>>'.
+      Type 'import("/Users/noname/Desktop/personal-projects/soup/node_modules/playwright/node_modules/playwright-core/types/types").ElementHandle<any>' is not assignable to type 'import("/Users/noname/Desktop/personal-projects/soup/node_modules/playwright-core/types/types").ElementHandle<any>'.
+        The types returned by '$(...)' are incompatible between these types.
+          Type 'Promise<ElementHandleForTag<any> | null>' is not assignable to type 'Promise<ElementHandle<HTMLElement | SVGElement> | null>'.
+            Type 'ElementHandleForTag<any> | null' is not assignable to type 'ElementHandle<HTMLElement | SVGElement> | null'.
+              Type 'ElementHandleForTag<any>' is not assignable to type 'ElementHandle<HTMLElement | SVGElement>'.
+                Types of property 'waitForSelector' are incompatible.
+                  Type '{ <K extends keyof HTMLElementTagNameMap>(selector: K, options?: ElementHandleWaitForSelectorOptionsNotHidden | undefined): Promise<import("/Users/noname/Desktop/personal-projects/soup/node_modules/playwright/node_modules/playwright-core/types/structs").ElementHandleForTag<...>>; (selector: string, options?: Element...' is not assignable to type '{ <K extends keyof HTMLElementTagNameMap>(selector: K, options?: ElementHandleWaitForSelectorOptionsNotHidden | undefined): Promise<import("/Users/noname/Desktop/personal-projects/soup/node_modules/playwright-core/types/structs").ElementHandleForTag<...>>; (selector: string, options?: ElementHandleWaitForSelectorOpt...'.
+                    Types of parameters 'options' and 'options' are incompatible.
+                      Type 'ElementHandleWaitForSelectorOptions' is not assignable to type 'ElementHandleWaitForSelectorOptionsNotHidden'.
+                        Type 'ElementHandleWaitForSelectorOptions' is not assignable to type '{ state?: "visible" | "attached" | undefined; }'.
+                          Types of property 'state' are incompatible.
+                            Type '"hidden" | "visible" | "attached" | "detached" | undefined' is not assignable to type '"visible" | "attached" | undefined'.
+                              Type '"hidden"' is not assignable to type '"visible" | "attached" | undefined'.

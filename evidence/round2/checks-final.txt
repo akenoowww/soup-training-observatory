@@ -26,8 +26,8 @@ All matched files use Prettier code style!
 
  Test Files  9 passed (9)
       Tests  71 passed (71)
-   Start at  02:25:15
-   Duration  1.78s (transform 391ms, setup 0ms, import 582ms, tests 2.88s, environment 0ms)
+   Start at  02:52:16
+   Duration  1.75s (transform 431ms, setup 0ms, import 638ms, tests 2.86s, environment 0ms)
 
 
 > soup-training-observatory@1.0.0 build
@@ -58,4 +58,4 @@ dist/assets/app-DfZOBv6h.css                                35.17 kB │ gzip:  
 dist/assets/benchmark-0r0h9aVx.js                            7.23 kB │ gzip:   3.16 kB │ map:    28.37 kB
 dist/assets/client-C5dJojYl.js                              59.51 kB │ gzip:  26.18 kB │ map:   308.14 kB
 dist/assets/app-DsJyw_oe.js                                348.77 kB │ gzip: 109.93 kB │ map: 1,899.43 kB
-✓ built in 1.20s
+✓ built in 1.23s
