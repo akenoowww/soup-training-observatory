@@ -24,4 +24,6 @@ jobs:
           path: |
             playwright-report/
             test-results/
+            evidence/round2/e2e-results.json
+            evidence/round2/accessibility/*.json
           retention-days: 14
