@@ -1,0 +1,14 @@
+
+Running 3 tests using 3 workers
+
+(node:39650) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:39652) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:39651) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › tests/e2e/adversarial.spec.ts:536:1 › twenty distinct viewports settle with current rendered bounds and bounded real worker requests (2.9s)
+  ✓  3 [webkit] › tests/e2e/adversarial.spec.ts:536:1 › twenty distinct viewports settle with current rendered bounds and bounded real worker requests (3.9s)
+  ✓  2 [firefox] › tests/e2e/adversarial.spec.ts:536:1 › twenty distinct viewports settle with current rendered bounds and bounded real worker requests (3.7s)
+
+  3 passed (5.4s)

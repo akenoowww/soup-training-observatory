@@ -1,0 +1,132 @@
+
+> soup-training-observatory@1.0.0 test
+> vitest run src/domain/series.property.test.ts
+
+
+ RUN  v4.1.12 /Users/noname/Desktop/personal-projects/soup
+
+ ❯ src/domain/series.property.test.ts (6 tests | 4 failed) 289ms
+     × agrees with independent last-arrival normalization over 128 shuffled malformed inputs 5ms
+     × preserves source identity, exact statistics, each segment extrema and breaks for all three metrics over 192 seeded datasets 12ms
+     × uses exact inclusive integer bounds and excludes the next step beyond a fractional viewport endpoint 1ms
+     × rejects unsupported source step coordinates instead of silently rounding or inventing chart positions 0ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/domain/series.property.test.ts > adversarial deterministic sampling oracle > agrees with independent last-arrival normalization over 128 shuffled malformed inputs
+AssertionError: seed 1: expected [ -10, -9, -8, -6, -5, -4, -2, …(28) ] to deeply equal [ Array(25) ]
+
+- Expected
++ Received
+
+@@ -1,8 +1,17 @@
+  [
++   -10,
++   -9,
++   -8,
++   -6,
++   -5,
++   -4,
++   -2,
++   -1,
+    0,
+    1,
++   1.25,
+    3,
+    7,
+    8,
+    9,
+    10,
+@@ -22,6 +31,7 @@
+    25,
+    26,
+    27,
+    28,
+    29,
++   9007199254740992,
+  ]
+
+ ❯ src/domain/series.property.test.ts:92:55
+     90|       const expected = referenceCanonical(rows);
+     91|       const actual = canonicalize(rows);
+     92|       expect(Array.from(actual.step), `seed ${seed}`).toEqual(expected…
+       |                                                       ^
+     93|       for (const metric of METRICS) expect(Array.from(actual[metric]),…
+     94|       expect(actual.duplicateCount, `seed ${seed}`).toBe(rows.filter(r…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯
+
+ FAIL  src/domain/series.property.test.ts > adversarial deterministic sampling oracle > preserves source identity, exact statistics, each segment extrema and breaks for all three metrics over 192 seeded datasets
+AssertionError: seed 2; loss; {"min":9007199254740793,"max":9007199254740806}: expected 15 to be 14 // Object.is equality
+
+- Expected
++ Received
+
+- 14
++ 15
+
+ ❯ assertViewport src/domain/series.property.test.ts:27:37
+     25|   const finite = rows.filter(row => Number.isFinite(row[metric]));
+     26|   const finiteValues = finite.map(row => row[metric]);
+     27|   expect(sampled.rawCount, context).toBe(rows.length);
+       |                                     ^
+     28|   expect(sampled.invalidCount, context).toBe(rows.length - finite.leng…
+     29|   expect(sampled.min, context).toBe(finite.length ? Math.min(...finite…
+ ❯ src/domain/series.property.test.ts:125:9
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯
+
+ FAIL  src/domain/series.property.test.ts > adversarial deterministic sampling oracle > uses exact inclusive integer bounds and excludes the next step beyond a fractional viewport endpoint
+AssertionError: {"min":9007199254740990,"max":9007199254740990}: expected [ 9007199254740990, 9007199254740991 ] to deeply equal [ 9007199254740990 ]
+
+- Expected
++ Received
+
+  [
+    9007199254740990,
++   9007199254740991,
+  ]
+
+ ❯ src/domain/series.property.test.ts:148:48
+    146|     for (const { rows, range, expected } of cases) {
+    147|       const sampled = sampleMetric(canonicalize(rows), 'loss', 10, ran…
+    148|       expect(sampled.x, JSON.stringify(range)).toEqual(expected);
+       |                                                ^
+    149|       expect(sampled.rawCount).toBe(expected.length);
+    150|     }
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/4]⎯
+
+ FAIL  src/domain/series.property.test.ts > adversarial deterministic sampling oracle > rejects unsupported source step coordinates instead of silently rounding or inventing chart positions
+AssertionError: expected [ -1, -0.1, +0, 0.1, 1, 1.25, …(2) ] to deeply equal [ +0, 1 ]
+
+- Expected
++ Received
+
+  [
++   -1,
++   -0.1,
+    0,
++   0.1,
+    1,
++   1.25,
++   9007199254740992,
++   1e+308,
+  ]
+
+ ❯ src/domain/series.property.test.ts:156:34
+    154|     const invalidSteps = [-1, -0.1, 0.1, 1.25, Number.MAX_SAFE_INTEGER…
+    155|     const run = canonicalize([point(0, 4), ...invalidSteps.map(step =>…
+    156|     expect(Array.from(run.step)).toEqual([0, 1]);
+       |                                  ^
+    157|     expect(run.rejectedStepCount).toBe(invalidSteps.length);
+    158|     expect(sampleMetric(run, 'loss', 1).y).toEqual([4, 3]);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/4]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  4 failed | 2 passed (6)
+   Start at  01:35:46
+   Duration  408ms (transform 28ms, setup 0ms, import 36ms, tests 289ms, environment 0ms)
+

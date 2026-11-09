@@ -1,0 +1,126 @@
+{
+  "scope": "Contrast ratios calculated from actual computed colors over nearest opaque ancestor background. Captured screen and elementFromPoint hit tests are reviewed separately; this is scoped manual corroboration, not full WCAG conformance.",
+  "minimumContrast": 5.27,
+  "results": [
+    {
+      "selector": ".nav-item.active[aria-current=\"page\"] > span:nth-child(2)",
+      "text": "Training runs",
+      "foreground": "rgb(101, 214, 173)",
+      "background": "rgb(36, 59, 83)",
+      "backgroundOwner": "nav-item active",
+      "contrastRatio": 6.45,
+      "threshold": 4.5,
+      "passesNormalTextContrast": true,
+      "hitTestOwnsCenter": true,
+      "ancestorsAllOpaque": true
+    },
+    {
+      "selector": ".nav-count",
+      "text": "20",
+      "foreground": "rgb(188, 204, 220)",
+      "background": "rgb(51, 78, 104)",
+      "backgroundOwner": "nav-count",
+      "contrastRatio": 5.27,
+      "threshold": 4.5,
+      "passesNormalTextContrast": true,
+      "hitTestOwnsCenter": true,
+      "ancestorsAllOpaque": true
+    },
+    {
+      "selector": "a[href$=\"#/guide\"] > span",
+      "text": "Field guide",
+      "foreground": "rgb(159, 179, 200)",
+      "background": "rgb(16, 42, 67)",
+      "backgroundOwner": "sidebar is-open",
+      "contrastRatio": 6.802,
+      "threshold": 4.5,
+      "passesNormalTextContrast": true,
+      "hitTestOwnsCenter": true,
+      "ancestorsAllOpaque": true
+    },
+    {
+      "selector": ".project-item",
+      "text": " Foundation models",
+      "foreground": "rgb(188, 204, 220)",
+      "background": "rgb(16, 42, 67)",
+      "backgroundOwner": "sidebar is-open",
+      "contrastRatio": 8.931,
+      "threshold": 4.5,
+      "passesNormalTextContrast": true,
+      "hitTestOwnsCenter": true,
+      "ancestorsAllOpaque": true
+    },
+    {
+      "selector": ".sidebar-project > small",
+      "text": "20 experiments \u00b7 3 metrics",
+      "foreground": "rgb(159, 179, 200)",
+      "background": "rgb(16, 42, 67)",
+      "backgroundOwner": "sidebar is-open",
+      "contrastRatio": 6.802,
+      "threshold": 4.5,
+      "passesNormalTextContrast": true,
+      "hitTestOwnsCenter": true,
+      "ancestorsAllOpaque": true
+    },
+    {
+      "selector": "div > strong",
+      "text": "A little room to experiment.",
+      "foreground": "rgb(240, 244, 248)",
+      "background": "rgb(16, 42, 67)",
+      "backgroundOwner": "sidebar is-open",
+      "contrastRatio": 13.248,
+      "threshold": 4.5,
+      "passesNormalTextContrast": true,
+      "hitTestOwnsCenter": true,
+      "ancestorsAllOpaque": true
+    },
+    {
+      "selector": ".demo-note > div > p",
+      "text": "Explore synthetic runs. Your production training is untouched.",
+      "foreground": "rgb(159, 179, 200)",
+      "background": "rgb(16, 42, 67)",
+      "backgroundOwner": "sidebar is-open",
+      "contrastRatio": 6.802,
+      "threshold": 4.5,
+      "passesNormalTextContrast": true,
+      "hitTestOwnsCenter": true,
+      "ancestorsAllOpaque": true
+    },
+    {
+      "selector": ".profile-avatar",
+      "text": "SC",
+      "foreground": "rgb(207, 188, 242)",
+      "background": "rgb(36, 59, 83)",
+      "backgroundOwner": "profile-avatar",
+      "contrastRatio": 6.644,
+      "threshold": 4.5,
+      "passesNormalTextContrast": true,
+      "hitTestOwnsCenter": true,
+      "ancestorsAllOpaque": true
+    },
+    {
+      "selector": ".profile > span:nth-child(2) > strong",
+      "text": "Soup collective",
+      "foreground": "rgb(240, 244, 248)",
+      "background": "rgb(16, 42, 67)",
+      "backgroundOwner": "sidebar is-open",
+      "contrastRatio": 13.248,
+      "threshold": 4.5,
+      "passesNormalTextContrast": true,
+      "hitTestOwnsCenter": true,
+      "ancestorsAllOpaque": true
+    },
+    {
+      "selector": ".profile > span:nth-child(2) > small",
+      "text": "Research workspace",
+      "foreground": "rgb(159, 179, 200)",
+      "background": "rgb(16, 42, 67)",
+      "backgroundOwner": "sidebar is-open",
+      "contrastRatio": 6.802,
+      "threshold": 4.5,
+      "passesNormalTextContrast": true,
+      "hitTestOwnsCenter": true,
+      "ancestorsAllOpaque": true
+    }
+  ]
+}

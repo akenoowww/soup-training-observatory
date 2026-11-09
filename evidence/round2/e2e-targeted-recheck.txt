@@ -1,0 +1,41 @@
+
+Running 18 tests using 3 workers
+
+(node:31666) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:31665) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:31664) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [chromium] › tests/e2e/adversarial.spec.ts:401:3 › layout and reachable keyboard navigation at 320px (906ms)
+  ✓   3 [chromium] › tests/e2e/adversarial.spec.ts:319:1 › search dialog traps focus in both directions and returns focus to the trigger on Escape (944ms)
+  ✓   2 [chromium] › tests/e2e/adversarial.spec.ts:401:3 › layout and reachable keyboard navigation at 390px (1.0s)
+  ✓   5 [chromium] › tests/e2e/adversarial.spec.ts:484:1 › reloading prepares a new view while keeping the recorded synthetic source time and revision distinct (537ms)
+  ✓   4 [chromium] › tests/e2e/adversarial.spec.ts:401:3 › layout and reachable keyboard navigation at 768px (621ms)
+  ✓   6 [chromium] › tests/e2e/canvas-truth.spec.ts:317:1 › an all-zero interval stays a real zero line on linear and becomes explicitly unplottable on log (606ms)
+(node:31743) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:31742) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:31744) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   9 [firefox] › tests/e2e/adversarial.spec.ts:401:3 › layout and reachable keyboard navigation at 390px (1.3s)
+  ✓   7 [firefox] › tests/e2e/adversarial.spec.ts:401:3 › layout and reachable keyboard navigation at 320px (1.4s)
+  ✓  10 [firefox] › tests/e2e/adversarial.spec.ts:401:3 › layout and reachable keyboard navigation at 768px (572ms)
+  ✓   8 [firefox] › tests/e2e/adversarial.spec.ts:319:1 › search dialog traps focus in both directions and returns focus to the trigger on Escape (1.4s)
+  ✓  11 [firefox] › tests/e2e/adversarial.spec.ts:484:1 › reloading prepares a new view while keeping the recorded synthetic source time and revision distinct (457ms)
+  ✓  12 [firefox] › tests/e2e/canvas-truth.spec.ts:317:1 › an all-zero interval stays a real zero line on linear and becomes explicitly unplottable on log (477ms)
+(node:31797) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:31798) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:31800) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  14 [webkit] › tests/e2e/adversarial.spec.ts:401:3 › layout and reachable keyboard navigation at 320px (987ms)
+  ✓  13 [webkit] › tests/e2e/adversarial.spec.ts:319:1 › search dialog traps focus in both directions and returns focus to the trigger on Escape (1.1s)
+  ✓  15 [webkit] › tests/e2e/adversarial.spec.ts:401:3 › layout and reachable keyboard navigation at 390px (828ms)
+  ✓  17 [webkit] › tests/e2e/adversarial.spec.ts:484:1 › reloading prepares a new view while keeping the recorded synthetic source time and revision distinct (482ms)
+  ✓  16 [webkit] › tests/e2e/adversarial.spec.ts:401:3 › layout and reachable keyboard navigation at 768px (562ms)
+  ✓  18 [webkit] › tests/e2e/canvas-truth.spec.ts:317:1 › an all-zero interval stays a real zero line on linear and becomes explicitly unplottable on log (525ms)
+
+  18 passed (8.1s)

@@ -1,0 +1,13 @@
+
+> soup-training-observatory@1.0.0 test
+> vitest run src/domain/series.property.test.ts
+
+
+ RUN  v4.1.12 /Users/noname/Desktop/personal-projects/soup
+
+
+ Test Files  1 passed (1)
+      Tests  6 passed (6)
+   Start at  01:37:01
+   Duration  1.65s (transform 28ms, setup 0ms, import 36ms, tests 1.54s, environment 0ms)
+

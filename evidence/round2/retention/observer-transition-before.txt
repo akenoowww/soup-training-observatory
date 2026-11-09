@@ -1,0 +1,78 @@
+
+> soup-training-observatory@1.0.0 test
+> vitest run src/app/queryClient.test.ts
+
+
+ RUN  v4.1.12 /Users/noname/Desktop/personal-projects/soup
+
+ ❯ src/app/queryClient.test.ts (4 tests | 1 failed) 10ms
+     × keeps observer navigation attached to the cached query after many unseen ranges 6ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/app/queryClient.test.ts > viewport retention > keeps observer navigation attached to the cached query after many unseen ranges
+AssertionError: range 12: active query must remain registered: expected undefined to be Query{ options: { …(10) }, …(5) } // Object.is equality
+
+- Expected:
+Query {
+  "gcTime": 10000,
+  "observers": [],
+  "options": {
+    "_defaulted": true,
+    "gcTime": 10000,
+    "queryFn": [Function queryFn],
+    "queryHash": "[\"run\",\"run-001\",12]",
+    "queryKey": [
+      "run",
+      "run-001",
+      12,
+    ],
+    "refetchOnReconnect": true,
+    "refetchOnWindowFocus": true,
+    "retry": 0,
+    "staleTime": 30000,
+    "throwOnError": false,
+  },
+  "queryHash": "[\"run\",\"run-001\",12]",
+  "queryKey": [
+    "run",
+    "run-001",
+    12,
+  ],
+  "state": {
+    "data": {
+      "value": 12,
+    },
+    "dataUpdateCount": 1,
+    "dataUpdatedAt": 1794257746080,
+    "error": null,
+    "errorUpdateCount": 0,
+    "errorUpdatedAt": 0,
+    "fetchFailureCount": 0,
+    "fetchFailureReason": null,
+    "fetchMeta": null,
+    "fetchStatus": "idle",
+    "isInvalidated": false,
+    "status": "success",
+  },
+}
+
++ Received:
+undefined
+
+ ❯ src/app/queryClient.test.ts:23:113
+     21|         });
+     22|         const active = observer.getCurrentQuery();
+     23|         expect(client.getQueryCache().get(active.queryHash), `range ${…
+       |                                                                                                                 ^
+     24|         await observer.refetch();
+     25|       }
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 3 passed (4)
+   Start at  01:55:45
+   Duration  131ms (transform 19ms, setup 0ms, import 43ms, tests 10ms, environment 0ms)
+

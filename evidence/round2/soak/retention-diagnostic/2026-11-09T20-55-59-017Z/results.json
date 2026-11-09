@@ -1,0 +1,416 @@
+{
+  "generatedAt": "2026-11-09T20:56:33.884Z",
+  "status": "completed",
+  "error": null,
+  "browser": "156.0.8078.81",
+  "machine": "darwin/arm64",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "cpuThrottle": 1,
+  "servedAssets": [
+    "./assets/app-CdawIVe3.js",
+    "./assets/client-Saz_VHki.css",
+    "./assets/app-DfZOBv6h.css"
+  ],
+  "requestedActiveSeconds": 30,
+  "diagnostic": true,
+  "iterationLimit": 10,
+  "requestedIdleSeconds": 0,
+  "elapsedSeconds": 34.412804666,
+  "pace": "At least one second between active-loop iterations, plus actual render/interaction time. Each iteration changes a run, submits one numeric range and inspects a sampled point; every third iteration also changes scale and resets zoom.",
+  "memoryScope": "GC requested in document and each matching dedicated data worker before each snapshot. Combined V8 heap+backing stores includes worker canonical typed arrays but excludes native/GPU allocations. Renderer RSS sums renderer processes in an isolated one-page browser, can include spare renderers and allocator retention, and excludes browser/GPU/utility processes.",
+  "standardizedCheckpoints": "Reload run002 then run001; reset full step domain and linear scale. This deliberately aligns the worker LRU data for retained-memory comparisons. Idle recovery keeps the same full run001 open, with no page interactions.",
+  "iterationCount": 10,
+  "interactionCount": 10,
+  "interactionCountMeaning": "Completed active iterations, not individual DOM events. Each iteration contains a run switch, range submission and keyboard inspection; every third also has two scale changes and reset.",
+  "actionCounts": {
+    "runSwitches": 10,
+    "rangeSubmissions": 10,
+    "keyboardInspections": 10,
+    "scaleChanges": 8,
+    "zoomResets": 4
+  },
+  "visitedRunIds": [
+    "run-002",
+    "run-003",
+    "run-004",
+    "run-005",
+    "run-006",
+    "run-007",
+    "run-008",
+    "run-009",
+    "run-010",
+    "run-011"
+  ],
+  "summary": {
+    "initialBytes": 38945427,
+    "maximumCheckpointBytes": 422418166,
+    "finalBytes": 256110600,
+    "finalMinusInitialBytes": 217165173,
+    "memoryVerdict": "Descriptive short-run evidence only. No automatic absence-of-leaks guarantee is inferred; review checkpoints, final idle recovery and bounded source/query cache policy."
+  },
+  "snapshots": [
+    {
+      "label": "warmup-full-1M",
+      "domCounters": {
+        "documents": 1,
+        "nodes": 638,
+        "jsEventListeners": 234
+      },
+      "elapsedMs": 721.949958,
+      "mainV8HeapBytes": 5849220,
+      "mainBackingStorageBytes": 416282,
+      "workerV8HeapBytes": 361956,
+      "workerBackingStorageBytes": 32317969,
+      "combinedV8AndBackingBytes": 38945427,
+      "rendererRssBytes": 555991040,
+      "rendererCount": 3,
+      "workerCount": 1,
+      "contexts": {
+        "main": {
+          "usedSize": 5849220,
+          "totalSize": 6717440,
+          "embedderHeapUsedSize": 1853536,
+          "backingStorageSize": 416282
+        },
+        "workers": [
+          {
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 361956,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32317969
+          }
+        ]
+      },
+      "workerErrors": [],
+      "rendererMemoryError": null,
+      "observed": {
+        "route": "#/runs/run-001",
+        "canvasCount": 3,
+        "tooltipCount": 0,
+        "chartCount": 3,
+        "pageWidth": 1440,
+        "domNodeCount": 397,
+        "performanceEntryCount": 20
+      }
+    },
+    {
+      "label": "active-11s",
+      "domCounters": {
+        "documents": 1,
+        "nodes": 648,
+        "jsEventListeners": 240
+      },
+      "elapsedMs": 11721.594665999999,
+      "mainV8HeapBytes": 389307076,
+      "mainBackingStorageBytes": 416749,
+      "workerV8HeapBytes": 376372,
+      "workerBackingStorageBytes": 32317969,
+      "combinedV8AndBackingBytes": 422418166,
+      "rendererRssBytes": 1550073856,
+      "rendererCount": 3,
+      "workerCount": 1,
+      "contexts": {
+        "main": {
+          "usedSize": 389307076,
+          "totalSize": 391020544,
+          "embedderHeapUsedSize": 5294488,
+          "backingStorageSize": 416749
+        },
+        "workers": [
+          {
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 376372,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32317969
+          }
+        ]
+      },
+      "workerErrors": [],
+      "rendererMemoryError": null,
+      "observed": {
+        "route": "#/runs/run-001",
+        "canvasCount": 3,
+        "tooltipCount": 0,
+        "chartCount": 3,
+        "pageWidth": 1440,
+        "domNodeCount": 397,
+        "performanceEntryCount": 46
+      }
+    },
+    {
+      "label": "active-22s",
+      "domCounters": {
+        "documents": 1,
+        "nodes": 648,
+        "jsEventListeners": 240
+      },
+      "elapsedMs": 23285.37375,
+      "mainV8HeapBytes": 385606112,
+      "mainBackingStorageBytes": 416885,
+      "workerV8HeapBytes": 400548,
+      "workerBackingStorageBytes": 32317969,
+      "combinedV8AndBackingBytes": 418741514,
+      "rendererRssBytes": 1276690432,
+      "rendererCount": 3,
+      "workerCount": 1,
+      "contexts": {
+        "main": {
+          "usedSize": 385606112,
+          "totalSize": 392593408,
+          "embedderHeapUsedSize": 4138800,
+          "backingStorageSize": 416885
+        },
+        "workers": [
+          {
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 400548,
+            "totalSize": 1048576,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32317969
+          }
+        ]
+      },
+      "workerErrors": [],
+      "rendererMemoryError": null,
+      "observed": {
+        "route": "#/runs/run-001",
+        "canvasCount": 3,
+        "tooltipCount": 0,
+        "chartCount": 3,
+        "pageWidth": 1440,
+        "domNodeCount": 397,
+        "performanceEntryCount": 65
+      }
+    },
+    {
+      "label": "active-31s",
+      "domCounters": {
+        "documents": 1,
+        "nodes": 648,
+        "jsEventListeners": 240
+      },
+      "elapsedMs": 32216.473665999998,
+      "mainV8HeapBytes": 231746364,
+      "mainBackingStorageBytes": 416991,
+      "workerV8HeapBytes": 398880,
+      "workerBackingStorageBytes": 32317969,
+      "combinedV8AndBackingBytes": 264880204,
+      "rendererRssBytes": 1077231616,
+      "rendererCount": 3,
+      "workerCount": 1,
+      "contexts": {
+        "main": {
+          "usedSize": 231746364,
+          "totalSize": 233209856,
+          "embedderHeapUsedSize": 3245368,
+          "backingStorageSize": 416991
+        },
+        "workers": [
+          {
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 398880,
+            "totalSize": 1048576,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32317969
+          }
+        ]
+      },
+      "workerErrors": [],
+      "rendererMemoryError": null,
+      "observed": {
+        "route": "#/runs/run-001",
+        "canvasCount": 3,
+        "tooltipCount": 0,
+        "chartCount": 3,
+        "pageWidth": 1440,
+        "domNodeCount": 397,
+        "performanceEntryCount": 84
+      }
+    },
+    {
+      "label": "after-active",
+      "domCounters": {
+        "documents": 1,
+        "nodes": 648,
+        "jsEventListeners": 240
+      },
+      "elapsedMs": 34009.025208,
+      "mainV8HeapBytes": 222917152,
+      "mainBackingStorageBytes": 416991,
+      "workerV8HeapBytes": 422528,
+      "workerBackingStorageBytes": 32317969,
+      "combinedV8AndBackingBytes": 256074640,
+      "rendererRssBytes": 1034764288,
+      "rendererCount": 3,
+      "workerCount": 1,
+      "contexts": {
+        "main": {
+          "usedSize": 222917152,
+          "totalSize": 223772672,
+          "embedderHeapUsedSize": 3197600,
+          "backingStorageSize": 416991
+        },
+        "workers": [
+          {
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 422528,
+            "totalSize": 1048576,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32317969
+          }
+        ]
+      },
+      "workerErrors": [],
+      "rendererMemoryError": null,
+      "observed": {
+        "route": "#/runs/run-001",
+        "canvasCount": 3,
+        "tooltipCount": 0,
+        "chartCount": 3,
+        "pageWidth": 1440,
+        "domNodeCount": 397,
+        "performanceEntryCount": 87
+      }
+    },
+    {
+      "label": "after-idle-recovery",
+      "domCounters": {
+        "documents": 1,
+        "nodes": 648,
+        "jsEventListeners": 240
+      },
+      "elapsedMs": 34317.545458,
+      "mainV8HeapBytes": 222953112,
+      "mainBackingStorageBytes": 416991,
+      "workerV8HeapBytes": 422528,
+      "workerBackingStorageBytes": 32317969,
+      "combinedV8AndBackingBytes": 256110600,
+      "rendererRssBytes": 1036304384,
+      "rendererCount": 3,
+      "workerCount": 1,
+      "contexts": {
+        "main": {
+          "usedSize": 222953112,
+          "totalSize": 223772672,
+          "embedderHeapUsedSize": 3197888,
+          "backingStorageSize": 416991
+        },
+        "workers": [
+          {
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 422528,
+            "totalSize": 1048576,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32317969
+          }
+        ]
+      },
+      "workerErrors": [],
+      "rendererMemoryError": null,
+      "observed": {
+        "route": "#/runs/run-001",
+        "canvasCount": 3,
+        "tooltipCount": 0,
+        "chartCount": 3,
+        "pageWidth": 1440,
+        "domNodeCount": 397,
+        "performanceEntryCount": 87
+      }
+    }
+  ],
+  "operations": [
+    {
+      "index": 0,
+      "elapsedMs": 1123.3223750000002,
+      "runId": "run-002",
+      "min": 0,
+      "max": 969,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 1,
+      "elapsedMs": 2361.603875,
+      "runId": "run-003",
+      "min": 1481,
+      "max": 4331,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 2,
+      "elapsedMs": 3613.5469999999996,
+      "runId": "run-004",
+      "min": 3405,
+      "max": 8645,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 3,
+      "elapsedMs": 10971.800375,
+      "runId": "run-005",
+      "min": 5771,
+      "max": 7251,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 4,
+      "elapsedMs": 13460.897166,
+      "runId": "run-006",
+      "min": 8579,
+      "max": 12704,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 5,
+      "elapsedMs": 14728.063333,
+      "runId": "run-007",
+      "min": 915,
+      "max": 8243,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 6,
+      "elapsedMs": 21274.019333,
+      "runId": "run-008",
+      "min": 3581,
+      "max": 5571,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 7,
+      "elapsedMs": 24630.845,
+      "runId": "run-009",
+      "min": 6695,
+      "max": 12095,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 8,
+      "elapsedMs": 25862.613291,
+      "runId": "run-010",
+      "min": 10251,
+      "max": 19571,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 9,
+      "elapsedMs": 31606.514833,
+      "runId": "run-011",
+      "min": 14249,
+      "max": 16749,
+      "inspectedBoundary": "first"
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "limits": [
+    "One desktop Chromium engine on one machine.",
+    "Three-minute activity plus finite idle cannot exclude slower leaks or production-only behavior.",
+    "No real network source, cluster, account or user telemetry is involved.",
+    "GC checkpoint intervention changes natural GC scheduling; this run measures retained allocations, not unforced peak memory."
+  ]
+}

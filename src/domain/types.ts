@@ -1,7 +1,10 @@
 export type RunStatus = 'running' | 'completed' | 'failed' | 'stopped';
 export type Metric = 'loss' | 'lr' | 'grad_norm';
 export const METRICS: readonly Metric[] = ['loss', 'lr', 'grad_norm'];
-export interface Range { min: number; max: number }
+export interface Range {
+  min: number;
+  max: number;
+}
 export interface RunSummary {
   id: string;
   name: string;
@@ -30,14 +33,30 @@ export interface SeriesResult {
   latest: number | null;
   domain: Range;
 }
-export interface DataIssue { kind: string; message: string; count: number }
+export interface DataIssue {
+  kind: string;
+  message: string;
+  count: number;
+}
+export interface SourceSnapshot {
+  readonly kind: 'synthetic';
+  readonly revision: string;
+  readonly recordedAt: string;
+}
 export interface RunDetail {
+  readonly source: SourceSnapshot;
   run: RunSummary;
   metrics: Record<Metric, SeriesResult>;
   issues: DataIssue[];
   fetchedAt: string;
 }
-export interface RawPoint { step: number; loss: number; lr: number; grad_norm: number }
+/** Source step is a nonnegative safe integer; invalid source rows are counted and rejected. */
+export interface RawPoint {
+  step: number;
+  loss: number;
+  lr: number;
+  grad_norm: number;
+}
 export interface ColumnarRun {
   step: Float64Array;
   loss: Float64Array;

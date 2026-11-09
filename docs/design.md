@@ -4,19 +4,19 @@ The primary object is a training run. The interface helps an engineer inspect wh
 
 ## Screen and state contract
 
-| Surface | Representation and ownership | Required behavior |
-| --- | --- | --- |
-| Application shell | Compact brand and workspace rail; actual destinations only | Training runs, run detail and data guide remain reachable; active destination has text and a visible marker |
-| Run browser | Search/filter toolbar and aligned table | Twenty deterministic runs; sort numeric fields numerically, search name/model/dataset, filter status; clear filters recovers an empty result |
-| Run detail identity | Breadcrumb, run name, labeled status, metadata | Switching runs immediately changes identity; previous-run values cannot appear under the new name |
-| Run summary | Latest loss, recorded step, elapsed duration and data issues | Step and duration summaries describe the complete run; latest loss explicitly follows the selected range. Unknown/non-finite latest values remain unavailable, never zero |
-| Primary evidence | Large loss line chart | Unsmooth line, visible extrema, honest gaps, numeric step axis; zoom or explicit step bounds; keyboard alternative |
-| Supporting evidence | Learning rate and gradient norm charts | Same step viewport; distinct labeled colors; truthful log-scale treatment |
-| Data integrity | Concise issue count and expandable issue descriptions | Explain non-finite observations, duplicates, ordering and missing steps at the point of chart interpretation |
-| Data guide | Short data-treatment explanation | Explain extrema selection, sample hover, duplicate policy, gaps, log zeros and synthetic source |
-| Loading | Reserved chart geometry and plain progress text | No stale chart labeled as the newly selected run |
-| Error | Human explanation, retry and back navigation | Failure must not substitute a healthy demo run or blank zero-valued chart |
-| Empty | Explicit no-matching-runs message | Preserve filters and provide a clear-filters action |
+| Surface             | Representation and ownership                                 | Required behavior                                                                                                                                                         |
+| ------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Application shell   | Compact brand and workspace rail; actual destinations only   | Training runs, run detail and data guide remain reachable; active destination has text and a visible marker                                                               |
+| Run browser         | Search/filter toolbar and aligned table                      | Twenty deterministic runs; sort numeric fields numerically, search name/model/dataset, filter status; clear filters recovers an empty result                              |
+| Run detail identity | Breadcrumb, run name, labeled status, metadata               | Switching runs immediately changes identity; previous-run values cannot appear under the new name                                                                         |
+| Run summary         | Latest loss, recorded step, elapsed duration and data issues | Step and duration summaries describe the complete run; latest loss explicitly follows the selected range. Unknown/non-finite latest values remain unavailable, never zero |
+| Primary evidence    | Large loss line chart                                        | Unsmooth line, visible extrema, honest gaps, numeric step axis; zoom or explicit step bounds; keyboard alternative                                                        |
+| Supporting evidence | Learning rate and gradient norm charts                       | Same step viewport; distinct labeled colors; truthful log-scale treatment                                                                                                 |
+| Data integrity      | Concise issue count and expandable issue descriptions        | Explain non-finite observations, duplicates, ordering and missing steps at the point of chart interpretation                                                              |
+| Data guide          | Short data-treatment explanation                             | Explain extrema selection, sample hover, duplicate policy, gaps, log zeros and synthetic source                                                                           |
+| Loading             | Reserved chart geometry and plain progress text              | No stale chart labeled as the newly selected run                                                                                                                          |
+| Error               | Human explanation, retry and back navigation                 | Failure must not substitute a healthy demo run or blank zero-valued chart                                                                                                 |
+| Empty               | Explicit no-matching-runs message                            | Preserve filters and provide a clear-filters action                                                                                                                       |
 
 The first viewport prioritizes identity, four summaries and loss. Learning rate and gradient norm continue below it. Data interpretation remains discoverable beside the plots. Equal weight for all three charts was rejected because the decision in the brief starts with loss divergence; auxiliary metrics explain rather than displace that evidence.
 
@@ -26,19 +26,19 @@ The selected relationship is a quiet instrumentation shell surrounding a high-at
 
 Colors use the Frontend Workbench bundled, verified Refactoring UI public scale subset. Local ordinal IDs below are not official publisher shade names.
 
-| Role | Exact value | Catalog entry |
-| --- | --- | --- |
-| Canvas and shell | `#102A43` | blue-grey.01 |
-| Panel | `#243B53` | blue-grey.02 |
-| Borders and plot grid | `#334E68` | blue-grey.03 |
-| Main text | `#F0F4F8` | blue-grey.10 |
-| Secondary text | `#BCCCDC` | blue-grey.08 |
-| Muted labels | `#9FB3C8` | blue-grey.07 |
-| Loss, primary emphasis | `#65D6AD` | teal.07 |
-| Learning rate | `#62B0E8` | blue.07 |
-| Gradient norm | `#CFBCF2` | purple.09 |
-| Warning | `#F7C948` | yellow-vivid.06 |
-| Error | `#F29B9B` | red.08 |
+| Role                   | Exact value | Catalog entry   |
+| ---------------------- | ----------- | --------------- |
+| Canvas and shell       | `#102A43`   | blue-grey.01    |
+| Panel                  | `#243B53`   | blue-grey.02    |
+| Borders and plot grid  | `#334E68`   | blue-grey.03    |
+| Main text              | `#F0F4F8`   | blue-grey.10    |
+| Secondary text         | `#BCCCDC`   | blue-grey.08    |
+| Muted labels           | `#9FB3C8`   | blue-grey.07    |
+| Loss, primary emphasis | `#65D6AD`   | teal.07         |
+| Learning rate          | `#62B0E8`   | blue.07         |
+| Gradient norm          | `#CFBCF2`   | purple.09       |
+| Warning                | `#F7C948`   | yellow-vivid.06 |
+| Error                  | `#F29B9B`   | red.08          |
 
 Calculated contrast on the panel is 7.02:1 for secondary text, 5.34:1 for muted labels, 6.45:1 for loss, 7.34:1 for warning and 6.64:1 for gradient norm. These are token-pair calculations, not an accessibility conformance claim.
 

@@ -1,0 +1,233 @@
+
+Running 135 tests using 3 workers
+
+(node:45168) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:45167) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:45166) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓    2 [chromium] › tests/e2e/accessibility.spec.ts:78:1 › automatic accessibility rules cover the open search modal (1.1s)
+  ✓    1 [chromium] › tests/e2e/accessibility.spec.ts:59:1 › automatic accessibility rules cover the full run browser (1.3s)
+  ✓    3 [chromium] › tests/e2e/accessibility.spec.ts:66:1 › automatic accessibility rules cover loaded numeric charts and their controls (2.0s)
+  ✓    4 [chromium] › tests/e2e/accessibility.spec.ts:87:1 › automatic accessibility rules cover the open narrow-screen navigation (800ms)
+  ✓    5 [chromium] › tests/e2e/adversarial.spec.ts:128:1 › actual React route keeps old-run data out while real worker replies arrive in reverse selection order (917ms)
+  ✓    6 [chromium] › tests/e2e/adversarial.spec.ts:162:1 › superseded same-run range cannot overwrite a newer zoom when its genuine response arrives late (658ms)
+  ✓    7 [chromium] › tests/e2e/adversarial.spec.ts:189:1 › selected-range loading never presents full-run loss as the selected latest value (606ms)
+  ✓    8 [chromium] › tests/e2e/adversarial.spec.ts:222:1 › a failed selected range leaves its summary unavailable instead of substituting a full-run statistic (463ms)
+  ✓   10 [chromium] › tests/e2e/adversarial.spec.ts:240:3 › malformed worker columns fails closed and a genuine retry recovers (607ms)
+  ✓   11 [chromium] › tests/e2e/adversarial.spec.ts:240:3 › malformed worker stale fails closed and a genuine retry recovers (626ms)
+  ✓   13 [chromium] › tests/e2e/adversarial.spec.ts:299:1 › chart keyboard zoom and roving tabs remain usable without a pointer (537ms)
+  ✘   12 [chromium] › tests/e2e/adversarial.spec.ts:258:1 › dragging an auxiliary chart sets the same numeric viewport on all metrics and double-click resets all (828ms)
+  ✓   14 [chromium] › tests/e2e/adversarial.spec.ts:330:1 › search dialog traps focus in both directions and returns focus to the trigger on Escape (427ms)
+(node:45290) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   15 [chromium] › tests/e2e/adversarial.spec.ts:381:1 › unavailable browser storage reports failed saving without a false saved state (447ms)
+  ✓   17 [chromium] › tests/e2e/adversarial.spec.ts:398:1 › invalid URL range is disclosed and reset restores the full recorded domain (433ms)
+  ✓   16 [chromium] › tests/e2e/adversarial.spec.ts:353:1 › bookmark survives reload and stays isolated by run, then can be removed (829ms)
+  ✓   18 [chromium] › tests/e2e/adversarial.spec.ts:412:3 › layout and reachable keyboard navigation at 320px (513ms)
+  ✓   19 [chromium] › tests/e2e/adversarial.spec.ts:412:3 › layout and reachable keyboard navigation at 390px (479ms)
+  ✓   20 [chromium] › tests/e2e/adversarial.spec.ts:412:3 › layout and reachable keyboard navigation at 768px (495ms)
+  ✓   21 [chromium] › tests/e2e/adversarial.spec.ts:440:3 › high-density display › the million-point curve remains usable and spike inspectable at DPR2 (602ms)
+  ✓   22 [chromium] › tests/e2e/adversarial.spec.ts:459:3 › international browser settings › recorded times stay explicitly UTC and numeric step inputs keep their meaning (496ms)
+  ✓   24 [chromium] › tests/e2e/adversarial.spec.ts:496:1 › reloading prepares a new view while keeping the recorded synthetic source time and revision distinct (503ms)
+  ✓   23 [chromium] › tests/e2e/adversarial.spec.ts:478:3 › touch input emulation › navigation and explicit zoom controls work through touchscreen taps (768ms)
+  ✓   25 [chromium] › tests/e2e/adversarial.spec.ts:521:1 › an already loaded synthetic workspace can prepare a new viewport while the browser is offline (448ms)
+  ✓   27 [chromium] › tests/e2e/canvas-truth.spec.ts:107:1 › NaN interval is an actual unpainted gap with finite painted neighbours, not zero or interpolation (415ms)
+  ✓   28 [chromium] › tests/e2e/canvas-truth.spec.ts:130:1 › painted values align with actual numeric x/y axis labels for every metric (387ms)
+  ✓   29 [chromium] › tests/e2e/canvas-truth.spec.ts:213:1 › drawn deep-zoom step labels stay distinct and learning-rate labels retain nonzero magnitudes (506ms)
+  ✓   30 [chromium] › tests/e2e/canvas-truth.spec.ts:239:1 › a finite singleton between missing measurements paints a real point and a later empty response clears it (432ms)
+  ✓   31 [chromium] › tests/e2e/canvas-truth.spec.ts:293:1 › logarithmic axes draw only finite positive numeric tick labels (461ms)
+  ✓   26 [chromium] › tests/e2e/adversarial.spec.ts:548:1 › twenty distinct viewports settle with current rendered bounds and bounded real worker requests (2.5s)
+  ✓   32 [chromium] › tests/e2e/canvas-truth.spec.ts:317:1 › an all-zero interval stays a real zero line on linear and becomes explicitly unplottable on log (442ms)
+  ✓   33 [chromium] › tests/e2e/observatory.spec.ts:45:1 › run browser filters, searches, sorts, persists URL state, and recovers from empty results (610ms)
+  ✓   35 [chromium] › tests/e2e/observatory.spec.ts:90:1 › non-finite values produce visible disclosure and exact missing-value inspection (468ms)
+  ✓   34 [chromium] › tests/e2e/observatory.spec.ts:68:1 › million-point spike remains painted in overview, narrow zoom and reset (752ms)
+  ✓   37 [chromium] › tests/e2e/observatory.spec.ts:125:1 › log scale discloses zero exclusions and linear restores the measured zero (445ms)
+  ✓   36 [chromium] › tests/e2e/observatory.spec.ts:113:1 › duplicate, unordered and missing-step observations remain discoverable (720ms)
+  ✓   38 [chromium] › tests/e2e/observatory.spec.ts:138:1 › rapid run switching never paints previous run measurements under the next run title (581ms)
+  ✓   39 [chromium] › tests/e2e/observatory.spec.ts:153:1 › keyboard search opens a run and chart keyboard inspection reveals measured values (528ms)
+  ✓   40 [chromium] › tests/e2e/observatory.spec.ts:175:1 › export identifies a sampled viewport and retains spike numeric value (563ms)
+  ✓   41 [chromium] › tests/e2e/observatory.spec.ts:191:1 › mobile layout fits viewport and navigation remains reachable (670ms)
+  ✘    9 [chromium] › tests/e2e/adversarial.spec.ts:240:3 › malformed worker identity fails closed and a genuine retry recovers (10.5s)
+  ✓   42 [chromium] › tests/e2e/observatory.spec.ts:206:1 › unknown run fails clearly with a working recovery route (379ms)
+(node:45450) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   43 [chromium] › tests/e2e/observatory.spec.ts:214:1 › a worker failure never substitutes fabricated values and has a working retry path (592ms)
+  ✓   44 [chromium] › tests/e2e/observatory.spec.ts:241:1 › initial worker loading exposes a reserved loading view before any chart is drawn (554ms)
+(node:45474) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:45477) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   45 [chromium] › tests/e2e/observatory.spec.ts:227:1 › an entirely invalid viewport shows unavailable values and never fabricates a zero curve (470ms)
+(node:45483) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   46 [firefox] › tests/e2e/accessibility.spec.ts:59:1 › automatic accessibility rules cover the full run browser (1.7s)
+  ✓   48 [firefox] › tests/e2e/accessibility.spec.ts:78:1 › automatic accessibility rules cover the open search modal (1.6s)
+  ✓   49 [firefox] › tests/e2e/accessibility.spec.ts:87:1 › automatic accessibility rules cover the open narrow-screen navigation (835ms)
+  ✓   47 [firefox] › tests/e2e/accessibility.spec.ts:66:1 › automatic accessibility rules cover loaded numeric charts and their controls (2.3s)
+  ✓   50 [firefox] › tests/e2e/adversarial.spec.ts:128:1 › actual React route keeps old-run data out while real worker replies arrive in reverse selection order (756ms)
+  ✓   51 [firefox] › tests/e2e/adversarial.spec.ts:162:1 › superseded same-run range cannot overwrite a newer zoom when its genuine response arrives late (640ms)
+  ✓   52 [firefox] › tests/e2e/adversarial.spec.ts:189:1 › selected-range loading never presents full-run loss as the selected latest value (623ms)
+  ✓   53 [firefox] › tests/e2e/adversarial.spec.ts:222:1 › a failed selected range leaves its summary unavailable instead of substituting a full-run statistic (454ms)
+  ✓   54 [firefox] › tests/e2e/adversarial.spec.ts:240:3 › malformed worker identity fails closed and a genuine retry recovers (581ms)
+  ✓   55 [firefox] › tests/e2e/adversarial.spec.ts:240:3 › malformed worker columns fails closed and a genuine retry recovers (608ms)
+  ✓   56 [firefox] › tests/e2e/adversarial.spec.ts:240:3 › malformed worker stale fails closed and a genuine retry recovers (589ms)
+  ✓   58 [firefox] › tests/e2e/adversarial.spec.ts:299:1 › chart keyboard zoom and roving tabs remain usable without a pointer (728ms)
+  ✓   59 [firefox] › tests/e2e/adversarial.spec.ts:330:1 › search dialog traps focus in both directions and returns focus to the trigger on Escape (527ms)
+  ✓   57 [firefox] › tests/e2e/adversarial.spec.ts:258:1 › dragging an auxiliary chart sets the same numeric viewport on all metrics and double-click resets all (1.0s)
+  ✓   61 [firefox] › tests/e2e/adversarial.spec.ts:381:1 › unavailable browser storage reports failed saving without a false saved state (504ms)
+  ✓   62 [firefox] › tests/e2e/adversarial.spec.ts:398:1 › invalid URL range is disclosed and reset restores the full recorded domain (479ms)
+  ✓   60 [firefox] › tests/e2e/adversarial.spec.ts:353:1 › bookmark survives reload and stays isolated by run, then can be removed (800ms)
+  ✓   63 [firefox] › tests/e2e/adversarial.spec.ts:412:3 › layout and reachable keyboard navigation at 320px (557ms)
+  ✓   64 [firefox] › tests/e2e/adversarial.spec.ts:412:3 › layout and reachable keyboard navigation at 390px (547ms)
+  ✓   65 [firefox] › tests/e2e/adversarial.spec.ts:412:3 › layout and reachable keyboard navigation at 768px (527ms)
+  ✓   67 [firefox] › tests/e2e/adversarial.spec.ts:459:3 › international browser settings › recorded times stay explicitly UTC and numeric step inputs keep their meaning (449ms)
+  ✓   66 [firefox] › tests/e2e/adversarial.spec.ts:440:3 › high-density display › the million-point curve remains usable and spike inspectable at DPR2 (654ms)
+  ✓   68 [firefox] › tests/e2e/adversarial.spec.ts:478:3 › touch input emulation › navigation and explicit zoom controls work through touchscreen taps (796ms)
+  ✓   69 [firefox] › tests/e2e/adversarial.spec.ts:496:1 › reloading prepares a new view while keeping the recorded synthetic source time and revision distinct (414ms)
+  ✓   70 [firefox] › tests/e2e/adversarial.spec.ts:521:1 › an already loaded synthetic workspace can prepare a new viewport while the browser is offline (565ms)
+  ✓   72 [firefox] › tests/e2e/canvas-truth.spec.ts:107:1 › NaN interval is an actual unpainted gap with finite painted neighbours, not zero or interpolation (875ms)
+  ✓   73 [firefox] › tests/e2e/canvas-truth.spec.ts:130:1 › painted values align with actual numeric x/y axis labels for every metric (947ms)
+  ✓   74 [firefox] › tests/e2e/canvas-truth.spec.ts:213:1 › drawn deep-zoom step labels stay distinct and learning-rate labels retain nonzero magnitudes (570ms)
+  ✓   75 [firefox] › tests/e2e/canvas-truth.spec.ts:239:1 › a finite singleton between missing measurements paints a real point and a later empty response clears it (453ms)
+  ✓   76 [firefox] › tests/e2e/canvas-truth.spec.ts:293:1 › logarithmic axes draw only finite positive numeric tick labels (660ms)
+  ✓   77 [firefox] › tests/e2e/canvas-truth.spec.ts:317:1 › an all-zero interval stays a real zero line on linear and becomes explicitly unplottable on log (595ms)
+  ✓   78 [firefox] › tests/e2e/observatory.spec.ts:45:1 › run browser filters, searches, sorts, persists URL state, and recovers from empty results (601ms)
+  ✓   79 [firefox] › tests/e2e/observatory.spec.ts:68:1 › million-point spike remains painted in overview, narrow zoom and reset (933ms)
+  ✓   80 [firefox] › tests/e2e/observatory.spec.ts:90:1 › non-finite values produce visible disclosure and exact missing-value inspection (442ms)
+  ✓   71 [firefox] › tests/e2e/adversarial.spec.ts:548:1 › twenty distinct viewports settle with current rendered bounds and bounded real worker requests (3.4s)
+  ✓   82 [firefox] › tests/e2e/observatory.spec.ts:125:1 › log scale discloses zero exclusions and linear restores the measured zero (488ms)
+  ✓   83 [firefox] › tests/e2e/observatory.spec.ts:138:1 › rapid run switching never paints previous run measurements under the next run title (484ms)
+  ✓   81 [firefox] › tests/e2e/observatory.spec.ts:113:1 › duplicate, unordered and missing-step observations remain discoverable (740ms)
+  ✓   84 [firefox] › tests/e2e/observatory.spec.ts:153:1 › keyboard search opens a run and chart keyboard inspection reveals measured values (567ms)
+  ✓   87 [firefox] › tests/e2e/observatory.spec.ts:206:1 › unknown run fails clearly with a working recovery route (317ms)
+  ✓   86 [firefox] › tests/e2e/observatory.spec.ts:191:1 › mobile layout fits viewport and navigation remains reachable (720ms)
+  ✓   85 [firefox] › tests/e2e/observatory.spec.ts:175:1 › export identifies a sampled viewport and retains spike numeric value (1.0s)
+  ✓   89 [firefox] › tests/e2e/observatory.spec.ts:227:1 › an entirely invalid viewport shows unavailable values and never fabricates a zero curve (417ms)
+  ✓   88 [firefox] › tests/e2e/observatory.spec.ts:214:1 › a worker failure never substitutes fabricated values and has a working retry path (549ms)
+  ✓   90 [firefox] › tests/e2e/observatory.spec.ts:241:1 › initial worker loading exposes a reserved loading view before any chart is drawn (562ms)
+(node:45645) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:45646) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:45647) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   91 [webkit] › tests/e2e/accessibility.spec.ts:59:1 › automatic accessibility rules cover the full run browser (1.4s)
+  ✓   93 [webkit] › tests/e2e/accessibility.spec.ts:78:1 › automatic accessibility rules cover the open search modal (1.1s)
+  ✓   92 [webkit] › tests/e2e/accessibility.spec.ts:66:1 › automatic accessibility rules cover loaded numeric charts and their controls (2.2s)
+  ✓   94 [webkit] › tests/e2e/accessibility.spec.ts:87:1 › automatic accessibility rules cover the open narrow-screen navigation (1.1s)
+  ✓   95 [webkit] › tests/e2e/adversarial.spec.ts:128:1 › actual React route keeps old-run data out while real worker replies arrive in reverse selection order (1.1s)
+  ✓   96 [webkit] › tests/e2e/adversarial.spec.ts:162:1 › superseded same-run range cannot overwrite a newer zoom when its genuine response arrives late (752ms)
+  ✓   98 [webkit] › tests/e2e/adversarial.spec.ts:222:1 › a failed selected range leaves its summary unavailable instead of substituting a full-run statistic (476ms)
+  ✓   97 [webkit] › tests/e2e/adversarial.spec.ts:189:1 › selected-range loading never presents full-run loss as the selected latest value (767ms)
+  ✓   99 [webkit] › tests/e2e/adversarial.spec.ts:240:3 › malformed worker identity fails closed and a genuine retry recovers (673ms)
+  ✓  100 [webkit] › tests/e2e/adversarial.spec.ts:240:3 › malformed worker columns fails closed and a genuine retry recovers (669ms)
+  ✓  101 [webkit] › tests/e2e/adversarial.spec.ts:240:3 › malformed worker stale fails closed and a genuine retry recovers (596ms)
+  ✓  103 [webkit] › tests/e2e/adversarial.spec.ts:299:1 › chart keyboard zoom and roving tabs remain usable without a pointer (608ms)
+  ✓  104 [webkit] › tests/e2e/adversarial.spec.ts:330:1 › search dialog traps focus in both directions and returns focus to the trigger on Escape (516ms)
+  ✓  102 [webkit] › tests/e2e/adversarial.spec.ts:258:1 › dragging an auxiliary chart sets the same numeric viewport on all metrics and double-click resets all (846ms)
+  ✓  106 [webkit] › tests/e2e/adversarial.spec.ts:381:1 › unavailable browser storage reports failed saving without a false saved state (464ms)
+  ✓  107 [webkit] › tests/e2e/adversarial.spec.ts:398:1 › invalid URL range is disclosed and reset restores the full recorded domain (473ms)
+  ✓  105 [webkit] › tests/e2e/adversarial.spec.ts:353:1 › bookmark survives reload and stays isolated by run, then can be removed (761ms)
+  ✓  108 [webkit] › tests/e2e/adversarial.spec.ts:412:3 › layout and reachable keyboard navigation at 320px (522ms)
+  ✓  109 [webkit] › tests/e2e/adversarial.spec.ts:412:3 › layout and reachable keyboard navigation at 390px (530ms)
+  ✓  110 [webkit] › tests/e2e/adversarial.spec.ts:412:3 › layout and reachable keyboard navigation at 768px (524ms)
+  ✓  112 [webkit] › tests/e2e/adversarial.spec.ts:459:3 › international browser settings › recorded times stay explicitly UTC and numeric step inputs keep their meaning (480ms)
+  ✓  111 [webkit] › tests/e2e/adversarial.spec.ts:440:3 › high-density display › the million-point curve remains usable and spike inspectable at DPR2 (686ms)
+  ✓  113 [webkit] › tests/e2e/adversarial.spec.ts:478:3 › touch input emulation › navigation and explicit zoom controls work through touchscreen taps (837ms)
+  ✓  114 [webkit] › tests/e2e/adversarial.spec.ts:496:1 › reloading prepares a new view while keeping the recorded synthetic source time and revision distinct (452ms)
+  ✓  115 [webkit] › tests/e2e/adversarial.spec.ts:521:1 › an already loaded synthetic workspace can prepare a new viewport while the browser is offline (542ms)
+  ✓  117 [webkit] › tests/e2e/canvas-truth.spec.ts:107:1 › NaN interval is an actual unpainted gap with finite painted neighbours, not zero or interpolation (527ms)
+  ✓  118 [webkit] › tests/e2e/canvas-truth.spec.ts:130:1 › painted values align with actual numeric x/y axis labels for every metric (467ms)
+  ✓  119 [webkit] › tests/e2e/canvas-truth.spec.ts:213:1 › drawn deep-zoom step labels stay distinct and learning-rate labels retain nonzero magnitudes (477ms)
+  ✓  120 [webkit] › tests/e2e/canvas-truth.spec.ts:239:1 › a finite singleton between missing measurements paints a real point and a later empty response clears it (487ms)
+  ✓  121 [webkit] › tests/e2e/canvas-truth.spec.ts:293:1 › logarithmic axes draw only finite positive numeric tick labels (483ms)
+  ✓  122 [webkit] › tests/e2e/canvas-truth.spec.ts:317:1 › an all-zero interval stays a real zero line on linear and becomes explicitly unplottable on log (526ms)
+  ✓  123 [webkit] › tests/e2e/observatory.spec.ts:45:1 › run browser filters, searches, sorts, persists URL state, and recovers from empty results (623ms)
+  ✓  124 [webkit] › tests/e2e/observatory.spec.ts:68:1 › million-point spike remains painted in overview, narrow zoom and reset (802ms)
+  ✓  125 [webkit] › tests/e2e/observatory.spec.ts:90:1 › non-finite values produce visible disclosure and exact missing-value inspection (493ms)
+  ✓  127 [webkit] › tests/e2e/observatory.spec.ts:125:1 › log scale discloses zero exclusions and linear restores the measured zero (411ms)
+  ✓  116 [webkit] › tests/e2e/adversarial.spec.ts:548:1 › twenty distinct viewports settle with current rendered bounds and bounded real worker requests (3.2s)
+  ✓  126 [webkit] › tests/e2e/observatory.spec.ts:113:1 › duplicate, unordered and missing-step observations remain discoverable (662ms)
+  ✓  128 [webkit] › tests/e2e/observatory.spec.ts:138:1 › rapid run switching never paints previous run measurements under the next run title (513ms)
+  ✓  130 [webkit] › tests/e2e/observatory.spec.ts:175:1 › export identifies a sampled viewport and retains spike numeric value (461ms)
+  ✓  129 [webkit] › tests/e2e/observatory.spec.ts:153:1 › keyboard search opens a run and chart keyboard inspection reveals measured values (526ms)
+  ✓  132 [webkit] › tests/e2e/observatory.spec.ts:206:1 › unknown run fails clearly with a working recovery route (363ms)
+  ✓  131 [webkit] › tests/e2e/observatory.spec.ts:191:1 › mobile layout fits viewport and navigation remains reachable (683ms)
+  ✓  133 [webkit] › tests/e2e/observatory.spec.ts:214:1 › a worker failure never substitutes fabricated values and has a working retry path (573ms)
+  ✓  134 [webkit] › tests/e2e/observatory.spec.ts:227:1 › an entirely invalid viewport shows unavailable values and never fabricates a zero curve (384ms)
+  ✓  135 [webkit] › tests/e2e/observatory.spec.ts:241:1 › initial worker loading exposes a reserved loading view before any chart is drawn (538ms)
+
+
+  1) [chromium] › tests/e2e/adversarial.spec.ts:240:3 › malformed worker identity fails closed and a genuine retry recovers 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('heading', { name: 'We couldn’t load this run' })
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('heading', { name: 'We couldn’t load this run' }) with timeout 10000ms
+      - waiting for getByRole('heading', { name: 'We couldn’t load this run' })
+
+
+      247 |     }, malformed);
+      248 |     await page.locator('a[href="#/runs/run-009"]').first().click();
+    > 249 |     await expect(page.getByRole('heading', { name: 'We couldn’t load this run' })).toBeVisible();
+          |                                                                                    ^
+      250 |     await expect(page.getByTestId('chart-loss')).toHaveCount(0);
+      251 |     await page.getByRole('button', { name: 'Try again', exact: false }).click();
+      252 |     await expect(page.locator('[data-run-id="run-009"]')).toHaveAttribute('data-ready', 'true');
+        at /Users/noname/Desktop/personal-projects/soup/tests/e2e/adversarial.spec.ts:249:84
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/adversarial-malformed-work-3af96-nd-a-genuine-retry-recovers-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/adversarial-malformed-work-3af96-nd-a-genuine-retry-recovers-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/adversarial-malformed-work-3af96-nd-a-genuine-retry-recovers-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/adversarial-malformed-work-3af96-nd-a-genuine-retry-recovers-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium] › tests/e2e/adversarial.spec.ts:258:1 › dragging an auxiliary chart sets the same numeric viewport on all metrics and double-click resets all 
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 300000
+    Received:   0
+
+      274 |   const from = Number(await page.getByRole('spinbutton', { name: 'Start step' }).inputValue());
+      275 |   const to = Number(await page.getByRole('spinbutton', { name: 'End step' }).inputValue());
+    > 276 |   expect(from).toBeGreaterThan(300000);
+          |                ^
+      277 |   expect(from).toBeLessThan(400000);
+      278 |   expect(to).toBeGreaterThan(600000);
+      279 |   expect(to).toBeLessThan(700000);
+        at /Users/noname/Desktop/personal-projects/soup/tests/e2e/adversarial.spec.ts:276:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/adversarial-dragging-an-au-f0544-and-double-click-resets-all-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/adversarial-dragging-an-au-f0544-and-double-click-resets-all-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/adversarial-dragging-an-au-f0544-and-double-click-resets-all-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/adversarial-dragging-an-au-f0544-and-double-click-resets-all-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    [chromium] › tests/e2e/adversarial.spec.ts:240:3 › malformed worker identity fails closed and a genuine retry recovers 
+    [chromium] › tests/e2e/adversarial.spec.ts:258:1 › dragging an auxiliary chart sets the same numeric viewport on all metrics and double-click resets all 
+  133 passed (39.9s)

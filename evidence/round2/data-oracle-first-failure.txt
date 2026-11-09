@@ -1,0 +1,59 @@
+
+> soup-training-observatory@1.0.0 test
+> vitest run src/domain/series.property.test.ts
+
+
+ RUN  v4.1.12 /Users/noname/Desktop/personal-projects/soup
+
+ ❯ src/domain/series.property.test.ts (5 tests | 2 failed) 1466ms
+     × uses an exact inclusive endpoint instead of admitting neighbouring representable values 4ms
+     × never emits nonfinite synthetic step coordinates when finite large steps have a gap 1ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/domain/series.property.test.ts > adversarial deterministic sampling oracle > uses an exact inclusive endpoint instead of admitting neighbouring representable values
+AssertionError: endpoint 0.1: expected [ 0.1, 0.10000000000000003 ] to deeply equal [ 0.1 ]
+
+- Expected
++ Received
+
+  [
+    0.1,
++   0.10000000000000003,
+  ]
+
+ ❯ src/domain/series.property.test.ts:144:46
+    142|       expect(adjacent).toBeGreaterThan(start);
+    143|       const sampled = sampleMetric(canonicalize(rows), 'loss', 10, { m…
+    144|       expect(sampled.x, `endpoint ${start}`).toEqual([start]);
+       |                                              ^
+    145|       expect(sampled.latest).toBe(2);
+    146|       expect(sampled.rawCount).toBe(1);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  src/domain/series.property.test.ts > adversarial deterministic sampling oracle > never emits nonfinite synthetic step coordinates when finite large steps have a gap
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ src/domain/series.property.test.ts:153:46
+    151|     const run = canonicalize([point(1e308, 2), point(1.1e308, 3)]);
+    152|     const sampled = sampleMetric(run, 'loss', 1);
+    153|     expect(sampled.x.every(Number.isFinite)).toBe(true);
+       |                                              ^
+    154|     expect(sampled.x).toEqual([...sampled.x].sort((a, b) => a - b));
+    155|     expect(sampled.y).toEqual([2, null, 3]);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  2 failed | 3 passed (5)
+   Start at  01:35:10
+   Duration  1.58s (transform 29ms, setup 0ms, import 37ms, tests 1.47s, environment 0ms)
+

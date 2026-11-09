@@ -3,7 +3,8 @@ import { compact, duration, metricNumber, number, utcDate } from './format';
 
 describe('display values retain their data meaning', () => {
   it('keeps unavailable measurements distinct from numeric zero', () => {
-    for (const value of [null, undefined, NaN, Infinity, -Infinity]) expect(metricNumber(value)).toBe('Unavailable');
+    for (const value of [null, undefined, NaN, Infinity, -Infinity])
+      expect(metricNumber(value)).toBe('Unavailable');
     expect(metricNumber(0)).toBe('0.0000');
   });
   it('uses readable scientific notation for learning rates without rounding them to zero', () => {

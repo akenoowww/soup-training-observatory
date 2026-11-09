@@ -9,8 +9,10 @@ export function generateRun(id: string): CanonicalRun {
   if (!summary) throw new Error('This run does not exist. Choose a run from the list.');
   const count = summary.pointCount;
   const columns: ColumnarRun = {
-    step: new Float64Array(count), loss: new Float64Array(count),
-    lr: new Float64Array(count), grad_norm: new Float64Array(count),
+    step: new Float64Array(count),
+    loss: new Float64Array(count),
+    lr: new Float64Array(count),
+    grad_norm: new Float64Array(count),
   };
   for (let i = 0; i < count; i++) {
     const step = i + (index === 6 && i >= Math.floor(count / 2) ? 120 : 0);

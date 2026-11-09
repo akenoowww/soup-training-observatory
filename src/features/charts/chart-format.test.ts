@@ -1,5 +1,14 @@
 import { describe, expect, it } from 'vitest';
-import { formatMetric, formatMetricTicks, formatStep, formatStepTick, formatStepTicks, prepareValues } from './chart-format';
+import {
+  constantMetricRange,
+  formatMetric,
+  formatMetricTicks,
+  formatStep,
+  formatStepTick,
+  formatStepTicks,
+  isolatedPointIndices,
+  prepareValues,
+} from './chart-format';
 
 describe('chart value preparation', () => {
   it('breaks the line at NaN, Infinity, and absent values without coercing to zero', () => {
@@ -19,7 +28,9 @@ describe('chart value preparation', () => {
   });
 
   it('does not smooth or clip a single outlier', () => {
-    expect(prepareValues([0.2, 0.19, 82.1542, 0.18], 'linear').values).toEqual([0.2, 0.19, 82.1542, 0.18]);
+    expect(prepareValues([0.2, 0.19, 82.1542, 0.18], 'linear').values).toEqual([
+      0.2, 0.19, 82.1542, 0.18,
+    ]);
   });
 });
 
@@ -46,10 +57,62 @@ describe('chart numeric formatting', () => {
     labels.forEach((label, index) => expect(Number(label)).toBeCloseTo(lrTicks[index]!, 12));
   });
 
+  it('preserves suppressed log-axis tick slots instead of drawing false zero or dash labels', () => {
+    expect(formatMetricTicks([0.0001, null, 0.001, null, 0.01], 'lr')).toEqual([
+      '1.0e-4',
+      null,
+      '1.0e-3',
+      null,
+      '1.0e-2',
+    ]);
+    expect(formatStepTicks([0, null, 100])).toEqual(['0', null, '100']);
+    expect(formatMetricTicks([0.00030001, null, 0.00030002], 'lr')).toEqual([
+      '3.0001e-4',
+      null,
+      '3.0002e-4',
+    ]);
+  });
+
   it('labels nonfinite summaries as unavailable and a real zero as zero', () => {
     expect(formatMetric(null, 'loss')).toBe('—');
     expect(formatMetric(NaN, 'loss')).toBe('—');
     expect(formatMetric(Infinity, 'loss')).toBe('—');
     expect(formatMetric(0, 'loss')).toBe('0');
+  });
+});
+
+describe('finite measurements inside gaps', () => {
+  it('selects singleton finite segments for markers without joining across gaps', () => {
+    expect(isolatedPointIndices([null, 9.4, null])).toEqual([1]);
+    expect(isolatedPointIndices([2, null, 3, 4, null, 5])).toEqual([0, 5]);
+    expect(isolatedPointIndices([0])).toEqual([0]);
+    expect(isolatedPointIndices([null, NaN, Infinity])).toEqual([]);
+    expect(isolatedPointIndices([1, 2, 3])).toEqual([]);
+  });
+  it('keeps a positive singleton visible after nonpositive log values become gaps', () => {
+    const prepared = prepareValues([0, 9.4, 0], 'log');
+    expect(prepared.values).toEqual([null, 9.4, null]);
+    expect(isolatedPointIndices(prepared.values)).toEqual([1]);
+  });
+});
+
+describe('constant linear measurements', () => {
+  it('places real zero inside a finite symmetric plotting range for every metric', () => {
+    for (const metric of ['loss', 'lr', 'grad_norm'] as const) {
+      const [min, max] = constantMetricRange(0, metric);
+      expect(Number.isFinite(min) && Number.isFinite(max)).toBe(true);
+      expect(min).toBeLessThan(0);
+      expect(max).toBeGreaterThan(0);
+      expect(min).toBe(-max);
+    }
+  });
+  it('keeps positive, negative and tiny constant values inside the axis without changing them', () => {
+    for (const value of [9.4, -2, 0.00000003, -0.00000003, 1e-300]) {
+      const [min, max] = constantMetricRange(value, 'loss');
+      expect(min).toBeLessThan(value);
+      expect(max).toBeGreaterThan(value);
+      expect(Number.isFinite(min) && Number.isFinite(max)).toBe(true);
+    }
+    expect(constantMetricRange(0, 'lr')).toEqual([-0.000001, 0.000001]);
   });
 });

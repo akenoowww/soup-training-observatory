@@ -1,0 +1,13 @@
+
+> soup-training-observatory@1.0.0 test
+> vitest run src/app/queryClient.test.ts
+
+
+ RUN  v4.1.12 /Users/noname/Desktop/personal-projects/soup
+
+
+ Test Files  1 passed (1)
+      Tests  4 passed (4)
+   Start at  01:56:26
+   Duration  472ms (transform 47ms, setup 0ms, import 221ms, tests 40ms, environment 0ms)
+

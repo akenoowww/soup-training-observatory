@@ -1,7 +1,8 @@
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import { getRunDetail } from './engine';
 import { generateRun } from './fixtures';
 import { RUNS } from './runs';
+import { SOURCE_SNAPSHOT } from './source';
 
 describe('synthetic data source', () => {
   it('contains exactly 20 stable IDs with ISO timestamps and one million-point run', () => {
@@ -46,5 +47,25 @@ describe('synthetic data source', () => {
     expect(result.metrics.loss.rawCount).toBe(101);
     expect(result.metrics.loss.domain.max).toBe(RUNS[1]!.steps);
     expect(result.metrics.loss.x.every((step) => step >= 100 && step <= 200)).toBe(true);
+  });
+  it('binds deterministic run chronology to the immutable recorded source snapshot', () => {
+    expect(Object.isFrozen(SOURCE_SNAPSHOT)).toBe(true);
+    for (const run of RUNS) {
+      const recordedEnd = Date.parse(run.startedAt) + run.durationSeconds * 1_000;
+      expect(recordedEnd, run.id).toBeLessThanOrEqual(Date.parse(SOURCE_SNAPSHOT.recordedAt));
+      expect(getRunDetail(run.id, { width: 1 }).source).toEqual(SOURCE_SNAPSHOT);
+    }
+    vi.useFakeTimers();
+    try {
+      vi.setSystemTime('2026-11-10T00:00:00.000Z');
+      const first = getRunDetail('run-002');
+      vi.advanceTimersByTime(60_000);
+      const second = getRunDetail('run-002');
+      expect(first.source).toBe(SOURCE_SNAPSHOT);
+      expect(second.source).toBe(SOURCE_SNAPSHOT);
+      expect(Date.parse(second.fetchedAt) - Date.parse(first.fetchedAt)).toBe(60_000);
+    } finally {
+      vi.useRealTimers();
+    }
   });
 });

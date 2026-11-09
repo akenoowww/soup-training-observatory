@@ -1,0 +1,91 @@
+
+Running 32 tests using 3 workers
+
+(node:20910) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:20911) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:20912) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   3 [firefox] › tests/e2e/canvas-truth.spec.ts:92:1 › painted values align with actual numeric x/y axis labels for every metric (1.8s)
+  ✓   4 [firefox] › tests/e2e/observatory.spec.ts:34:1 › run browser filters, searches, sorts, persists URL state, and recovers from empty results (945ms)
+  ✓   1 [firefox] › tests/e2e/canvas-truth.spec.ts:77:1 › NaN interval is an actual unpainted gap with finite painted neighbours, not zero or interpolation (2.4s)
+  ✓   2 [firefox] › tests/e2e/canvas-truth.spec.ts:132:1 › drawn deep-zoom step labels stay distinct and learning-rate labels retain nonzero magnitudes (1.8s)
+  ✓   6 [firefox] › tests/e2e/observatory.spec.ts:77:1 › non-finite values produce visible disclosure and exact missing-value inspection (690ms)
+  ✓   7 [firefox] › tests/e2e/observatory.spec.ts:92:1 › duplicate, unordered and missing-step observations remain discoverable (805ms)
+  ✓   5 [firefox] › tests/e2e/observatory.spec.ts:55:1 › million-point spike remains painted in overview, narrow zoom and reset (1.0s)
+  ✓   8 [firefox] › tests/e2e/observatory.spec.ts:104:1 › log scale discloses zero exclusions and linear restores the measured zero (503ms)
+  ✓   9 [firefox] › tests/e2e/observatory.spec.ts:115:1 › rapid run switching never paints previous run measurements under the next run title (591ms)
+  ✓  10 [firefox] › tests/e2e/observatory.spec.ts:128:1 › keyboard search opens a run and chart keyboard inspection reveals measured values (782ms)
+  ✓  11 [firefox] › tests/e2e/observatory.spec.ts:146:1 › export identifies a sampled viewport and retains spike numeric value (838ms)
+  ✓  13 [firefox] › tests/e2e/observatory.spec.ts:175:1 › unknown run fails clearly with a working recovery route (425ms)
+  ✓  14 [firefox] › tests/e2e/observatory.spec.ts:183:1 › a worker failure never substitutes fabricated values and has a working retry path (591ms)
+  ✓  15 [firefox] › tests/e2e/observatory.spec.ts:194:1 › an entirely invalid viewport shows unavailable values and never fabricates a zero curve (510ms)
+  ✓  12 [firefox] › tests/e2e/observatory.spec.ts:160:1 › mobile layout fits viewport and navigation remains reachable (1.3s)
+  ✓  16 [firefox] › tests/e2e/observatory.spec.ts:204:1 › loading keeps previous-run charts out of the new run before worker data arrives (590ms)
+(node:21261) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:21262) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:21265) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  18 [webkit] › tests/e2e/canvas-truth.spec.ts:92:1 › painted values align with actual numeric x/y axis labels for every metric (1.7s)
+  ✓  19 [webkit] › tests/e2e/canvas-truth.spec.ts:132:1 › drawn deep-zoom step labels stay distinct and learning-rate labels retain nonzero magnitudes (1.7s)
+  ✓  17 [webkit] › tests/e2e/canvas-truth.spec.ts:77:1 › NaN interval is an actual unpainted gap with finite painted neighbours, not zero or interpolation (1.8s)
+  ✓  22 [webkit] › tests/e2e/observatory.spec.ts:77:1 › non-finite values produce visible disclosure and exact missing-value inspection (560ms)
+  ✓  20 [webkit] › tests/e2e/observatory.spec.ts:34:1 › run browser filters, searches, sorts, persists URL state, and recovers from empty results (747ms)
+  ✓  21 [webkit] › tests/e2e/observatory.spec.ts:55:1 › million-point spike remains painted in overview, narrow zoom and reset (788ms)
+  ✓  24 [webkit] › tests/e2e/observatory.spec.ts:104:1 › log scale discloses zero exclusions and linear restores the measured zero (442ms)
+  ✓  23 [webkit] › tests/e2e/observatory.spec.ts:92:1 › duplicate, unordered and missing-step observations remain discoverable (623ms)
+  ✓  25 [webkit] › tests/e2e/observatory.spec.ts:115:1 › rapid run switching never paints previous run measurements under the next run title (501ms)
+  ✓  27 [webkit] › tests/e2e/observatory.spec.ts:146:1 › export identifies a sampled viewport and retains spike numeric value (483ms)
+  ✓  29 [webkit] › tests/e2e/observatory.spec.ts:175:1 › unknown run fails clearly with a working recovery route (350ms)
+  ✓  28 [webkit] › tests/e2e/observatory.spec.ts:160:1 › mobile layout fits viewport and navigation remains reachable (872ms)
+  ✓  30 [webkit] › tests/e2e/observatory.spec.ts:183:1 › a worker failure never substitutes fabricated values and has a working retry path (473ms)
+  ✓  31 [webkit] › tests/e2e/observatory.spec.ts:194:1 › an entirely invalid viewport shows unavailable values and never fabricates a zero curve (404ms)
+  ✓  32 [webkit] › tests/e2e/observatory.spec.ts:204:1 › loading keeps previous-run charts out of the new run before worker data arrives (440ms)
+  ✘  26 [webkit] › tests/e2e/observatory.spec.ts:128:1 › keyboard search opens a run and chart keyboard inspection reveals measured values (10.5s)
+
+
+  1) [webkit] › tests/e2e/observatory.spec.ts:128:1 › keyboard search opens a run and chart keyboard inspection reveals measured values 
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  getByRole('dialog')
+    Expected: 0
+    Received: 1
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toHaveCount" getByRole('dialog') with timeout 10000ms
+      - waiting for getByRole('dialog')
+        24 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      134 |   await page.keyboard.press('Tab');
+      135 |   await page.keyboard.press('Enter');
+    > 136 |   await expect(page.getByRole('dialog')).toHaveCount(0);
+          |                                          ^
+      137 |   await expect(page.getByRole('heading', { name: 'whisper-small-en' })).toBeVisible();
+      138 |   await expect(page.locator('[data-ready="true"]')).toBeVisible();
+      139 |   await page.getByTestId('chart-loss').focus();
+        at /Users/noname/Desktop/personal-projects/soup/tests/e2e/observatory.spec.ts:136:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/observatory-keyboard-searc-d5f6b-ion-reveals-measured-values-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/observatory-keyboard-searc-d5f6b-ion-reveals-measured-values-webkit/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/observatory-keyboard-searc-d5f6b-ion-reveals-measured-values-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/observatory-keyboard-searc-d5f6b-ion-reveals-measured-values-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [webkit] › tests/e2e/observatory.spec.ts:128:1 › keyboard search opens a run and chart keyboard inspection reveals measured values 
+  31 passed (32.4s)

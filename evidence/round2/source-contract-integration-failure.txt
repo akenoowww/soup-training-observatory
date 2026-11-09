@@ -1,0 +1,239 @@
+
+> soup-training-observatory@1.0.0 test
+> vitest run src/domain src/data
+
+
+ RUN  v4.1.12 /Users/noname/Desktop/personal-projects/soup
+
+ ❯ src/data/client.test.ts (11 tests | 7 failed) 43ms
+     × keeps fast-switch responses attached to their original run even when replies arrive out of order 18ms
+     × rejects an aborted selection and ignores its late worker response 5ms
+     × rejects worker failure and creates a fresh worker on retry 2ms
+     × exposes a bounded timeout instead of leaving loading permanent 3ms
+     × fails closed on a response belonging to a different run and recovers with a new worker 3ms
+     × ignores late errors and malformed messages from a replaced worker 4ms
+     × rejects an obsolete fixture revision even when the run and numeric measurements match 5ms
+ ❯ src/data/validate-response.test.ts (4 tests | 2 failed) 143ms
+     × accepts real full, finite/invalid-only, empty, and fractional-boundary viewports 126ms
+     × rejects stale revisions, missing source identity and impossible source times 1ms
+ ❯ src/data/engine.test.ts (7 tests | 1 failed) 612ms
+     × binds deterministic run chronology to the immutable recorded source snapshot 304ms
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 10 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/data/client.test.ts > worker request isolation and recovery > keeps fast-switch responses attached to their original run even when replies arrive out of order
+AssertionError: promise rejected "Error: The data worker returned inconsist…" instead of resolving
+ ❯ src/data/client.test.ts:28:23
+     26|     worker.reply(worker.requests[1]!.requestId, 'run-003');
+     27|     worker.reply(worker.requests[0]!.requestId, 'run-002');
+     28|     await expect(first).resolves.toHaveProperty('run.id', 'run-002');
+       |                       ^
+     29|     await expect(second).resolves.toHaveProperty('run.id', 'run-003');
+     30|   });
+
+Caused by: Error: The data worker returned inconsistent measurements. Retry to reconnect.
+ ❯ resetWorker src/data/client.ts:19:20
+ ❯ FakeWorker.current.onmessage src/data/client.ts:44:7
+ ❯ FakeWorker.reply src/data/client.test.ts:15:47
+ ❯ src/data/client.test.ts:26:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/10]⎯
+
+ FAIL  src/data/client.test.ts > worker request isolation and recovery > rejects an aborted selection and ignores its late worker response
+AssertionError: promise rejected "Error: The data worker returned inconsist…" instead of resolving
+ ❯ src/data/client.test.ts:41:24
+     39|     worker.reply(worker.requests[1]!.requestId, 'run-003');
+     40|     await rejection;
+     41|     await expect(second).resolves.toHaveProperty('run.id', 'run-003');
+       |                        ^
+     42|   });
+     43|   it('does not start a worker for an already aborted signal', async ()…
+
+Caused by: Error: The data worker returned inconsistent measurements. Retry to reconnect.
+ ❯ FakeWorker.current.onmessage src/data/client.ts:43:22
+ ❯ FakeWorker.reply src/data/client.test.ts:15:47
+ ❯ src/data/client.test.ts:39:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/10]⎯
+
+ FAIL  src/data/client.test.ts > worker request isolation and recovery > rejects worker failure and creates a fresh worker on retry
+AssertionError: promise rejected "Error: The data worker returned inconsist…" instead of resolving
+ ❯ src/data/client.test.ts:57:23
+     55|     expect(FakeWorker.current).not.toBe(failedWorker);
+     56|     FakeWorker.current.reply(FakeWorker.current.requests[0]!.requestId…
+     57|     await expect(retry).resolves.toHaveProperty('run.id', 'run-002');
+       |                       ^
+     58|   });
+     59|   it('exposes a bounded timeout instead of leaving loading permanent',…
+
+Caused by: Error: The data worker returned inconsistent measurements. Retry to reconnect.
+ ❯ FakeWorker.current.onmessage src/data/client.ts:43:22
+ ❯ FakeWorker.reply src/data/client.test.ts:15:47
+ ❯ src/data/client.test.ts:56:24
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/10]⎯
+
+ FAIL  src/data/client.test.ts > worker request isolation and recovery > exposes a bounded timeout instead of leaving loading permanent
+AssertionError: promise rejected "Error: The data worker returned inconsist…" instead of resolving
+ ❯ src/data/client.test.ts:69:23
+     67|     expect(FakeWorker.current).not.toBe(timedOutWorker);
+     68|     FakeWorker.current.reply(FakeWorker.current.requests[0]!.requestId…
+     69|     await expect(retry).resolves.toHaveProperty('run.id', 'run-002');
+       |                       ^
+     70|   });
+     71|   it('fails closed on a response belonging to a different run and reco…
+
+Caused by: Error: The data worker returned inconsistent measurements. Retry to reconnect.
+ ❯ FakeWorker.current.onmessage src/data/client.ts:43:22
+ ❯ FakeWorker.reply src/data/client.test.ts:15:47
+ ❯ src/data/client.test.ts:68:24
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/10]⎯
+
+ FAIL  src/data/client.test.ts > worker request isolation and recovery > fails closed on a response belonging to a different run and recovers with a new worker
+AssertionError: promise rejected "Error: The data worker returned inconsist…" instead of resolving
+ ❯ src/data/client.test.ts:80:23
+     78|     expect(FakeWorker.current).not.toBe(oldWorker);
+     79|     FakeWorker.current.reply(FakeWorker.current.requests[0]!.requestId…
+     80|     await expect(retry).resolves.toHaveProperty('run.id', 'run-002');
+       |                       ^
+     81|   });
+     82|   it('rejects shifted metric columns and contradictory extrema instead…
+
+Caused by: Error: The data worker returned inconsistent measurements. Retry to reconnect.
+ ❯ FakeWorker.current.onmessage src/data/client.ts:43:22
+ ❯ FakeWorker.reply src/data/client.test.ts:15:47
+ ❯ src/data/client.test.ts:79:24
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/10]⎯
+
+ FAIL  src/data/client.test.ts > worker request isolation and recovery > ignores late errors and malformed messages from a replaced worker
+AssertionError: promise rejected "Error: The data worker returned inconsist…" instead of resolving
+ ❯ src/data/client.test.ts:105:23
+    103|     oldWorker.onmessage?.({ data: null });
+    104|     replacement.reply(replacement.requests[0]!.requestId, 'run-002');
+    105|     await expect(retry).resolves.toHaveProperty('run.id', 'run-002');
+       |                       ^
+    106|   });
+    107|   it('rejects invalid viewport bounds before starting a worker', async…
+
+Caused by: Error: The data worker returned inconsistent measurements. Retry to reconnect.
+ ❯ FakeWorker.current.onmessage src/data/client.ts:43:22
+ ❯ FakeWorker.reply src/data/client.test.ts:15:47
+ ❯ src/data/client.test.ts:104:17
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/10]⎯
+
+ FAIL  src/data/client.test.ts > worker request isolation and recovery > rejects an obsolete fixture revision even when the run and numeric measurements match
+AssertionError: promise rejected "Error: The data worker returned inconsist…" instead of resolving
+ ❯ src/data/client.test.ts:134:23
+    132|     expect(FakeWorker.current).not.toBe(worker);
+    133|     FakeWorker.current.reply(FakeWorker.current.requests[0]!.requestId…
+    134|     await expect(retry).resolves.toHaveProperty('source.revision', SOU…
+       |                       ^
+    135|   });
+    136|
+
+Caused by: Error: The data worker returned inconsistent measurements. Retry to reconnect.
+ ❯ FakeWorker.current.onmessage src/data/client.ts:43:22
+ ❯ FakeWorker.reply src/data/client.test.ts:15:47
+ ❯ src/data/client.test.ts:133:24
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/10]⎯
+
+ FAIL  src/data/engine.test.ts > synthetic data source > binds deterministic run chronology to the immutable recorded source snapshot
+AssertionError: expected undefined to deeply equal { kind: 'synthetic', …(2) }
+
+- Expected:
+{
+  "kind": "synthetic",
+  "recordedAt": "2026-11-09T18:00:00.000Z",
+  "revision": "soup-fixtures-v2",
+}
+
++ Received:
+undefined
+
+ ❯ src/data/engine.test.ts:56:57
+     54|       const recordedEnd = Date.parse(run.startedAt) + run.durationSeco…
+     55|       expect(recordedEnd, run.id).toBeLessThanOrEqual(Date.parse(SOURC…
+     56|       expect(getRunDetail(run.id, { width: 1 }).source).toEqual(SOURCE…
+       |                                                         ^
+     57|     }
+     58|     const first = getRunDetail('run-002');
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/10]⎯
+
+ FAIL  src/data/validate-response.test.ts > worker response boundary > accepts real full, finite/invalid-only, empty, and fractional-boundary viewports
+AssertionError: run-001 undefined: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ src/data/validate-response.test.ts:13:125
+     11|     for (const run of RUNS) {
+     12|       for (const range of [undefined, { min: 50.1, max: 54.99999999999…
+     13|         expect(isRunDetail(getRunDetail(run.id, { range, width: 3 }), …
+       |                                                                                                                             ^
+     14|       }
+     15|     }
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/10]⎯
+
+ FAIL  src/data/validate-response.test.ts > worker response boundary > rejects stale revisions, missing source identity and impossible source times
+AssertionError: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ src/data/validate-response.test.ts:49:46
+     47|   it('rejects stale revisions, missing source identity and impossible …
+     48|     const original = fixture();
+     49|     expect(isRunDetail(original, 'run-002')).toBe(true);
+       |                                              ^
+     50|     for (const source of [
+     51|       undefined,
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[10/10]⎯
+
+⎯⎯⎯⎯⎯⎯ Unhandled Errors ⎯⎯⎯⎯⎯⎯
+
+Vitest caught 1 unhandled error during the test run.
+This might cause false positive tests. Resolve unhandled errors to make sure your tests are not affected.
+
+⎯⎯⎯⎯ Unhandled Rejection ⎯⎯⎯⎯⎯
+Error: The data worker returned inconsistent measurements. Retry to reconnect.
+ ❯ FakeWorker.current.onmessage src/data/client.ts:43:22
+     41|     else if ('detail' in payload && isRunDetail(payload.detail, reques…
+     42|     else {
+     43|       request.reject(new Error('The data worker returned inconsistent …
+       |                      ^
+     44|       resetWorker('The data worker returned inconsistent measurements.…
+     45|     }
+ ❯ FakeWorker.reply src/data/client.test.ts:15:47
+ ❯ src/data/client.test.ts:26:12
+ ❯ node_modules/@vitest/runner/dist/chunk-artifact.js:302:11
+ ❯ node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26
+ ❯ node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20
+ ❯ runWithCancel node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10
+ ❯ node_modules/@vitest/runner/dist/chunk-artifact.js:2305:20
+
+This error originated in "src/data/client.test.ts" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The latest test that might've caused the error is "exposes a bounded timeout instead of leaving loading permanent". It might mean one of the following:
+- The error was thrown, while Vitest was running this test.
+- If the error occurred after the test had been completed, this was the last documented test before it was thrown.
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+
+ Test Files  3 failed | 2 passed (5)
+      Tests  10 failed | 36 passed (46)
+     Errors  1 error
+   Start at  01:39:29
+   Duration  1.91s (transform 211ms, setup 0ms, import 276ms, tests 3.30s, environment 0ms)
+

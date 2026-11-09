@@ -1,0 +1,3436 @@
+{
+  "method": "For every actual axe-incomplete native navigation text node: inspect actual computed foreground and nearest opaque ancestor background; calculate WCAG sRGB relative-luminance contrast; record ancestor opacity/filter, viewport rectangle and elementFromPoint center ownership; save viewport PNG for visual inspection. No axe rule was disabled or result overwritten.",
+  "limits": "Nearest-background calculation and a center hit test corroborate this captured state; they do not establish every glyph pixel, every screen location or assistive-technology usability. Viewport screenshots must be inspected separately. Axe incomplete findings remain in original artifacts.",
+  "results": [
+    {
+      "engine": "chromium",
+      "browserVersion": "156.0.8078.81",
+      "capturedAt": "2026-11-09T20:46:54.913Z",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "appScripts": [
+        "http://127.0.0.1:4173/assets/app-DUb16MVE.js"
+      ],
+      "nodes": [
+        {
+          "selector": ".nav-item.active[aria-current=\"page\"] > span:nth-child(2)",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "Training runs",
+          "rect": {
+            "x": 50,
+            "y": 265.34375,
+            "width": 72.296875,
+            "height": 16
+          },
+          "foreground": "rgb(101, 214, 173)",
+          "fontSize": "12px",
+          "fontWeight": "500",
+          "center": {
+            "x": 86.1484375,
+            "y": 273.34375
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "SPAN",
+            "className": ""
+          },
+          "ancestors": [
+            {
+              "tag": "SPAN",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "A",
+              "className": "nav-item active",
+              "background": "rgb(36, 59, 83)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "NAV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(36, 59, 83)",
+          "backgroundOwner": {
+            "tag": "A",
+            "className": "nav-item active"
+          },
+          "contrastRatio": 6.45,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": ".nav-count",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "20",
+          "rect": {
+            "x": 176,
+            "y": 263.84375,
+            "width": 24,
+            "height": 19
+          },
+          "foreground": "rgb(188, 204, 220)",
+          "fontSize": "10px",
+          "fontWeight": "400",
+          "center": {
+            "x": 188,
+            "y": 273.34375
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "SPAN",
+            "className": "nav-count"
+          },
+          "ancestors": [
+            {
+              "tag": "SPAN",
+              "className": "nav-count",
+              "background": "rgb(51, 78, 104)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "A",
+              "className": "nav-item active",
+              "background": "rgb(36, 59, 83)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "NAV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(51, 78, 104)",
+          "backgroundOwner": {
+            "tag": "SPAN",
+            "className": "nav-count"
+          },
+          "contrastRatio": 5.27,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": "a[href$=\"#/guide\"] > span",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "Field guide",
+          "rect": {
+            "x": 50,
+            "y": 308.34375,
+            "width": 61.46875,
+            "height": 16
+          },
+          "foreground": "rgb(159, 179, 200)",
+          "fontSize": "12px",
+          "fontWeight": "500",
+          "center": {
+            "x": 80.734375,
+            "y": 316.34375
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "SPAN",
+            "className": ""
+          },
+          "ancestors": [
+            {
+              "tag": "SPAN",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "A",
+              "className": "nav-item",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "NAV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(16, 42, 67)",
+          "backgroundOwner": {
+            "tag": "ASIDE",
+            "className": "sidebar is-open"
+          },
+          "contrastRatio": 6.802,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": ".project-item",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": " Foundation models",
+          "rect": {
+            "x": 12,
+            "y": 392.84375,
+            "width": 199,
+            "height": 14
+          },
+          "foreground": "rgb(188, 204, 220)",
+          "fontSize": "11px",
+          "fontWeight": "400",
+          "center": {
+            "x": 111.5,
+            "y": 399.84375
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "SPAN",
+            "className": "project-item"
+          },
+          "ancestors": [
+            {
+              "tag": "SPAN",
+              "className": "project-item",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "sidebar-project",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(16, 42, 67)",
+          "backgroundOwner": {
+            "tag": "ASIDE",
+            "className": "sidebar is-open"
+          },
+          "contrastRatio": 8.931,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": ".sidebar-project > small",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "20 experiments · 3 metrics",
+          "rect": {
+            "x": 12,
+            "y": 418.84375,
+            "width": 199,
+            "height": 13
+          },
+          "foreground": "rgb(159, 179, 200)",
+          "fontSize": "10px",
+          "fontWeight": "400",
+          "center": {
+            "x": 111.5,
+            "y": 425.34375
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "SMALL",
+            "className": ""
+          },
+          "ancestors": [
+            {
+              "tag": "SMALL",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "sidebar-project",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(16, 42, 67)",
+          "backgroundOwner": {
+            "tag": "ASIDE",
+            "className": "sidebar is-open"
+          },
+          "contrastRatio": 6.802,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": "div > strong",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "A little room to experiment.",
+          "rect": {
+            "x": 47,
+            "y": 672.5,
+            "width": 128.875,
+            "height": 13
+          },
+          "foreground": "rgb(240, 244, 248)",
+          "fontSize": "10px",
+          "fontWeight": "500",
+          "center": {
+            "x": 111.4375,
+            "y": 679
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "STRONG",
+            "className": ""
+          },
+          "ancestors": [
+            {
+              "tag": "STRONG",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "demo-note",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "sidebar-bottom",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(16, 42, 67)",
+          "backgroundOwner": {
+            "tag": "ASIDE",
+            "className": "sidebar is-open"
+          },
+          "contrastRatio": 13.248,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": ".demo-note > div > p",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "Explore synthetic runs. Your production training is untouched.",
+          "rect": {
+            "x": 47,
+            "y": 692.5,
+            "width": 153,
+            "height": 49.5
+          },
+          "foreground": "rgb(159, 179, 200)",
+          "fontSize": "10px",
+          "fontWeight": "400",
+          "center": {
+            "x": 123.5,
+            "y": 717.25
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "P",
+            "className": ""
+          },
+          "ancestors": [
+            {
+              "tag": "P",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "demo-note",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "sidebar-bottom",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(16, 42, 67)",
+          "backgroundOwner": {
+            "tag": "ASIDE",
+            "className": "sidebar is-open"
+          },
+          "contrastRatio": 6.802,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": ".profile-avatar",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "SC",
+          "rect": {
+            "x": 12,
+            "y": 795,
+            "width": 30,
+            "height": 30
+          },
+          "foreground": "rgb(207, 188, 242)",
+          "fontSize": "10px",
+          "fontWeight": "550",
+          "center": {
+            "x": 27,
+            "y": 810
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "SPAN",
+            "className": "profile-avatar"
+          },
+          "ancestors": [
+            {
+              "tag": "SPAN",
+              "className": "profile-avatar",
+              "background": "rgb(36, 59, 83)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "profile",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "sidebar-bottom",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(36, 59, 83)",
+          "backgroundOwner": {
+            "tag": "SPAN",
+            "className": "profile-avatar"
+          },
+          "contrastRatio": 6.644,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": ".profile > span:nth-child(2) > strong",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "Soup collective",
+          "rect": {
+            "x": 51,
+            "y": 795,
+            "width": 160,
+            "height": 14
+          },
+          "foreground": "rgb(240, 244, 248)",
+          "fontSize": "11px",
+          "fontWeight": "500",
+          "center": {
+            "x": 131,
+            "y": 802
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "STRONG",
+            "className": ""
+          },
+          "ancestors": [
+            {
+              "tag": "STRONG",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "SPAN",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "profile",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "sidebar-bottom",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(16, 42, 67)",
+          "backgroundOwner": {
+            "tag": "ASIDE",
+            "className": "sidebar is-open"
+          },
+          "contrastRatio": 13.248,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": ".profile > span:nth-child(2) > small",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "Research workspace",
+          "rect": {
+            "x": 51,
+            "y": 813,
+            "width": 160,
+            "height": 12
+          },
+          "foreground": "rgb(159, 179, 200)",
+          "fontSize": "9px",
+          "fontWeight": "400",
+          "center": {
+            "x": 131,
+            "y": 819
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "SMALL",
+            "className": ""
+          },
+          "ancestors": [
+            {
+              "tag": "SMALL",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "SPAN",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "profile",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "sidebar-bottom",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(16, 42, 67)",
+          "backgroundOwner": {
+            "tag": "ASIDE",
+            "className": "sidebar is-open"
+          },
+          "contrastRatio": 6.802,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        }
+      ]
+    },
+    {
+      "engine": "firefox",
+      "browserVersion": "159.0",
+      "capturedAt": "2026-11-09T20:46:56.507Z",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "appScripts": [
+        "http://127.0.0.1:4173/assets/app-DUb16MVE.js"
+      ],
+      "nodes": [
+        {
+          "selector": ".nav-item.active[aria-current=\"page\"] > span:nth-child(2)",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "Training runs",
+          "rect": {
+            "x": 50,
+            "y": 268.8500061035156,
+            "width": 72.30000305175781,
+            "height": 16
+          },
+          "foreground": "rgb(101, 214, 173)",
+          "fontSize": "12px",
+          "fontWeight": "500",
+          "center": {
+            "x": 86.1500015258789,
+            "y": 276.8500061035156
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "SPAN",
+            "className": ""
+          },
+          "ancestors": [
+            {
+              "tag": "SPAN",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "A",
+              "className": "nav-item active",
+              "background": "rgb(36, 59, 83)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "NAV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(36, 59, 83)",
+          "backgroundOwner": {
+            "tag": "A",
+            "className": "nav-item active"
+          },
+          "contrastRatio": 6.45,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": ".nav-count",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "20",
+          "rect": {
+            "x": 176,
+            "y": 266.8500061035156,
+            "width": 24,
+            "height": 20
+          },
+          "foreground": "rgb(188, 204, 220)",
+          "fontSize": "10px",
+          "fontWeight": "400",
+          "center": {
+            "x": 188,
+            "y": 276.8500061035156
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "SPAN",
+            "className": "nav-count"
+          },
+          "ancestors": [
+            {
+              "tag": "SPAN",
+              "className": "nav-count",
+              "background": "rgb(51, 78, 104)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "A",
+              "className": "nav-item active",
+              "background": "rgb(36, 59, 83)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "NAV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(51, 78, 104)",
+          "backgroundOwner": {
+            "tag": "SPAN",
+            "className": "nav-count"
+          },
+          "contrastRatio": 5.27,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": "a[href$=\"#/guide\"] > span",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "Field guide",
+          "rect": {
+            "x": 50,
+            "y": 312.3500061035156,
+            "width": 61.46665954589844,
+            "height": 16
+          },
+          "foreground": "rgb(159, 179, 200)",
+          "fontSize": "12px",
+          "fontWeight": "500",
+          "center": {
+            "x": 80.73332977294922,
+            "y": 320.3500061035156
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "SPAN",
+            "className": ""
+          },
+          "ancestors": [
+            {
+              "tag": "SPAN",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "A",
+              "className": "nav-item",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "NAV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(16, 42, 67)",
+          "backgroundOwner": {
+            "tag": "ASIDE",
+            "className": "sidebar is-open"
+          },
+          "contrastRatio": 6.802,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": ".sidebar-project > .nav-label",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "PROJECT",
+          "rect": {
+            "x": 12,
+            "y": 372.8500061035156,
+            "width": 199,
+            "height": 12
+          },
+          "foreground": "rgb(159, 179, 200)",
+          "fontSize": "9px",
+          "fontWeight": "600",
+          "center": {
+            "x": 111.5,
+            "y": 378.8500061035156
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "SPAN",
+            "className": "nav-label"
+          },
+          "ancestors": [
+            {
+              "tag": "SPAN",
+              "className": "nav-label",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "sidebar-project",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(16, 42, 67)",
+          "backgroundOwner": {
+            "tag": "ASIDE",
+            "className": "sidebar is-open"
+          },
+          "contrastRatio": 6.802,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": ".project-item",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": " Foundation models",
+          "rect": {
+            "x": 12,
+            "y": 396.8500061035156,
+            "width": 199,
+            "height": 15
+          },
+          "foreground": "rgb(188, 204, 220)",
+          "fontSize": "11px",
+          "fontWeight": "400",
+          "center": {
+            "x": 111.5,
+            "y": 404.3500061035156
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "SPAN",
+            "className": "project-item"
+          },
+          "ancestors": [
+            {
+              "tag": "SPAN",
+              "className": "project-item",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "sidebar-project",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(16, 42, 67)",
+          "backgroundOwner": {
+            "tag": "ASIDE",
+            "className": "sidebar is-open"
+          },
+          "contrastRatio": 8.931,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": ".sidebar-project > small",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "20 experiments · 3 metrics",
+          "rect": {
+            "x": 12,
+            "y": 423.8500061035156,
+            "width": 199,
+            "height": 14
+          },
+          "foreground": "rgb(159, 179, 200)",
+          "fontSize": "10px",
+          "fontWeight": "400",
+          "center": {
+            "x": 111.5,
+            "y": 430.8500061035156
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "SMALL",
+            "className": ""
+          },
+          "ancestors": [
+            {
+              "tag": "SMALL",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "sidebar-project",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(16, 42, 67)",
+          "backgroundOwner": {
+            "tag": "ASIDE",
+            "className": "sidebar is-open"
+          },
+          "contrastRatio": 6.802,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": "div > strong",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "A little room to experiment.",
+          "rect": {
+            "x": 47,
+            "y": 670.5,
+            "width": 128.85000610351562,
+            "height": 14
+          },
+          "foreground": "rgb(240, 244, 248)",
+          "fontSize": "10px",
+          "fontWeight": "500",
+          "center": {
+            "x": 111.42500305175781,
+            "y": 677.5
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "STRONG",
+            "className": ""
+          },
+          "ancestors": [
+            {
+              "tag": "STRONG",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "demo-note",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "sidebar-bottom",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(16, 42, 67)",
+          "backgroundOwner": {
+            "tag": "ASIDE",
+            "className": "sidebar is-open"
+          },
+          "contrastRatio": 13.248,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": ".demo-note > div > p",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "Explore synthetic runs. Your production training is untouched.",
+          "rect": {
+            "x": 47,
+            "y": 691.5,
+            "width": 153,
+            "height": 49.5
+          },
+          "foreground": "rgb(159, 179, 200)",
+          "fontSize": "10px",
+          "fontWeight": "400",
+          "center": {
+            "x": 123.5,
+            "y": 716.25
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "P",
+            "className": ""
+          },
+          "ancestors": [
+            {
+              "tag": "P",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "demo-note",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "sidebar-bottom",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(16, 42, 67)",
+          "backgroundOwner": {
+            "tag": "ASIDE",
+            "className": "sidebar is-open"
+          },
+          "contrastRatio": 6.802,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": ".profile-avatar",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "SC",
+          "rect": {
+            "x": 12,
+            "y": 794.5,
+            "width": 30,
+            "height": 30
+          },
+          "foreground": "rgb(207, 188, 242)",
+          "fontSize": "10px",
+          "fontWeight": "550",
+          "center": {
+            "x": 27,
+            "y": 809.5
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "SPAN",
+            "className": "profile-avatar"
+          },
+          "ancestors": [
+            {
+              "tag": "SPAN",
+              "className": "profile-avatar",
+              "background": "rgb(36, 59, 83)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "profile",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "sidebar-bottom",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(36, 59, 83)",
+          "backgroundOwner": {
+            "tag": "SPAN",
+            "className": "profile-avatar"
+          },
+          "contrastRatio": 6.644,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": ".profile > span:nth-child(2) > strong",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "Soup collective",
+          "rect": {
+            "x": 51,
+            "y": 794,
+            "width": 160,
+            "height": 15
+          },
+          "foreground": "rgb(240, 244, 248)",
+          "fontSize": "11px",
+          "fontWeight": "500",
+          "center": {
+            "x": 131,
+            "y": 801.5
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "STRONG",
+            "className": ""
+          },
+          "ancestors": [
+            {
+              "tag": "STRONG",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "SPAN",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "profile",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "sidebar-bottom",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(16, 42, 67)",
+          "backgroundOwner": {
+            "tag": "ASIDE",
+            "className": "sidebar is-open"
+          },
+          "contrastRatio": 13.248,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": ".profile > span:nth-child(2) > small",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "Research workspace",
+          "rect": {
+            "x": 51,
+            "y": 813,
+            "width": 160,
+            "height": 12
+          },
+          "foreground": "rgb(159, 179, 200)",
+          "fontSize": "9px",
+          "fontWeight": "400",
+          "center": {
+            "x": 131,
+            "y": 819
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "SMALL",
+            "className": ""
+          },
+          "ancestors": [
+            {
+              "tag": "SMALL",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "SPAN",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "profile",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "sidebar-bottom",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(16, 42, 67)",
+          "backgroundOwner": {
+            "tag": "ASIDE",
+            "className": "sidebar is-open"
+          },
+          "contrastRatio": 6.802,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "browserVersion": "27.2",
+      "capturedAt": "2026-11-09T20:46:57.582Z",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "appScripts": [
+        "http://127.0.0.1:4173/assets/app-DUb16MVE.js"
+      ],
+      "nodes": [
+        {
+          "selector": ".nav-item.active[aria-current=\"page\"] > span:nth-child(2)",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "Training runs",
+          "rect": {
+            "x": 50,
+            "y": 265.34375,
+            "width": 72.296875,
+            "height": 16
+          },
+          "foreground": "rgb(101, 214, 173)",
+          "fontSize": "12px",
+          "fontWeight": "500",
+          "center": {
+            "x": 86.1484375,
+            "y": 273.34375
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "SPAN",
+            "className": ""
+          },
+          "ancestors": [
+            {
+              "tag": "SPAN",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "A",
+              "className": "nav-item active",
+              "background": "rgb(36, 59, 83)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "NAV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(36, 59, 83)",
+          "backgroundOwner": {
+            "tag": "A",
+            "className": "nav-item active"
+          },
+          "contrastRatio": 6.45,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": ".nav-count",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "20",
+          "rect": {
+            "x": 176,
+            "y": 263.84375,
+            "width": 24,
+            "height": 19
+          },
+          "foreground": "rgb(188, 204, 220)",
+          "fontSize": "10px",
+          "fontWeight": "400",
+          "center": {
+            "x": 188,
+            "y": 273.34375
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "SPAN",
+            "className": "nav-count"
+          },
+          "ancestors": [
+            {
+              "tag": "SPAN",
+              "className": "nav-count",
+              "background": "rgb(51, 78, 104)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "A",
+              "className": "nav-item active",
+              "background": "rgb(36, 59, 83)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "NAV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(51, 78, 104)",
+          "backgroundOwner": {
+            "tag": "SPAN",
+            "className": "nav-count"
+          },
+          "contrastRatio": 5.27,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": "a[href$=\"#/guide\"] > span",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "Field guide",
+          "rect": {
+            "x": 50,
+            "y": 308.34375,
+            "width": 61.46875,
+            "height": 16
+          },
+          "foreground": "rgb(159, 179, 200)",
+          "fontSize": "12px",
+          "fontWeight": "500",
+          "center": {
+            "x": 80.734375,
+            "y": 316.34375
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "SPAN",
+            "className": ""
+          },
+          "ancestors": [
+            {
+              "tag": "SPAN",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "A",
+              "className": "nav-item",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "NAV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(16, 42, 67)",
+          "backgroundOwner": {
+            "tag": "ASIDE",
+            "className": "sidebar is-open"
+          },
+          "contrastRatio": 6.802,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": ".project-item",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": " Foundation models",
+          "rect": {
+            "x": 12,
+            "y": 392.84375,
+            "width": 199,
+            "height": 14
+          },
+          "foreground": "rgb(188, 204, 220)",
+          "fontSize": "11px",
+          "fontWeight": "400",
+          "center": {
+            "x": 111.5,
+            "y": 399.84375
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "SPAN",
+            "className": "project-item"
+          },
+          "ancestors": [
+            {
+              "tag": "SPAN",
+              "className": "project-item",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "sidebar-project",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(16, 42, 67)",
+          "backgroundOwner": {
+            "tag": "ASIDE",
+            "className": "sidebar is-open"
+          },
+          "contrastRatio": 8.931,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": ".sidebar-project > small",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "20 experiments · 3 metrics",
+          "rect": {
+            "x": 12,
+            "y": 418.84375,
+            "width": 199,
+            "height": 13
+          },
+          "foreground": "rgb(159, 179, 200)",
+          "fontSize": "10px",
+          "fontWeight": "400",
+          "center": {
+            "x": 111.5,
+            "y": 425.34375
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "SMALL",
+            "className": ""
+          },
+          "ancestors": [
+            {
+              "tag": "SMALL",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "sidebar-project",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(16, 42, 67)",
+          "backgroundOwner": {
+            "tag": "ASIDE",
+            "className": "sidebar is-open"
+          },
+          "contrastRatio": 6.802,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": "div > strong",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "A little room to experiment.",
+          "rect": {
+            "x": 47,
+            "y": 672.5130004882812,
+            "width": 128.8699951171875,
+            "height": 13.02001953125
+          },
+          "foreground": "rgb(240, 244, 248)",
+          "fontSize": "10px",
+          "fontWeight": "500",
+          "center": {
+            "x": 111.43499755859375,
+            "y": 679.0230102539062
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "STRONG",
+            "className": ""
+          },
+          "ancestors": [
+            {
+              "tag": "STRONG",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "demo-note",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "sidebar-bottom",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(16, 42, 67)",
+          "backgroundOwner": {
+            "tag": "ASIDE",
+            "className": "sidebar is-open"
+          },
+          "contrastRatio": 13.248,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": ".demo-note > div > p",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "Explore synthetic runs. Your production training is untouched.",
+          "rect": {
+            "x": 47,
+            "y": 692.5,
+            "width": 153,
+            "height": 49.5
+          },
+          "foreground": "rgb(159, 179, 200)",
+          "fontSize": "10px",
+          "fontWeight": "400",
+          "center": {
+            "x": 123.5,
+            "y": 717.25
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "P",
+            "className": ""
+          },
+          "ancestors": [
+            {
+              "tag": "P",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "demo-note",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "sidebar-bottom",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(16, 42, 67)",
+          "backgroundOwner": {
+            "tag": "ASIDE",
+            "className": "sidebar is-open"
+          },
+          "contrastRatio": 6.802,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": ".profile-avatar",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "SC",
+          "rect": {
+            "x": 12,
+            "y": 795,
+            "width": 30,
+            "height": 30
+          },
+          "foreground": "rgb(207, 188, 242)",
+          "fontSize": "10px",
+          "fontWeight": "550",
+          "center": {
+            "x": 27,
+            "y": 810
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "SPAN",
+            "className": "profile-avatar"
+          },
+          "ancestors": [
+            {
+              "tag": "SPAN",
+              "className": "profile-avatar",
+              "background": "rgb(36, 59, 83)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "profile",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "sidebar-bottom",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(36, 59, 83)",
+          "backgroundOwner": {
+            "tag": "SPAN",
+            "className": "profile-avatar"
+          },
+          "contrastRatio": 6.644,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": ".profile > span:nth-child(2) > strong",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "Soup collective",
+          "rect": {
+            "x": 51,
+            "y": 795,
+            "width": 160,
+            "height": 14
+          },
+          "foreground": "rgb(240, 244, 248)",
+          "fontSize": "11px",
+          "fontWeight": "500",
+          "center": {
+            "x": 131,
+            "y": 802
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "STRONG",
+            "className": ""
+          },
+          "ancestors": [
+            {
+              "tag": "STRONG",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "SPAN",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "profile",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "sidebar-bottom",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(16, 42, 67)",
+          "backgroundOwner": {
+            "tag": "ASIDE",
+            "className": "sidebar is-open"
+          },
+          "contrastRatio": 13.248,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        },
+        {
+          "selector": ".profile > span:nth-child(2) > small",
+          "rule": "color-contrast",
+          "explanation": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+          "text": "Research workspace",
+          "rect": {
+            "x": 51,
+            "y": 813,
+            "width": 160,
+            "height": 12
+          },
+          "foreground": "rgb(159, 179, 200)",
+          "fontSize": "9px",
+          "fontWeight": "400",
+          "center": {
+            "x": 131,
+            "y": 819
+          },
+          "visibleAtCenter": true,
+          "centerElement": {
+            "tag": "SMALL",
+            "className": ""
+          },
+          "ancestors": [
+            {
+              "tag": "SMALL",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "SPAN",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "profile",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "sidebar-bottom",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "ASIDE",
+              "className": "sidebar is-open",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIALOG",
+              "className": "mobile-navigation",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "app-shell",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "DIV",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "BODY",
+              "className": "",
+              "background": "rgba(0, 0, 0, 0)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            },
+            {
+              "tag": "HTML",
+              "className": "",
+              "background": "rgb(16, 42, 67)",
+              "opacity": "1",
+              "filter": "none",
+              "backdropFilter": "none"
+            }
+          ],
+          "background": "rgb(16, 42, 67)",
+          "backgroundOwner": {
+            "tag": "ASIDE",
+            "className": "sidebar is-open"
+          },
+          "contrastRatio": 6.802,
+          "normalTextThreshold": 4.5,
+          "passesNormalTextContrast": true,
+          "allAncestorsOpaque": true,
+          "allAncestorsUnfiltered": true
+        }
+      ]
+    }
+  ]
+}

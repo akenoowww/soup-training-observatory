@@ -1,0 +1,56 @@
+{
+  "browser": "156.0.8078.81",
+  "recordedAt": "2026-11-09T20:35:43.607Z",
+  "scope": "Isolated calibration: identical deterministic100M integer operations in dedicatedWorker; pageRate alternates1,4,1 afterwarmup. Shows this Chrome setup only, not proof of targetCPU across versions.",
+  "timings": [
+    {
+      "pageRate": 1,
+      "duration": 120.69999999552965,
+      "hash": -446695227
+    },
+    {
+      "pageRate": 1,
+      "duration": 122.5,
+      "hash": -446695227
+    },
+    {
+      "pageRate": 1,
+      "duration": 120.79999999701977,
+      "hash": -446695227
+    },
+    {
+      "pageRate": 4,
+      "duration": 118.60000000149012,
+      "hash": -446695227
+    },
+    {
+      "pageRate": 4,
+      "duration": 119,
+      "hash": -446695227
+    },
+    {
+      "pageRate": 4,
+      "duration": 118.60000000149012,
+      "hash": -446695227
+    },
+    {
+      "pageRate": 1,
+      "duration": 122.40000000596046,
+      "hash": -446695227
+    },
+    {
+      "pageRate": 1,
+      "duration": 122.70000000298023,
+      "hash": -446695227
+    },
+    {
+      "pageRate": 1,
+      "duration": 122.60000000149012,
+      "hash": -446695227
+    }
+  ],
+  "workerEmulationResult": {
+    "accepted": false,
+    "error": "Error: Operation is only supported for pages, not workers"
+  }
+}

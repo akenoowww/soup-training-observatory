@@ -1,0 +1,4011 @@
+{
+  "config": {
+    "argv": [
+      "/opt/homebrew/Cellar/node/24.3.0/bin/node",
+      "/Users/noname/Desktop/personal-projects/soup/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/Users/noname/Desktop/personal-projects/soup/playwright.config.ts",
+    "rootDir": "/Users/noname/Desktop/personal-projects/soup/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 3
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/noname/Desktop/personal-projects/soup/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/noname/Desktop/personal-projects/soup/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/noname/Desktop/personal-projects/soup/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/noname/Desktop/personal-projects/soup/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/noname/Desktop/personal-projects/soup/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/noname/Desktop/personal-projects/soup/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/noname/Desktop/personal-projects/soup/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "name": "chromium",
+        "testDir": "/Users/noname/Desktop/personal-projects/soup/tests/e2e",
+        "snapshotDir": "/Users/noname/Desktop/personal-projects/soup/tests/e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.8127.18 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "launchOptions": {
+            "executablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/noname/Desktop/personal-projects/soup/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "name": "firefox",
+        "testDir": "/Users/noname/Desktop/personal-projects/soup/tests/e2e",
+        "snapshotDir": "/Users/noname/Desktop/personal-projects/soup/tests/e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:159.0) Gecko/20100101 Firefox/159.0",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "firefox"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "firefox"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/noname/Desktop/personal-projects/soup/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "name": "webkit",
+        "testDir": "/Users/noname/Desktop/personal-projects/soup/tests/e2e",
+        "snapshotDir": "/Users/noname/Desktop/personal-projects/soup/tests/e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1792,
+            "height": 1120
+          },
+          "deviceScaleFactor": 2,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "webkit"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "webkit"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/round2/e2e-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.0",
+    "workers": 3,
+    "webServer": {
+      "command": "npm run preview -- --port 4173 --strictPort",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": true,
+      "timeout": 30000
+    }
+  },
+  "suites": [
+    {
+      "title": "accessibility.spec.ts",
+      "file": "accessibility.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "automatic accessibility rules cover the full run browser",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1372,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:26.498Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "axe-run-browser",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXB0dXJlZEF0IjogIjIwMjYtMTEtMDlUMjE6MTM6MjguMjIyWiIsCiAgInByb2plY3QiOiAiY2hyb21pdW0iLAogICJicm93c2VyVmVyc2lvbiI6ICIxNTYuMC44MDc4LjgxIiwKICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jLyIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA3MjAKICB9LAogICJzdGF0ZSI6ICJydW4tYnJvd3NlciIsCiAgInRhZ3MiOiBbCiAgICAid2NhZzJhIiwKICAgICJ3Y2FnMmFhIiwKICAgICJ3Y2FnMjFhIiwKICAgICJ3Y2FnMjFhYSIKICBdLAogICJheGVWZXJzaW9uIjogIjQuMTQuMCIsCiAgImNvdW50cyI6IHsKICAgICJwYXNzZXMiOiAyNiwKICAgICJpbmFwcGxpY2FibGUiOiAzNywKICAgICJ2aW9sYXRpb25zIjogMCwKICAgICJpbmNvbXBsZXRlIjogMAogIH0sCiAgInZpb2xhdGlvbnMiOiBbXSwKICAiaW5jb21wbGV0ZSI6IFtdLAogICJsaW1pdHMiOiBbCiAgICAiQXV0b21hdGVkIFdDQUcgcnVsZSBjaGVja3Mgb24gdGhpcyBjYXB0dXJlZCBicm93c2VyIHN0YXRlIG9ubHk7IG5vdCBhbiBhY2Nlc3NpYmlsaXR5IGNvbmZvcm1hbmNlIGNsYWltLiIsCiAgICAiSW5jb21wbGV0ZSBjaGVja3MgcmVxdWlyZSBtYW51YWwgYXNzZXNzbWVudCBhbmQgYXJlIG5vdCBzaWxlbnRseSB0cmVhdGVkIGFzIHBhc3Nlcy4iLAogICAgIk5vIHBoeXNpY2FsLWRldmljZSBlcmdvbm9taWNzLCBhc3Npc3RpdmUtdGVjaG5vbG9neSB1c2FiaWxpdHkgb3IgZnVsbCBhcHBsaWNhdGlvbi1zdGF0ZSBjb3ZlcmFnZSBpcyBlc3RhYmxpc2hlZCBieSB0aGlzIGFydGlmYWN0LiIKICBdCn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1707,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:38.545Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "axe-run-browser",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXB0dXJlZEF0IjogIjIwMjYtMTEtMDlUMjE6MTM6NDAuODEyWiIsCiAgInByb2plY3QiOiAiZmlyZWZveCIsCiAgImJyb3dzZXJWZXJzaW9uIjogIjE1OS4wIiwKICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jLyIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA3MjAKICB9LAogICJzdGF0ZSI6ICJydW4tYnJvd3NlciIsCiAgInRhZ3MiOiBbCiAgICAid2NhZzJhIiwKICAgICJ3Y2FnMmFhIiwKICAgICJ3Y2FnMjFhIiwKICAgICJ3Y2FnMjFhYSIKICBdLAogICJheGVWZXJzaW9uIjogIjQuMTQuMCIsCiAgImNvdW50cyI6IHsKICAgICJwYXNzZXMiOiAyNiwKICAgICJpbmFwcGxpY2FibGUiOiAzNywKICAgICJ2aW9sYXRpb25zIjogMCwKICAgICJpbmNvbXBsZXRlIjogMAogIH0sCiAgInZpb2xhdGlvbnMiOiBbXSwKICAiaW5jb21wbGV0ZSI6IFtdLAogICJsaW1pdHMiOiBbCiAgICAiQXV0b21hdGVkIFdDQUcgcnVsZSBjaGVja3Mgb24gdGhpcyBjYXB0dXJlZCBicm93c2VyIHN0YXRlIG9ubHk7IG5vdCBhbiBhY2Nlc3NpYmlsaXR5IGNvbmZvcm1hbmNlIGNsYWltLiIsCiAgICAiSW5jb21wbGV0ZSBjaGVja3MgcmVxdWlyZSBtYW51YWwgYXNzZXNzbWVudCBhbmQgYXJlIG5vdCBzaWxlbnRseSB0cmVhdGVkIGFzIHBhc3Nlcy4iLAogICAgIk5vIHBoeXNpY2FsLWRldmljZSBlcmdvbm9taWNzLCBhc3Npc3RpdmUtdGVjaG5vbG9neSB1c2FiaWxpdHkgb3IgZnVsbCBhcHBsaWNhdGlvbi1zdGF0ZSBjb3ZlcmFnZSBpcyBlc3RhYmxpc2hlZCBieSB0aGlzIGFydGlmYWN0LiIKICBdCn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 1434,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:52.916Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "axe-run-browser",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXB0dXJlZEF0IjogIjIwMjYtMTEtMDlUMjE6MTM6NTQuNTEzWiIsCiAgInByb2plY3QiOiAid2Via2l0IiwKICAiYnJvd3NlclZlcnNpb24iOiAiMjcuMiIsCiAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIy8iLAogICJ2aWV3cG9ydCI6IHsKICAgICJ3aWR0aCI6IDEyODAsCiAgICAiaGVpZ2h0IjogNzIwCiAgfSwKICAic3RhdGUiOiAicnVuLWJyb3dzZXIiLAogICJ0YWdzIjogWwogICAgIndjYWcyYSIsCiAgICAid2NhZzJhYSIsCiAgICAid2NhZzIxYSIsCiAgICAid2NhZzIxYWEiCiAgXSwKICAiYXhlVmVyc2lvbiI6ICI0LjE0LjAiLAogICJjb3VudHMiOiB7CiAgICAicGFzc2VzIjogMjYsCiAgICAiaW5hcHBsaWNhYmxlIjogMzcsCiAgICAidmlvbGF0aW9ucyI6IDAsCiAgICAiaW5jb21wbGV0ZSI6IDAKICB9LAogICJ2aW9sYXRpb25zIjogW10sCiAgImluY29tcGxldGUiOiBbXSwKICAibGltaXRzIjogWwogICAgIkF1dG9tYXRlZCBXQ0FHIHJ1bGUgY2hlY2tzIG9uIHRoaXMgY2FwdHVyZWQgYnJvd3NlciBzdGF0ZSBvbmx5OyBub3QgYW4gYWNjZXNzaWJpbGl0eSBjb25mb3JtYW5jZSBjbGFpbS4iLAogICAgIkluY29tcGxldGUgY2hlY2tzIHJlcXVpcmUgbWFudWFsIGFzc2Vzc21lbnQgYW5kIGFyZSBub3Qgc2lsZW50bHkgdHJlYXRlZCBhcyBwYXNzZXMuIiwKICAgICJObyBwaHlzaWNhbC1kZXZpY2UgZXJnb25vbWljcywgYXNzaXN0aXZlLXRlY2hub2xvZ3kgdXNhYmlsaXR5IG9yIGZ1bGwgYXBwbGljYXRpb24tc3RhdGUgY292ZXJhZ2UgaXMgZXN0YWJsaXNoZWQgYnkgdGhpcyBhcnRpZmFjdC4iCiAgXQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ddd864604af8a6a0198f-179f9c6f5d724c07eaec",
+          "file": "accessibility.spec.ts",
+          "line": 59,
+          "column": 1
+        },
+        {
+          "title": "automatic accessibility rules cover loaded numeric charts and their controls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2025,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:26.500Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "axe-loaded-run",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXB0dXJlZEF0IjogIjIwMjYtMTEtMDlUMjE6MTM6MjguMzQyWiIsCiAgInByb2plY3QiOiAiY2hyb21pdW0iLAogICJicm93c2VyVmVyc2lvbiI6ICIxNTYuMC44MDc4LjgxIiwKICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMSIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA3MjAKICB9LAogICJzdGF0ZSI6ICJsb2FkZWQtcnVuIiwKICAidGFncyI6IFsKICAgICJ3Y2FnMmEiLAogICAgIndjYWcyYWEiLAogICAgIndjYWcyMWEiLAogICAgIndjYWcyMWFhIgogIF0sCiAgImF4ZVZlcnNpb24iOiAiNC4xNC4wIiwKICAiY291bnRzIjogewogICAgInBhc3NlcyI6IDI4LAogICAgImluYXBwbGljYWJsZSI6IDM1LAogICAgInZpb2xhdGlvbnMiOiAwLAogICAgImluY29tcGxldGUiOiAwCiAgfSwKICAidmlvbGF0aW9ucyI6IFtdLAogICJpbmNvbXBsZXRlIjogW10sCiAgImxpbWl0cyI6IFsKICAgICJBdXRvbWF0ZWQgV0NBRyBydWxlIGNoZWNrcyBvbiB0aGlzIGNhcHR1cmVkIGJyb3dzZXIgc3RhdGUgb25seTsgbm90IGFuIGFjY2Vzc2liaWxpdHkgY29uZm9ybWFuY2UgY2xhaW0uIiwKICAgICJJbmNvbXBsZXRlIGNoZWNrcyByZXF1aXJlIG1hbnVhbCBhc3Nlc3NtZW50IGFuZCBhcmUgbm90IHNpbGVudGx5IHRyZWF0ZWQgYXMgcGFzc2VzLiIsCiAgICAiTm8gcGh5c2ljYWwtZGV2aWNlIGVyZ29ub21pY3MsIGFzc2lzdGl2ZS10ZWNobm9sb2d5IHVzYWJpbGl0eSBvciBmdWxsIGFwcGxpY2F0aW9uLXN0YXRlIGNvdmVyYWdlIGlzIGVzdGFibGlzaGVkIGJ5IHRoaXMgYXJ0aWZhY3QuIgogIF0KfQ=="
+                    },
+                    {
+                      "name": "axe-loaded-run-inspector",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXB0dXJlZEF0IjogIjIwMjYtMTEtMDlUMjE6MTM6MjguODk3WiIsCiAgInByb2plY3QiOiAiY2hyb21pdW0iLAogICJicm93c2VyVmVyc2lvbiI6ICIxNTYuMC44MDc4LjgxIiwKICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMSIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA3MjAKICB9LAogICJzdGF0ZSI6ICJsb2FkZWQtcnVuLWluc3BlY3RvciIsCiAgInRhZ3MiOiBbCiAgICAid2NhZzJhIiwKICAgICJ3Y2FnMmFhIiwKICAgICJ3Y2FnMjFhIiwKICAgICJ3Y2FnMjFhYSIKICBdLAogICJheGVWZXJzaW9uIjogIjQuMTQuMCIsCiAgImNvdW50cyI6IHsKICAgICJwYXNzZXMiOiAzMCwKICAgICJpbmFwcGxpY2FibGUiOiAzMywKICAgICJ2aW9sYXRpb25zIjogMCwKICAgICJpbmNvbXBsZXRlIjogMAogIH0sCiAgInZpb2xhdGlvbnMiOiBbXSwKICAiaW5jb21wbGV0ZSI6IFtdLAogICJsaW1pdHMiOiBbCiAgICAiQXV0b21hdGVkIFdDQUcgcnVsZSBjaGVja3Mgb24gdGhpcyBjYXB0dXJlZCBicm93c2VyIHN0YXRlIG9ubHk7IG5vdCBhbiBhY2Nlc3NpYmlsaXR5IGNvbmZvcm1hbmNlIGNsYWltLiIsCiAgICAiSW5jb21wbGV0ZSBjaGVja3MgcmVxdWlyZSBtYW51YWwgYXNzZXNzbWVudCBhbmQgYXJlIG5vdCBzaWxlbnRseSB0cmVhdGVkIGFzIHBhc3Nlcy4iLAogICAgIk5vIHBoeXNpY2FsLWRldmljZSBlcmdvbm9taWNzLCBhc3Npc3RpdmUtdGVjaG5vbG9neSB1c2FiaWxpdHkgb3IgZnVsbCBhcHBsaWNhdGlvbi1zdGF0ZSBjb3ZlcmFnZSBpcyBlc3RhYmxpc2hlZCBieSB0aGlzIGFydGlmYWN0LiIKICBdCn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 2391,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:38.645Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "axe-loaded-run",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXB0dXJlZEF0IjogIjIwMjYtMTEtMDlUMjE6MTM6NDEuMTI3WiIsCiAgInByb2plY3QiOiAiZmlyZWZveCIsCiAgImJyb3dzZXJWZXJzaW9uIjogIjE1OS4wIiwKICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMSIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA3MjAKICB9LAogICJzdGF0ZSI6ICJsb2FkZWQtcnVuIiwKICAidGFncyI6IFsKICAgICJ3Y2FnMmEiLAogICAgIndjYWcyYWEiLAogICAgIndjYWcyMWEiLAogICAgIndjYWcyMWFhIgogIF0sCiAgImF4ZVZlcnNpb24iOiAiNC4xNC4wIiwKICAiY291bnRzIjogewogICAgInBhc3NlcyI6IDI4LAogICAgImluYXBwbGljYWJsZSI6IDM1LAogICAgInZpb2xhdGlvbnMiOiAwLAogICAgImluY29tcGxldGUiOiAwCiAgfSwKICAidmlvbGF0aW9ucyI6IFtdLAogICJpbmNvbXBsZXRlIjogW10sCiAgImxpbWl0cyI6IFsKICAgICJBdXRvbWF0ZWQgV0NBRyBydWxlIGNoZWNrcyBvbiB0aGlzIGNhcHR1cmVkIGJyb3dzZXIgc3RhdGUgb25seTsgbm90IGFuIGFjY2Vzc2liaWxpdHkgY29uZm9ybWFuY2UgY2xhaW0uIiwKICAgICJJbmNvbXBsZXRlIGNoZWNrcyByZXF1aXJlIG1hbnVhbCBhc3Nlc3NtZW50IGFuZCBhcmUgbm90IHNpbGVudGx5IHRyZWF0ZWQgYXMgcGFzc2VzLiIsCiAgICAiTm8gcGh5c2ljYWwtZGV2aWNlIGVyZ29ub21pY3MsIGFzc2lzdGl2ZS10ZWNobm9sb2d5IHVzYWJpbGl0eSBvciBmdWxsIGFwcGxpY2F0aW9uLXN0YXRlIGNvdmVyYWdlIGlzIGVzdGFibGlzaGVkIGJ5IHRoaXMgYXJ0aWZhY3QuIgogIF0KfQ=="
+                    },
+                    {
+                      "name": "axe-loaded-run-inspector",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXB0dXJlZEF0IjogIjIwMjYtMTEtMDlUMjE6MTM6NDEuNzg2WiIsCiAgInByb2plY3QiOiAiZmlyZWZveCIsCiAgImJyb3dzZXJWZXJzaW9uIjogIjE1OS4wIiwKICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMSIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA3MjAKICB9LAogICJzdGF0ZSI6ICJsb2FkZWQtcnVuLWluc3BlY3RvciIsCiAgInRhZ3MiOiBbCiAgICAid2NhZzJhIiwKICAgICJ3Y2FnMmFhIiwKICAgICJ3Y2FnMjFhIiwKICAgICJ3Y2FnMjFhYSIKICBdLAogICJheGVWZXJzaW9uIjogIjQuMTQuMCIsCiAgImNvdW50cyI6IHsKICAgICJwYXNzZXMiOiAzMCwKICAgICJpbmFwcGxpY2FibGUiOiAzMywKICAgICJ2aW9sYXRpb25zIjogMCwKICAgICJpbmNvbXBsZXRlIjogMAogIH0sCiAgInZpb2xhdGlvbnMiOiBbXSwKICAiaW5jb21wbGV0ZSI6IFtdLAogICJsaW1pdHMiOiBbCiAgICAiQXV0b21hdGVkIFdDQUcgcnVsZSBjaGVja3Mgb24gdGhpcyBjYXB0dXJlZCBicm93c2VyIHN0YXRlIG9ubHk7IG5vdCBhbiBhY2Nlc3NpYmlsaXR5IGNvbmZvcm1hbmNlIGNsYWltLiIsCiAgICAiSW5jb21wbGV0ZSBjaGVja3MgcmVxdWlyZSBtYW51YWwgYXNzZXNzbWVudCBhbmQgYXJlIG5vdCBzaWxlbnRseSB0cmVhdGVkIGFzIHBhc3Nlcy4iLAogICAgIk5vIHBoeXNpY2FsLWRldmljZSBlcmdvbm9taWNzLCBhc3Npc3RpdmUtdGVjaG5vbG9neSB1c2FiaWxpdHkgb3IgZnVsbCBhcHBsaWNhdGlvbi1zdGF0ZSBjb3ZlcmFnZSBpcyBlc3RhYmxpc2hlZCBieSB0aGlzIGFydGlmYWN0LiIKICBdCn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1991,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:53.018Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "axe-loaded-run",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXB0dXJlZEF0IjogIjIwMjYtMTEtMDlUMjE6MTM6NTQuNTI0WiIsCiAgInByb2plY3QiOiAid2Via2l0IiwKICAiYnJvd3NlclZlcnNpb24iOiAiMjcuMiIsCiAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIy9ydW5zL3J1bi0wMDEiLAogICJ2aWV3cG9ydCI6IHsKICAgICJ3aWR0aCI6IDEyODAsCiAgICAiaGVpZ2h0IjogNzIwCiAgfSwKICAic3RhdGUiOiAibG9hZGVkLXJ1biIsCiAgInRhZ3MiOiBbCiAgICAid2NhZzJhIiwKICAgICJ3Y2FnMmFhIiwKICAgICJ3Y2FnMjFhIiwKICAgICJ3Y2FnMjFhYSIKICBdLAogICJheGVWZXJzaW9uIjogIjQuMTQuMCIsCiAgImNvdW50cyI6IHsKICAgICJwYXNzZXMiOiAyOCwKICAgICJpbmFwcGxpY2FibGUiOiAzNSwKICAgICJ2aW9sYXRpb25zIjogMCwKICAgICJpbmNvbXBsZXRlIjogMAogIH0sCiAgInZpb2xhdGlvbnMiOiBbXSwKICAiaW5jb21wbGV0ZSI6IFtdLAogICJsaW1pdHMiOiBbCiAgICAiQXV0b21hdGVkIFdDQUcgcnVsZSBjaGVja3Mgb24gdGhpcyBjYXB0dXJlZCBicm93c2VyIHN0YXRlIG9ubHk7IG5vdCBhbiBhY2Nlc3NpYmlsaXR5IGNvbmZvcm1hbmNlIGNsYWltLiIsCiAgICAiSW5jb21wbGV0ZSBjaGVja3MgcmVxdWlyZSBtYW51YWwgYXNzZXNzbWVudCBhbmQgYXJlIG5vdCBzaWxlbnRseSB0cmVhdGVkIGFzIHBhc3Nlcy4iLAogICAgIk5vIHBoeXNpY2FsLWRldmljZSBlcmdvbm9taWNzLCBhc3Npc3RpdmUtdGVjaG5vbG9neSB1c2FiaWxpdHkgb3IgZnVsbCBhcHBsaWNhdGlvbi1zdGF0ZSBjb3ZlcmFnZSBpcyBlc3RhYmxpc2hlZCBieSB0aGlzIGFydGlmYWN0LiIKICBdCn0="
+                    },
+                    {
+                      "name": "axe-loaded-run-inspector",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXB0dXJlZEF0IjogIjIwMjYtMTEtMDlUMjE6MTM6NTUuMTE1WiIsCiAgInByb2plY3QiOiAid2Via2l0IiwKICAiYnJvd3NlclZlcnNpb24iOiAiMjcuMiIsCiAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIy9ydW5zL3J1bi0wMDEiLAogICJ2aWV3cG9ydCI6IHsKICAgICJ3aWR0aCI6IDEyODAsCiAgICAiaGVpZ2h0IjogNzIwCiAgfSwKICAic3RhdGUiOiAibG9hZGVkLXJ1bi1pbnNwZWN0b3IiLAogICJ0YWdzIjogWwogICAgIndjYWcyYSIsCiAgICAid2NhZzJhYSIsCiAgICAid2NhZzIxYSIsCiAgICAid2NhZzIxYWEiCiAgXSwKICAiYXhlVmVyc2lvbiI6ICI0LjE0LjAiLAogICJjb3VudHMiOiB7CiAgICAicGFzc2VzIjogMzAsCiAgICAiaW5hcHBsaWNhYmxlIjogMzMsCiAgICAidmlvbGF0aW9ucyI6IDAsCiAgICAiaW5jb21wbGV0ZSI6IDAKICB9LAogICJ2aW9sYXRpb25zIjogW10sCiAgImluY29tcGxldGUiOiBbXSwKICAibGltaXRzIjogWwogICAgIkF1dG9tYXRlZCBXQ0FHIHJ1bGUgY2hlY2tzIG9uIHRoaXMgY2FwdHVyZWQgYnJvd3NlciBzdGF0ZSBvbmx5OyBub3QgYW4gYWNjZXNzaWJpbGl0eSBjb25mb3JtYW5jZSBjbGFpbS4iLAogICAgIkluY29tcGxldGUgY2hlY2tzIHJlcXVpcmUgbWFudWFsIGFzc2Vzc21lbnQgYW5kIGFyZSBub3Qgc2lsZW50bHkgdHJlYXRlZCBhcyBwYXNzZXMuIiwKICAgICJObyBwaHlzaWNhbC1kZXZpY2UgZXJnb25vbWljcywgYXNzaXN0aXZlLXRlY2hub2xvZ3kgdXNhYmlsaXR5IG9yIGZ1bGwgYXBwbGljYXRpb24tc3RhdGUgY292ZXJhZ2UgaXMgZXN0YWJsaXNoZWQgYnkgdGhpcyBhcnRpZmFjdC4iCiAgXQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ddd864604af8a6a0198f-1cc7f922ceb10e26ece5",
+          "file": "accessibility.spec.ts",
+          "line": 66,
+          "column": 1
+        },
+        {
+          "title": "automatic accessibility rules cover the open search modal",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 1279,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:26.508Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "axe-search-modal",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXB0dXJlZEF0IjogIjIwMjYtMTEtMDlUMjE6MTM6MjguMTI0WiIsCiAgInByb2plY3QiOiAiY2hyb21pdW0iLAogICJicm93c2VyVmVyc2lvbiI6ICIxNTYuMC44MDc4LjgxIiwKICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jLyIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA3MjAKICB9LAogICJzdGF0ZSI6ICJzZWFyY2gtbW9kYWwiLAogICJ0YWdzIjogWwogICAgIndjYWcyYSIsCiAgICAid2NhZzJhYSIsCiAgICAid2NhZzIxYSIsCiAgICAid2NhZzIxYWEiCiAgXSwKICAiYXhlVmVyc2lvbiI6ICI0LjE0LjAiLAogICJjb3VudHMiOiB7CiAgICAicGFzc2VzIjogMTUsCiAgICAiaW5hcHBsaWNhYmxlIjogNDgsCiAgICAidmlvbGF0aW9ucyI6IDAsCiAgICAiaW5jb21wbGV0ZSI6IDAKICB9LAogICJ2aW9sYXRpb25zIjogW10sCiAgImluY29tcGxldGUiOiBbXSwKICAibGltaXRzIjogWwogICAgIkF1dG9tYXRlZCBXQ0FHIHJ1bGUgY2hlY2tzIG9uIHRoaXMgY2FwdHVyZWQgYnJvd3NlciBzdGF0ZSBvbmx5OyBub3QgYW4gYWNjZXNzaWJpbGl0eSBjb25mb3JtYW5jZSBjbGFpbS4iLAogICAgIkluY29tcGxldGUgY2hlY2tzIHJlcXVpcmUgbWFudWFsIGFzc2Vzc21lbnQgYW5kIGFyZSBub3Qgc2lsZW50bHkgdHJlYXRlZCBhcyBwYXNzZXMuIiwKICAgICJObyBwaHlzaWNhbC1kZXZpY2UgZXJnb25vbWljcywgYXNzaXN0aXZlLXRlY2hub2xvZ3kgdXNhYmlsaXR5IG9yIGZ1bGwgYXBwbGljYXRpb24tc3RhdGUgY292ZXJhZ2UgaXMgZXN0YWJsaXNoZWQgYnkgdGhpcyBhcnRpZmFjdC4iCiAgXQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1632,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:38.911Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "axe-search-modal",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXB0dXJlZEF0IjogIjIwMjYtMTEtMDlUMjE6MTM6NDEuNDQ4WiIsCiAgInByb2plY3QiOiAiZmlyZWZveCIsCiAgImJyb3dzZXJWZXJzaW9uIjogIjE1OS4wIiwKICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jLyIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA3MjAKICB9LAogICJzdGF0ZSI6ICJzZWFyY2gtbW9kYWwiLAogICJ0YWdzIjogWwogICAgIndjYWcyYSIsCiAgICAid2NhZzJhYSIsCiAgICAid2NhZzIxYSIsCiAgICAid2NhZzIxYWEiCiAgXSwKICAiYXhlVmVyc2lvbiI6ICI0LjE0LjAiLAogICJjb3VudHMiOiB7CiAgICAicGFzc2VzIjogMTUsCiAgICAiaW5hcHBsaWNhYmxlIjogNDgsCiAgICAidmlvbGF0aW9ucyI6IDAsCiAgICAiaW5jb21wbGV0ZSI6IDAKICB9LAogICJ2aW9sYXRpb25zIjogW10sCiAgImluY29tcGxldGUiOiBbXSwKICAibGltaXRzIjogWwogICAgIkF1dG9tYXRlZCBXQ0FHIHJ1bGUgY2hlY2tzIG9uIHRoaXMgY2FwdHVyZWQgYnJvd3NlciBzdGF0ZSBvbmx5OyBub3QgYW4gYWNjZXNzaWJpbGl0eSBjb25mb3JtYW5jZSBjbGFpbS4iLAogICAgIkluY29tcGxldGUgY2hlY2tzIHJlcXVpcmUgbWFudWFsIGFzc2Vzc21lbnQgYW5kIGFyZSBub3Qgc2lsZW50bHkgdHJlYXRlZCBhcyBwYXNzZXMuIiwKICAgICJObyBwaHlzaWNhbC1kZXZpY2UgZXJnb25vbWljcywgYXNzaXN0aXZlLXRlY2hub2xvZ3kgdXNhYmlsaXR5IG9yIGZ1bGwgYXBwbGljYXRpb24tc3RhdGUgY292ZXJhZ2UgaXMgZXN0YWJsaXNoZWQgYnkgdGhpcyBhcnRpZmFjdC4iCiAgXQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1139,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:53.175Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "axe-search-modal",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXB0dXJlZEF0IjogIjIwMjYtMTEtMDlUMjE6MTM6NTQuNDMwWiIsCiAgInByb2plY3QiOiAid2Via2l0IiwKICAiYnJvd3NlclZlcnNpb24iOiAiMjcuMiIsCiAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIy8iLAogICJ2aWV3cG9ydCI6IHsKICAgICJ3aWR0aCI6IDEyODAsCiAgICAiaGVpZ2h0IjogNzIwCiAgfSwKICAic3RhdGUiOiAic2VhcmNoLW1vZGFsIiwKICAidGFncyI6IFsKICAgICJ3Y2FnMmEiLAogICAgIndjYWcyYWEiLAogICAgIndjYWcyMWEiLAogICAgIndjYWcyMWFhIgogIF0sCiAgImF4ZVZlcnNpb24iOiAiNC4xNC4wIiwKICAiY291bnRzIjogewogICAgInBhc3NlcyI6IDE1LAogICAgImluYXBwbGljYWJsZSI6IDQ4LAogICAgInZpb2xhdGlvbnMiOiAwLAogICAgImluY29tcGxldGUiOiAwCiAgfSwKICAidmlvbGF0aW9ucyI6IFtdLAogICJpbmNvbXBsZXRlIjogW10sCiAgImxpbWl0cyI6IFsKICAgICJBdXRvbWF0ZWQgV0NBRyBydWxlIGNoZWNrcyBvbiB0aGlzIGNhcHR1cmVkIGJyb3dzZXIgc3RhdGUgb25seTsgbm90IGFuIGFjY2Vzc2liaWxpdHkgY29uZm9ybWFuY2UgY2xhaW0uIiwKICAgICJJbmNvbXBsZXRlIGNoZWNrcyByZXF1aXJlIG1hbnVhbCBhc3Nlc3NtZW50IGFuZCBhcmUgbm90IHNpbGVudGx5IHRyZWF0ZWQgYXMgcGFzc2VzLiIsCiAgICAiTm8gcGh5c2ljYWwtZGV2aWNlIGVyZ29ub21pY3MsIGFzc2lzdGl2ZS10ZWNobm9sb2d5IHVzYWJpbGl0eSBvciBmdWxsIGFwcGxpY2F0aW9uLXN0YXRlIGNvdmVyYWdlIGlzIGVzdGFibGlzaGVkIGJ5IHRoaXMgYXJ0aWZhY3QuIgogIF0KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ddd864604af8a6a0198f-03c91f1a953410910158",
+          "file": "accessibility.spec.ts",
+          "line": 78,
+          "column": 1
+        },
+        {
+          "title": "automatic accessibility rules cover the open narrow-screen navigation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 818,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:28.200Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "axe-mobile-navigation",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXB0dXJlZEF0IjogIjIwMjYtMTEtMDlUMjE6MTM6MjguOTcxWiIsCiAgInByb2plY3QiOiAiY2hyb21pdW0iLAogICJicm93c2VyVmVyc2lvbiI6ICIxNTYuMC44MDc4LjgxIiwKICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jLyIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMzkwLAogICAgImhlaWdodCI6IDg0NAogIH0sCiAgInN0YXRlIjogIm1vYmlsZS1uYXZpZ2F0aW9uIiwKICAidGFncyI6IFsKICAgICJ3Y2FnMmEiLAogICAgIndjYWcyYWEiLAogICAgIndjYWcyMWEiLAogICAgIndjYWcyMWFhIgogIF0sCiAgImF4ZVZlcnNpb24iOiAiNC4xNC4wIiwKICAiY291bnRzIjogewogICAgInBhc3NlcyI6IDE0LAogICAgImluYXBwbGljYWJsZSI6IDQ5LAogICAgInZpb2xhdGlvbnMiOiAwLAogICAgImluY29tcGxldGUiOiAxCiAgfSwKICAidmlvbGF0aW9ucyI6IFtdLAogICJpbmNvbXBsZXRlIjogWwogICAgewogICAgICAiaWQiOiAiY29sb3ItY29udHJhc3QiLAogICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAidGFncyI6IFsKICAgICAgICAiY2F0LmNvbG9yIiwKICAgICAgICAid2NhZzJhYSIsCiAgICAgICAgIndjYWcxNDMiLAogICAgICAgICJUVHY1IiwKICAgICAgICAiVFQxMy5jIiwKICAgICAgICAiRU4tMzAxLTU0OSIsCiAgICAgICAgIkVOLTkuMS40LjMiLAogICAgICAgICJBQ1QiLAogICAgICAgICJSR0FBdjQiLAogICAgICAgICJSR0FBLTMuMi4xIgogICAgICBdLAogICAgICAiZGVzY3JpcHRpb24iOiAiRW5zdXJlIHRoZSBjb250cmFzdCBiZXR3ZWVuIGZvcmVncm91bmQgYW5kIGJhY2tncm91bmQgY29sb3JzIG1lZXRzIFdDQUcgMiBBQSBtaW5pbXVtIGNvbnRyYXN0IHJhdGlvIHRocmVzaG9sZHMiLAogICAgICAiaGVscCI6ICJFbGVtZW50cyBtdXN0IG1lZXQgbWluaW11bSBjb2xvciBjb250cmFzdCByYXRpbyB0aHJlc2hvbGRzIiwKICAgICAgImhlbHBVcmwiOiAiaHR0cHM6Ly9kZXF1ZXVuaXZlcnNpdHkuY29tL3J1bGVzL2F4ZS80LjE0L2NvbG9yLWNvbnRyYXN0P2FwcGxpY2F0aW9uPXBsYXl3cmlnaHQiLAogICAgICAibm9kZXMiOiBbCiAgICAgICAgewogICAgICAgICAgImFueSI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJpZCI6ICJjb2xvci1jb250cmFzdCIsCiAgICAgICAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAgICAgICAiY29udHJhc3RSYXRpbyI6IDAsCiAgICAgICAgICAgICAgICAiZm9udFNpemUiOiAiOS4wcHQgKDEycHgpIiwKICAgICAgICAgICAgICAgICJmb250V2VpZ2h0IjogIm5vcm1hbCIsCiAgICAgICAgICAgICAgICAibWVzc2FnZUtleSI6ICJiZ092ZXJsYXAiLAogICAgICAgICAgICAgICAgImV4cGVjdGVkQ29udHJhc3RSYXRpbyI6ICI0LjU6MSIKICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICJyZWxhdGVkTm9kZXMiOiBbXSwKICAgICAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgICAgICJtZXNzYWdlIjogIkVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgICAgIH0KICAgICAgICAgIF0sCiAgICAgICAgICAiYWxsIjogW10sCiAgICAgICAgICAibm9uZSI6IFtdLAogICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICJodG1sIjogIjxzcGFuPlRyYWluaW5nIHJ1bnM8L3NwYW4+IiwKICAgICAgICAgICJ0YXJnZXQiOiBbCiAgICAgICAgICAgICIubmF2LWl0ZW0uYWN0aXZlW2FyaWEtY3VycmVudD1cInBhZ2VcIl0gPiBzcGFuOm50aC1jaGlsZCgyKSIKICAgICAgICAgIF0sCiAgICAgICAgICAiZmFpbHVyZVN1bW1hcnkiOiAiRml4IGFueSBvZiB0aGUgZm9sbG93aW5nOlxuICBFbGVtZW50J3MgYmFja2dyb3VuZCBjb2xvciBjb3VsZCBub3QgYmUgZGV0ZXJtaW5lZCBiZWNhdXNlIGl0IGlzIG92ZXJsYXBwZWQgYnkgYW5vdGhlciBlbGVtZW50IgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImFueSI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJpZCI6ICJjb2xvci1jb250cmFzdCIsCiAgICAgICAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAgICAgICAiY29udHJhc3RSYXRpbyI6IDAsCiAgICAgICAgICAgICAgICAiZm9udFNpemUiOiAiNy41cHQgKDEwcHgpIiwKICAgICAgICAgICAgICAgICJmb250V2VpZ2h0IjogIm5vcm1hbCIsCiAgICAgICAgICAgICAgICAibWVzc2FnZUtleSI6ICJiZ092ZXJsYXAiLAogICAgICAgICAgICAgICAgImV4cGVjdGVkQ29udHJhc3RSYXRpbyI6ICI0LjU6MSIKICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICJyZWxhdGVkTm9kZXMiOiBbXSwKICAgICAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgICAgICJtZXNzYWdlIjogIkVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgICAgIH0KICAgICAgICAgIF0sCiAgICAgICAgICAiYWxsIjogW10sCiAgICAgICAgICAibm9uZSI6IFtdLAogICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICJodG1sIjogIjxzcGFuIGNsYXNzPVwibmF2LWNvdW50XCI+MjA8L3NwYW4+IiwKICAgICAgICAgICJ0YXJnZXQiOiBbCiAgICAgICAgICAgICIubmF2LWNvdW50IgogICAgICAgICAgXSwKICAgICAgICAgICJmYWlsdXJlU3VtbWFyeSI6ICJGaXggYW55IG9mIHRoZSBmb2xsb3dpbmc6XG4gIEVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiYW55IjogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgImlkIjogImNvbG9yLWNvbnRyYXN0IiwKICAgICAgICAgICAgICAiZGF0YSI6IHsKICAgICAgICAgICAgICAgICJjb250cmFzdFJhdGlvIjogMCwKICAgICAgICAgICAgICAgICJmb250U2l6ZSI6ICI5LjBwdCAoMTJweCkiLAogICAgICAgICAgICAgICAgImZvbnRXZWlnaHQiOiAibm9ybWFsIiwKICAgICAgICAgICAgICAgICJtZXNzYWdlS2V5IjogImJnT3ZlcmxhcCIsCiAgICAgICAgICAgICAgICAiZXhwZWN0ZWRDb250cmFzdFJhdGlvIjogIjQuNToxIgogICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgInJlbGF0ZWROb2RlcyI6IFtdLAogICAgICAgICAgICAgICJpbXBhY3QiOiAic2VyaW91cyIsCiAgICAgICAgICAgICAgIm1lc3NhZ2UiOiAiRWxlbWVudCdzIGJhY2tncm91bmQgY29sb3IgY291bGQgbm90IGJlIGRldGVybWluZWQgYmVjYXVzZSBpdCBpcyBvdmVybGFwcGVkIGJ5IGFub3RoZXIgZWxlbWVudCIKICAgICAgICAgICAgfQogICAgICAgICAgXSwKICAgICAgICAgICJhbGwiOiBbXSwKICAgICAgICAgICJub25lIjogW10sCiAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgImh0bWwiOiAiPHNwYW4+RmllbGQgZ3VpZGU8L3NwYW4+IiwKICAgICAgICAgICJ0YXJnZXQiOiBbCiAgICAgICAgICAgICJhW2hyZWYkPVwiIy9ndWlkZVwiXSA+IHNwYW4iCiAgICAgICAgICBdLAogICAgICAgICAgImZhaWx1cmVTdW1tYXJ5IjogIkZpeCBhbnkgb2YgdGhlIGZvbGxvd2luZzpcbiAgRWxlbWVudCdzIGJhY2tncm91bmQgY29sb3IgY291bGQgbm90IGJlIGRldGVybWluZWQgYmVjYXVzZSBpdCBpcyBvdmVybGFwcGVkIGJ5IGFub3RoZXIgZWxlbWVudCIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJhbnkiOiBbCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAiaWQiOiAiY29sb3ItY29udHJhc3QiLAogICAgICAgICAgICAgICJkYXRhIjogewogICAgICAgICAgICAgICAgImNvbnRyYXN0UmF0aW8iOiAwLAogICAgICAgICAgICAgICAgImZvbnRTaXplIjogIjguM3B0ICgxMXB4KSIsCiAgICAgICAgICAgICAgICAiZm9udFdlaWdodCI6ICJub3JtYWwiLAogICAgICAgICAgICAgICAgIm1lc3NhZ2VLZXkiOiAiYmdPdmVybGFwIiwKICAgICAgICAgICAgICAgICJleHBlY3RlZENvbnRyYXN0UmF0aW8iOiAiNC41OjEiCiAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAicmVsYXRlZE5vZGVzIjogW10sCiAgICAgICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICAgICAibWVzc2FnZSI6ICJFbGVtZW50J3MgYmFja2dyb3VuZCBjb2xvciBjb3VsZCBub3QgYmUgZGV0ZXJtaW5lZCBiZWNhdXNlIGl0IGlzIG92ZXJsYXBwZWQgYnkgYW5vdGhlciBlbGVtZW50IgogICAgICAgICAgICB9CiAgICAgICAgICBdLAogICAgICAgICAgImFsbCI6IFtdLAogICAgICAgICAgIm5vbmUiOiBbXSwKICAgICAgICAgICJpbXBhY3QiOiAic2VyaW91cyIsCiAgICAgICAgICAiaHRtbCI6ICI8c3BhbiBjbGFzcz1cInByb2plY3QtaXRlbVwiPjxzcGFuIGNsYXNzPVwicHJvamVjdC1kb3RcIj48L3NwYW4+IEZvdW5kYXRpb24gbW9kZWxzPC9zcGFuPiIsCiAgICAgICAgICAidGFyZ2V0IjogWwogICAgICAgICAgICAiLnByb2plY3QtaXRlbSIKICAgICAgICAgIF0sCiAgICAgICAgICAiZmFpbHVyZVN1bW1hcnkiOiAiRml4IGFueSBvZiB0aGUgZm9sbG93aW5nOlxuICBFbGVtZW50J3MgYmFja2dyb3VuZCBjb2xvciBjb3VsZCBub3QgYmUgZGV0ZXJtaW5lZCBiZWNhdXNlIGl0IGlzIG92ZXJsYXBwZWQgYnkgYW5vdGhlciBlbGVtZW50IgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImFueSI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJpZCI6ICJjb2xvci1jb250cmFzdCIsCiAgICAgICAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAgICAgICAiY29udHJhc3RSYXRpbyI6IDAsCiAgICAgICAgICAgICAgICAiZm9udFNpemUiOiAiNy41cHQgKDEwcHgpIiwKICAgICAgICAgICAgICAgICJmb250V2VpZ2h0IjogIm5vcm1hbCIsCiAgICAgICAgICAgICAgICAibWVzc2FnZUtleSI6ICJiZ092ZXJsYXAiLAogICAgICAgICAgICAgICAgImV4cGVjdGVkQ29udHJhc3RSYXRpbyI6ICI0LjU6MSIKICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICJyZWxhdGVkTm9kZXMiOiBbXSwKICAgICAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgICAgICJtZXNzYWdlIjogIkVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgICAgIH0KICAgICAgICAgIF0sCiAgICAgICAgICAiYWxsIjogW10sCiAgICAgICAgICAibm9uZSI6IFtdLAogICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICJodG1sIjogIjxzbWFsbD4yMCBleHBlcmltZW50cyDCtyAzIG1ldHJpY3M8L3NtYWxsPiIsCiAgICAgICAgICAidGFyZ2V0IjogWwogICAgICAgICAgICAiLnNpZGViYXItcHJvamVjdCA+IHNtYWxsIgogICAgICAgICAgXSwKICAgICAgICAgICJmYWlsdXJlU3VtbWFyeSI6ICJGaXggYW55IG9mIHRoZSBmb2xsb3dpbmc6XG4gIEVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiYW55IjogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgImlkIjogImNvbG9yLWNvbnRyYXN0IiwKICAgICAgICAgICAgICAiZGF0YSI6IHsKICAgICAgICAgICAgICAgICJjb250cmFzdFJhdGlvIjogMCwKICAgICAgICAgICAgICAgICJmb250U2l6ZSI6ICI3LjVwdCAoMTBweCkiLAogICAgICAgICAgICAgICAgImZvbnRXZWlnaHQiOiAibm9ybWFsIiwKICAgICAgICAgICAgICAgICJtZXNzYWdlS2V5IjogImJnT3ZlcmxhcCIsCiAgICAgICAgICAgICAgICAiZXhwZWN0ZWRDb250cmFzdFJhdGlvIjogIjQuNToxIgogICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgInJlbGF0ZWROb2RlcyI6IFtdLAogICAgICAgICAgICAgICJpbXBhY3QiOiAic2VyaW91cyIsCiAgICAgICAgICAgICAgIm1lc3NhZ2UiOiAiRWxlbWVudCdzIGJhY2tncm91bmQgY29sb3IgY291bGQgbm90IGJlIGRldGVybWluZWQgYmVjYXVzZSBpdCBpcyBvdmVybGFwcGVkIGJ5IGFub3RoZXIgZWxlbWVudCIKICAgICAgICAgICAgfQogICAgICAgICAgXSwKICAgICAgICAgICJhbGwiOiBbXSwKICAgICAgICAgICJub25lIjogW10sCiAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgImh0bWwiOiAiPHN0cm9uZz5BIGxpdHRsZSByb29tIHRvIGV4cGVyaW1lbnQuPC9zdHJvbmc+IiwKICAgICAgICAgICJ0YXJnZXQiOiBbCiAgICAgICAgICAgICJkaXYgPiBzdHJvbmciCiAgICAgICAgICBdLAogICAgICAgICAgImZhaWx1cmVTdW1tYXJ5IjogIkZpeCBhbnkgb2YgdGhlIGZvbGxvd2luZzpcbiAgRWxlbWVudCdzIGJhY2tncm91bmQgY29sb3IgY291bGQgbm90IGJlIGRldGVybWluZWQgYmVjYXVzZSBpdCBpcyBvdmVybGFwcGVkIGJ5IGFub3RoZXIgZWxlbWVudCIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJhbnkiOiBbCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAiaWQiOiAiY29sb3ItY29udHJhc3QiLAogICAgICAgICAgICAgICJkYXRhIjogewogICAgICAgICAgICAgICAgImNvbnRyYXN0UmF0aW8iOiAwLAogICAgICAgICAgICAgICAgImZvbnRTaXplIjogIjcuNXB0ICgxMHB4KSIsCiAgICAgICAgICAgICAgICAiZm9udFdlaWdodCI6ICJub3JtYWwiLAogICAgICAgICAgICAgICAgIm1lc3NhZ2VLZXkiOiAiYmdPdmVybGFwIiwKICAgICAgICAgICAgICAgICJleHBlY3RlZENvbnRyYXN0UmF0aW8iOiAiNC41OjEiCiAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAicmVsYXRlZE5vZGVzIjogW10sCiAgICAgICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICAgICAibWVzc2FnZSI6ICJFbGVtZW50J3MgYmFja2dyb3VuZCBjb2xvciBjb3VsZCBub3QgYmUgZGV0ZXJtaW5lZCBiZWNhdXNlIGl0IGlzIG92ZXJsYXBwZWQgYnkgYW5vdGhlciBlbGVtZW50IgogICAgICAgICAgICB9CiAgICAgICAgICBdLAogICAgICAgICAgImFsbCI6IFtdLAogICAgICAgICAgIm5vbmUiOiBbXSwKICAgICAgICAgICJpbXBhY3QiOiAic2VyaW91cyIsCiAgICAgICAgICAiaHRtbCI6ICI8cD5FeHBsb3JlIHN5bnRoZXRpYyBydW5zLiBZb3VyIHByb2R1Y3Rpb24gdHJhaW5pbmcgaXMgdW50b3VjaGVkLjwvcD4iLAogICAgICAgICAgInRhcmdldCI6IFsKICAgICAgICAgICAgIi5kZW1vLW5vdGUgPiBkaXYgPiBwIgogICAgICAgICAgXSwKICAgICAgICAgICJmYWlsdXJlU3VtbWFyeSI6ICJGaXggYW55IG9mIHRoZSBmb2xsb3dpbmc6XG4gIEVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiYW55IjogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgImlkIjogImNvbG9yLWNvbnRyYXN0IiwKICAgICAgICAgICAgICAiZGF0YSI6IHsKICAgICAgICAgICAgICAgICJjb250cmFzdFJhdGlvIjogMCwKICAgICAgICAgICAgICAgICJmb250U2l6ZSI6ICI3LjVwdCAoMTBweCkiLAogICAgICAgICAgICAgICAgImZvbnRXZWlnaHQiOiAibm9ybWFsIiwKICAgICAgICAgICAgICAgICJtZXNzYWdlS2V5IjogImJnT3ZlcmxhcCIsCiAgICAgICAgICAgICAgICAiZXhwZWN0ZWRDb250cmFzdFJhdGlvIjogIjQuNToxIgogICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgInJlbGF0ZWROb2RlcyI6IFtdLAogICAgICAgICAgICAgICJpbXBhY3QiOiAic2VyaW91cyIsCiAgICAgICAgICAgICAgIm1lc3NhZ2UiOiAiRWxlbWVudCdzIGJhY2tncm91bmQgY29sb3IgY291bGQgbm90IGJlIGRldGVybWluZWQgYmVjYXVzZSBpdCBpcyBvdmVybGFwcGVkIGJ5IGFub3RoZXIgZWxlbWVudCIKICAgICAgICAgICAgfQogICAgICAgICAgXSwKICAgICAgICAgICJhbGwiOiBbXSwKICAgICAgICAgICJub25lIjogW10sCiAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgImh0bWwiOiAiPHNwYW4gY2xhc3M9XCJwcm9maWxlLWF2YXRhclwiPlNDPC9zcGFuPiIsCiAgICAgICAgICAidGFyZ2V0IjogWwogICAgICAgICAgICAiLnByb2ZpbGUtYXZhdGFyIgogICAgICAgICAgXSwKICAgICAgICAgICJmYWlsdXJlU3VtbWFyeSI6ICJGaXggYW55IG9mIHRoZSBmb2xsb3dpbmc6XG4gIEVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiYW55IjogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgImlkIjogImNvbG9yLWNvbnRyYXN0IiwKICAgICAgICAgICAgICAiZGF0YSI6IHsKICAgICAgICAgICAgICAgICJjb250cmFzdFJhdGlvIjogMCwKICAgICAgICAgICAgICAgICJmb250U2l6ZSI6ICI4LjNwdCAoMTFweCkiLAogICAgICAgICAgICAgICAgImZvbnRXZWlnaHQiOiAibm9ybWFsIiwKICAgICAgICAgICAgICAgICJtZXNzYWdlS2V5IjogImJnT3ZlcmxhcCIsCiAgICAgICAgICAgICAgICAiZXhwZWN0ZWRDb250cmFzdFJhdGlvIjogIjQuNToxIgogICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgInJlbGF0ZWROb2RlcyI6IFtdLAogICAgICAgICAgICAgICJpbXBhY3QiOiAic2VyaW91cyIsCiAgICAgICAgICAgICAgIm1lc3NhZ2UiOiAiRWxlbWVudCdzIGJhY2tncm91bmQgY29sb3IgY291bGQgbm90IGJlIGRldGVybWluZWQgYmVjYXVzZSBpdCBpcyBvdmVybGFwcGVkIGJ5IGFub3RoZXIgZWxlbWVudCIKICAgICAgICAgICAgfQogICAgICAgICAgXSwKICAgICAgICAgICJhbGwiOiBbXSwKICAgICAgICAgICJub25lIjogW10sCiAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgImh0bWwiOiAiPHN0cm9uZz5Tb3VwIGNvbGxlY3RpdmU8L3N0cm9uZz4iLAogICAgICAgICAgInRhcmdldCI6IFsKICAgICAgICAgICAgIi5wcm9maWxlID4gc3BhbjpudGgtY2hpbGQoMikgPiBzdHJvbmciCiAgICAgICAgICBdLAogICAgICAgICAgImZhaWx1cmVTdW1tYXJ5IjogIkZpeCBhbnkgb2YgdGhlIGZvbGxvd2luZzpcbiAgRWxlbWVudCdzIGJhY2tncm91bmQgY29sb3IgY291bGQgbm90IGJlIGRldGVybWluZWQgYmVjYXVzZSBpdCBpcyBvdmVybGFwcGVkIGJ5IGFub3RoZXIgZWxlbWVudCIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJhbnkiOiBbCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAiaWQiOiAiY29sb3ItY29udHJhc3QiLAogICAgICAgICAgICAgICJkYXRhIjogewogICAgICAgICAgICAgICAgImNvbnRyYXN0UmF0aW8iOiAwLAogICAgICAgICAgICAgICAgImZvbnRTaXplIjogIjYuOHB0ICg5cHgpIiwKICAgICAgICAgICAgICAgICJmb250V2VpZ2h0IjogIm5vcm1hbCIsCiAgICAgICAgICAgICAgICAibWVzc2FnZUtleSI6ICJiZ092ZXJsYXAiLAogICAgICAgICAgICAgICAgImV4cGVjdGVkQ29udHJhc3RSYXRpbyI6ICI0LjU6MSIKICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICJyZWxhdGVkTm9kZXMiOiBbXSwKICAgICAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgICAgICJtZXNzYWdlIjogIkVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgICAgIH0KICAgICAgICAgIF0sCiAgICAgICAgICAiYWxsIjogW10sCiAgICAgICAgICAibm9uZSI6IFtdLAogICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICJodG1sIjogIjxzbWFsbD5SZXNlYXJjaCB3b3Jrc3BhY2U8L3NtYWxsPiIsCiAgICAgICAgICAidGFyZ2V0IjogWwogICAgICAgICAgICAiLnByb2ZpbGUgPiBzcGFuOm50aC1jaGlsZCgyKSA+IHNtYWxsIgogICAgICAgICAgXSwKICAgICAgICAgICJmYWlsdXJlU3VtbWFyeSI6ICJGaXggYW55IG9mIHRoZSBmb2xsb3dpbmc6XG4gIEVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgfQogICAgICBdCiAgICB9CiAgXSwKICAibGltaXRzIjogWwogICAgIkF1dG9tYXRlZCBXQ0FHIHJ1bGUgY2hlY2tzIG9uIHRoaXMgY2FwdHVyZWQgYnJvd3NlciBzdGF0ZSBvbmx5OyBub3QgYW4gYWNjZXNzaWJpbGl0eSBjb25mb3JtYW5jZSBjbGFpbS4iLAogICAgIkluY29tcGxldGUgY2hlY2tzIHJlcXVpcmUgbWFudWFsIGFzc2Vzc21lbnQgYW5kIGFyZSBub3Qgc2lsZW50bHkgdHJlYXRlZCBhcyBwYXNzZXMuIiwKICAgICJObyBwaHlzaWNhbC1kZXZpY2UgZXJnb25vbWljcywgYXNzaXN0aXZlLXRlY2hub2xvZ3kgdXNhYmlsaXR5IG9yIGZ1bGwgYXBwbGljYXRpb24tc3RhdGUgY292ZXJhZ2UgaXMgZXN0YWJsaXNoZWQgYnkgdGhpcyBhcnRpZmFjdC4iCiAgXQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 836,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:40.847Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "axe-mobile-navigation",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXB0dXJlZEF0IjogIjIwMjYtMTEtMDlUMjE6MTM6NDEuNjU5WiIsCiAgInByb2plY3QiOiAiZmlyZWZveCIsCiAgImJyb3dzZXJWZXJzaW9uIjogIjE1OS4wIiwKICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jLyIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMzkwLAogICAgImhlaWdodCI6IDg0NAogIH0sCiAgInN0YXRlIjogIm1vYmlsZS1uYXZpZ2F0aW9uIiwKICAidGFncyI6IFsKICAgICJ3Y2FnMmEiLAogICAgIndjYWcyYWEiLAogICAgIndjYWcyMWEiLAogICAgIndjYWcyMWFhIgogIF0sCiAgImF4ZVZlcnNpb24iOiAiNC4xNC4wIiwKICAiY291bnRzIjogewogICAgInBhc3NlcyI6IDE0LAogICAgImluYXBwbGljYWJsZSI6IDQ5LAogICAgInZpb2xhdGlvbnMiOiAwLAogICAgImluY29tcGxldGUiOiAxCiAgfSwKICAidmlvbGF0aW9ucyI6IFtdLAogICJpbmNvbXBsZXRlIjogWwogICAgewogICAgICAiaWQiOiAiY29sb3ItY29udHJhc3QiLAogICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAidGFncyI6IFsKICAgICAgICAiY2F0LmNvbG9yIiwKICAgICAgICAid2NhZzJhYSIsCiAgICAgICAgIndjYWcxNDMiLAogICAgICAgICJUVHY1IiwKICAgICAgICAiVFQxMy5jIiwKICAgICAgICAiRU4tMzAxLTU0OSIsCiAgICAgICAgIkVOLTkuMS40LjMiLAogICAgICAgICJBQ1QiLAogICAgICAgICJSR0FBdjQiLAogICAgICAgICJSR0FBLTMuMi4xIgogICAgICBdLAogICAgICAiZGVzY3JpcHRpb24iOiAiRW5zdXJlIHRoZSBjb250cmFzdCBiZXR3ZWVuIGZvcmVncm91bmQgYW5kIGJhY2tncm91bmQgY29sb3JzIG1lZXRzIFdDQUcgMiBBQSBtaW5pbXVtIGNvbnRyYXN0IHJhdGlvIHRocmVzaG9sZHMiLAogICAgICAiaGVscCI6ICJFbGVtZW50cyBtdXN0IG1lZXQgbWluaW11bSBjb2xvciBjb250cmFzdCByYXRpbyB0aHJlc2hvbGRzIiwKICAgICAgImhlbHBVcmwiOiAiaHR0cHM6Ly9kZXF1ZXVuaXZlcnNpdHkuY29tL3J1bGVzL2F4ZS80LjE0L2NvbG9yLWNvbnRyYXN0P2FwcGxpY2F0aW9uPXBsYXl3cmlnaHQiLAogICAgICAibm9kZXMiOiBbCiAgICAgICAgewogICAgICAgICAgImFueSI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJpZCI6ICJjb2xvci1jb250cmFzdCIsCiAgICAgICAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAgICAgICAiY29udHJhc3RSYXRpbyI6IDAsCiAgICAgICAgICAgICAgICAiZm9udFNpemUiOiAiOS4wcHQgKDEycHgpIiwKICAgICAgICAgICAgICAgICJmb250V2VpZ2h0IjogIm5vcm1hbCIsCiAgICAgICAgICAgICAgICAibWVzc2FnZUtleSI6ICJiZ092ZXJsYXAiLAogICAgICAgICAgICAgICAgImV4cGVjdGVkQ29udHJhc3RSYXRpbyI6ICI0LjU6MSIKICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICJyZWxhdGVkTm9kZXMiOiBbXSwKICAgICAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgICAgICJtZXNzYWdlIjogIkVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgICAgIH0KICAgICAgICAgIF0sCiAgICAgICAgICAiYWxsIjogW10sCiAgICAgICAgICAibm9uZSI6IFtdLAogICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICJodG1sIjogIjxzcGFuPlRyYWluaW5nIHJ1bnM8L3NwYW4+IiwKICAgICAgICAgICJ0YXJnZXQiOiBbCiAgICAgICAgICAgICIubmF2LWl0ZW0uYWN0aXZlW2FyaWEtY3VycmVudD1cInBhZ2VcIl0gPiBzcGFuOm50aC1jaGlsZCgyKSIKICAgICAgICAgIF0sCiAgICAgICAgICAiZmFpbHVyZVN1bW1hcnkiOiAiRml4IGFueSBvZiB0aGUgZm9sbG93aW5nOlxuICBFbGVtZW50J3MgYmFja2dyb3VuZCBjb2xvciBjb3VsZCBub3QgYmUgZGV0ZXJtaW5lZCBiZWNhdXNlIGl0IGlzIG92ZXJsYXBwZWQgYnkgYW5vdGhlciBlbGVtZW50IgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImFueSI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJpZCI6ICJjb2xvci1jb250cmFzdCIsCiAgICAgICAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAgICAgICAiY29udHJhc3RSYXRpbyI6IDAsCiAgICAgICAgICAgICAgICAiZm9udFNpemUiOiAiNy41cHQgKDEwcHgpIiwKICAgICAgICAgICAgICAgICJmb250V2VpZ2h0IjogIm5vcm1hbCIsCiAgICAgICAgICAgICAgICAibWVzc2FnZUtleSI6ICJiZ092ZXJsYXAiLAogICAgICAgICAgICAgICAgImV4cGVjdGVkQ29udHJhc3RSYXRpbyI6ICI0LjU6MSIKICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICJyZWxhdGVkTm9kZXMiOiBbXSwKICAgICAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgICAgICJtZXNzYWdlIjogIkVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgICAgIH0KICAgICAgICAgIF0sCiAgICAgICAgICAiYWxsIjogW10sCiAgICAgICAgICAibm9uZSI6IFtdLAogICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICJodG1sIjogIjxzcGFuIGNsYXNzPVwibmF2LWNvdW50XCI+MjA8L3NwYW4+IiwKICAgICAgICAgICJ0YXJnZXQiOiBbCiAgICAgICAgICAgICIubmF2LWNvdW50IgogICAgICAgICAgXSwKICAgICAgICAgICJmYWlsdXJlU3VtbWFyeSI6ICJGaXggYW55IG9mIHRoZSBmb2xsb3dpbmc6XG4gIEVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiYW55IjogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgImlkIjogImNvbG9yLWNvbnRyYXN0IiwKICAgICAgICAgICAgICAiZGF0YSI6IHsKICAgICAgICAgICAgICAgICJjb250cmFzdFJhdGlvIjogMCwKICAgICAgICAgICAgICAgICJmb250U2l6ZSI6ICI5LjBwdCAoMTJweCkiLAogICAgICAgICAgICAgICAgImZvbnRXZWlnaHQiOiAibm9ybWFsIiwKICAgICAgICAgICAgICAgICJtZXNzYWdlS2V5IjogImJnT3ZlcmxhcCIsCiAgICAgICAgICAgICAgICAiZXhwZWN0ZWRDb250cmFzdFJhdGlvIjogIjQuNToxIgogICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgInJlbGF0ZWROb2RlcyI6IFtdLAogICAgICAgICAgICAgICJpbXBhY3QiOiAic2VyaW91cyIsCiAgICAgICAgICAgICAgIm1lc3NhZ2UiOiAiRWxlbWVudCdzIGJhY2tncm91bmQgY29sb3IgY291bGQgbm90IGJlIGRldGVybWluZWQgYmVjYXVzZSBpdCBpcyBvdmVybGFwcGVkIGJ5IGFub3RoZXIgZWxlbWVudCIKICAgICAgICAgICAgfQogICAgICAgICAgXSwKICAgICAgICAgICJhbGwiOiBbXSwKICAgICAgICAgICJub25lIjogW10sCiAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgImh0bWwiOiAiPHNwYW4+RmllbGQgZ3VpZGU8L3NwYW4+IiwKICAgICAgICAgICJ0YXJnZXQiOiBbCiAgICAgICAgICAgICJhW2hyZWYkPVwiIy9ndWlkZVwiXSA+IHNwYW4iCiAgICAgICAgICBdLAogICAgICAgICAgImZhaWx1cmVTdW1tYXJ5IjogIkZpeCBhbnkgb2YgdGhlIGZvbGxvd2luZzpcbiAgRWxlbWVudCdzIGJhY2tncm91bmQgY29sb3IgY291bGQgbm90IGJlIGRldGVybWluZWQgYmVjYXVzZSBpdCBpcyBvdmVybGFwcGVkIGJ5IGFub3RoZXIgZWxlbWVudCIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJhbnkiOiBbCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAiaWQiOiAiY29sb3ItY29udHJhc3QiLAogICAgICAgICAgICAgICJkYXRhIjogewogICAgICAgICAgICAgICAgImNvbnRyYXN0UmF0aW8iOiAwLAogICAgICAgICAgICAgICAgImZvbnRTaXplIjogIjYuOHB0ICg5cHgpIiwKICAgICAgICAgICAgICAgICJmb250V2VpZ2h0IjogIm5vcm1hbCIsCiAgICAgICAgICAgICAgICAibWVzc2FnZUtleSI6ICJiZ092ZXJsYXAiLAogICAgICAgICAgICAgICAgImV4cGVjdGVkQ29udHJhc3RSYXRpbyI6ICI0LjU6MSIKICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICJyZWxhdGVkTm9kZXMiOiBbXSwKICAgICAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgICAgICJtZXNzYWdlIjogIkVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgICAgIH0KICAgICAgICAgIF0sCiAgICAgICAgICAiYWxsIjogW10sCiAgICAgICAgICAibm9uZSI6IFtdLAogICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICJodG1sIjogIjxzcGFuIGNsYXNzPVwibmF2LWxhYmVsXCI+UFJPSkVDVDwvc3Bhbj4iLAogICAgICAgICAgInRhcmdldCI6IFsKICAgICAgICAgICAgIi5zaWRlYmFyLXByb2plY3QgPiAubmF2LWxhYmVsIgogICAgICAgICAgXSwKICAgICAgICAgICJmYWlsdXJlU3VtbWFyeSI6ICJGaXggYW55IG9mIHRoZSBmb2xsb3dpbmc6XG4gIEVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiYW55IjogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgImlkIjogImNvbG9yLWNvbnRyYXN0IiwKICAgICAgICAgICAgICAiZGF0YSI6IHsKICAgICAgICAgICAgICAgICJjb250cmFzdFJhdGlvIjogMCwKICAgICAgICAgICAgICAgICJmb250U2l6ZSI6ICI4LjNwdCAoMTFweCkiLAogICAgICAgICAgICAgICAgImZvbnRXZWlnaHQiOiAibm9ybWFsIiwKICAgICAgICAgICAgICAgICJtZXNzYWdlS2V5IjogImJnT3ZlcmxhcCIsCiAgICAgICAgICAgICAgICAiZXhwZWN0ZWRDb250cmFzdFJhdGlvIjogIjQuNToxIgogICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgInJlbGF0ZWROb2RlcyI6IFtdLAogICAgICAgICAgICAgICJpbXBhY3QiOiAic2VyaW91cyIsCiAgICAgICAgICAgICAgIm1lc3NhZ2UiOiAiRWxlbWVudCdzIGJhY2tncm91bmQgY29sb3IgY291bGQgbm90IGJlIGRldGVybWluZWQgYmVjYXVzZSBpdCBpcyBvdmVybGFwcGVkIGJ5IGFub3RoZXIgZWxlbWVudCIKICAgICAgICAgICAgfQogICAgICAgICAgXSwKICAgICAgICAgICJhbGwiOiBbXSwKICAgICAgICAgICJub25lIjogW10sCiAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgImh0bWwiOiAiPHNwYW4gY2xhc3M9XCJwcm9qZWN0LWl0ZW1cIj48c3BhbiBjbGFzcz1cInByb2plY3QtZG90XCI+PC9zcGFuPiBGb3VuZGF0aW9uIG1vZGVsczwvc3Bhbj4iLAogICAgICAgICAgInRhcmdldCI6IFsKICAgICAgICAgICAgIi5wcm9qZWN0LWl0ZW0iCiAgICAgICAgICBdLAogICAgICAgICAgImZhaWx1cmVTdW1tYXJ5IjogIkZpeCBhbnkgb2YgdGhlIGZvbGxvd2luZzpcbiAgRWxlbWVudCdzIGJhY2tncm91bmQgY29sb3IgY291bGQgbm90IGJlIGRldGVybWluZWQgYmVjYXVzZSBpdCBpcyBvdmVybGFwcGVkIGJ5IGFub3RoZXIgZWxlbWVudCIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJhbnkiOiBbCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAiaWQiOiAiY29sb3ItY29udHJhc3QiLAogICAgICAgICAgICAgICJkYXRhIjogewogICAgICAgICAgICAgICAgImNvbnRyYXN0UmF0aW8iOiAwLAogICAgICAgICAgICAgICAgImZvbnRTaXplIjogIjcuNXB0ICgxMHB4KSIsCiAgICAgICAgICAgICAgICAiZm9udFdlaWdodCI6ICJub3JtYWwiLAogICAgICAgICAgICAgICAgIm1lc3NhZ2VLZXkiOiAiYmdPdmVybGFwIiwKICAgICAgICAgICAgICAgICJleHBlY3RlZENvbnRyYXN0UmF0aW8iOiAiNC41OjEiCiAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAicmVsYXRlZE5vZGVzIjogW10sCiAgICAgICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICAgICAibWVzc2FnZSI6ICJFbGVtZW50J3MgYmFja2dyb3VuZCBjb2xvciBjb3VsZCBub3QgYmUgZGV0ZXJtaW5lZCBiZWNhdXNlIGl0IGlzIG92ZXJsYXBwZWQgYnkgYW5vdGhlciBlbGVtZW50IgogICAgICAgICAgICB9CiAgICAgICAgICBdLAogICAgICAgICAgImFsbCI6IFtdLAogICAgICAgICAgIm5vbmUiOiBbXSwKICAgICAgICAgICJpbXBhY3QiOiAic2VyaW91cyIsCiAgICAgICAgICAiaHRtbCI6ICI8c21hbGw+MjAgZXhwZXJpbWVudHMgwrcgMyBtZXRyaWNzPC9zbWFsbD4iLAogICAgICAgICAgInRhcmdldCI6IFsKICAgICAgICAgICAgIi5zaWRlYmFyLXByb2plY3QgPiBzbWFsbCIKICAgICAgICAgIF0sCiAgICAgICAgICAiZmFpbHVyZVN1bW1hcnkiOiAiRml4IGFueSBvZiB0aGUgZm9sbG93aW5nOlxuICBFbGVtZW50J3MgYmFja2dyb3VuZCBjb2xvciBjb3VsZCBub3QgYmUgZGV0ZXJtaW5lZCBiZWNhdXNlIGl0IGlzIG92ZXJsYXBwZWQgYnkgYW5vdGhlciBlbGVtZW50IgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImFueSI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJpZCI6ICJjb2xvci1jb250cmFzdCIsCiAgICAgICAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAgICAgICAiY29udHJhc3RSYXRpbyI6IDAsCiAgICAgICAgICAgICAgICAiZm9udFNpemUiOiAiNy41cHQgKDEwcHgpIiwKICAgICAgICAgICAgICAgICJmb250V2VpZ2h0IjogIm5vcm1hbCIsCiAgICAgICAgICAgICAgICAibWVzc2FnZUtleSI6ICJiZ092ZXJsYXAiLAogICAgICAgICAgICAgICAgImV4cGVjdGVkQ29udHJhc3RSYXRpbyI6ICI0LjU6MSIKICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICJyZWxhdGVkTm9kZXMiOiBbXSwKICAgICAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgICAgICJtZXNzYWdlIjogIkVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgICAgIH0KICAgICAgICAgIF0sCiAgICAgICAgICAiYWxsIjogW10sCiAgICAgICAgICAibm9uZSI6IFtdLAogICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICJodG1sIjogIjxzdHJvbmc+QSBsaXR0bGUgcm9vbSB0byBleHBlcmltZW50Ljwvc3Ryb25nPiIsCiAgICAgICAgICAidGFyZ2V0IjogWwogICAgICAgICAgICAiZGl2ID4gc3Ryb25nIgogICAgICAgICAgXSwKICAgICAgICAgICJmYWlsdXJlU3VtbWFyeSI6ICJGaXggYW55IG9mIHRoZSBmb2xsb3dpbmc6XG4gIEVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiYW55IjogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgImlkIjogImNvbG9yLWNvbnRyYXN0IiwKICAgICAgICAgICAgICAiZGF0YSI6IHsKICAgICAgICAgICAgICAgICJjb250cmFzdFJhdGlvIjogMCwKICAgICAgICAgICAgICAgICJmb250U2l6ZSI6ICI3LjVwdCAoMTBweCkiLAogICAgICAgICAgICAgICAgImZvbnRXZWlnaHQiOiAibm9ybWFsIiwKICAgICAgICAgICAgICAgICJtZXNzYWdlS2V5IjogImJnT3ZlcmxhcCIsCiAgICAgICAgICAgICAgICAiZXhwZWN0ZWRDb250cmFzdFJhdGlvIjogIjQuNToxIgogICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgInJlbGF0ZWROb2RlcyI6IFtdLAogICAgICAgICAgICAgICJpbXBhY3QiOiAic2VyaW91cyIsCiAgICAgICAgICAgICAgIm1lc3NhZ2UiOiAiRWxlbWVudCdzIGJhY2tncm91bmQgY29sb3IgY291bGQgbm90IGJlIGRldGVybWluZWQgYmVjYXVzZSBpdCBpcyBvdmVybGFwcGVkIGJ5IGFub3RoZXIgZWxlbWVudCIKICAgICAgICAgICAgfQogICAgICAgICAgXSwKICAgICAgICAgICJhbGwiOiBbXSwKICAgICAgICAgICJub25lIjogW10sCiAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgImh0bWwiOiAiPHA+RXhwbG9yZSBzeW50aGV0aWMgcnVucy4gWW91ciBwcm9kdWN0aW9uIHRyYWluaW5nIGlzIHVudG91Y2hlZC48L3A+IiwKICAgICAgICAgICJ0YXJnZXQiOiBbCiAgICAgICAgICAgICIuZGVtby1ub3RlID4gZGl2ID4gcCIKICAgICAgICAgIF0sCiAgICAgICAgICAiZmFpbHVyZVN1bW1hcnkiOiAiRml4IGFueSBvZiB0aGUgZm9sbG93aW5nOlxuICBFbGVtZW50J3MgYmFja2dyb3VuZCBjb2xvciBjb3VsZCBub3QgYmUgZGV0ZXJtaW5lZCBiZWNhdXNlIGl0IGlzIG92ZXJsYXBwZWQgYnkgYW5vdGhlciBlbGVtZW50IgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImFueSI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJpZCI6ICJjb2xvci1jb250cmFzdCIsCiAgICAgICAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAgICAgICAiY29udHJhc3RSYXRpbyI6IDAsCiAgICAgICAgICAgICAgICAiZm9udFNpemUiOiAiNy41cHQgKDEwcHgpIiwKICAgICAgICAgICAgICAgICJmb250V2VpZ2h0IjogIm5vcm1hbCIsCiAgICAgICAgICAgICAgICAibWVzc2FnZUtleSI6ICJiZ092ZXJsYXAiLAogICAgICAgICAgICAgICAgImV4cGVjdGVkQ29udHJhc3RSYXRpbyI6ICI0LjU6MSIKICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICJyZWxhdGVkTm9kZXMiOiBbXSwKICAgICAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgICAgICJtZXNzYWdlIjogIkVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgICAgIH0KICAgICAgICAgIF0sCiAgICAgICAgICAiYWxsIjogW10sCiAgICAgICAgICAibm9uZSI6IFtdLAogICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICJodG1sIjogIjxzcGFuIGNsYXNzPVwicHJvZmlsZS1hdmF0YXJcIj5TQzwvc3Bhbj4iLAogICAgICAgICAgInRhcmdldCI6IFsKICAgICAgICAgICAgIi5wcm9maWxlLWF2YXRhciIKICAgICAgICAgIF0sCiAgICAgICAgICAiZmFpbHVyZVN1bW1hcnkiOiAiRml4IGFueSBvZiB0aGUgZm9sbG93aW5nOlxuICBFbGVtZW50J3MgYmFja2dyb3VuZCBjb2xvciBjb3VsZCBub3QgYmUgZGV0ZXJtaW5lZCBiZWNhdXNlIGl0IGlzIG92ZXJsYXBwZWQgYnkgYW5vdGhlciBlbGVtZW50IgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImFueSI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJpZCI6ICJjb2xvci1jb250cmFzdCIsCiAgICAgICAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAgICAgICAiY29udHJhc3RSYXRpbyI6IDAsCiAgICAgICAgICAgICAgICAiZm9udFNpemUiOiAiOC4zcHQgKDExcHgpIiwKICAgICAgICAgICAgICAgICJmb250V2VpZ2h0IjogIm5vcm1hbCIsCiAgICAgICAgICAgICAgICAibWVzc2FnZUtleSI6ICJiZ092ZXJsYXAiLAogICAgICAgICAgICAgICAgImV4cGVjdGVkQ29udHJhc3RSYXRpbyI6ICI0LjU6MSIKICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICJyZWxhdGVkTm9kZXMiOiBbXSwKICAgICAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgICAgICJtZXNzYWdlIjogIkVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgICAgIH0KICAgICAgICAgIF0sCiAgICAgICAgICAiYWxsIjogW10sCiAgICAgICAgICAibm9uZSI6IFtdLAogICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICJodG1sIjogIjxzdHJvbmc+U291cCBjb2xsZWN0aXZlPC9zdHJvbmc+IiwKICAgICAgICAgICJ0YXJnZXQiOiBbCiAgICAgICAgICAgICIucHJvZmlsZSA+IHNwYW46bnRoLWNoaWxkKDIpID4gc3Ryb25nIgogICAgICAgICAgXSwKICAgICAgICAgICJmYWlsdXJlU3VtbWFyeSI6ICJGaXggYW55IG9mIHRoZSBmb2xsb3dpbmc6XG4gIEVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiYW55IjogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgImlkIjogImNvbG9yLWNvbnRyYXN0IiwKICAgICAgICAgICAgICAiZGF0YSI6IHsKICAgICAgICAgICAgICAgICJjb250cmFzdFJhdGlvIjogMCwKICAgICAgICAgICAgICAgICJmb250U2l6ZSI6ICI2LjhwdCAoOXB4KSIsCiAgICAgICAgICAgICAgICAiZm9udFdlaWdodCI6ICJub3JtYWwiLAogICAgICAgICAgICAgICAgIm1lc3NhZ2VLZXkiOiAiYmdPdmVybGFwIiwKICAgICAgICAgICAgICAgICJleHBlY3RlZENvbnRyYXN0UmF0aW8iOiAiNC41OjEiCiAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAicmVsYXRlZE5vZGVzIjogW10sCiAgICAgICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICAgICAibWVzc2FnZSI6ICJFbGVtZW50J3MgYmFja2dyb3VuZCBjb2xvciBjb3VsZCBub3QgYmUgZGV0ZXJtaW5lZCBiZWNhdXNlIGl0IGlzIG92ZXJsYXBwZWQgYnkgYW5vdGhlciBlbGVtZW50IgogICAgICAgICAgICB9CiAgICAgICAgICBdLAogICAgICAgICAgImFsbCI6IFtdLAogICAgICAgICAgIm5vbmUiOiBbXSwKICAgICAgICAgICJpbXBhY3QiOiAic2VyaW91cyIsCiAgICAgICAgICAiaHRtbCI6ICI8c21hbGw+UmVzZWFyY2ggd29ya3NwYWNlPC9zbWFsbD4iLAogICAgICAgICAgInRhcmdldCI6IFsKICAgICAgICAgICAgIi5wcm9maWxlID4gc3BhbjpudGgtY2hpbGQoMikgPiBzbWFsbCIKICAgICAgICAgIF0sCiAgICAgICAgICAiZmFpbHVyZVN1bW1hcnkiOiAiRml4IGFueSBvZiB0aGUgZm9sbG93aW5nOlxuICBFbGVtZW50J3MgYmFja2dyb3VuZCBjb2xvciBjb3VsZCBub3QgYmUgZGV0ZXJtaW5lZCBiZWNhdXNlIGl0IGlzIG92ZXJsYXBwZWQgYnkgYW5vdGhlciBlbGVtZW50IgogICAgICAgIH0KICAgICAgXQogICAgfQogIF0sCiAgImxpbWl0cyI6IFsKICAgICJBdXRvbWF0ZWQgV0NBRyBydWxlIGNoZWNrcyBvbiB0aGlzIGNhcHR1cmVkIGJyb3dzZXIgc3RhdGUgb25seTsgbm90IGFuIGFjY2Vzc2liaWxpdHkgY29uZm9ybWFuY2UgY2xhaW0uIiwKICAgICJJbmNvbXBsZXRlIGNoZWNrcyByZXF1aXJlIG1hbnVhbCBhc3Nlc3NtZW50IGFuZCBhcmUgbm90IHNpbGVudGx5IHRyZWF0ZWQgYXMgcGFzc2VzLiIsCiAgICAiTm8gcGh5c2ljYWwtZGV2aWNlIGVyZ29ub21pY3MsIGFzc2lzdGl2ZS10ZWNobm9sb2d5IHVzYWJpbGl0eSBvciBmdWxsIGFwcGxpY2F0aW9uLXN0YXRlIGNvdmVyYWdlIGlzIGVzdGFibGlzaGVkIGJ5IHRoaXMgYXJ0aWZhY3QuIgogIF0KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 858,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:54.529Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "axe-mobile-navigation",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXB0dXJlZEF0IjogIjIwMjYtMTEtMDlUMjE6MTM6NTUuMzQxWiIsCiAgInByb2plY3QiOiAid2Via2l0IiwKICAiYnJvd3NlclZlcnNpb24iOiAiMjcuMiIsCiAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIy8iLAogICJ2aWV3cG9ydCI6IHsKICAgICJ3aWR0aCI6IDM5MCwKICAgICJoZWlnaHQiOiA4NDQKICB9LAogICJzdGF0ZSI6ICJtb2JpbGUtbmF2aWdhdGlvbiIsCiAgInRhZ3MiOiBbCiAgICAid2NhZzJhIiwKICAgICJ3Y2FnMmFhIiwKICAgICJ3Y2FnMjFhIiwKICAgICJ3Y2FnMjFhYSIKICBdLAogICJheGVWZXJzaW9uIjogIjQuMTQuMCIsCiAgImNvdW50cyI6IHsKICAgICJwYXNzZXMiOiAxNCwKICAgICJpbmFwcGxpY2FibGUiOiA0OSwKICAgICJ2aW9sYXRpb25zIjogMCwKICAgICJpbmNvbXBsZXRlIjogMQogIH0sCiAgInZpb2xhdGlvbnMiOiBbXSwKICAiaW5jb21wbGV0ZSI6IFsKICAgIHsKICAgICAgImlkIjogImNvbG9yLWNvbnRyYXN0IiwKICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgInRhZ3MiOiBbCiAgICAgICAgImNhdC5jb2xvciIsCiAgICAgICAgIndjYWcyYWEiLAogICAgICAgICJ3Y2FnMTQzIiwKICAgICAgICAiVFR2NSIsCiAgICAgICAgIlRUMTMuYyIsCiAgICAgICAgIkVOLTMwMS01NDkiLAogICAgICAgICJFTi05LjEuNC4zIiwKICAgICAgICAiQUNUIiwKICAgICAgICAiUkdBQXY0IiwKICAgICAgICAiUkdBQS0zLjIuMSIKICAgICAgXSwKICAgICAgImRlc2NyaXB0aW9uIjogIkVuc3VyZSB0aGUgY29udHJhc3QgYmV0d2VlbiBmb3JlZ3JvdW5kIGFuZCBiYWNrZ3JvdW5kIGNvbG9ycyBtZWV0cyBXQ0FHIDIgQUEgbWluaW11bSBjb250cmFzdCByYXRpbyB0aHJlc2hvbGRzIiwKICAgICAgImhlbHAiOiAiRWxlbWVudHMgbXVzdCBtZWV0IG1pbmltdW0gY29sb3IgY29udHJhc3QgcmF0aW8gdGhyZXNob2xkcyIsCiAgICAgICJoZWxwVXJsIjogImh0dHBzOi8vZGVxdWV1bml2ZXJzaXR5LmNvbS9ydWxlcy9heGUvNC4xNC9jb2xvci1jb250cmFzdD9hcHBsaWNhdGlvbj1wbGF5d3JpZ2h0IiwKICAgICAgIm5vZGVzIjogWwogICAgICAgIHsKICAgICAgICAgICJhbnkiOiBbCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAiaWQiOiAiY29sb3ItY29udHJhc3QiLAogICAgICAgICAgICAgICJkYXRhIjogewogICAgICAgICAgICAgICAgImNvbnRyYXN0UmF0aW8iOiAwLAogICAgICAgICAgICAgICAgImZvbnRTaXplIjogIjkuMHB0ICgxMnB4KSIsCiAgICAgICAgICAgICAgICAiZm9udFdlaWdodCI6ICJub3JtYWwiLAogICAgICAgICAgICAgICAgIm1lc3NhZ2VLZXkiOiAiYmdPdmVybGFwIiwKICAgICAgICAgICAgICAgICJleHBlY3RlZENvbnRyYXN0UmF0aW8iOiAiNC41OjEiCiAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAicmVsYXRlZE5vZGVzIjogW10sCiAgICAgICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICAgICAibWVzc2FnZSI6ICJFbGVtZW50J3MgYmFja2dyb3VuZCBjb2xvciBjb3VsZCBub3QgYmUgZGV0ZXJtaW5lZCBiZWNhdXNlIGl0IGlzIG92ZXJsYXBwZWQgYnkgYW5vdGhlciBlbGVtZW50IgogICAgICAgICAgICB9CiAgICAgICAgICBdLAogICAgICAgICAgImFsbCI6IFtdLAogICAgICAgICAgIm5vbmUiOiBbXSwKICAgICAgICAgICJpbXBhY3QiOiAic2VyaW91cyIsCiAgICAgICAgICAiaHRtbCI6ICI8c3Bhbj5UcmFpbmluZyBydW5zPC9zcGFuPiIsCiAgICAgICAgICAidGFyZ2V0IjogWwogICAgICAgICAgICAiLm5hdi1pdGVtLmFjdGl2ZVthcmlhLWN1cnJlbnQ9XCJwYWdlXCJdID4gc3BhbjpudGgtY2hpbGQoMikiCiAgICAgICAgICBdLAogICAgICAgICAgImZhaWx1cmVTdW1tYXJ5IjogIkZpeCBhbnkgb2YgdGhlIGZvbGxvd2luZzpcbiAgRWxlbWVudCdzIGJhY2tncm91bmQgY29sb3IgY291bGQgbm90IGJlIGRldGVybWluZWQgYmVjYXVzZSBpdCBpcyBvdmVybGFwcGVkIGJ5IGFub3RoZXIgZWxlbWVudCIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJhbnkiOiBbCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAiaWQiOiAiY29sb3ItY29udHJhc3QiLAogICAgICAgICAgICAgICJkYXRhIjogewogICAgICAgICAgICAgICAgImNvbnRyYXN0UmF0aW8iOiAwLAogICAgICAgICAgICAgICAgImZvbnRTaXplIjogIjcuNXB0ICgxMHB4KSIsCiAgICAgICAgICAgICAgICAiZm9udFdlaWdodCI6ICJub3JtYWwiLAogICAgICAgICAgICAgICAgIm1lc3NhZ2VLZXkiOiAiYmdPdmVybGFwIiwKICAgICAgICAgICAgICAgICJleHBlY3RlZENvbnRyYXN0UmF0aW8iOiAiNC41OjEiCiAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAicmVsYXRlZE5vZGVzIjogW10sCiAgICAgICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICAgICAibWVzc2FnZSI6ICJFbGVtZW50J3MgYmFja2dyb3VuZCBjb2xvciBjb3VsZCBub3QgYmUgZGV0ZXJtaW5lZCBiZWNhdXNlIGl0IGlzIG92ZXJsYXBwZWQgYnkgYW5vdGhlciBlbGVtZW50IgogICAgICAgICAgICB9CiAgICAgICAgICBdLAogICAgICAgICAgImFsbCI6IFtdLAogICAgICAgICAgIm5vbmUiOiBbXSwKICAgICAgICAgICJpbXBhY3QiOiAic2VyaW91cyIsCiAgICAgICAgICAiaHRtbCI6ICI8c3BhbiBjbGFzcz1cIm5hdi1jb3VudFwiPjIwPC9zcGFuPiIsCiAgICAgICAgICAidGFyZ2V0IjogWwogICAgICAgICAgICAiLm5hdi1jb3VudCIKICAgICAgICAgIF0sCiAgICAgICAgICAiZmFpbHVyZVN1bW1hcnkiOiAiRml4IGFueSBvZiB0aGUgZm9sbG93aW5nOlxuICBFbGVtZW50J3MgYmFja2dyb3VuZCBjb2xvciBjb3VsZCBub3QgYmUgZGV0ZXJtaW5lZCBiZWNhdXNlIGl0IGlzIG92ZXJsYXBwZWQgYnkgYW5vdGhlciBlbGVtZW50IgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImFueSI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJpZCI6ICJjb2xvci1jb250cmFzdCIsCiAgICAgICAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAgICAgICAiY29udHJhc3RSYXRpbyI6IDAsCiAgICAgICAgICAgICAgICAiZm9udFNpemUiOiAiOS4wcHQgKDEycHgpIiwKICAgICAgICAgICAgICAgICJmb250V2VpZ2h0IjogIm5vcm1hbCIsCiAgICAgICAgICAgICAgICAibWVzc2FnZUtleSI6ICJiZ092ZXJsYXAiLAogICAgICAgICAgICAgICAgImV4cGVjdGVkQ29udHJhc3RSYXRpbyI6ICI0LjU6MSIKICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICJyZWxhdGVkTm9kZXMiOiBbXSwKICAgICAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgICAgICJtZXNzYWdlIjogIkVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgICAgIH0KICAgICAgICAgIF0sCiAgICAgICAgICAiYWxsIjogW10sCiAgICAgICAgICAibm9uZSI6IFtdLAogICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICJodG1sIjogIjxzcGFuPkZpZWxkIGd1aWRlPC9zcGFuPiIsCiAgICAgICAgICAidGFyZ2V0IjogWwogICAgICAgICAgICAiYVtocmVmJD1cIiMvZ3VpZGVcIl0gPiBzcGFuIgogICAgICAgICAgXSwKICAgICAgICAgICJmYWlsdXJlU3VtbWFyeSI6ICJGaXggYW55IG9mIHRoZSBmb2xsb3dpbmc6XG4gIEVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiYW55IjogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgImlkIjogImNvbG9yLWNvbnRyYXN0IiwKICAgICAgICAgICAgICAiZGF0YSI6IHsKICAgICAgICAgICAgICAgICJjb250cmFzdFJhdGlvIjogMCwKICAgICAgICAgICAgICAgICJmb250U2l6ZSI6ICI4LjNwdCAoMTFweCkiLAogICAgICAgICAgICAgICAgImZvbnRXZWlnaHQiOiAibm9ybWFsIiwKICAgICAgICAgICAgICAgICJtZXNzYWdlS2V5IjogImJnT3ZlcmxhcCIsCiAgICAgICAgICAgICAgICAiZXhwZWN0ZWRDb250cmFzdFJhdGlvIjogIjQuNToxIgogICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgInJlbGF0ZWROb2RlcyI6IFtdLAogICAgICAgICAgICAgICJpbXBhY3QiOiAic2VyaW91cyIsCiAgICAgICAgICAgICAgIm1lc3NhZ2UiOiAiRWxlbWVudCdzIGJhY2tncm91bmQgY29sb3IgY291bGQgbm90IGJlIGRldGVybWluZWQgYmVjYXVzZSBpdCBpcyBvdmVybGFwcGVkIGJ5IGFub3RoZXIgZWxlbWVudCIKICAgICAgICAgICAgfQogICAgICAgICAgXSwKICAgICAgICAgICJhbGwiOiBbXSwKICAgICAgICAgICJub25lIjogW10sCiAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgImh0bWwiOiAiPHNwYW4gY2xhc3M9XCJwcm9qZWN0LWl0ZW1cIj48c3BhbiBjbGFzcz1cInByb2plY3QtZG90XCI+PC9zcGFuPiBGb3VuZGF0aW9uIG1vZGVsczwvc3Bhbj4iLAogICAgICAgICAgInRhcmdldCI6IFsKICAgICAgICAgICAgIi5wcm9qZWN0LWl0ZW0iCiAgICAgICAgICBdLAogICAgICAgICAgImZhaWx1cmVTdW1tYXJ5IjogIkZpeCBhbnkgb2YgdGhlIGZvbGxvd2luZzpcbiAgRWxlbWVudCdzIGJhY2tncm91bmQgY29sb3IgY291bGQgbm90IGJlIGRldGVybWluZWQgYmVjYXVzZSBpdCBpcyBvdmVybGFwcGVkIGJ5IGFub3RoZXIgZWxlbWVudCIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJhbnkiOiBbCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAiaWQiOiAiY29sb3ItY29udHJhc3QiLAogICAgICAgICAgICAgICJkYXRhIjogewogICAgICAgICAgICAgICAgImNvbnRyYXN0UmF0aW8iOiAwLAogICAgICAgICAgICAgICAgImZvbnRTaXplIjogIjcuNXB0ICgxMHB4KSIsCiAgICAgICAgICAgICAgICAiZm9udFdlaWdodCI6ICJub3JtYWwiLAogICAgICAgICAgICAgICAgIm1lc3NhZ2VLZXkiOiAiYmdPdmVybGFwIiwKICAgICAgICAgICAgICAgICJleHBlY3RlZENvbnRyYXN0UmF0aW8iOiAiNC41OjEiCiAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAicmVsYXRlZE5vZGVzIjogW10sCiAgICAgICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICAgICAibWVzc2FnZSI6ICJFbGVtZW50J3MgYmFja2dyb3VuZCBjb2xvciBjb3VsZCBub3QgYmUgZGV0ZXJtaW5lZCBiZWNhdXNlIGl0IGlzIG92ZXJsYXBwZWQgYnkgYW5vdGhlciBlbGVtZW50IgogICAgICAgICAgICB9CiAgICAgICAgICBdLAogICAgICAgICAgImFsbCI6IFtdLAogICAgICAgICAgIm5vbmUiOiBbXSwKICAgICAgICAgICJpbXBhY3QiOiAic2VyaW91cyIsCiAgICAgICAgICAiaHRtbCI6ICI8c21hbGw+MjAgZXhwZXJpbWVudHMgwrcgMyBtZXRyaWNzPC9zbWFsbD4iLAogICAgICAgICAgInRhcmdldCI6IFsKICAgICAgICAgICAgIi5zaWRlYmFyLXByb2plY3QgPiBzbWFsbCIKICAgICAgICAgIF0sCiAgICAgICAgICAiZmFpbHVyZVN1bW1hcnkiOiAiRml4IGFueSBvZiB0aGUgZm9sbG93aW5nOlxuICBFbGVtZW50J3MgYmFja2dyb3VuZCBjb2xvciBjb3VsZCBub3QgYmUgZGV0ZXJtaW5lZCBiZWNhdXNlIGl0IGlzIG92ZXJsYXBwZWQgYnkgYW5vdGhlciBlbGVtZW50IgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImFueSI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJpZCI6ICJjb2xvci1jb250cmFzdCIsCiAgICAgICAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAgICAgICAiY29udHJhc3RSYXRpbyI6IDAsCiAgICAgICAgICAgICAgICAiZm9udFNpemUiOiAiNy41cHQgKDEwcHgpIiwKICAgICAgICAgICAgICAgICJmb250V2VpZ2h0IjogIm5vcm1hbCIsCiAgICAgICAgICAgICAgICAibWVzc2FnZUtleSI6ICJiZ092ZXJsYXAiLAogICAgICAgICAgICAgICAgImV4cGVjdGVkQ29udHJhc3RSYXRpbyI6ICI0LjU6MSIKICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICJyZWxhdGVkTm9kZXMiOiBbXSwKICAgICAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgICAgICJtZXNzYWdlIjogIkVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgICAgIH0KICAgICAgICAgIF0sCiAgICAgICAgICAiYWxsIjogW10sCiAgICAgICAgICAibm9uZSI6IFtdLAogICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICJodG1sIjogIjxzdHJvbmc+QSBsaXR0bGUgcm9vbSB0byBleHBlcmltZW50Ljwvc3Ryb25nPiIsCiAgICAgICAgICAidGFyZ2V0IjogWwogICAgICAgICAgICAiZGl2ID4gc3Ryb25nIgogICAgICAgICAgXSwKICAgICAgICAgICJmYWlsdXJlU3VtbWFyeSI6ICJGaXggYW55IG9mIHRoZSBmb2xsb3dpbmc6XG4gIEVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiYW55IjogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgImlkIjogImNvbG9yLWNvbnRyYXN0IiwKICAgICAgICAgICAgICAiZGF0YSI6IHsKICAgICAgICAgICAgICAgICJjb250cmFzdFJhdGlvIjogMCwKICAgICAgICAgICAgICAgICJmb250U2l6ZSI6ICI3LjVwdCAoMTBweCkiLAogICAgICAgICAgICAgICAgImZvbnRXZWlnaHQiOiAibm9ybWFsIiwKICAgICAgICAgICAgICAgICJtZXNzYWdlS2V5IjogImJnT3ZlcmxhcCIsCiAgICAgICAgICAgICAgICAiZXhwZWN0ZWRDb250cmFzdFJhdGlvIjogIjQuNToxIgogICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgInJlbGF0ZWROb2RlcyI6IFtdLAogICAgICAgICAgICAgICJpbXBhY3QiOiAic2VyaW91cyIsCiAgICAgICAgICAgICAgIm1lc3NhZ2UiOiAiRWxlbWVudCdzIGJhY2tncm91bmQgY29sb3IgY291bGQgbm90IGJlIGRldGVybWluZWQgYmVjYXVzZSBpdCBpcyBvdmVybGFwcGVkIGJ5IGFub3RoZXIgZWxlbWVudCIKICAgICAgICAgICAgfQogICAgICAgICAgXSwKICAgICAgICAgICJhbGwiOiBbXSwKICAgICAgICAgICJub25lIjogW10sCiAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgImh0bWwiOiAiPHA+RXhwbG9yZSBzeW50aGV0aWMgcnVucy4gWW91ciBwcm9kdWN0aW9uIHRyYWluaW5nIGlzIHVudG91Y2hlZC48L3A+IiwKICAgICAgICAgICJ0YXJnZXQiOiBbCiAgICAgICAgICAgICIuZGVtby1ub3RlID4gZGl2ID4gcCIKICAgICAgICAgIF0sCiAgICAgICAgICAiZmFpbHVyZVN1bW1hcnkiOiAiRml4IGFueSBvZiB0aGUgZm9sbG93aW5nOlxuICBFbGVtZW50J3MgYmFja2dyb3VuZCBjb2xvciBjb3VsZCBub3QgYmUgZGV0ZXJtaW5lZCBiZWNhdXNlIGl0IGlzIG92ZXJsYXBwZWQgYnkgYW5vdGhlciBlbGVtZW50IgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImFueSI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJpZCI6ICJjb2xvci1jb250cmFzdCIsCiAgICAgICAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAgICAgICAiY29udHJhc3RSYXRpbyI6IDAsCiAgICAgICAgICAgICAgICAiZm9udFNpemUiOiAiNy41cHQgKDEwcHgpIiwKICAgICAgICAgICAgICAgICJmb250V2VpZ2h0IjogIm5vcm1hbCIsCiAgICAgICAgICAgICAgICAibWVzc2FnZUtleSI6ICJiZ092ZXJsYXAiLAogICAgICAgICAgICAgICAgImV4cGVjdGVkQ29udHJhc3RSYXRpbyI6ICI0LjU6MSIKICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICJyZWxhdGVkTm9kZXMiOiBbXSwKICAgICAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgICAgICJtZXNzYWdlIjogIkVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgICAgIH0KICAgICAgICAgIF0sCiAgICAgICAgICAiYWxsIjogW10sCiAgICAgICAgICAibm9uZSI6IFtdLAogICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICJodG1sIjogIjxzcGFuIGNsYXNzPVwicHJvZmlsZS1hdmF0YXJcIj5TQzwvc3Bhbj4iLAogICAgICAgICAgInRhcmdldCI6IFsKICAgICAgICAgICAgIi5wcm9maWxlLWF2YXRhciIKICAgICAgICAgIF0sCiAgICAgICAgICAiZmFpbHVyZVN1bW1hcnkiOiAiRml4IGFueSBvZiB0aGUgZm9sbG93aW5nOlxuICBFbGVtZW50J3MgYmFja2dyb3VuZCBjb2xvciBjb3VsZCBub3QgYmUgZGV0ZXJtaW5lZCBiZWNhdXNlIGl0IGlzIG92ZXJsYXBwZWQgYnkgYW5vdGhlciBlbGVtZW50IgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImFueSI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJpZCI6ICJjb2xvci1jb250cmFzdCIsCiAgICAgICAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAgICAgICAiY29udHJhc3RSYXRpbyI6IDAsCiAgICAgICAgICAgICAgICAiZm9udFNpemUiOiAiOC4zcHQgKDExcHgpIiwKICAgICAgICAgICAgICAgICJmb250V2VpZ2h0IjogIm5vcm1hbCIsCiAgICAgICAgICAgICAgICAibWVzc2FnZUtleSI6ICJiZ092ZXJsYXAiLAogICAgICAgICAgICAgICAgImV4cGVjdGVkQ29udHJhc3RSYXRpbyI6ICI0LjU6MSIKICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICJyZWxhdGVkTm9kZXMiOiBbXSwKICAgICAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgICAgICJtZXNzYWdlIjogIkVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgICAgIH0KICAgICAgICAgIF0sCiAgICAgICAgICAiYWxsIjogW10sCiAgICAgICAgICAibm9uZSI6IFtdLAogICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICJodG1sIjogIjxzdHJvbmc+U291cCBjb2xsZWN0aXZlPC9zdHJvbmc+IiwKICAgICAgICAgICJ0YXJnZXQiOiBbCiAgICAgICAgICAgICIucHJvZmlsZSA+IHNwYW46bnRoLWNoaWxkKDIpID4gc3Ryb25nIgogICAgICAgICAgXSwKICAgICAgICAgICJmYWlsdXJlU3VtbWFyeSI6ICJGaXggYW55IG9mIHRoZSBmb2xsb3dpbmc6XG4gIEVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiYW55IjogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgImlkIjogImNvbG9yLWNvbnRyYXN0IiwKICAgICAgICAgICAgICAiZGF0YSI6IHsKICAgICAgICAgICAgICAgICJjb250cmFzdFJhdGlvIjogMCwKICAgICAgICAgICAgICAgICJmb250U2l6ZSI6ICI2LjhwdCAoOXB4KSIsCiAgICAgICAgICAgICAgICAiZm9udFdlaWdodCI6ICJub3JtYWwiLAogICAgICAgICAgICAgICAgIm1lc3NhZ2VLZXkiOiAiYmdPdmVybGFwIiwKICAgICAgICAgICAgICAgICJleHBlY3RlZENvbnRyYXN0UmF0aW8iOiAiNC41OjEiCiAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAicmVsYXRlZE5vZGVzIjogW10sCiAgICAgICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICAgICAibWVzc2FnZSI6ICJFbGVtZW50J3MgYmFja2dyb3VuZCBjb2xvciBjb3VsZCBub3QgYmUgZGV0ZXJtaW5lZCBiZWNhdXNlIGl0IGlzIG92ZXJsYXBwZWQgYnkgYW5vdGhlciBlbGVtZW50IgogICAgICAgICAgICB9CiAgICAgICAgICBdLAogICAgICAgICAgImFsbCI6IFtdLAogICAgICAgICAgIm5vbmUiOiBbXSwKICAgICAgICAgICJpbXBhY3QiOiAic2VyaW91cyIsCiAgICAgICAgICAiaHRtbCI6ICI8c21hbGw+UmVzZWFyY2ggd29ya3NwYWNlPC9zbWFsbD4iLAogICAgICAgICAgInRhcmdldCI6IFsKICAgICAgICAgICAgIi5wcm9maWxlID4gc3BhbjpudGgtY2hpbGQoMikgPiBzbWFsbCIKICAgICAgICAgIF0sCiAgICAgICAgICAiZmFpbHVyZVN1bW1hcnkiOiAiRml4IGFueSBvZiB0aGUgZm9sbG93aW5nOlxuICBFbGVtZW50J3MgYmFja2dyb3VuZCBjb2xvciBjb3VsZCBub3QgYmUgZGV0ZXJtaW5lZCBiZWNhdXNlIGl0IGlzIG92ZXJsYXBwZWQgYnkgYW5vdGhlciBlbGVtZW50IgogICAgICAgIH0KICAgICAgXQogICAgfQogIF0sCiAgImxpbWl0cyI6IFsKICAgICJBdXRvbWF0ZWQgV0NBRyBydWxlIGNoZWNrcyBvbiB0aGlzIGNhcHR1cmVkIGJyb3dzZXIgc3RhdGUgb25seTsgbm90IGFuIGFjY2Vzc2liaWxpdHkgY29uZm9ybWFuY2UgY2xhaW0uIiwKICAgICJJbmNvbXBsZXRlIGNoZWNrcyByZXF1aXJlIG1hbnVhbCBhc3Nlc3NtZW50IGFuZCBhcmUgbm90IHNpbGVudGx5IHRyZWF0ZWQgYXMgcGFzc2VzLiIsCiAgICAiTm8gcGh5c2ljYWwtZGV2aWNlIGVyZ29ub21pY3MsIGFzc2lzdGl2ZS10ZWNobm9sb2d5IHVzYWJpbGl0eSBvciBmdWxsIGFwcGxpY2F0aW9uLXN0YXRlIGNvdmVyYWdlIGlzIGVzdGFibGlzaGVkIGJ5IHRoaXMgYXJ0aWZhY3QuIgogIF0KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ddd864604af8a6a0198f-de40120db162421f004f",
+          "file": "accessibility.spec.ts",
+          "line": 87,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "adversarial.spec.ts",
+      "file": "adversarial.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "actual React route keeps old-run data out while real worker replies arrive in reverse selection order",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 971,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:28.312Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 736,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:41.499Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 831,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:54.609Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-a705fc0428439aba07b0",
+          "file": "adversarial.spec.ts",
+          "line": 118,
+          "column": 1
+        },
+        {
+          "title": "superseded same-run range cannot overwrite a newer zoom when its genuine response arrives late",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 600,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:28.997Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 622,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:41.698Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 683,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:55.188Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-8c57e44f517de85d9eda",
+          "file": "adversarial.spec.ts",
+          "line": 152,
+          "column": 1
+        },
+        {
+          "title": "selected-range loading never presents full-run loss as the selected latest value",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 627,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:29.036Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 695,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:41.842Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 640,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:55.409Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-73da390f45d1d45c7dad",
+          "file": "adversarial.spec.ts",
+          "line": 179,
+          "column": 1
+        },
+        {
+          "title": "a failed selected range leaves its summary unavailable instead of substituting a full-run statistic",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 446,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:29.296Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 407,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:42.241Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 405,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:55.447Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-89094c0c3932e00b2b3f",
+          "file": "adversarial.spec.ts",
+          "line": 213,
+          "column": 1
+        },
+        {
+          "title": "malformed worker identity fails closed and a genuine retry recovers",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 720,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:29.603Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 747,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:42.326Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 622,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:55.857Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-8d30875098706d9be5b0",
+          "file": "adversarial.spec.ts",
+          "line": 231,
+          "column": 3
+        },
+        {
+          "title": "malformed worker columns fails closed and a genuine retry recovers",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 661,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:29.671Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 645,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:42.546Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 613,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:55.878Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-f5eebbb34ecb24d993f6",
+          "file": "adversarial.spec.ts",
+          "line": 231,
+          "column": 3
+        },
+        {
+          "title": "malformed worker stale fails closed and a genuine retry recovers",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 633,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:29.752Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 604,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:42.655Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 640,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:56.056Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-8a6247953879dbf7746d",
+          "file": "adversarial.spec.ts",
+          "line": 231,
+          "column": 3
+        },
+        {
+          "title": "dragging an auxiliary chart sets the same numeric viewport on all metrics and double-click resets all",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1097,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:30.336Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 965,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:43.078Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 868,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:56.487Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-20191c62bb97b3e00061",
+          "file": "adversarial.spec.ts",
+          "line": 252,
+          "column": 1
+        },
+        {
+          "title": "chart keyboard zoom and roving tabs remain usable without a pointer",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 623,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:30.341Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 617,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:43.197Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 576,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:56.497Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-7a30175d79121eebd767",
+          "file": "adversarial.spec.ts",
+          "line": 295,
+          "column": 1
+        },
+        {
+          "title": "search dialog traps focus in both directions and returns focus to the trigger on Escape",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 554,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:30.396Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 519,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:43.264Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 517,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:56.709Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-40bdbaff46f223102de0",
+          "file": "adversarial.spec.ts",
+          "line": 326,
+          "column": 1
+        },
+        {
+          "title": "bookmark survives reload and stays isolated by run, then can be removed",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 789,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:30.958Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 780,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:43.789Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 835,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:57.083Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-b68e8b03cdee743ae845",
+          "file": "adversarial.spec.ts",
+          "line": 349,
+          "column": 1
+        },
+        {
+          "title": "unavailable browser storage reports failed saving without a false saved state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 505,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:30.975Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 395,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:43.819Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 469,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:57.233Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-9983ff5ec05133cfe4c2",
+          "file": "adversarial.spec.ts",
+          "line": 377,
+          "column": 1
+        },
+        {
+          "title": "invalid URL range is disclosed and reset restores the full recorded domain",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 490,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:31.438Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 490,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:44.047Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 480,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:57.364Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-2afee337f6cc0cec5e6a",
+          "file": "adversarial.spec.ts",
+          "line": 394,
+          "column": 1
+        },
+        {
+          "title": "layout and reachable keyboard navigation at 320px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 551,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:31.488Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 664,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:44.220Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 534,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:57.709Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-ec91a4e9812be9337fa1",
+          "file": "adversarial.spec.ts",
+          "line": 408,
+          "column": 3
+        },
+        {
+          "title": "layout and reachable keyboard navigation at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 565,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:31.755Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 548,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:44.545Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 524,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:57.852Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-0bbccee74c7ad8071e80",
+          "file": "adversarial.spec.ts",
+          "line": 408,
+          "column": 3
+        },
+        {
+          "title": "layout and reachable keyboard navigation at 768px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 569,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:31.937Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 535,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:44.573Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 540,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:57.925Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-b8aca33d645e8bc0eebe",
+          "file": "adversarial.spec.ts",
+          "line": 408,
+          "column": 3
+        },
+        {
+          "title": "reloading prepares a new view while keeping the recorded synthetic source time and revision distinct",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 523,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:32.817Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 460,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:45.613Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 514,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:58.834Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-049e6d238d61ac9f9ca7",
+          "file": "adversarial.spec.ts",
+          "line": 492,
+          "column": 1
+        },
+        {
+          "title": "an already loaded synthetic workspace can prepare a new viewport while the browser is offline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 666,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:32.863Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 626,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:45.622Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 542,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:58.920Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-22db2add87b26129cad7",
+          "file": "adversarial.spec.ts",
+          "line": 517,
+          "column": 1
+        },
+        {
+          "title": "twenty distinct viewports settle with current rendered bounds and bounded real worker requests",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "sequential-viewport-worker-requests",
+                  "description": "20 native worker requests for20 distinct completed viewports"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 3235,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:33.348Z",
+                  "annotations": [
+                    {
+                      "type": "sequential-viewport-worker-requests",
+                      "description": "20 native worker requests for20 distinct completed viewports"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "sequential-viewport-worker-requests",
+                  "description": "20 native worker requests for20 distinct completed viewports"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4998,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:46.010Z",
+                  "annotations": [
+                    {
+                      "type": "sequential-viewport-worker-requests",
+                      "description": "20 native worker requests for20 distinct completed viewports"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "sequential-viewport-worker-requests",
+                  "description": "20 native worker requests for20 distinct completed viewports"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2971,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:59.223Z",
+                  "annotations": [
+                    {
+                      "type": "sequential-viewport-worker-requests",
+                      "description": "20 native worker requests for20 distinct completed viewports"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-e2770cd077216df35138",
+          "file": "adversarial.spec.ts",
+          "line": 544,
+          "column": 1
+        }
+      ],
+      "suites": [
+        {
+          "title": "high-density display",
+          "file": "adversarial.spec.ts",
+          "line": 434,
+          "column": 6,
+          "specs": [
+            {
+              "title": "the million-point curve remains usable and spike inspectable at DPR2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 760,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-09T21:13:32.049Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 717,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-09T21:13:44.891Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 663,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-09T21:13:58.250Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c8623cf54f8234f94483-00b0479d08043e0be554",
+              "file": "adversarial.spec.ts",
+              "line": 436,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "international browser settings",
+          "file": "adversarial.spec.ts",
+          "line": 453,
+          "column": 6,
+          "specs": [
+            {
+              "title": "recorded times stay explicitly UTC and numeric step inputs keep their meaning",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 521,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-09T21:13:32.331Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 517,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-09T21:13:45.098Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 446,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-09T21:13:58.381Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c8623cf54f8234f94483-940063867243f14018a2",
+              "file": "adversarial.spec.ts",
+              "line": 455,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "touch input emulation",
+          "file": "adversarial.spec.ts",
+          "line": 472,
+          "column": 6,
+          "specs": [
+            {
+              "title": "navigation and explicit zoom controls work through touchscreen taps",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 841,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-09T21:13:32.519Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 889,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-09T21:13:45.115Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 744,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-09T21:13:58.474Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c8623cf54f8234f94483-195291126dcba24906a4",
+              "file": "adversarial.spec.ts",
+              "line": 474,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "canvas-truth.spec.ts",
+      "file": "canvas-truth.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "NaN interval is an actual unpainted gap with finite painted neighbours, not zero or interpolation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 499,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:33.376Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 542,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:46.084Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 493,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:59.358Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94470acaecc3b59dfd3c-a9fc667b239945f2c06e",
+          "file": "canvas-truth.spec.ts",
+          "line": 107,
+          "column": 1
+        },
+        {
+          "title": "painted values align with actual numeric x/y axis labels for every metric",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 435,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:33.548Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 912,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:46.259Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 487,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:59.473Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94470acaecc3b59dfd3c-994a7eae328ba4e7bf01",
+          "file": "canvas-truth.spec.ts",
+          "line": 130,
+          "column": 1
+        },
+        {
+          "title": "drawn deep-zoom step labels stay distinct and learning-rate labels retain nonzero magnitudes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 539,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:33.880Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 1396,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:46.630Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 457,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:59.858Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94470acaecc3b59dfd3c-242e97ac474f3a1569cc",
+          "file": "canvas-truth.spec.ts",
+          "line": 213,
+          "column": 1
+        },
+        {
+          "title": "a finite singleton between missing measurements paints a real point and a later empty response clears it",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 525,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:33.996Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1013,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:47.180Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 495,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:59.966Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94470acaecc3b59dfd3c-e44aa9df9147b4b599d7",
+          "file": "canvas-truth.spec.ts",
+          "line": 239,
+          "column": 1
+        },
+        {
+          "title": "logarithmic axes draw only finite positive numeric tick labels",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 451,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:34.427Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 691,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:48.034Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 479,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:14:00.320Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94470acaecc3b59dfd3c-4261aa99b84ff47496bd",
+          "file": "canvas-truth.spec.ts",
+          "line": 293,
+          "column": 1
+        },
+        {
+          "title": "an all-zero interval stays a real zero line on linear and becomes explicitly unplottable on log",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 479,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:34.532Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 515,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:48.200Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 494,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:14:00.467Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94470acaecc3b59dfd3c-1ce2fcb20929caa448e0",
+          "file": "canvas-truth.spec.ts",
+          "line": 317,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "observatory.spec.ts",
+      "file": "observatory.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "run browser filters, searches, sorts, persists URL state, and recovers from empty results",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 626,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:34.892Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 900,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:48.724Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 632,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:14:00.809Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d68d06cf89477466321-2517fa48335438948dc9",
+          "file": "observatory.spec.ts",
+          "line": 46,
+          "column": 1
+        },
+        {
+          "title": "million-point spike remains painted in overview, narrow zoom and reset",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 894,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:35.031Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 1169,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:48.736Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 885,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:14:00.973Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d68d06cf89477466321-39384627ec73e905d28a",
+          "file": "observatory.spec.ts",
+          "line": 69,
+          "column": 1
+        },
+        {
+          "title": "non-finite values produce visible disclosure and exact missing-value inspection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 552,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:35.523Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 488,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:49.629Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 493,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:14:01.446Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d68d06cf89477466321-d14b907dee45eed0d695",
+          "file": "observatory.spec.ts",
+          "line": 93,
+          "column": 1
+        },
+        {
+          "title": "duplicate, unordered and missing-step observations remain discoverable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 714,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:35.932Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 709,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:49.909Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 646,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:14:01.866Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d68d06cf89477466321-08989f686365be197f23",
+          "file": "observatory.spec.ts",
+          "line": 116,
+          "column": 1
+        },
+        {
+          "title": "log scale discloses zero exclusions and linear restores the measured zero",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 431,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:36.081Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 403,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:50.125Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 419,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:14:01.944Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d68d06cf89477466321-c43049d1cbb25a7df599",
+          "file": "observatory.spec.ts",
+          "line": 128,
+          "column": 1
+        },
+        {
+          "title": "rapid run switching never paints previous run measurements under the next run title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 554,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:36.520Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 544,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:50.533Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 502,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:14:02.204Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d68d06cf89477466321-13d0ae72ad8f2f3afa28",
+          "file": "observatory.spec.ts",
+          "line": 141,
+          "column": 1
+        },
+        {
+          "title": "keyboard search opens a run and chart keyboard inspection reveals measured values",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 555,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:36.598Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 686,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:50.623Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 520,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:14:02.369Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d68d06cf89477466321-ba0fbf82c602d576c03c",
+          "file": "observatory.spec.ts",
+          "line": 156,
+          "column": 1
+        },
+        {
+          "title": "export identifies a sampled viewport and retains spike numeric value",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 696,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:36.652Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 981,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:51.017Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 442,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:14:02.517Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d68d06cf89477466321-30e000584ea330b724e5",
+          "file": "observatory.spec.ts",
+          "line": 178,
+          "column": 1
+        },
+        {
+          "title": "mobile layout fits viewport and navigation remains reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 774,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:37.081Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 865,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:51.083Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 729,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:14:02.713Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d68d06cf89477466321-20b609bf213e2b37f27b",
+          "file": "observatory.spec.ts",
+          "line": 194,
+          "column": 1
+        },
+        {
+          "title": "unknown run fails clearly with a working recovery route",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 439,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:37.163Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 415,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:51.314Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 364,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:14:02.896Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d68d06cf89477466321-a9fe56e37c48a615baf6",
+          "file": "observatory.spec.ts",
+          "line": 210,
+          "column": 1
+        },
+        {
+          "title": "a worker failure never substitutes fabricated values and has a working retry path",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 608,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:37.355Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 553,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:51.735Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 575,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:14:02.968Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d68d06cf89477466321-9ac1c3f5f3909ebe0263",
+          "file": "observatory.spec.ts",
+          "line": 218,
+          "column": 1
+        },
+        {
+          "title": "an entirely invalid viewport shows unavailable values and never fabricates a zero curve",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 479,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:37.614Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 441,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:51.955Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 383,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:14:03.265Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d68d06cf89477466321-70b4bd1192070becadf4",
+          "file": "observatory.spec.ts",
+          "line": 231,
+          "column": 1
+        },
+        {
+          "title": "initial worker loading exposes a reserved loading view before any chart is drawn",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 578,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:37.863Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 580,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:13:52.003Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 516,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T21:14:03.449Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d68d06cf89477466321-7221df3d1e65895595ac",
+          "file": "observatory.spec.ts",
+          "line": 245,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-09T21:13:26.072Z",
+    "duration": 37932.345,
+    "expected": 135,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

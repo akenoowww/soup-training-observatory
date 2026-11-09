@@ -1,0 +1,189 @@
+
+Running 12 tests using 3 workers
+
+(node:19576) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:19578) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:19577) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [chromium] › tests/e2e/adversarial.spec.ts:97:1 › superseded same-run range cannot overwrite a newer zoom when its genuine response arrives late (1.0s)
+  ✓   3 [chromium] › tests/e2e/adversarial.spec.ts:69:1 › actual React route keeps old-run data out while real worker replies arrive in reverse selection order (1.2s)
+  ✓   5 [chromium] › tests/e2e/adversarial.spec.ts:174:1 › search dialog traps focus in both directions and returns focus to the trigger on Escape (434ms)
+  ✓   6 [chromium] › tests/e2e/adversarial.spec.ts:195:1 › bookmark survives reload and stays isolated by run, then can be removed (628ms)
+  ✓   7 [chromium] › tests/e2e/adversarial.spec.ts:209:1 › unavailable browser storage reports failed saving without a false saved state (336ms)
+  ✓   8 [chromium] › tests/e2e/adversarial.spec.ts:217:1 › invalid URL range is disclosed and reset restores the full recorded domain (404ms)
+  ✘   2 [chromium] › tests/e2e/adversarial.spec.ts:117:1 › dragging an auxiliary chart sets the same numeric viewport on all metrics and double-click resets all (11.3s)
+  ✘   4 [chromium] › tests/e2e/adversarial.spec.ts:151:1 › chart keyboard zoom and roving tabs remain usable without a pointer (10.5s)
+(node:19780) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:19781) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  11 [chromium] › tests/e2e/adversarial.spec.ts:229:3 › layout and reachable keyboard navigation at 768px (618ms)
+  ✘   9 [chromium] › tests/e2e/adversarial.spec.ts:229:3 › layout and reachable keyboard navigation at 320px (10.4s)
+  ✓  12 [chromium] › tests/e2e/adversarial.spec.ts:248:3 › high-density display › the million-point curve remains usable and spike inspectable at DPR2 (925ms)
+  ✘  10 [chromium] › tests/e2e/adversarial.spec.ts:229:3 › layout and reachable keyboard navigation at 390px (10.5s)
+
+
+  1) [chromium] › tests/e2e/adversarial.spec.ts:117:1 › dragging an auxiliary chart sets the same numeric viewport on all metrics and double-click resets all 
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator:  getByTestId('chart-loss')
+    Expected: "349740"
+    Received: ""
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toHaveAttribute" getByTestId('chart-loss') with timeout 10000ms
+      - waiting for getByTestId('chart-loss')
+        24 × locator resolved to <div tabindex="0" role="group" data-max-value="9.4" aria-describedby="_r_6_" data-testid="chart-loss" data-rendered-points="3760" data-source-points="297929" class="metric-chart__interactive" data-min-value="0.2880360910450614" aria-label="Training loss interactive chart">…</div>
+           - unexpected value "null"
+
+
+      136 |     const chart = page.getByTestId(`chart-${metric}`);
+      137 |     await expect(chart).toHaveAttribute('data-source-points', String(to - from + 1));
+    > 138 |     await expect(chart).toHaveAttribute('data-x-min', String(from));
+          |                         ^
+      139 |     await expect(chart).toHaveAttribute('data-x-max', String(to));
+      140 |   }
+      141 |   await expect(page.getByTestId('chart-loss')).toHaveAttribute('data-max-value', '9.4');
+        at /Users/noname/Desktop/personal-projects/soup/tests/e2e/adversarial.spec.ts:138:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/adversarial-dragging-an-au-f0544-and-double-click-resets-all-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/adversarial-dragging-an-au-f0544-and-double-click-resets-all-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/adversarial-dragging-an-au-f0544-and-double-click-resets-all-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/adversarial-dragging-an-au-f0544-and-double-click-resets-all-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium] › tests/e2e/adversarial.spec.ts:151:1 › chart keyboard zoom and roving tabs remain usable without a pointer 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('.metric-chart--loss .metric-chart__tooltip')
+    Expected substring: "16,199"
+    Received string:    "Sampled step 16,2000.4270788993874785"
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toContainText" locator('.metric-chart--loss .metric-chart__tooltip') with timeout 10000ms
+      - waiting for locator('.metric-chart--loss .metric-chart__tooltip')
+        24 × locator resolved to <div aria-hidden="true" class="metric-chart__tooltip">…</div>
+           - unexpected value "Sampled step 16,2000.4270788993874785"
+
+
+      160 |   await expect(page.locator('.metric-chart--loss .metric-chart__tooltip')).toContainText('Sampled step');
+      161 |   await page.keyboard.press('End');
+    > 162 |   await expect(page.locator('.metric-chart--loss .metric-chart__tooltip')).toContainText('16,199');
+          |                                                                            ^
+      163 |   await page.getByRole('tab', { name: 'Metrics', exact: true }).focus();
+      164 |   await page.keyboard.press('ArrowRight');
+      165 |   await expect(page.getByRole('tab', { name: /Data quality/ })).toHaveAttribute('aria-selected', 'true');
+        at /Users/noname/Desktop/personal-projects/soup/tests/e2e/adversarial.spec.ts:162:76
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/adversarial-chart-keyboard-8ba92-in-usable-without-a-pointer-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/adversarial-chart-keyboard-8ba92-in-usable-without-a-pointer-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/adversarial-chart-keyboard-8ba92-in-usable-without-a-pointer-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/adversarial-chart-keyboard-8ba92-in-usable-without-a-pointer-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [chromium] › tests/e2e/adversarial.spec.ts:229:3 › layout and reachable keyboard navigation at 320px 
+
+    Error: expect(locator).toBeFocused() failed
+
+    Locator:  getByRole('button', { name: 'Open navigation' })
+    Expected: focused
+    Received: inactive
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toBeFocused" getByRole('button', { name: 'Open navigation' }) with timeout 10000ms
+      - waiting for getByRole('button', { name: 'Open navigation' })
+        24 × locator resolved to <button aria-label="Open navigation" class="icon-button mobile-menu">…</button>
+           - unexpected value "inactive"
+
+
+      236 |       await expect(page.getByRole('link', { name: 'Skip to content' })).toBeFocused();
+      237 |       await page.keyboard.press('Tab');
+    > 238 |       await expect(page.getByRole('button', { name: 'Open navigation' })).toBeFocused();
+          |                                                                           ^
+      239 |     }
+      240 |     await openReady(page);
+      241 |     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+        at /Users/noname/Desktop/personal-projects/soup/tests/e2e/adversarial.spec.ts:238:75
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/adversarial-layout-and-rea-3be50-eyboard-navigation-at-320px-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/adversarial-layout-and-rea-3be50-eyboard-navigation-at-320px-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/adversarial-layout-and-rea-3be50-eyboard-navigation-at-320px-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/adversarial-layout-and-rea-3be50-eyboard-navigation-at-320px-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [chromium] › tests/e2e/adversarial.spec.ts:229:3 › layout and reachable keyboard navigation at 390px 
+
+    Error: expect(locator).toBeFocused() failed
+
+    Locator:  getByRole('button', { name: 'Open navigation' })
+    Expected: focused
+    Received: inactive
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toBeFocused" getByRole('button', { name: 'Open navigation' }) with timeout 10000ms
+      - waiting for getByRole('button', { name: 'Open navigation' })
+        24 × locator resolved to <button aria-label="Open navigation" class="icon-button mobile-menu">…</button>
+           - unexpected value "inactive"
+
+
+      236 |       await expect(page.getByRole('link', { name: 'Skip to content' })).toBeFocused();
+      237 |       await page.keyboard.press('Tab');
+    > 238 |       await expect(page.getByRole('button', { name: 'Open navigation' })).toBeFocused();
+          |                                                                           ^
+      239 |     }
+      240 |     await openReady(page);
+      241 |     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+        at /Users/noname/Desktop/personal-projects/soup/tests/e2e/adversarial.spec.ts:238:75
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/adversarial-layout-and-rea-4d529-eyboard-navigation-at-390px-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/adversarial-layout-and-rea-4d529-eyboard-navigation-at-390px-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/adversarial-layout-and-rea-4d529-eyboard-navigation-at-390px-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/adversarial-layout-and-rea-4d529-eyboard-navigation-at-390px-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4 failed
+    [chromium] › tests/e2e/adversarial.spec.ts:117:1 › dragging an auxiliary chart sets the same numeric viewport on all metrics and double-click resets all 
+    [chromium] › tests/e2e/adversarial.spec.ts:151:1 › chart keyboard zoom and roving tabs remain usable without a pointer 
+    [chromium] › tests/e2e/adversarial.spec.ts:229:3 › layout and reachable keyboard navigation at 320px 
+    [chromium] › tests/e2e/adversarial.spec.ts:229:3 › layout and reachable keyboard navigation at 390px 
+  8 passed (23.5s)

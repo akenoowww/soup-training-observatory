@@ -1,0 +1,1370 @@
+{
+  "recordedAt": "2026-11-09T20:47:38.766Z",
+  "browser": "156.0.8078.81",
+  "dump": {
+    "dumpGuid": "0x2",
+    "success": true
+  },
+  "traceBytes": 6058871,
+  "frames": [
+    {
+      "frame": "C7BBF59A32C7FF0A275C2675EA8B0244",
+      "isInPrimaryMainFrame": true,
+      "isOutermostMainFrame": true,
+      "name": "",
+      "processId": 30869,
+      "url": "http://127.0.0.1:4173/"
+    }
+  ],
+  "workers": [
+    {
+      "name": "thread_name",
+      "pid": 30869,
+      "args": {
+        "name": "DedicatedWorker thread"
+      }
+    },
+    {
+      "name": "TracingSessionIdForWorker",
+      "pid": 30869,
+      "args": {
+        "data": {
+          "frame": "C7BBF59A32C7FF0A275C2675EA8B0244",
+          "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+          "workerId": "FF379E75F82F7C673C7E88387CA8B317",
+          "workerThreadId": 1620569
+        }
+      }
+    }
+  ],
+  "dumps": [
+    {
+      "name": "GlobalMemoryDump.Computation",
+      "pid": 30857,
+      "argsKeys": [],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::FinishAsyncProcessDump",
+      "pid": 30863,
+      "argsKeys": [],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "GlobalMemoryDump.Computation",
+      "pid": 30857,
+      "argsKeys": [],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "GlobalMemoryDump.Computation",
+      "pid": 30857,
+      "argsKeys": [],
+      "dumpKeys": []
+    },
+    {
+      "name": "GlobalMemoryDump.Computation",
+      "pid": 30857,
+      "argsKeys": [],
+      "dumpKeys": []
+    },
+    {
+      "name": "GlobalMemoryDump.Computation",
+      "pid": 30857,
+      "argsKeys": [],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::FinishAsyncProcessDump",
+      "pid": 30857,
+      "argsKeys": [],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::InvokeOnMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "memory_dump_provider"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "MemoryDumpManager::FinishAsyncProcessDump",
+      "pid": 30869,
+      "argsKeys": [],
+      "dumpKeys": []
+    },
+    {
+      "name": "GlobalMemoryDump.Computation",
+      "pid": 30857,
+      "argsKeys": [],
+      "dumpKeys": []
+    },
+    {
+      "name": "GlobalMemoryDump.Computation",
+      "pid": 30857,
+      "argsKeys": [],
+      "dumpKeys": []
+    },
+    {
+      "name": "GlobalMemoryDump.Computation",
+      "pid": 30857,
+      "argsKeys": [],
+      "dumpKeys": []
+    },
+    {
+      "name": "GlobalMemoryDump.Computation",
+      "pid": 30857,
+      "argsKeys": [],
+      "dumpKeys": []
+    },
+    {
+      "name": "GlobalMemoryDump.Computation",
+      "pid": 30857,
+      "argsKeys": [],
+      "dumpKeys": []
+    },
+    {
+      "name": "GlobalMemoryDump.Computation",
+      "pid": 30857,
+      "argsKeys": [],
+      "dumpKeys": []
+    },
+    {
+      "name": "GlobalMemoryDump.Computation",
+      "pid": 30857,
+      "argsKeys": [],
+      "dumpKeys": []
+    },
+    {
+      "name": "GlobalMemoryDump.Computation",
+      "pid": 30857,
+      "argsKeys": [],
+      "dumpKeys": []
+    },
+    {
+      "name": "GlobalMemoryDump.Computation",
+      "pid": 30857,
+      "argsKeys": [],
+      "dumpKeys": []
+    },
+    {
+      "name": "GlobalMemoryDump.Computation",
+      "pid": 30857,
+      "argsKeys": [],
+      "dumpKeys": []
+    },
+    {
+      "name": "GlobalMemoryDump.Computation",
+      "pid": 30857,
+      "argsKeys": [],
+      "dumpKeys": []
+    },
+    {
+      "name": "GlobalMemoryDump.Computation",
+      "pid": 30857,
+      "argsKeys": [],
+      "dumpKeys": []
+    },
+    {
+      "name": "periodic_interval",
+      "pid": 30857,
+      "id": "0x0",
+      "argsKeys": [
+        "dumps"
+      ],
+      "dumpKeys": [
+        "level_of_detail",
+        "process_totals"
+      ],
+      "process_totals": {
+        "is_peak_rss_resettable": false,
+        "peak_resident_set_size": "0",
+        "private_footprint_bytes": "46f0800"
+      }
+    },
+    {
+      "name": "periodic_interval",
+      "pid": 30863,
+      "id": "0x0",
+      "argsKeys": [
+        "dumps"
+      ],
+      "dumpKeys": [
+        "level_of_detail",
+        "process_totals"
+      ],
+      "process_totals": {
+        "is_peak_rss_resettable": false,
+        "peak_resident_set_size": "0",
+        "private_footprint_bytes": "134a4400"
+      }
+    },
+    {
+      "name": "periodic_interval",
+      "pid": 30869,
+      "id": "0x0",
+      "argsKeys": [
+        "dumps"
+      ],
+      "dumpKeys": [
+        "level_of_detail",
+        "process_totals"
+      ],
+      "process_totals": {
+        "is_peak_rss_resettable": false,
+        "peak_resident_set_size": "0",
+        "private_footprint_bytes": "66e0800"
+      }
+    },
+    {
+      "name": "periodic_interval",
+      "pid": 30864,
+      "id": "0x0",
+      "argsKeys": [
+        "dumps"
+      ],
+      "dumpKeys": [
+        "level_of_detail",
+        "process_totals"
+      ],
+      "process_totals": {
+        "is_peak_rss_resettable": false,
+        "peak_resident_set_size": "0",
+        "private_footprint_bytes": "1750400"
+      }
+    },
+    {
+      "name": "periodic_interval",
+      "pid": 30865,
+      "id": "0x0",
+      "argsKeys": [
+        "dumps"
+      ],
+      "dumpKeys": [
+        "level_of_detail",
+        "process_totals"
+      ],
+      "process_totals": {
+        "is_peak_rss_resettable": false,
+        "peak_resident_set_size": "0",
+        "private_footprint_bytes": "1374000"
+      }
+    },
+    {
+      "name": "periodic_interval",
+      "pid": 30867,
+      "id": "0x0",
+      "argsKeys": [
+        "dumps"
+      ],
+      "dumpKeys": [
+        "level_of_detail",
+        "process_totals"
+      ],
+      "process_totals": {
+        "is_peak_rss_resettable": false,
+        "peak_resident_set_size": "0",
+        "private_footprint_bytes": "353c800"
+      }
+    },
+    {
+      "name": "periodic_interval",
+      "pid": 30868,
+      "id": "0x0",
+      "argsKeys": [
+        "dumps"
+      ],
+      "dumpKeys": [
+        "level_of_detail",
+        "process_totals"
+      ],
+      "process_totals": {
+        "is_peak_rss_resettable": false,
+        "peak_resident_set_size": "0",
+        "private_footprint_bytes": "1acc400"
+      }
+    },
+    {
+      "name": "periodic_interval",
+      "pid": 30870,
+      "id": "0x0",
+      "argsKeys": [
+        "dumps"
+      ],
+      "dumpKeys": [
+        "level_of_detail",
+        "process_totals"
+      ],
+      "process_totals": {
+        "is_peak_rss_resettable": false,
+        "peak_resident_set_size": "0",
+        "private_footprint_bytes": "1390000"
+      }
+    },
+    {
+      "name": "periodic_interval",
+      "pid": 30857,
+      "id": "0x0",
+      "argsKeys": [
+        "dumps"
+      ],
+      "dumpKeys": [
+        "allocators",
+        "allocators_graph",
+        "level_of_detail"
+      ]
+    },
+    {
+      "name": "periodic_interval",
+      "pid": 30863,
+      "id": "0x0",
+      "argsKeys": [
+        "dumps"
+      ],
+      "dumpKeys": [
+        "allocators",
+        "allocators_graph",
+        "level_of_detail"
+      ]
+    },
+    {
+      "name": "periodic_interval",
+      "pid": 30864,
+      "id": "0x0",
+      "argsKeys": [
+        "dumps"
+      ],
+      "dumpKeys": [
+        "allocators",
+        "allocators_graph",
+        "level_of_detail"
+      ]
+    },
+    {
+      "name": "periodic_interval",
+      "pid": 30865,
+      "id": "0x0",
+      "argsKeys": [
+        "dumps"
+      ],
+      "dumpKeys": [
+        "allocators",
+        "allocators_graph",
+        "level_of_detail"
+      ]
+    },
+    {
+      "name": "periodic_interval",
+      "pid": 30867,
+      "id": "0x0",
+      "argsKeys": [
+        "dumps"
+      ],
+      "dumpKeys": [
+        "allocators",
+        "allocators_graph",
+        "level_of_detail"
+      ]
+    },
+    {
+      "name": "periodic_interval",
+      "pid": 30868,
+      "id": "0x0",
+      "argsKeys": [
+        "dumps"
+      ],
+      "dumpKeys": [
+        "allocators",
+        "allocators_graph",
+        "level_of_detail"
+      ]
+    },
+    {
+      "name": "periodic_interval",
+      "pid": 30869,
+      "id": "0x0",
+      "argsKeys": [
+        "dumps"
+      ],
+      "dumpKeys": [
+        "allocators",
+        "allocators_graph",
+        "level_of_detail"
+      ]
+    },
+    {
+      "name": "periodic_interval",
+      "pid": 30870,
+      "id": "0x0",
+      "argsKeys": [
+        "dumps"
+      ],
+      "dumpKeys": [
+        "allocators",
+        "allocators_graph",
+        "level_of_detail"
+      ]
+    },
+    {
+      "name": "periodic_interval",
+      "pid": 30857,
+      "id": "0x0",
+      "argsKeys": [
+        "dumps"
+      ],
+      "dumpKeys": [
+        "allocators",
+        "allocators_graph",
+        "level_of_detail"
+      ]
+    },
+    {
+      "name": "GlobalMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "dump_guid",
+        "dump_type",
+        "level_of_detail",
+        "success"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "ProcessMemoryDump",
+      "pid": 30863,
+      "argsKeys": [
+        "dump_guid"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "ProcessMemoryDump",
+      "pid": 30857,
+      "argsKeys": [
+        "dump_guid"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "ProcessMemoryDump",
+      "pid": 30869,
+      "argsKeys": [
+        "dump_guid"
+      ],
+      "dumpKeys": []
+    },
+    {
+      "name": "ProcessMemoryDump",
+      "pid": 30863,
+      "argsKeys": [],
+      "dumpKeys": []
+    },
+    {
+      "name": "ProcessMemoryDump",
+      "pid": 30857,
+      "argsKeys": [],
+      "dumpKeys": []
+    },
+    {
+      "name": "ProcessMemoryDump",
+      "pid": 30869,
+      "argsKeys": [],
+      "dumpKeys": []
+    },
+    {
+      "name": "GlobalMemoryDump",
+      "pid": 30857,
+      "argsKeys": [],
+      "dumpKeys": []
+    }
+  ]
+}

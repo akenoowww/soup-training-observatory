@@ -1,53 +1,55 @@
 # SOUP engineering note
 
+The canonical short submission note is [the two-page PDF](submission-note.pdf). This file links its evidence and records the release boundary. The assignment requests generated data; a training backend and authentication are not prerequisites for this frontend exercise.
+
 ## Verdict
 
-**SHIP as a synthetic frontend demonstrator. DON'T SHIP as a live production training control.** The required generated-data experience is implemented; real-cluster authentication, ingestion contracts, source sequence/freshness guarantees, authorization and operator-validated acceptance would be required before someone relies on it to spend or stop real money. The first integration priority is a source contract with run identity, monotonically increasing revision, ingestion timestamp and explicit missing-value semantics. Reload time is not source freshness.
+**DON'T SHIP the submission yet: the final sustained-use check and externally accessible delivery links are not yet complete. Public publication still requires the owner’s authorization.** The local application candidate has passed the checks below, with no remaining known P1 defect in the requested generated-data scenarios. The final delivery step is a hosted smoke check and a repository the reviewer can access. The next technical improvement is an explicit render-workload policy for extreme discontinuities. The chart benchmark is kept separate from complete application behavior.
 
-## Truthfulness and architecture
+## Truthfulness
 
-The browser generates twenty deterministic fixtures. A module worker owns Float64 step/loss/lr/grad_norm columns. The million-point run allocates 32,000,000 bytes for canonical columns; UI receives sampled arrays. A two-run LRU bounds canonical retention. React owns presentation, TanStack Query owns asynchronous cache/isolation, and uPlot supplies mature Canvas rendering. Native controls provide precise ranges and keyboard alternatives.
+Source steps are nonnegative safe integers; unsupported coordinates are rejected and counted. Numeric sorting applies the last received observation at each duplicate step, including invalid values. Exact binary bounds select only observations inside the viewport. Non-finite values and absent steps split finite segments. Each segment/bucket retains first/last/min/max observations in source order. No averaging or smoothing is enabled. Isolated finite points have explicit markers, and constant zero curves are padded inside the plot instead of being clipped at its edge.
 
-Numeric stable sorting precedes plotting. Duplicate steps use the last received observation, including invalid latest values. Non-finite values become null gaps; absent training steps add an explicit null marker. Each visible numeric-step bucket retains first/last/min/max observations in original order, independently by metric. There is no averaging or smoothing. A single-point spike remains selected whenever the visible range contains it. Pathological frequent discontinuities deliberately exceed the normal four-points-per-pixel budget instead of inventing continuity.
+[The independent oracle and correctness argument](sampling-correctness.md) cover 128 malformed arrival streams, 1,152 dataset/range/metric combinations and 105 directed outlier/boundary combinations. The actual million-point fixture is also tested over six widths and six ranges. This is reproducible adversarial evidence and an algorithmic argument, not a formal proof over every browser and floating-point state.
 
-Tooltips display the actual retained measurement, labeled sampled. Summary/axis formatting is separate from values; tiny learning rates retain scientific notation, and adjacent deep-zoom ticks expand precision until distinct. The latest loss follows the visibly labeled selected range; step/duration summaries describe the whole run. CSV is labeled sampled viewport, with blank gap values.
+Hover and export identify sampled observations. Viewport statistics come from all unique source rows in view. Selected-range summaries remain unavailable during pending or failed requests. Actual painted axis labels and curve coordinates are compared in browser tests. Log mode explicitly discloses excluded nonpositive samples; linear mode retains genuine zero values.
 
-## Automated evidence
+## Executed checks
 
-Executed: **41 unit tests and 13 production-browser tests passed**, strict TypeScript, ESLint and build passed. Automated WCAG 2 A/AA axe checks of the inspected desktop/mobile views report zero violations; this is not full accessibility certification. `npm audit` reports zero known vulnerabilities after a tested minimatch dev-tool override. See the recorded output in `evidence/` for versions and results. Unit checks cover the million-point spike over six widths and six viewports, bucket extrema, finite source-value identity, NaN/±Infinity, missing steps, duplicate policy, numeric ordering, zero handling, exact statistics, invalid latest values, worker abort/out-of-order replies, timeout/crash recovery, and UTC/date rollover. Browser scenarios cover actual painted spike pixels, shared zoom, visible quality information, logarithmic exclusions, switching runs, search/filter/sort/recovery, keyboard use, sampled export, worker failure/retry and mobile overflow.
+- **71 unit tests:** normalization, independent sampling oracle, statistics, source/protocol validation, request cancellation/recovery, cache bounds, URL/storage contracts and UTC/numeric precision.
+- **45 browser scenarios x 3 engines = 135 passed**, zero skipped/flaky: Chromium, Firefox and WebKit on macOS. These include actual Canvas spike/gap/singleton/zero geometry, axis `fillText` labels, shared drag/reset, controlled real-Worker response order through React/query/client, pending/error scopes, malformed source rejection, reload, storage failures, keyboard/modal focus, 320/390/768px, DPR2 and touch emulation.
+- Formatting, TypeScript, ESLint and production build pass. CI installs all three engines; local results are not claimed as an executed Linux CI result.
+- Fifteen axe state reports contain zero confirmed violations. Three mobile native-dialog scans retain an incomplete background/contrast category. All 31 flagged nodes were examined through computed colors, opacity, hit tests and three actual screenshots: contrast 5.27-13.25:1. The incomplete reports remain unchanged; this is not full accessibility certification.
 
-These checks do **not** establish real-cluster behavior, scientific validity of fixtures, every possible zoom boundary/data distribution, screen-reader usability, touch ergonomics on physical devices, visual clarity on every display, or performance on arbitrary hardware. A min/max line preserves extrema but can visually overstate local oscillation/order within a very dense pixel; zoom reveals the retained observations. At overview resolution a one-point gap can be subpixel, so missingness counts remain visible beside charts.
+Outputs: [checks](../evidence/round2/checks-final.txt), [browser run](../evidence/round2/e2e-final.txt), [browser methods](../tests/e2e/README.md), [accessibility evidence](../evidence/round2/accessibility/).
 
 ## Silent failures
 
-- **Stale data:** source is explicitly synthetic/static, status is snapshot status, and reload never claims new training progress. A real source is intentionally absent; freshness cannot be certified by this frontend.
-- **Request races:** run ID, range and width are query keys; AbortSignal removes pending requests, and responses resolve only their original request ID. The run detail remounts on identity changes, so an old run's plot is not reused under the new heading.
-- **Locale/time zone:** numeric axes use steps, precise inputs use numbers, numeric presentation is explicit en-US, and every timestamp is UTC. Tests cover offset input and date rollover.
-- **Smoothing/divergence:** no smoothing path exists; extrema plus the divergence fixture make late increases discoverable. No 'healthy' verdict is inferred from final loss.
-- **Log zeros:** nonpositive values are masked only for rendering and counted as excluded plotted samples; the original values remain inspectable on linear scale. Non-finite values never become zero.
-- **Failure recovery:** worker failures show an actionable error without substituted demo success. Retry starts a fresh worker. Invalid URL ranges are disclosed and restore the full recorded domain.
+- **Stale data:** responses carry immutable source revision/recorded time; view preparation time is separate. Stale revisions and impossible chronology fail closed. Reload does not advance the source snapshot. No live-source freshness is inferred.
+- **Races:** query identity includes run/revision/range/width, responses retain their producing viewport, and aborted request IDs cannot update a new selection. Controlled real Worker replies are released in reverse order in integration tests. Previous same-run plots stay covered while updating; a different run gets no placeholder.
+- **Locale/time zone:** explicit en-US numeric presentation and UTC timestamps are exercised in a Russian locale with a UTC+14 browser zone, plus offset/date-rollover tests.
+- **Divergence:** extrema are preserved, smoothing is absent, and low final loss does not become a healthy-run verdict.
+- **Log zeros:** values are not clamped positive. An all-zero log view explicitly says no positive values; switching back restores the actual zero line.
 
-## Performance
+## Performance and memory
 
-Measured results, CPU ×4 Chrome trace files and collection methodology are in `evidence/performance/`. Chrome 156, macOS arm64, three fixture repetitions:
+Chrome 156, macOS arm64, production build. Five fresh repetitions per fixture mode and five full-application loads; input summaries contain fifteen observations each. CPU x4 applies to the page. Calibration showed the dedicated worker stayed normally scheduled, so a main-thread-sampled control separates reduction from worker placement.
 
-| Measurement | Unreduced baseline | Worker + extrema |
-| --- | ---: | ---: |
-| First render, median | 601.1 ms | 243.2 ms |
-| Zoom, median | 6.9 ms | 33.3 ms |
-| Hover, median | 30.6 ms | 30.9 ms |
-| Page + worker V8 / backing stores | 57.1 MB | 34.6 MB |
-| Isolated renderer RSS, approximate | 526.5 MB | 507.9 MB |
-| Retained loss entries | 1,000,000 | 3,580 |
+| Median                                                 | Raw million-point chart | Main-thread sampling | Worker sampling |
+| ------------------------------------------------------ | ----------------------: | -------------------: | --------------: |
+| First render                                           |                596.5 ms |             427.6 ms |        221.3 ms |
+| Zoom                                                   |                 21.6 ms |              30.7 ms |         34.2 ms |
+| Hover                                                  |                 16.0 ms |              15.9 ms |         16.2 ms |
+| Attributed renderer private footprint, single overview |                93.85 MB |             69.55 MB |        73.03 MB |
 
-Zoom is **slower** after worker resampling; hover is effectively unchanged at the two-animation-frame measurement resolution. This negative result is retained. Separate full React route, one run: first render **548.3 ms**, zoom **192.3 ms**, hover **41.2 ms**, V8/backing stores **37.0 MB**, renderer RSS **549.9 MB**. Those application timings include automation transport and cannot be compared directly with fixture-only timings.
+The **complete React application** uses comparable actual input-to-paint endpoints before/after hardening: first render **515.5 -> 495.9 ms**; zoom **63.9 -> 62.8 ms**; hover **32.0 -> 32.8 ms**. The small observed cold-render difference is descriptive; causal improvement is not established by five samples. An interim candidate measured 583.3 ms and later failed the memory soak; its negative results remain preserved. The smaller chart benchmark does not establish that the full application became faster.
 
- The isolated fixture compares unreduced million-point uPlot against the same data with worker sampling. First render includes source preparation; zoom completes after the updated plot paints; hover covers a pointer movement through a subsequent paint. The fixture isolates chart/pipeline cost; separate application results include the full React interface. Chrome CPU throttling is an emulation, not a claim about a named low-end device. Main-thread V8 heap alone excludes worker data; memory results identify backing stores, worker heap and renderer RSS separately rather than labeling one heap as complete tab memory.
+At 1M points the full application's measured renderer private footprint was **102.42 MB**. Actual trace metadata attributes the page and worker to the same PID, deduplicated; spare renderer/browser/GPU processes are excluded. Its V8/backing-store sum was about **36.56 MB**, including the 32 MB source columns. Original all-renderer RSS estimates remain in the raw evidence and are not relabeled as private tab memory. Memory dumps were collected separately from timed runs.
 
-## What surprised us; what remains concerning
+[Raw observations and traces](../evidence/round2/performance-fixed/results.json), [comparable old-build results](../evidence/round2/performance-before/results.json), [methodology and limitations](performance-methodology.md). The interim custom cache cap caused a real ~495 MB retained-memory spike and was rejected. Native TanStack 10-second GC replaces it; the exact observer-transition regression and fixed 30-second probe passed. A new 180-second sustained-use run is still being verified under `evidence/round2/soak/`; no short run establishes absence of leaks over hours.
 
-The easiest misleading chart was a tiny status-shaped sparkline: it looked plausible while claiming a trend unrelated to that run. It was removed. Duplicate removal also initially inflated the reordered count because shifted array positions were mistaken for changed source order; an independent all-run consistency check exposed it. Dense sampling remains an interpretation trade-off: preserving every extreme protects a divergence signal, while compression hides detailed timing and can make a microscopic gap impossible to see. Explicit gaps/counts and zoom help, but an operator study with representative real telemetry would be the next meaningful acceptance check.
+## Surprise, remaining concern and AI use
 
-## AI assistance
+A retained outlier was still invisible when it was the only finite point between two gaps. A genuine zero could also disappear on a clipping boundary. These were rendering failures that sampler tests alone missed. A plausible status-shaped sparkline was removed because it invented a trend. The remaining concern is perceptual compression: extrema survive, while dense timing/oscillations and subpixel gaps do not become fully readable. Pathologically many discontinuities can exceed the normal output budget; that workload needs a separately bounded rendering policy before broader real-source use.
 
-Codex implemented this project with the requested Frontend Workbench Product Design and Copy Guard skills. Independent agents authored the data pipeline, chart adapter, browser tests and performance collector, and reviewed source-contract consistency. Accepted suggestions included mature uPlot, worker ownership, per-bucket extrema, explicit synthetic provenance and UTC formatting. Rejected/corrected output included invented status-based microcharts, CSS-variable strings passed to Canvas colors, colliding deep-zoom labels, incorrect issue counts and a worker timeout that would retry the same stalled worker. Verification was performed through executed tests, real browser rendering, accessibility checks and recorded traces; no human-authored verification or real training integration is claimed.
+Codex with Frontend Workbench authored the implementation and independent agent reviews. Accepted suggestions included uPlot, worker ownership, extrema sampling, explicit fixture provenance and native dialogs. Corrected suggestions included invented trends, mixed-scope summaries, collapsed labels, invisible singleton/zero rendering and mistaken CPU/memory attribution. Verification was executed through tests, browser pixels/labels and Chrome traces. No candidate's human verification, personal understanding or interview performance is fabricated. The live discussion remains the candidate's own work; no canned answers are supplied.

@@ -1,0 +1,51 @@
+
+> soup-training-observatory@1.0.0 test
+> vitest run src/data/engine.test.ts src/data/validate-response.test.ts
+
+
+ RUN  v4.1.12 /Users/noname/Desktop/personal-projects/soup
+
+ ❯ src/data/validate-response.test.ts (4 tests | 1 failed) 233ms
+     × rejects stale revisions, missing source identity and impossible source times 4ms
+ ❯ src/data/engine.test.ts (7 tests | 1 failed) 251ms
+     × binds deterministic run chronology to the immutable recorded source snapshot 2ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/data/engine.test.ts > synthetic data source > binds deterministic run chronology to the immutable recorded source snapshot
+AssertionError: run-001: expected 1794268462000 to be less than or equal to 1794247200000
+ ❯ src/data/engine.test.ts:55:35
+     53|     for (const run of RUNS) {
+     54|       const recordedEnd = Date.parse(run.startedAt) + run.durationSeco…
+     55|       expect(recordedEnd, run.id).toBeLessThanOrEqual(Date.parse(SOURC…
+       |                                   ^
+     56|       expect(getRunDetail(run.id, { width: 1 }).source).toEqual(SOURCE…
+     57|     }
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+ FAIL  src/data/validate-response.test.ts > worker response boundary > rejects stale revisions, missing source identity and impossible source times
+AssertionError: expected true to be false // Object.is equality
+
+- Expected
++ Received
+
+- false
++ true
+
+ ❯ src/data/validate-response.test.ts:57:64
+     55|       { ...SOURCE_SNAPSHOT, recordedAt: '2099-01-01T00:00:00.000Z' },
+     56|       { ...SOURCE_SNAPSHOT, recordedAt: 'not-a-date' },
+     57|     ]) expect(isRunDetail({ ...original, source }, 'run-002')).toBe(fa…
+       |                                                                ^
+     58|     expect(isRunDetail({ ...original, fetchedAt: '2026-11-09T17:59:59.…
+     59|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯
+
+
+ Test Files  2 failed (2)
+      Tests  2 failed | 9 passed (11)
+   Start at  01:38:53
+   Duration  395ms (transform 89ms, setup 0ms, import 118ms, tests 484ms, environment 0ms)
+

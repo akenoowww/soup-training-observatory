@@ -1,21 +1,85 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>SOUP · Reproducible chart benchmark</title>
-<style>
-:root{font:14px system-ui,sans-serif;color:#F0F4F8;background:#102A43;color-scheme:dark}body{max-width:1000px;margin:36px auto;padding:0 24px}h1{font-size:24px;font-weight:550}p{color:#BCCCDC;line-height:1.6}.badge{font:12px ui-monospace,monospace;color:#65D6AD}#plot{border:1px solid #334E68;background:#243B53;border-radius:8px;padding:15px;width:900px;max-width:calc(100vw - 80px)}#status{color:#9FB3C8;font:12px ui-monospace,monospace;min-height:24px}.note{font-size:12px}pre{padding:16px;white-space:pre-wrap;background:#243B53;border:1px solid #334E68;border-radius:8px;font-size:12px;line-height:1.6}
-</style>
-</head>
-<body>
-<span class="badge">SOUP / MEASUREMENT FIXTURE</span>
-<h1 id="title">Preparing the one-million-point chart…</h1>
-<p>This isolated fixture compares the same uPlot loss chart before and after worker-backed extrema sampling. It is a controlled chart comparison, not the complete application's render time.</p>
-<div id="plot"></div>
-<p id="status" role="status">Generating deterministic data.</p>
-<pre id="results">Waiting for measurement.</pre>
-<p class="note">CPU throttling is applied by the measurement runner. Hover and zoom timing includes two animation frames after the real cursor or viewport update. Memory is collected separately by Chrome DevTools Protocol; renderer RSS is an isolated-browser approximation, not the browser's Task Manager private-memory number.</p>
-<script type="module" src="/src/benchmark.ts"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOUP · Reproducible chart benchmark</title>
+    <style>
+      :root {
+        font:
+          14px system-ui,
+          sans-serif;
+        color: #f0f4f8;
+        background: #102a43;
+        color-scheme: dark;
+      }
+      body {
+        max-width: 1000px;
+        margin: 36px auto;
+        padding: 0 24px;
+      }
+      h1 {
+        font-size: 24px;
+        font-weight: 550;
+      }
+      p {
+        color: #bcccdc;
+        line-height: 1.6;
+      }
+      .badge {
+        font:
+          12px ui-monospace,
+          monospace;
+        color: #65d6ad;
+      }
+      #plot {
+        border: 1px solid #334e68;
+        background: #243b53;
+        border-radius: 8px;
+        padding: 15px;
+        width: 900px;
+        max-width: calc(100vw - 80px);
+      }
+      #status {
+        color: #9fb3c8;
+        font:
+          12px ui-monospace,
+          monospace;
+        min-height: 24px;
+      }
+      .note {
+        font-size: 12px;
+      }
+      pre {
+        padding: 16px;
+        white-space: pre-wrap;
+        background: #243b53;
+        border: 1px solid #334e68;
+        border-radius: 8px;
+        font-size: 12px;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="badge">SOUP / MEASUREMENT FIXTURE</span>
+    <h1 id="title">Preparing the one-million-point chart…</h1>
+    <p>
+      This isolated fixture compares the same uPlot loss chart in three modes: unreduced, extrema
+      sampled on the main thread, and the actual worker-backed source. The middle control separates
+      downsampling from moving work to an unthrottled worker. This is not the complete application's
+      render time.
+    </p>
+    <div id="plot"></div>
+    <p id="status" role="status">Generating deterministic data.</p>
+    <pre id="results">Waiting for measurement.</pre>
+    <p class="note">
+      The runner applies CPU ×4 to the page target. A dedicated-worker calibration records the
+      actual throttle scope; equivalent worker slowdown is not assumed. Hover uses trusted mouse
+      events and both hover and zoom include two animation frames after the cursor or viewport
+      update. Memory is collected separately by Chrome DevTools Protocol; renderer RSS is an
+      isolated-browser approximation, not the browser's Task Manager private-memory number.
+    </p>
+    <script type="module" src="/src/benchmark.ts"></script>
+  </body>
 </html>

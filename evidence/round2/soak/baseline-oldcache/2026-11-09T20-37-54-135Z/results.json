@@ -1,0 +1,888 @@
+{
+  "generatedAt": "2026-11-09T20:40:01.907Z",
+  "status": "completed",
+  "error": null,
+  "browser": "156.0.8078.81",
+  "machine": "darwin/arm64",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "cpuThrottle": 1,
+  "requestedActiveSeconds": 90,
+  "requestedIdleSeconds": 35,
+  "elapsedSeconds": 127.39087425,
+  "pace": "At least one second between active-loop iterations, plus actual render/interaction time. Each iteration changes a run, submits one numeric range and inspects a sampled point; every third iteration also changes scale and resets zoom.",
+  "memoryScope": "GC requested in document and each matching dedicated data worker before each snapshot. Combined V8 heap+backing stores includes worker canonical typed arrays but excludes native/GPU allocations. Renderer RSS sums renderer processes in an isolated one-page browser, can include spare renderers and allocator retention, and excludes browser/GPU/utility processes.",
+  "standardizedCheckpoints": "Reload run002 then run001; reset full step domain and linear scale. This deliberately aligns the worker LRU data for retained-memory comparisons. Idle recovery keeps the same full run001 open, with no page interactions.",
+  "interactionCount": 75,
+  "visitedRunIds": [
+    "run-002",
+    "run-003",
+    "run-004",
+    "run-005",
+    "run-006",
+    "run-007",
+    "run-008",
+    "run-009",
+    "run-010",
+    "run-011",
+    "run-012",
+    "run-013",
+    "run-014",
+    "run-015",
+    "run-016",
+    "run-017",
+    "run-018",
+    "run-019",
+    "run-020",
+    "run-001"
+  ],
+  "summary": {
+    "initialBytes": 39047640,
+    "maximumCheckpointBytes": 52739963,
+    "finalBytes": 48697662,
+    "finalMinusInitialBytes": 9650022,
+    "memoryVerdict": "Descriptive short-run evidence only. No automatic absence-of-leaks guarantee is inferred; review checkpoints, final idle recovery and bounded source/query cache policy."
+  },
+  "snapshots": [
+    {
+      "label": "warmup-full-1M",
+      "elapsedMs": 575.0004590000001,
+      "mainV8HeapBytes": 5965064,
+      "mainBackingStorageBytes": 405016,
+      "workerV8HeapBytes": 360000,
+      "workerBackingStorageBytes": 32317560,
+      "combinedV8AndBackingBytes": 39047640,
+      "rendererRssBytes": 556761088,
+      "rendererCount": 3,
+      "workerCount": 1,
+      "contexts": {
+        "main": {
+          "usedSize": 5965064,
+          "totalSize": 6717440,
+          "embedderHeapUsedSize": 1850896,
+          "backingStorageSize": 405016
+        },
+        "workers": [
+          {
+            "url": "http://127.0.0.1:4173/assets/data.worker-CckBE9yV.js",
+            "usedSize": 360000,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32317560
+          }
+        ]
+      },
+      "workerErrors": [],
+      "rendererMemoryError": null,
+      "observed": {
+        "route": "#/runs/run-001",
+        "canvasCount": 3,
+        "tooltipCount": 0,
+        "chartCount": 3,
+        "pageWidth": 1440
+      }
+    },
+    {
+      "label": "active-31s",
+      "elapsedMs": 31342.630667,
+      "mainV8HeapBytes": 15427984,
+      "mainBackingStorageBytes": 408186,
+      "workerV8HeapBytes": 388804,
+      "workerBackingStorageBytes": 32317560,
+      "combinedV8AndBackingBytes": 48542534,
+      "rendererRssBytes": 600801280,
+      "rendererCount": 3,
+      "workerCount": 1,
+      "contexts": {
+        "main": {
+          "usedSize": 15427984,
+          "totalSize": 16416768,
+          "embedderHeapUsedSize": 2222832,
+          "backingStorageSize": 408186
+        },
+        "workers": [
+          {
+            "url": "http://127.0.0.1:4173/assets/data.worker-CckBE9yV.js",
+            "usedSize": 388804,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32317560
+          }
+        ]
+      },
+      "workerErrors": [],
+      "rendererMemoryError": null,
+      "observed": {
+        "route": "#/runs/run-001",
+        "canvasCount": 3,
+        "tooltipCount": 0,
+        "chartCount": 3,
+        "pageWidth": 1440
+      }
+    },
+    {
+      "label": "active-61s",
+      "elapsedMs": 61812.988375,
+      "mainV8HeapBytes": 19326272,
+      "mainBackingStorageBytes": 408984,
+      "workerV8HeapBytes": 417532,
+      "workerBackingStorageBytes": 32317560,
+      "combinedV8AndBackingBytes": 52470348,
+      "rendererRssBytes": 516325376,
+      "rendererCount": 3,
+      "workerCount": 1,
+      "contexts": {
+        "main": {
+          "usedSize": 19326272,
+          "totalSize": 20873216,
+          "embedderHeapUsedSize": 2415968,
+          "backingStorageSize": 408984
+        },
+        "workers": [
+          {
+            "url": "http://127.0.0.1:4173/assets/data.worker-CckBE9yV.js",
+            "usedSize": 417532,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32317560
+          }
+        ]
+      },
+      "workerErrors": [],
+      "rendererMemoryError": null,
+      "observed": {
+        "route": "#/runs/run-001",
+        "canvasCount": 3,
+        "tooltipCount": 0,
+        "chartCount": 3,
+        "pageWidth": 1440
+      }
+    },
+    {
+      "label": "active-90s",
+      "elapsedMs": 90943.187375,
+      "mainV8HeapBytes": 19621356,
+      "mainBackingStorageBytes": 409007,
+      "workerV8HeapBytes": 392040,
+      "workerBackingStorageBytes": 32317560,
+      "combinedV8AndBackingBytes": 52739963,
+      "rendererRssBytes": 519749632,
+      "rendererCount": 3,
+      "workerCount": 1,
+      "contexts": {
+        "main": {
+          "usedSize": 19621356,
+          "totalSize": 21135360,
+          "embedderHeapUsedSize": 2532096,
+          "backingStorageSize": 409007
+        },
+        "workers": [
+          {
+            "url": "http://127.0.0.1:4173/assets/data.worker-CckBE9yV.js",
+            "usedSize": 392040,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32317560
+          }
+        ]
+      },
+      "workerErrors": [],
+      "rendererMemoryError": null,
+      "observed": {
+        "route": "#/runs/run-001",
+        "canvasCount": 3,
+        "tooltipCount": 0,
+        "chartCount": 3,
+        "pageWidth": 1440
+      }
+    },
+    {
+      "label": "after-active",
+      "elapsedMs": 92292.617834,
+      "mainV8HeapBytes": 19511700,
+      "mainBackingStorageBytes": 408975,
+      "workerV8HeapBytes": 418356,
+      "workerBackingStorageBytes": 32317560,
+      "combinedV8AndBackingBytes": 52656591,
+      "rendererRssBytes": 519831552,
+      "rendererCount": 3,
+      "workerCount": 1,
+      "contexts": {
+        "main": {
+          "usedSize": 19511700,
+          "totalSize": 21135360,
+          "embedderHeapUsedSize": 2600320,
+          "backingStorageSize": 408975
+        },
+        "workers": [
+          {
+            "url": "http://127.0.0.1:4173/assets/data.worker-CckBE9yV.js",
+            "usedSize": 418356,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32317560
+          }
+        ]
+      },
+      "workerErrors": [],
+      "rendererMemoryError": null,
+      "observed": {
+        "route": "#/runs/run-001",
+        "canvasCount": 3,
+        "tooltipCount": 0,
+        "chartCount": 3,
+        "pageWidth": 1440
+      }
+    },
+    {
+      "label": "after-idle-recovery",
+      "elapsedMs": 127329.885375,
+      "mainV8HeapBytes": 15553728,
+      "mainBackingStorageBytes": 408018,
+      "workerV8HeapBytes": 418356,
+      "workerBackingStorageBytes": 32317560,
+      "combinedV8AndBackingBytes": 48697662,
+      "rendererRssBytes": 498843648,
+      "rendererCount": 3,
+      "workerCount": 1,
+      "contexts": {
+        "main": {
+          "usedSize": 15553728,
+          "totalSize": 16941056,
+          "embedderHeapUsedSize": 2449568,
+          "backingStorageSize": 408018
+        },
+        "workers": [
+          {
+            "url": "http://127.0.0.1:4173/assets/data.worker-CckBE9yV.js",
+            "usedSize": 418356,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32317560
+          }
+        ]
+      },
+      "workerErrors": [],
+      "rendererMemoryError": null,
+      "observed": {
+        "route": "#/runs/run-001",
+        "canvasCount": 3,
+        "tooltipCount": 0,
+        "chartCount": 3,
+        "pageWidth": 1440
+      }
+    }
+  ],
+  "operations": [
+    {
+      "index": 0,
+      "elapsedMs": 902.8389590000002,
+      "runId": "run-002",
+      "min": 0,
+      "max": 969,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 1,
+      "elapsedMs": 2058.072209,
+      "runId": "run-003",
+      "min": 1481,
+      "max": 4331,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 2,
+      "elapsedMs": 3221.3873750000002,
+      "runId": "run-004",
+      "min": 3405,
+      "max": 8645,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 3,
+      "elapsedMs": 4498.619250000001,
+      "runId": "run-005",
+      "min": 5771,
+      "max": 7251,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 4,
+      "elapsedMs": 5655.548167,
+      "runId": "run-006",
+      "min": 8579,
+      "max": 12704,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 5,
+      "elapsedMs": 6823.119250000001,
+      "runId": "run-007",
+      "min": 915,
+      "max": 8243,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 6,
+      "elapsedMs": 8114.452959000001,
+      "runId": "run-008",
+      "min": 3581,
+      "max": 5571,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 7,
+      "elapsedMs": 9270.975625,
+      "runId": "run-009",
+      "min": 6695,
+      "max": 12095,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 8,
+      "elapsedMs": 10420.189499999999,
+      "runId": "run-010",
+      "min": 10251,
+      "max": 19571,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 9,
+      "elapsedMs": 11698.633334,
+      "runId": "run-011",
+      "min": 14249,
+      "max": 16749,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 10,
+      "elapsedMs": 12855.862334,
+      "runId": "run-012",
+      "min": 2669,
+      "max": 9344,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 11,
+      "elapsedMs": 14005.516667,
+      "runId": "run-013",
+      "min": 6531,
+      "max": 17891,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 12,
+      "elapsedMs": 15280.982042,
+      "runId": "run-014",
+      "min": 10835,
+      "max": 13845,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 13,
+      "elapsedMs": 16436.971375,
+      "runId": "run-015",
+      "min": 15581,
+      "max": 23531,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 14,
+      "elapsedMs": 17586.35025,
+      "runId": "run-016",
+      "min": 669,
+      "max": 14069,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 15,
+      "elapsedMs": 18864.602459,
+      "runId": "run-017",
+      "min": 5279,
+      "max": 8799,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 16,
+      "elapsedMs": 20020.145292,
+      "runId": "run-018",
+      "min": 10331,
+      "max": 19556,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 17,
+      "elapsedMs": 21186.073834000003,
+      "runId": "run-019",
+      "min": 15825,
+      "max": 31265,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 18,
+      "elapsedMs": 22464.65475,
+      "runId": "run-020",
+      "min": 21761,
+      "max": 25791,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 19,
+      "elapsedMs": 23768.560584000003,
+      "runId": "run-001",
+      "min": 69999,
+      "max": 319999,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 20,
+      "elapsedMs": 24935.645,
+      "runId": "run-002",
+      "min": 1939,
+      "max": 5819,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 21,
+      "elapsedMs": 26213.426959,
+      "runId": "run-003",
+      "min": 3761,
+      "max": 4901,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 22,
+      "elapsedMs": 27369.491334000002,
+      "runId": "run-004",
+      "min": 6025,
+      "max": 9300,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 23,
+      "elapsedMs": 28522.387209,
+      "runId": "run-005",
+      "min": 8731,
+      "max": 14651,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 24,
+      "elapsedMs": 29814.792209000003,
+      "runId": "run-006",
+      "min": 1979,
+      "max": 3629,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 25,
+      "elapsedMs": 30969.431625,
+      "runId": "run-007",
+      "min": 4579,
+      "max": 9159,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 26,
+      "elapsedMs": 32553.391208999998,
+      "runId": "run-008",
+      "min": 7561,
+      "max": 15521,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 27,
+      "elapsedMs": 33830.059125,
+      "runId": "run-009",
+      "min": 11015,
+      "max": 13175,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 28,
+      "elapsedMs": 34985.405542,
+      "runId": "run-010",
+      "min": 931,
+      "max": 6756,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 29,
+      "elapsedMs": 36135.619584,
+      "runId": "run-011",
+      "min": 4249,
+      "max": 14249,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 30,
+      "elapsedMs": 37413.379499999995,
+      "runId": "run-012",
+      "min": 8009,
+      "max": 10679,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 31,
+      "elapsedMs": 38568.757999999994,
+      "runId": "run-013",
+      "min": 12211,
+      "max": 19311,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 32,
+      "elapsedMs": 39719.972125,
+      "runId": "run-014",
+      "min": 16855,
+      "max": 28895,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 33,
+      "elapsedMs": 41014.113375,
+      "runId": "run-015",
+      "min": 2861,
+      "max": 6041,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 34,
+      "elapsedMs": 42167.507999999994,
+      "runId": "run-016",
+      "min": 7369,
+      "max": 15744,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 35,
+      "elapsedMs": 43319.182834,
+      "runId": "run-017",
+      "min": 12319,
+      "max": 26399,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 36,
+      "elapsedMs": 44596.148167,
+      "runId": "run-018",
+      "min": 17711,
+      "max": 21401,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 37,
+      "elapsedMs": 45752.260959,
+      "runId": "run-019",
+      "min": 385,
+      "max": 10035,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 38,
+      "elapsedMs": 46918.920125,
+      "runId": "run-020",
+      "min": 5641,
+      "max": 21761,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 39,
+      "elapsedMs": 48263.541916999995,
+      "runId": "run-001",
+      "min": 269999,
+      "max": 369999,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 40,
+      "elapsedMs": 49418.229542,
+      "runId": "run-002",
+      "min": 3879,
+      "max": 6304,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 41,
+      "elapsedMs": 50588.956249999996,
+      "runId": "run-003",
+      "min": 6041,
+      "max": 10601,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 42,
+      "elapsedMs": 51880.650708999994,
+      "runId": "run-004",
+      "min": 785,
+      "max": 2095,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 43,
+      "elapsedMs": 53034.8855,
+      "runId": "run-005",
+      "min": 2811,
+      "max": 6511,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 44,
+      "elapsedMs": 54185.520208999995,
+      "runId": "run-006",
+      "min": 5279,
+      "max": 11879,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 45,
+      "elapsedMs": 55463.549042,
+      "runId": "run-007",
+      "min": 8243,
+      "max": 10075,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 46,
+      "elapsedMs": 56618.366459,
+      "runId": "run-008",
+      "min": 11541,
+      "max": 16516,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 47,
+      "elapsedMs": 57767.6555,
+      "runId": "run-009",
+      "min": 2375,
+      "max": 11015,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 48,
+      "elapsedMs": 59080.840584,
+      "runId": "run-010",
+      "min": 5591,
+      "max": 7921,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 49,
+      "elapsedMs": 60251.720875,
+      "runId": "run-011",
+      "min": 9249,
+      "max": 15499,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 50,
+      "elapsedMs": 61419.143041999996,
+      "runId": "run-012",
+      "min": 13349,
+      "max": 24029,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 51,
+      "elapsedMs": 63146.468458999996,
+      "runId": "run-013",
+      "min": 851,
+      "max": 3691,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 52,
+      "elapsedMs": 64300.554791999995,
+      "runId": "run-014",
+      "min": 4815,
+      "max": 12340,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 53,
+      "elapsedMs": 65451.684542,
+      "runId": "run-015",
+      "min": 9221,
+      "max": 21941,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 54,
+      "elapsedMs": 66746.478542,
+      "runId": "run-016",
+      "min": 14069,
+      "max": 17419,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 55,
+      "elapsedMs": 67900.637959,
+      "runId": "run-017",
+      "min": 19359,
+      "max": 28159,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 56,
+      "elapsedMs": 69053.682625,
+      "runId": "run-018",
+      "min": 2951,
+      "max": 17711,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 57,
+      "elapsedMs": 70329.59662499999,
+      "runId": "run-019",
+      "min": 8105,
+      "max": 11965,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 58,
+      "elapsedMs": 71484.482292,
+      "runId": "run-020",
+      "min": 13701,
+      "max": 23776,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 59,
+      "elapsedMs": 72701.131209,
+      "runId": "run-001",
+      "min": 469999,
+      "max": 869999,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 60,
+      "elapsedMs": 73979.222125,
+      "runId": "run-002",
+      "min": 0,
+      "max": 969,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 61,
+      "elapsedMs": 75133.9265,
+      "runId": "run-003",
+      "min": 1481,
+      "max": 4331,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 62,
+      "elapsedMs": 76284.358375,
+      "runId": "run-004",
+      "min": 3405,
+      "max": 8645,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 63,
+      "elapsedMs": 77562.643042,
+      "runId": "run-005",
+      "min": 5771,
+      "max": 7251,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 64,
+      "elapsedMs": 78717.37637499999,
+      "runId": "run-006",
+      "min": 8579,
+      "max": 12704,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 65,
+      "elapsedMs": 79867.108417,
+      "runId": "run-007",
+      "min": 915,
+      "max": 8243,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 66,
+      "elapsedMs": 81146.2555,
+      "runId": "run-008",
+      "min": 3581,
+      "max": 5571,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 67,
+      "elapsedMs": 82305.221125,
+      "runId": "run-009",
+      "min": 6695,
+      "max": 12095,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 68,
+      "elapsedMs": 83468.00016699999,
+      "runId": "run-010",
+      "min": 10251,
+      "max": 19571,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 69,
+      "elapsedMs": 84761.835834,
+      "runId": "run-011",
+      "min": 14249,
+      "max": 16749,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 70,
+      "elapsedMs": 85915.99258399999,
+      "runId": "run-012",
+      "min": 2669,
+      "max": 9344,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 71,
+      "elapsedMs": 87067.079042,
+      "runId": "run-013",
+      "min": 6531,
+      "max": 17891,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 72,
+      "elapsedMs": 88361.818709,
+      "runId": "run-014",
+      "min": 10835,
+      "max": 13845,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 73,
+      "elapsedMs": 89519.40275,
+      "runId": "run-015",
+      "min": 15581,
+      "max": 23531,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 74,
+      "elapsedMs": 90666.500292,
+      "runId": "run-016",
+      "min": 669,
+      "max": 14069,
+      "inspectedBoundary": "last"
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "limits": [
+    "One desktop Chromium engine on one machine.",
+    "Three-minute activity plus finite idle cannot exclude slower leaks or production-only behavior.",
+    "No real network source, cluster, account or user telemetry is involved.",
+    "GC checkpoint intervention changes natural GC scheduling; this run measures retained allocations, not unforced peak memory."
+  ]
+}

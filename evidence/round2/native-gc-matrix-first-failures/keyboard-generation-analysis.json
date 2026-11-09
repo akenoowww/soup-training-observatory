@@ -1,0 +1,213 @@
+{
+  "sourceTrace": "evidence/round2/native-gc-matrix-first-failures/adversarial-high-density-d-db4e6-d-spike-inspectable-at-DPR2-chromium/trace.zip",
+  "method": "Read original Playwright frame-snapshots; only explicitly present attribute values are extracted. Empty arrays can mean snapshot references inherited nodes, not absent attributes. No application rerun or modified trace.",
+  "conclusion": "The focus and Home actions preceded the requested zoom generation. Focus snapshot shows full x0..999999 with ready=true; after Home the old range is busy and announces sampled step0. The new490000..510000 data then clears old inspection state as designed. Generic ready and max9.4 were not generation-specific predicates. This does not establish a pointer/keyboard production race.",
+  "snapshots": [
+    {
+      "callId": "gekb@867",
+      "phase": "before",
+      "timestamp": 7383.674,
+      "explicitReadyValues": [
+        "true"
+      ],
+      "explicitXMinimums": [
+        "0"
+      ],
+      "explicitXMaximums": [
+        "999999"
+      ],
+      "explicitBusyValues": [
+        "false",
+        "false"
+      ],
+      "sampledStep0AnnouncementPresent": false
+    },
+    {
+      "callId": "gekb@867",
+      "phase": "action",
+      "timestamp": 7409.074,
+      "explicitReadyValues": [
+        "true"
+      ],
+      "explicitXMinimums": [],
+      "explicitXMaximums": [],
+      "explicitBusyValues": [],
+      "sampledStep0AnnouncementPresent": false
+    },
+    {
+      "callId": "gekb@867",
+      "phase": "after",
+      "timestamp": 7413.639,
+      "explicitReadyValues": [],
+      "explicitXMinimums": [],
+      "explicitXMaximums": [],
+      "explicitBusyValues": [],
+      "sampledStep0AnnouncementPresent": false
+    },
+    {
+      "callId": "gekb@869",
+      "phase": "before",
+      "timestamp": 7414.826,
+      "explicitReadyValues": [
+        "true"
+      ],
+      "explicitXMinimums": [],
+      "explicitXMaximums": [],
+      "explicitBusyValues": [],
+      "sampledStep0AnnouncementPresent": false
+    },
+    {
+      "callId": "gekb@869",
+      "phase": "after",
+      "timestamp": 7416.336,
+      "explicitReadyValues": [
+        "true"
+      ],
+      "explicitXMinimums": [],
+      "explicitXMaximums": [],
+      "explicitBusyValues": [],
+      "sampledStep0AnnouncementPresent": false
+    },
+    {
+      "callId": "gekb@871",
+      "phase": "before",
+      "timestamp": 7417.384,
+      "explicitReadyValues": [
+        "true"
+      ],
+      "explicitXMinimums": [],
+      "explicitXMaximums": [],
+      "explicitBusyValues": [],
+      "sampledStep0AnnouncementPresent": false
+    },
+    {
+      "callId": "gekb@871",
+      "phase": "after",
+      "timestamp": 7418.561,
+      "explicitReadyValues": [
+        "true"
+      ],
+      "explicitXMinimums": [
+        "0"
+      ],
+      "explicitXMaximums": [
+        "999999"
+      ],
+      "explicitBusyValues": [
+        "false",
+        "false"
+      ],
+      "sampledStep0AnnouncementPresent": false
+    },
+    {
+      "callId": "gekb@873",
+      "phase": "before",
+      "timestamp": 7419.506,
+      "explicitReadyValues": [
+        "true"
+      ],
+      "explicitXMinimums": [
+        "0"
+      ],
+      "explicitXMaximums": [
+        "999999"
+      ],
+      "explicitBusyValues": [
+        "false",
+        "false"
+      ],
+      "sampledStep0AnnouncementPresent": false
+    },
+    {
+      "callId": "gekb@873",
+      "phase": "after",
+      "timestamp": 7422.057,
+      "explicitReadyValues": [
+        "true"
+      ],
+      "explicitXMinimums": [
+        "0"
+      ],
+      "explicitXMaximums": [
+        "999999"
+      ],
+      "explicitBusyValues": [
+        "false",
+        "false"
+      ],
+      "sampledStep0AnnouncementPresent": false
+    },
+    {
+      "callId": "gekb@875",
+      "phase": "action",
+      "timestamp": 7423.009,
+      "explicitReadyValues": [],
+      "explicitXMinimums": [],
+      "explicitXMaximums": [],
+      "explicitBusyValues": [],
+      "sampledStep0AnnouncementPresent": false
+    },
+    {
+      "callId": "gekb@875",
+      "phase": "after",
+      "timestamp": 7449.702,
+      "explicitReadyValues": [
+        "false"
+      ],
+      "explicitXMinimums": [
+        "0",
+        "0",
+        "0"
+      ],
+      "explicitXMaximums": [
+        "999999",
+        "999999",
+        "999999"
+      ],
+      "explicitBusyValues": [
+        "true",
+        "true",
+        "true",
+        "true"
+      ],
+      "sampledStep0AnnouncementPresent": true
+    },
+    {
+      "callId": "gekb@877",
+      "phase": "before",
+      "timestamp": 7455.978,
+      "explicitReadyValues": [
+        "false"
+      ],
+      "explicitXMinimums": [
+        "490000",
+        "490000",
+        "490000"
+      ],
+      "explicitXMaximums": [
+        "510000",
+        "510000",
+        "510000"
+      ],
+      "explicitBusyValues": [
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "sampledStep0AnnouncementPresent": false
+    },
+    {
+      "callId": "gekb@877",
+      "phase": "after",
+      "timestamp": 17457.593,
+      "explicitReadyValues": [
+        "true"
+      ],
+      "explicitXMinimums": [],
+      "explicitXMaximums": [],
+      "explicitBusyValues": [],
+      "sampledStep0AnnouncementPresent": false
+    }
+  ]
+}

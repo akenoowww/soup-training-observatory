@@ -1,0 +1,10 @@
+
+Running 3 tests using 1 worker
+
+(node:18961) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/3] [chromium] › tests/e2e/canvas-truth.spec.ts:77:1 › NaN interval is an actual unpainted gap with finite painted neighbours, not zero or interpolation
+[2/3] [chromium] › tests/e2e/canvas-truth.spec.ts:92:1 › painted values align with actual numeric x/y axis labels for every metric
+[3/3] [chromium] › tests/e2e/canvas-truth.spec.ts:132:1 › drawn deep-zoom step labels stay distinct and learning-rate labels retain nonzero magnitudes
+  3 passed (2.1s)

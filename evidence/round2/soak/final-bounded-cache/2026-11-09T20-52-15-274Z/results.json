@@ -1,0 +1,304 @@
+{
+  "generatedAt": "2026-11-09T20:53:41.348Z",
+  "status": "failed",
+  "error": {
+    "message": "page.waitForFunction: Timeout 30000ms exceeded.",
+    "stack": "page.waitForFunction: Timeout 30000ms exceeded.\n    at settled (/Users/noname/Desktop/personal-projects/soup/scripts/soak.mjs:179:14)\n    at /Users/noname/Desktop/personal-projects/soup/scripts/soak.mjs:343:11"
+  },
+  "browser": "156.0.8078.81",
+  "machine": "darwin/arm64",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "cpuThrottle": 1,
+  "servedAssets": [
+    "./assets/app-CdawIVe3.js",
+    "./assets/client-Saz_VHki.css",
+    "./assets/app-DfZOBv6h.css"
+  ],
+  "requestedActiveSeconds": 180,
+  "requestedIdleSeconds": 35,
+  "elapsedSeconds": 85.740263584,
+  "pace": "At least one second between active-loop iterations, plus actual render/interaction time. Each iteration changes a run, submits one numeric range and inspects a sampled point; every third iteration also changes scale and resets zoom.",
+  "memoryScope": "GC requested in document and each matching dedicated data worker before each snapshot. Combined V8 heap+backing stores includes worker canonical typed arrays but excludes native/GPU allocations. Renderer RSS sums renderer processes in an isolated one-page browser, can include spare renderers and allocator retention, and excludes browser/GPU/utility processes.",
+  "standardizedCheckpoints": "Reload run002 then run001; reset full step domain and linear scale. This deliberately aligns the worker LRU data for retained-memory comparisons. Idle recovery keeps the same full run001 open, with no page interactions.",
+  "iterationCount": 19,
+  "interactionCount": 19,
+  "interactionCountMeaning": "Completed active iterations, not individual DOM events. Each iteration contains a run switch, range submission and keyboard inspection; every third also has two scale changes and reset.",
+  "actionCounts": {
+    "runSwitches": 19,
+    "rangeSubmissions": 19,
+    "keyboardInspections": 19,
+    "scaleChanges": 14,
+    "zoomResets": 7
+  },
+  "visitedRunIds": [
+    "run-002",
+    "run-003",
+    "run-004",
+    "run-005",
+    "run-006",
+    "run-007",
+    "run-008",
+    "run-009",
+    "run-010",
+    "run-011",
+    "run-012",
+    "run-013",
+    "run-014",
+    "run-015",
+    "run-016",
+    "run-017",
+    "run-018",
+    "run-019",
+    "run-020"
+  ],
+  "summary": {
+    "initialBytes": 38945347,
+    "maximumCheckpointBytes": 494824485,
+    "finalBytes": 494824485,
+    "finalMinusInitialBytes": 455879138,
+    "memoryVerdict": "Descriptive short-run evidence only. No automatic absence-of-leaks guarantee is inferred; review checkpoints, final idle recovery and bounded source/query cache policy."
+  },
+  "snapshots": [
+    {
+      "label": "warmup-full-1M",
+      "elapsedMs": 723.8655419999999,
+      "mainV8HeapBytes": 5849144,
+      "mainBackingStorageBytes": 416278,
+      "workerV8HeapBytes": 361956,
+      "workerBackingStorageBytes": 32317969,
+      "combinedV8AndBackingBytes": 38945347,
+      "rendererRssBytes": 555827200,
+      "rendererCount": 3,
+      "workerCount": 1,
+      "contexts": {
+        "main": {
+          "usedSize": 5849144,
+          "totalSize": 6717440,
+          "embedderHeapUsedSize": 1853536,
+          "backingStorageSize": 416278
+        },
+        "workers": [
+          {
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 361956,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32317969
+          }
+        ]
+      },
+      "workerErrors": [],
+      "rendererMemoryError": null,
+      "observed": {
+        "route": "#/runs/run-001",
+        "canvasCount": 3,
+        "tooltipCount": 0,
+        "chartCount": 3,
+        "pageWidth": 1440
+      }
+    },
+    {
+      "label": "active-34s",
+      "elapsedMs": 34820.779083999994,
+      "mainV8HeapBytes": 461691324,
+      "mainBackingStorageBytes": 417044,
+      "workerV8HeapBytes": 398148,
+      "workerBackingStorageBytes": 32317969,
+      "combinedV8AndBackingBytes": 494824485,
+      "rendererRssBytes": 1846050816,
+      "rendererCount": 3,
+      "workerCount": 1,
+      "contexts": {
+        "main": {
+          "usedSize": 461691324,
+          "totalSize": 473595904,
+          "embedderHeapUsedSize": 4481904,
+          "backingStorageSize": 417044
+        },
+        "workers": [
+          {
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 398148,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32317969
+          }
+        ]
+      },
+      "workerErrors": [],
+      "rendererMemoryError": null,
+      "observed": {
+        "route": "#/runs/run-001",
+        "canvasCount": 3,
+        "tooltipCount": 0,
+        "chartCount": 3,
+        "pageWidth": 1440
+      }
+    }
+  ],
+  "operations": [
+    {
+      "index": 0,
+      "elapsedMs": 1129.7468749999998,
+      "runId": "run-002",
+      "min": 0,
+      "max": 969,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 1,
+      "elapsedMs": 2368.912167,
+      "runId": "run-003",
+      "min": 1481,
+      "max": 4331,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 2,
+      "elapsedMs": 3618.664417,
+      "runId": "run-004",
+      "min": 3405,
+      "max": 8645,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 3,
+      "elapsedMs": 10979.3985,
+      "runId": "run-005",
+      "min": 5771,
+      "max": 7251,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 4,
+      "elapsedMs": 12218.575459,
+      "runId": "run-006",
+      "min": 8579,
+      "max": 12704,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 5,
+      "elapsedMs": 13484.921875,
+      "runId": "run-007",
+      "min": 915,
+      "max": 8243,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 6,
+      "elapsedMs": 14912.361417,
+      "runId": "run-008",
+      "min": 3581,
+      "max": 5571,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 7,
+      "elapsedMs": 22067.845959,
+      "runId": "run-009",
+      "min": 6695,
+      "max": 12095,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 8,
+      "elapsedMs": 23336.927584,
+      "runId": "run-010",
+      "min": 10251,
+      "max": 19571,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 9,
+      "elapsedMs": 24764.587875,
+      "runId": "run-011",
+      "min": 14249,
+      "max": 16749,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 10,
+      "elapsedMs": 26102.56775,
+      "runId": "run-012",
+      "min": 2669,
+      "max": 9344,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 11,
+      "elapsedMs": 33166.342874999995,
+      "runId": "run-013",
+      "min": 6531,
+      "max": 17891,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 12,
+      "elapsedMs": 36313.729959,
+      "runId": "run-014",
+      "min": 10835,
+      "max": 13845,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 13,
+      "elapsedMs": 37551.377959,
+      "runId": "run-015",
+      "min": 15581,
+      "max": 23531,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 14,
+      "elapsedMs": 43351.937167,
+      "runId": "run-016",
+      "min": 669,
+      "max": 14069,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 15,
+      "elapsedMs": 46161.538458999996,
+      "runId": "run-017",
+      "min": 5279,
+      "max": 8799,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 16,
+      "elapsedMs": 47400.441999999995,
+      "runId": "run-018",
+      "min": 10331,
+      "max": 19556,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 17,
+      "elapsedMs": 48649.834417,
+      "runId": "run-019",
+      "min": 15825,
+      "max": 31265,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 18,
+      "elapsedMs": 54594.976624999996,
+      "runId": "run-020",
+      "min": 21761,
+      "max": 25791,
+      "inspectedBoundary": "last"
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "limits": [
+    "One desktop Chromium engine on one machine.",
+    "Three-minute activity plus finite idle cannot exclude slower leaks or production-only behavior.",
+    "No real network source, cluster, account or user telemetry is involved.",
+    "GC checkpoint intervention changes natural GC scheduling; this run measures retained allocations, not unforced peak memory."
+  ]
+}

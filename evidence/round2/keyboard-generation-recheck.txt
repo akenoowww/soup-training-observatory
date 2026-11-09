@@ -1,0 +1,65 @@
+
+Running 20 tests using 3 workers
+
+(node:43008) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:43009) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:43010) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   3 [chromium] › tests/e2e/adversarial.spec.ts:299:1 › chart keyboard zoom and roving tabs remain usable without a pointer (1.1s)
+  ✓   1 [chromium] › tests/e2e/adversarial.spec.ts:299:1 › chart keyboard zoom and roving tabs remain usable without a pointer (1.1s)
+  ✓   2 [chromium] › tests/e2e/adversarial.spec.ts:440:3 › high-density display › the million-point curve remains usable and spike inspectable at DPR2 (1.3s)
+(node:43074) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:43075) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:43080) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   5 [chromium] › tests/e2e/adversarial.spec.ts:299:1 › chart keyboard zoom and roving tabs remain usable without a pointer (936ms)
+  ✓   4 [chromium] › tests/e2e/adversarial.spec.ts:440:3 › high-density display › the million-point curve remains usable and spike inspectable at DPR2 (985ms)
+(node:43131) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   6 [chromium] › tests/e2e/adversarial.spec.ts:440:3 › high-density display › the million-point curve remains usable and spike inspectable at DPR2 (946ms)
+(node:43132) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:43133) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   7 [chromium] › tests/e2e/adversarial.spec.ts:299:1 › chart keyboard zoom and roving tabs remain usable without a pointer (721ms)
+  ✓   8 [chromium] › tests/e2e/adversarial.spec.ts:440:3 › high-density display › the million-point curve remains usable and spike inspectable at DPR2 (907ms)
+(node:43181) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   9 [chromium] › tests/e2e/adversarial.spec.ts:299:1 › chart keyboard zoom and roving tabs remain usable without a pointer (638ms)
+(node:43182) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:43184) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  10 [chromium] › tests/e2e/adversarial.spec.ts:440:3 › high-density display › the million-point curve remains usable and spike inspectable at DPR2 (953ms)
+  ✓  11 [chromium] › tests/e2e/adversarial.spec.ts:299:1 › chart keyboard zoom and roving tabs remain usable without a pointer (754ms)
+(node:43217) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:43218) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  12 [chromium] › tests/e2e/adversarial.spec.ts:440:3 › high-density display › the million-point curve remains usable and spike inspectable at DPR2 (933ms)
+(node:43236) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  13 [chromium] › tests/e2e/adversarial.spec.ts:299:1 › chart keyboard zoom and roving tabs remain usable without a pointer (768ms)
+  ✓  14 [chromium] › tests/e2e/adversarial.spec.ts:440:3 › high-density display › the million-point curve remains usable and spike inspectable at DPR2 (909ms)
+(node:43268) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  15 [chromium] › tests/e2e/adversarial.spec.ts:299:1 › chart keyboard zoom and roving tabs remain usable without a pointer (593ms)
+(node:43269) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:43273) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  17 [chromium] › tests/e2e/adversarial.spec.ts:299:1 › chart keyboard zoom and roving tabs remain usable without a pointer (706ms)
+  ✓  16 [chromium] › tests/e2e/adversarial.spec.ts:440:3 › high-density display › the million-point curve remains usable and spike inspectable at DPR2 (959ms)
+(node:43318) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:43319) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  18 [chromium] › tests/e2e/adversarial.spec.ts:440:3 › high-density display › the million-point curve remains usable and spike inspectable at DPR2 (786ms)
+  ✓  19 [chromium] › tests/e2e/adversarial.spec.ts:299:1 › chart keyboard zoom and roving tabs remain usable without a pointer (704ms)
+  ✓  20 [chromium] › tests/e2e/adversarial.spec.ts:440:3 › high-density display › the million-point curve remains usable and spike inspectable at DPR2 (898ms)
+
+  20 passed (11.8s)

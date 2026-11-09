@@ -1,0 +1,13 @@
+
+> soup-training-observatory@1.0.0 test
+> vitest run
+
+
+ RUN  v4.1.12 /Users/noname/Desktop/personal-projects/soup
+
+
+ Test Files  9 passed (9)
+      Tests  71 passed (71)
+   Start at  01:58:54
+   Duration  1.78s (transform 457ms, setup 0ms, import 630ms, tests 2.90s, environment 1ms)
+

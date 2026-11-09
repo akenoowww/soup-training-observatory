@@ -1,0 +1,14 @@
+
+Running 3 tests using 3 workers
+
+(node:44868) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:44870) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:44869) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 [chromium] › tests/e2e/adversarial.spec.ts:478:3 › touch input emulation › navigation and explicit zoom controls work through touchscreen taps (1.2s)
+  ✓  1 [webkit] › tests/e2e/adversarial.spec.ts:478:3 › touch input emulation › navigation and explicit zoom controls work through touchscreen taps (1.5s)
+  ✓  3 [firefox] › tests/e2e/adversarial.spec.ts:478:3 › touch input emulation › navigation and explicit zoom controls work through touchscreen taps (1.7s)
+
+  3 passed (3.7s)

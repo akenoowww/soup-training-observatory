@@ -1,0 +1,1708 @@
+{
+  "build": {
+    "indexSha256": "50aeeae34d8cc0a25579fb8e0cef09a534b3d3cb969a6b98d7c45b49de1d406e",
+    "benchmarkIndexSha256": "b8aca4b92bedd15c3a5104cbce4ea393185bc71bcec16aa3879d334a0a3753bc",
+    "benchmarkAssets": [
+      "./assets/benchmark-0r0h9aVx.js",
+      "./assets/client-C5dJojYl.js",
+      "./assets/client-Saz_VHki.css"
+    ],
+    "assets": [
+      "./assets/app-DsJyw_oe.js",
+      "./assets/client-C5dJojYl.js",
+      "./assets/client-Saz_VHki.css",
+      "./assets/app-DfZOBv6h.css"
+    ]
+  },
+  "fixtureRuns": [
+    {
+      "mode": "baseline",
+      "iteration": 1,
+      "browserVersion": "156.0.8078.81",
+      "firstRenderMs": 634.2000000029802,
+      "dataPreparationMs": 438.6000000014901,
+      "plotUntilPaintMs": 122.89999999850988,
+      "sourcePoints": 1000000,
+      "renderedPoints": 1000000,
+      "spikeRetained": true,
+      "zoomMs": [],
+      "hoverMs": [],
+      "zoom": {
+        "durationMs": 7.899999998509884,
+        "renderedPoints": 1000000,
+        "sourcePoints": 20001,
+        "spikeRetained": true
+      },
+      "hovers": [
+        {
+          "durationMs": 10.5,
+          "step": 497986,
+          "value": 0.4312839577888786,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 15.099999994039536,
+          "step": 500000,
+          "value": 9.4,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 16.600000001490116,
+          "step": 501990,
+          "value": 0.45149980760920017,
+          "isTrusted": true
+        }
+      ],
+      "memoryAtOverview": {
+        "contexts": [
+          {
+            "target": "page",
+            "usedSize": 25051832,
+            "totalSize": 25477120,
+            "embedderHeapUsedSize": 468520,
+            "backingStorageSize": 32067340
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 57119172,
+        "rendererRssBytes": 526204928,
+        "rendererCount": 3,
+        "errors": [],
+        "scope": "V8 total includes measured page+dedicated-worker JS heap and backing stores after explicit GC in both contexts; excludes native/GPU allocations. RSS sums renderer processes in an isolated one-page browser and may include spare renderers; browser/GPU/utility processes are excluded. RSS is an approximation of tab footprint, not the browser Task Manager private-memory number."
+      },
+      "traceFile": "baseline.trace.json",
+      "traceSummary": {
+        "events": 9202,
+        "paintEvents": 23,
+        "inputEvents": 59,
+        "frameProcesses": [
+          {
+            "frame": "01C8AD1A7A13B2EBB9A4FCB01F69FF40",
+            "isInPrimaryMainFrame": true,
+            "isOutermostMainFrame": true,
+            "name": "",
+            "processId": 50583,
+            "url": "about:blank"
+          }
+        ],
+        "workerProcesses": [],
+        "processPrivateFootprints": [],
+        "userTimingNames": [
+          "soup:benchmark:start",
+          "soup:benchmark:data-ready",
+          "soup:benchmark:first-paint",
+          "soup:benchmark:zoom-start",
+          "soup:benchmark:zoom-painted",
+          "soup:benchmark:hover-start",
+          "soup:benchmark:hover-painted",
+          "soup:benchmark:first-render",
+          "soup:benchmark:zoom",
+          "soup:benchmark:hover"
+        ]
+      }
+    },
+    {
+      "mode": "baseline",
+      "iteration": 2,
+      "browserVersion": "156.0.8078.81",
+      "firstRenderMs": 594.3999999985099,
+      "dataPreparationMs": 427,
+      "plotUntilPaintMs": 113.30000000447035,
+      "sourcePoints": 1000000,
+      "renderedPoints": 1000000,
+      "spikeRetained": true,
+      "zoomMs": [],
+      "hoverMs": [],
+      "zoom": {
+        "durationMs": 11.200000002980232,
+        "renderedPoints": 1000000,
+        "sourcePoints": 20001,
+        "spikeRetained": true
+      },
+      "hovers": [
+        {
+          "durationMs": 7.600000001490116,
+          "step": 497986,
+          "value": 0.4312839577888786,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 17,
+          "step": 500000,
+          "value": 9.4,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 16.299999997019768,
+          "step": 501990,
+          "value": 0.45149980760920017,
+          "isTrusted": true
+        }
+      ],
+      "memoryAtOverview": {
+        "contexts": [
+          {
+            "target": "page",
+            "usedSize": 24995668,
+            "totalSize": 25477120,
+            "embedderHeapUsedSize": 468200,
+            "backingStorageSize": 32067338
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 57063006,
+        "rendererRssBytes": 520749056,
+        "rendererCount": 3,
+        "errors": [],
+        "scope": "V8 total includes measured page+dedicated-worker JS heap and backing stores after explicit GC in both contexts; excludes native/GPU allocations. RSS sums renderer processes in an isolated one-page browser and may include spare renderers; browser/GPU/utility processes are excluded. RSS is an approximation of tab footprint, not the browser Task Manager private-memory number."
+      },
+      "traceFile": null,
+      "traceSummary": null
+    },
+    {
+      "mode": "baseline",
+      "iteration": 3,
+      "browserVersion": "156.0.8078.81",
+      "firstRenderMs": 590.8999999985099,
+      "dataPreparationMs": 421.19999999552965,
+      "plotUntilPaintMs": 110.30000000447035,
+      "sourcePoints": 1000000,
+      "renderedPoints": 1000000,
+      "spikeRetained": true,
+      "zoomMs": [],
+      "hoverMs": [],
+      "zoom": {
+        "durationMs": 22.100000001490116,
+        "renderedPoints": 1000000,
+        "sourcePoints": 20001,
+        "spikeRetained": true
+      },
+      "hovers": [
+        {
+          "durationMs": 5.299999997019768,
+          "step": 497986,
+          "value": 0.4312839577888786,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 16.19999999552965,
+          "step": 500000,
+          "value": 9.4,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 15.700000002980232,
+          "step": 501990,
+          "value": 0.45149980760920017,
+          "isTrusted": true
+        }
+      ],
+      "memoryAtOverview": {
+        "contexts": [
+          {
+            "target": "page",
+            "usedSize": 24995668,
+            "totalSize": 25477120,
+            "embedderHeapUsedSize": 468696,
+            "backingStorageSize": 32067338
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 57063006,
+        "rendererRssBytes": 521633792,
+        "rendererCount": 3,
+        "errors": [],
+        "scope": "V8 total includes measured page+dedicated-worker JS heap and backing stores after explicit GC in both contexts; excludes native/GPU allocations. RSS sums renderer processes in an isolated one-page browser and may include spare renderers; browser/GPU/utility processes are excluded. RSS is an approximation of tab footprint, not the browser Task Manager private-memory number."
+      },
+      "traceFile": null,
+      "traceSummary": null
+    },
+    {
+      "mode": "baseline",
+      "iteration": 4,
+      "browserVersion": "156.0.8078.81",
+      "firstRenderMs": 596.5,
+      "dataPreparationMs": 427.79999999701977,
+      "plotUntilPaintMs": 112.70000000298023,
+      "sourcePoints": 1000000,
+      "renderedPoints": 1000000,
+      "spikeRetained": true,
+      "zoomMs": [],
+      "hoverMs": [],
+      "zoom": {
+        "durationMs": 22.19999999552965,
+        "renderedPoints": 1000000,
+        "sourcePoints": 20001,
+        "spikeRetained": true
+      },
+      "hovers": [
+        {
+          "durationMs": 8.899999998509884,
+          "step": 497986,
+          "value": 0.4312839577888786,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 17.5,
+          "step": 500000,
+          "value": 9.4,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 18.200000002980232,
+          "step": 501990,
+          "value": 0.45149980760920017,
+          "isTrusted": true
+        }
+      ],
+      "memoryAtOverview": {
+        "contexts": [
+          {
+            "target": "page",
+            "usedSize": 24995668,
+            "totalSize": 25477120,
+            "embedderHeapUsedSize": 468224,
+            "backingStorageSize": 32067338
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 57063006,
+        "rendererRssBytes": 521977856,
+        "rendererCount": 3,
+        "errors": [],
+        "scope": "V8 total includes measured page+dedicated-worker JS heap and backing stores after explicit GC in both contexts; excludes native/GPU allocations. RSS sums renderer processes in an isolated one-page browser and may include spare renderers; browser/GPU/utility processes are excluded. RSS is an approximation of tab footprint, not the browser Task Manager private-memory number."
+      },
+      "traceFile": null,
+      "traceSummary": null
+    },
+    {
+      "mode": "baseline",
+      "iteration": 5,
+      "browserVersion": "156.0.8078.81",
+      "firstRenderMs": 597.2000000029802,
+      "dataPreparationMs": 428,
+      "plotUntilPaintMs": 114.40000000596046,
+      "sourcePoints": 1000000,
+      "renderedPoints": 1000000,
+      "spikeRetained": true,
+      "zoomMs": [],
+      "hoverMs": [],
+      "zoom": {
+        "durationMs": 21.599999994039536,
+        "renderedPoints": 1000000,
+        "sourcePoints": 20001,
+        "spikeRetained": true
+      },
+      "hovers": [
+        {
+          "durationMs": 4.700000002980232,
+          "step": 497986,
+          "value": 0.4312839577888786,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 17.899999998509884,
+          "step": 500000,
+          "value": 9.4,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 16.100000001490116,
+          "step": 501990,
+          "value": 0.45149980760920017,
+          "isTrusted": true
+        }
+      ],
+      "memoryAtOverview": {
+        "contexts": [
+          {
+            "target": "page",
+            "usedSize": 24994124,
+            "totalSize": 25477120,
+            "embedderHeapUsedSize": 710688,
+            "backingStorageSize": 32067338
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 57061462,
+        "rendererRssBytes": 520912896,
+        "rendererCount": 3,
+        "errors": [],
+        "scope": "V8 total includes measured page+dedicated-worker JS heap and backing stores after explicit GC in both contexts; excludes native/GPU allocations. RSS sums renderer processes in an isolated one-page browser and may include spare renderers; browser/GPU/utility processes are excluded. RSS is an approximation of tab footprint, not the browser Task Manager private-memory number."
+      },
+      "traceFile": null,
+      "traceSummary": null
+    },
+    {
+      "mode": "sampled-main",
+      "iteration": 1,
+      "browserVersion": "156.0.8078.81",
+      "firstRenderMs": 460.79999999701977,
+      "dataPreparationMs": 297.30000000447035,
+      "plotUntilPaintMs": 91.29999999701977,
+      "sourcePoints": 1000000,
+      "renderedPoints": 3580,
+      "spikeRetained": true,
+      "zoomMs": [],
+      "hoverMs": [],
+      "zoom": {
+        "durationMs": 23.299999997019768,
+        "renderedPoints": 2074,
+        "sourcePoints": 20001,
+        "spikeRetained": true
+      },
+      "hovers": [
+        {
+          "durationMs": 4.5,
+          "step": 497978,
+          "value": 0.4221477569527344,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 16.399999998509884,
+          "step": 500000,
+          "value": 9.4,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 15.5,
+          "step": 501999,
+          "value": 0.4616010031185936,
+          "isTrusted": true
+        }
+      ],
+      "memoryAtOverview": {
+        "contexts": [
+          {
+            "target": "page",
+            "usedSize": 1869704,
+            "totalSize": 2441216,
+            "embedderHeapUsedSize": 468512,
+            "backingStorageSize": 32067345
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 33937049,
+        "rendererRssBytes": 500760576,
+        "rendererCount": 3,
+        "errors": [],
+        "scope": "V8 total includes measured page+dedicated-worker JS heap and backing stores after explicit GC in both contexts; excludes native/GPU allocations. RSS sums renderer processes in an isolated one-page browser and may include spare renderers; browser/GPU/utility processes are excluded. RSS is an approximation of tab footprint, not the browser Task Manager private-memory number."
+      },
+      "traceFile": "sampled-main.trace.json",
+      "traceSummary": {
+        "events": 9605,
+        "paintEvents": 23,
+        "inputEvents": 59,
+        "frameProcesses": [
+          {
+            "frame": "D70E324772BE212047F31FA0C5D24BC2",
+            "isInPrimaryMainFrame": true,
+            "isOutermostMainFrame": true,
+            "name": "",
+            "processId": 50814,
+            "url": "about:blank"
+          }
+        ],
+        "workerProcesses": [],
+        "processPrivateFootprints": [],
+        "userTimingNames": [
+          "soup:benchmark:start",
+          "soup:benchmark:data-ready",
+          "soup:benchmark:first-paint",
+          "soup:benchmark:zoom-start",
+          "soup:benchmark:zoom-painted",
+          "soup:benchmark:hover-start",
+          "soup:benchmark:hover-painted",
+          "soup:benchmark:first-render",
+          "soup:benchmark:zoom",
+          "soup:benchmark:hover"
+        ]
+      }
+    },
+    {
+      "mode": "sampled-main",
+      "iteration": 2,
+      "browserVersion": "156.0.8078.81",
+      "firstRenderMs": 426.79999999701977,
+      "dataPreparationMs": 293.1000000014901,
+      "plotUntilPaintMs": 77.29999999701977,
+      "sourcePoints": 1000000,
+      "renderedPoints": 3580,
+      "spikeRetained": true,
+      "zoomMs": [],
+      "hoverMs": [],
+      "zoom": {
+        "durationMs": 30.69999999552965,
+        "renderedPoints": 2074,
+        "sourcePoints": 20001,
+        "spikeRetained": true
+      },
+      "hovers": [
+        {
+          "durationMs": 8.600000001490116,
+          "step": 497978,
+          "value": 0.4221477569527344,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 16.5,
+          "step": 500000,
+          "value": 9.4,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 16.899999998509884,
+          "step": 501999,
+          "value": 0.4616010031185936,
+          "isTrusted": true
+        }
+      ],
+      "memoryAtOverview": {
+        "contexts": [
+          {
+            "target": "page",
+            "usedSize": 1814296,
+            "totalSize": 2179072,
+            "embedderHeapUsedSize": 468296,
+            "backingStorageSize": 32067343
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 33881639,
+        "rendererRssBytes": 494551040,
+        "rendererCount": 3,
+        "errors": [],
+        "scope": "V8 total includes measured page+dedicated-worker JS heap and backing stores after explicit GC in both contexts; excludes native/GPU allocations. RSS sums renderer processes in an isolated one-page browser and may include spare renderers; browser/GPU/utility processes are excluded. RSS is an approximation of tab footprint, not the browser Task Manager private-memory number."
+      },
+      "traceFile": null,
+      "traceSummary": null
+    },
+    {
+      "mode": "sampled-main",
+      "iteration": 3,
+      "browserVersion": "156.0.8078.81",
+      "firstRenderMs": 419.79999999701977,
+      "dataPreparationMs": 282.6000000014901,
+      "plotUntilPaintMs": 78.19999999552965,
+      "sourcePoints": 1000000,
+      "renderedPoints": 3580,
+      "spikeRetained": true,
+      "zoomMs": [],
+      "hoverMs": [],
+      "zoom": {
+        "durationMs": 29.399999998509884,
+        "renderedPoints": 2074,
+        "sourcePoints": 20001,
+        "spikeRetained": true
+      },
+      "hovers": [
+        {
+          "durationMs": 8.399999998509884,
+          "step": 497978,
+          "value": 0.4221477569527344,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 16.700000002980232,
+          "step": 500000,
+          "value": 9.4,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 16.69999999552965,
+          "step": 501999,
+          "value": 0.4616010031185936,
+          "isTrusted": true
+        }
+      ],
+      "memoryAtOverview": {
+        "contexts": [
+          {
+            "target": "page",
+            "usedSize": 1813336,
+            "totalSize": 2703360,
+            "embedderHeapUsedSize": 468296,
+            "backingStorageSize": 32067343
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 33880679,
+        "rendererRssBytes": 494927872,
+        "rendererCount": 3,
+        "errors": [],
+        "scope": "V8 total includes measured page+dedicated-worker JS heap and backing stores after explicit GC in both contexts; excludes native/GPU allocations. RSS sums renderer processes in an isolated one-page browser and may include spare renderers; browser/GPU/utility processes are excluded. RSS is an approximation of tab footprint, not the browser Task Manager private-memory number."
+      },
+      "traceFile": null,
+      "traceSummary": null
+    },
+    {
+      "mode": "sampled-main",
+      "iteration": 4,
+      "browserVersion": "156.0.8078.81",
+      "firstRenderMs": 427.6000000014901,
+      "dataPreparationMs": 292.90000000596046,
+      "plotUntilPaintMs": 76.89999999850988,
+      "sourcePoints": 1000000,
+      "renderedPoints": 3580,
+      "spikeRetained": true,
+      "zoomMs": [],
+      "hoverMs": [],
+      "zoom": {
+        "durationMs": 33,
+        "renderedPoints": 2074,
+        "sourcePoints": 20001,
+        "spikeRetained": true
+      },
+      "hovers": [
+        {
+          "durationMs": 6.399999998509884,
+          "step": 497978,
+          "value": 0.4221477569527344,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 16.399999998509884,
+          "step": 500000,
+          "value": 9.4,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 16,
+          "step": 501999,
+          "value": 0.4616010031185936,
+          "isTrusted": true
+        }
+      ],
+      "memoryAtOverview": {
+        "contexts": [
+          {
+            "target": "page",
+            "usedSize": 1814284,
+            "totalSize": 2441216,
+            "embedderHeapUsedSize": 468296,
+            "backingStorageSize": 32067343
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 33881627,
+        "rendererRssBytes": 494845952,
+        "rendererCount": 3,
+        "errors": [],
+        "scope": "V8 total includes measured page+dedicated-worker JS heap and backing stores after explicit GC in both contexts; excludes native/GPU allocations. RSS sums renderer processes in an isolated one-page browser and may include spare renderers; browser/GPU/utility processes are excluded. RSS is an approximation of tab footprint, not the browser Task Manager private-memory number."
+      },
+      "traceFile": null,
+      "traceSummary": null
+    },
+    {
+      "mode": "sampled-main",
+      "iteration": 5,
+      "browserVersion": "156.0.8078.81",
+      "firstRenderMs": 427.6000000014901,
+      "dataPreparationMs": 294.8999999985099,
+      "plotUntilPaintMs": 77,
+      "sourcePoints": 1000000,
+      "renderedPoints": 3580,
+      "spikeRetained": true,
+      "zoomMs": [],
+      "hoverMs": [],
+      "zoom": {
+        "durationMs": 33,
+        "renderedPoints": 2074,
+        "sourcePoints": 20001,
+        "spikeRetained": true
+      },
+      "hovers": [
+        {
+          "durationMs": 6.100000001490116,
+          "step": 497978,
+          "value": 0.4221477569527344,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 16,
+          "step": 500000,
+          "value": 9.4,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 15.099999994039536,
+          "step": 501999,
+          "value": 0.4616010031185936,
+          "isTrusted": true
+        }
+      ],
+      "memoryAtOverview": {
+        "contexts": [
+          {
+            "target": "page",
+            "usedSize": 1814644,
+            "totalSize": 2441216,
+            "embedderHeapUsedSize": 468168,
+            "backingStorageSize": 32067343
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 33881987,
+        "rendererRssBytes": 496484352,
+        "rendererCount": 3,
+        "errors": [],
+        "scope": "V8 total includes measured page+dedicated-worker JS heap and backing stores after explicit GC in both contexts; excludes native/GPU allocations. RSS sums renderer processes in an isolated one-page browser and may include spare renderers; browser/GPU/utility processes are excluded. RSS is an approximation of tab footprint, not the browser Task Manager private-memory number."
+      },
+      "traceFile": null,
+      "traceSummary": null
+    },
+    {
+      "mode": "optimized",
+      "iteration": 1,
+      "browserVersion": "156.0.8078.81",
+      "firstRenderMs": 250.60000000149012,
+      "dataPreparationMs": 154.20000000298023,
+      "plotUntilPaintMs": 25.799999997019768,
+      "sourcePoints": 1000000,
+      "renderedPoints": 3580,
+      "spikeRetained": true,
+      "zoomMs": [],
+      "hoverMs": [],
+      "zoom": {
+        "durationMs": 31.200000002980232,
+        "renderedPoints": 2074,
+        "sourcePoints": 20001,
+        "spikeRetained": true
+      },
+      "hovers": [
+        {
+          "durationMs": 4.300000004470348,
+          "step": 497978,
+          "value": 0.4221477569527344,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 17.299999997019768,
+          "step": 500000,
+          "value": 9.4,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 16.399999998509884,
+          "step": 501999,
+          "value": 0.4616010031185936,
+          "isTrusted": true
+        }
+      ],
+      "memoryAtOverview": {
+        "contexts": [
+          {
+            "target": "page",
+            "usedSize": 1859708,
+            "totalSize": 2441216,
+            "embedderHeapUsedSize": 470888,
+            "backingStorageSize": 67318
+          },
+          {
+            "target": "worker",
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 341304,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32007583
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 34275913,
+        "rendererRssBytes": 505970688,
+        "rendererCount": 3,
+        "errors": [],
+        "scope": "V8 total includes measured page+dedicated-worker JS heap and backing stores after explicit GC in both contexts; excludes native/GPU allocations. RSS sums renderer processes in an isolated one-page browser and may include spare renderers; browser/GPU/utility processes are excluded. RSS is an approximation of tab footprint, not the browser Task Manager private-memory number."
+      },
+      "traceFile": "optimized.trace.json",
+      "traceSummary": {
+        "events": 8762,
+        "paintEvents": 26,
+        "inputEvents": 59,
+        "frameProcesses": [
+          {
+            "frame": "889EFC3CFEFC5F4F6C388C4C81ED2D84",
+            "isInPrimaryMainFrame": true,
+            "isOutermostMainFrame": true,
+            "name": "",
+            "processId": 51032,
+            "url": "about:blank"
+          }
+        ],
+        "workerProcesses": [
+          {
+            "pid": 51032,
+            "frame": "889EFC3CFEFC5F4F6C388C4C81ED2D84",
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "workerId": "EA5428675DC8CE89EA10C73D00DAD45C",
+            "workerThreadId": 1750951
+          }
+        ],
+        "processPrivateFootprints": [],
+        "userTimingNames": [
+          "soup:benchmark:start",
+          "soup:benchmark:data-ready",
+          "soup:benchmark:first-paint",
+          "soup:benchmark:zoom-start",
+          "soup:benchmark:zoom-painted",
+          "soup:benchmark:hover-start",
+          "soup:benchmark:hover-painted",
+          "soup:benchmark:first-render",
+          "soup:benchmark:zoom",
+          "soup:benchmark:hover"
+        ]
+      }
+    },
+    {
+      "mode": "optimized",
+      "iteration": 2,
+      "browserVersion": "156.0.8078.81",
+      "firstRenderMs": 217.89999999850988,
+      "dataPreparationMs": 142.29999999701977,
+      "plotUntilPaintMs": 20.799999997019768,
+      "sourcePoints": 1000000,
+      "renderedPoints": 3580,
+      "spikeRetained": true,
+      "zoomMs": [],
+      "hoverMs": [],
+      "zoom": {
+        "durationMs": 36.80000000447035,
+        "renderedPoints": 2074,
+        "sourcePoints": 20001,
+        "spikeRetained": true
+      },
+      "hovers": [
+        {
+          "durationMs": 5.5,
+          "step": 497978,
+          "value": 0.4221477569527344,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 16.5,
+          "step": 500000,
+          "value": 9.4,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 16.19999999552965,
+          "step": 501999,
+          "value": 0.4616010031185936,
+          "isTrusted": true
+        }
+      ],
+      "memoryAtOverview": {
+        "contexts": [
+          {
+            "target": "page",
+            "usedSize": 1797104,
+            "totalSize": 2441216,
+            "embedderHeapUsedSize": 470560,
+            "backingStorageSize": 67305
+          },
+          {
+            "target": "worker",
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 338696,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32007569
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 34210674,
+        "rendererRssBytes": 498647040,
+        "rendererCount": 3,
+        "errors": [],
+        "scope": "V8 total includes measured page+dedicated-worker JS heap and backing stores after explicit GC in both contexts; excludes native/GPU allocations. RSS sums renderer processes in an isolated one-page browser and may include spare renderers; browser/GPU/utility processes are excluded. RSS is an approximation of tab footprint, not the browser Task Manager private-memory number."
+      },
+      "traceFile": null,
+      "traceSummary": null
+    },
+    {
+      "mode": "optimized",
+      "iteration": 3,
+      "browserVersion": "156.0.8078.81",
+      "firstRenderMs": 221.29999999701977,
+      "dataPreparationMs": 143.70000000298023,
+      "plotUntilPaintMs": 21.700000002980232,
+      "sourcePoints": 1000000,
+      "renderedPoints": 3580,
+      "spikeRetained": true,
+      "zoomMs": [],
+      "hoverMs": [],
+      "zoom": {
+        "durationMs": 33.899999998509884,
+        "renderedPoints": 2074,
+        "sourcePoints": 20001,
+        "spikeRetained": true
+      },
+      "hovers": [
+        {
+          "durationMs": 4.299999997019768,
+          "step": 497978,
+          "value": 0.4221477569527344,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 15.799999997019768,
+          "step": 500000,
+          "value": 9.4,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 16.5,
+          "step": 501999,
+          "value": 0.4616010031185936,
+          "isTrusted": true
+        }
+      ],
+      "memoryAtOverview": {
+        "contexts": [
+          {
+            "target": "page",
+            "usedSize": 1802640,
+            "totalSize": 2179072,
+            "embedderHeapUsedSize": 470560,
+            "backingStorageSize": 67305
+          },
+          {
+            "target": "worker",
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 338696,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32007569
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 34216210,
+        "rendererRssBytes": 499974144,
+        "rendererCount": 3,
+        "errors": [],
+        "scope": "V8 total includes measured page+dedicated-worker JS heap and backing stores after explicit GC in both contexts; excludes native/GPU allocations. RSS sums renderer processes in an isolated one-page browser and may include spare renderers; browser/GPU/utility processes are excluded. RSS is an approximation of tab footprint, not the browser Task Manager private-memory number."
+      },
+      "traceFile": null,
+      "traceSummary": null
+    },
+    {
+      "mode": "optimized",
+      "iteration": 4,
+      "browserVersion": "156.0.8078.81",
+      "firstRenderMs": 229,
+      "dataPreparationMs": 144,
+      "plotUntilPaintMs": 27.69999999552965,
+      "sourcePoints": 1000000,
+      "renderedPoints": 3580,
+      "spikeRetained": true,
+      "zoomMs": [],
+      "hoverMs": [],
+      "zoom": {
+        "durationMs": 34.20000000298023,
+        "renderedPoints": 2074,
+        "sourcePoints": 20001,
+        "spikeRetained": true
+      },
+      "hovers": [
+        {
+          "durationMs": 5.899999998509884,
+          "step": 497978,
+          "value": 0.4221477569527344,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 15.899999998509884,
+          "step": 500000,
+          "value": 9.4,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 17,
+          "step": 501999,
+          "value": 0.4616010031185936,
+          "isTrusted": true
+        }
+      ],
+      "memoryAtOverview": {
+        "contexts": [
+          {
+            "target": "page",
+            "usedSize": 1802676,
+            "totalSize": 2179072,
+            "embedderHeapUsedSize": 470312,
+            "backingStorageSize": 67305
+          },
+          {
+            "target": "worker",
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 338696,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32007569
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 34216246,
+        "rendererRssBytes": 501235712,
+        "rendererCount": 3,
+        "errors": [],
+        "scope": "V8 total includes measured page+dedicated-worker JS heap and backing stores after explicit GC in both contexts; excludes native/GPU allocations. RSS sums renderer processes in an isolated one-page browser and may include spare renderers; browser/GPU/utility processes are excluded. RSS is an approximation of tab footprint, not the browser Task Manager private-memory number."
+      },
+      "traceFile": null,
+      "traceSummary": null
+    },
+    {
+      "mode": "optimized",
+      "iteration": 5,
+      "browserVersion": "156.0.8078.81",
+      "firstRenderMs": 219.80000000447035,
+      "dataPreparationMs": 142.69999999552965,
+      "plotUntilPaintMs": 21.30000000447035,
+      "sourcePoints": 1000000,
+      "renderedPoints": 3580,
+      "spikeRetained": true,
+      "zoomMs": [],
+      "hoverMs": [],
+      "zoom": {
+        "durationMs": 34.399999998509884,
+        "renderedPoints": 2074,
+        "sourcePoints": 20001,
+        "spikeRetained": true
+      },
+      "hovers": [
+        {
+          "durationMs": 5,
+          "step": 497978,
+          "value": 0.4221477569527344,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 16.30000000447035,
+          "step": 500000,
+          "value": 9.4,
+          "isTrusted": true
+        },
+        {
+          "durationMs": 16.799999997019768,
+          "step": 501999,
+          "value": 0.4616010031185936,
+          "isTrusted": true
+        }
+      ],
+      "memoryAtOverview": {
+        "contexts": [
+          {
+            "target": "page",
+            "usedSize": 1802476,
+            "totalSize": 2179072,
+            "embedderHeapUsedSize": 470552,
+            "backingStorageSize": 67305
+          },
+          {
+            "target": "worker",
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 338696,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32007569
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 34216046,
+        "rendererRssBytes": 499122176,
+        "rendererCount": 3,
+        "errors": [],
+        "scope": "V8 total includes measured page+dedicated-worker JS heap and backing stores after explicit GC in both contexts; excludes native/GPU allocations. RSS sums renderer processes in an isolated one-page browser and may include spare renderers; browser/GPU/utility processes are excluded. RSS is an approximation of tab footprint, not the browser Task Manager private-memory number."
+      },
+      "traceFile": null,
+      "traceSummary": null
+    }
+  ],
+  "applicationRuns": [
+    {
+      "iteration": 1,
+      "browserVersion": "156.0.8078.81",
+      "firstRenderMs": 540.7999999970198,
+      "zooms": [
+        {
+          "durationMs": 98.19999999552965,
+          "isTrusted": true,
+          "startTime": 668.8999999985099,
+          "endTime": 767.0999999940395,
+          "hash": "#/runs/run-001?min=249999.75&max=749999.25"
+        },
+        {
+          "durationMs": 61.80000000447035,
+          "isTrusted": true,
+          "startTime": 812.0999999940395,
+          "endTime": 873.8999999985099,
+          "hash": "#/runs/run-001?min=374999.625&max=624999.375"
+        },
+        {
+          "durationMs": 62.100000001490116,
+          "isTrusted": true,
+          "startTime": 928.3999999985099,
+          "endTime": 990.5,
+          "hash": "#/runs/run-001?min=437499.5625&max=562499.4375"
+        }
+      ],
+      "hovers": [
+        {
+          "durationMs": 32.29999999701977,
+          "isTrusted": true,
+          "startTime": 1074.7999999970198,
+          "endTime": 1107.0999999940395,
+          "hash": "#/runs/run-001?min=437499.5625&max=562499.4375",
+          "tooltip": "Sampled step 468,6670.4324610170587735"
+        },
+        {
+          "durationMs": 31.80000000447035,
+          "isTrusted": true,
+          "startTime": 1141.1999999955297,
+          "endTime": 1173,
+          "hash": "#/runs/run-001?min=437499.5625&max=562499.4375",
+          "tooltip": "Sampled step 499,9990.4523629027052376"
+        },
+        {
+          "durationMs": 32.20000000298023,
+          "isTrusted": true,
+          "startTime": 1208.6999999955297,
+          "endTime": 1240.8999999985099,
+          "hash": "#/runs/run-001?min=437499.5625&max=562499.4375",
+          "tooltip": "Sampled step 531,1640.4458205409737323"
+        }
+      ],
+      "longTasks": [
+        {
+          "startTime": 174.89999999850988,
+          "duration": 98
+        },
+        {
+          "startTime": 414.79999999701977,
+          "duration": 78
+        }
+      ],
+      "memoryAtOverview": {
+        "contexts": [
+          {
+            "target": "page",
+            "usedSize": 3918632,
+            "totalSize": 4538368,
+            "embedderHeapUsedSize": 1686208,
+            "backingStorageSize": 415155
+          },
+          {
+            "target": "worker",
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 341304,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32007583
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 36682674,
+        "rendererRssBytes": 548093952,
+        "rendererCount": 3,
+        "errors": [],
+        "scope": "V8 total includes measured page+dedicated-worker JS heap and backing stores after explicit GC in both contexts; excludes native/GPU allocations. RSS sums renderer processes in an isolated one-page browser and may include spare renderers; browser/GPU/utility processes are excluded. RSS is an approximation of tab footprint, not the browser Task Manager private-memory number."
+      },
+      "domainEvidence": "actual uPlot draw-hook domains",
+      "traceFile": "application.trace.json",
+      "traceSummary": {
+        "events": 18620,
+        "paintEvents": 78,
+        "inputEvents": 165,
+        "frameProcesses": [
+          {
+            "frame": "D44AADC07E342B40645DBAECD423C98E",
+            "isInPrimaryMainFrame": true,
+            "isOutermostMainFrame": true,
+            "name": "",
+            "processId": 51261,
+            "url": "about:blank"
+          }
+        ],
+        "workerProcesses": [
+          {
+            "pid": 51261,
+            "frame": "D44AADC07E342B40645DBAECD423C98E",
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "workerId": "2B1934C4F85CE5DF8446B1936B521B8A",
+            "workerThreadId": 1752171
+          }
+        ],
+        "processPrivateFootprints": [],
+        "userTimingNames": [
+          "soup:run-rendered",
+          "soup:app:first-settled",
+          "soup:app:zoom-start",
+          "soup:app:zoom-painted",
+          "soup:app:hover-start",
+          "soup:app:hover-painted",
+          "soup:app:first-render",
+          "soup:app:zoom",
+          "soup:app:hover"
+        ]
+      }
+    },
+    {
+      "iteration": 2,
+      "browserVersion": "156.0.8078.81",
+      "firstRenderMs": 491.3999999985099,
+      "zooms": [
+        {
+          "durationMs": 91.5,
+          "isTrusted": true,
+          "startTime": 600,
+          "endTime": 691.5,
+          "hash": "#/runs/run-001?min=249999.75&max=749999.25"
+        },
+        {
+          "durationMs": 63.100000001490116,
+          "isTrusted": true,
+          "startTime": 745,
+          "endTime": 808.1000000014901,
+          "hash": "#/runs/run-001?min=374999.625&max=624999.375"
+        },
+        {
+          "durationMs": 46.70000000298023,
+          "isTrusted": true,
+          "startTime": 861.7999999970198,
+          "endTime": 908.5,
+          "hash": "#/runs/run-001?min=437499.5625&max=562499.4375"
+        }
+      ],
+      "hovers": [
+        {
+          "durationMs": 33.600000001490116,
+          "isTrusted": true,
+          "startTime": 991.2999999970198,
+          "endTime": 1024.8999999985099,
+          "hash": "#/runs/run-001?min=437499.5625&max=562499.4375",
+          "tooltip": "Sampled step 468,6670.4324610170587735"
+        },
+        {
+          "durationMs": 33.20000000298023,
+          "isTrusted": true,
+          "startTime": 1058.2999999970198,
+          "endTime": 1091.5,
+          "hash": "#/runs/run-001?min=437499.5625&max=562499.4375",
+          "tooltip": "Sampled step 499,9990.4523629027052376"
+        },
+        {
+          "durationMs": 33.100000001490116,
+          "isTrusted": true,
+          "startTime": 1124.6000000014901,
+          "endTime": 1157.7000000029802,
+          "hash": "#/runs/run-001?min=437499.5625&max=562499.4375",
+          "tooltip": "Sampled step 531,1640.4458205409737323"
+        }
+      ],
+      "longTasks": [
+        {
+          "startTime": 33.20000000298023,
+          "duration": 70
+        },
+        {
+          "startTime": 392.8999999985099,
+          "duration": 61
+        }
+      ],
+      "memoryAtOverview": {
+        "contexts": [
+          {
+            "target": "page",
+            "usedSize": 3797016,
+            "totalSize": 4538368,
+            "embedderHeapUsedSize": 2225128,
+            "backingStorageSize": 415102
+          },
+          {
+            "target": "worker",
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 338696,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32007569
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 36558383,
+        "rendererRssBytes": 542031872,
+        "rendererCount": 3,
+        "errors": [],
+        "scope": "V8 total includes measured page+dedicated-worker JS heap and backing stores after explicit GC in both contexts; excludes native/GPU allocations. RSS sums renderer processes in an isolated one-page browser and may include spare renderers; browser/GPU/utility processes are excluded. RSS is an approximation of tab footprint, not the browser Task Manager private-memory number."
+      },
+      "domainEvidence": "actual uPlot draw-hook domains",
+      "traceFile": null,
+      "traceSummary": null
+    },
+    {
+      "iteration": 3,
+      "browserVersion": "156.0.8078.81",
+      "firstRenderMs": 498.8999999985099,
+      "zooms": [
+        {
+          "durationMs": 92.39999999850988,
+          "isTrusted": true,
+          "startTime": 607,
+          "endTime": 699.3999999985099,
+          "hash": "#/runs/run-001?min=249999.75&max=749999.25"
+        },
+        {
+          "durationMs": 62.79999999701977,
+          "isTrusted": true,
+          "startTime": 753.2000000029802,
+          "endTime": 816,
+          "hash": "#/runs/run-001?min=374999.625&max=624999.375"
+        },
+        {
+          "durationMs": 44.79999999701977,
+          "isTrusted": true,
+          "startTime": 870.2000000029802,
+          "endTime": 915,
+          "hash": "#/runs/run-001?min=437499.5625&max=562499.4375"
+        }
+      ],
+      "hovers": [
+        {
+          "durationMs": 32.69999999552965,
+          "isTrusted": true,
+          "startTime": 999.2000000029802,
+          "endTime": 1031.8999999985099,
+          "hash": "#/runs/run-001?min=437499.5625&max=562499.4375",
+          "tooltip": "Sampled step 468,6670.4324610170587735"
+        },
+        {
+          "durationMs": 33.100000001490116,
+          "isTrusted": true,
+          "startTime": 1065.8999999985099,
+          "endTime": 1099,
+          "hash": "#/runs/run-001?min=437499.5625&max=562499.4375",
+          "tooltip": "Sampled step 499,9990.4523629027052376"
+        },
+        {
+          "durationMs": 32.19999999552965,
+          "isTrusted": true,
+          "startTime": 1132.7000000029802,
+          "endTime": 1164.8999999985099,
+          "hash": "#/runs/run-001?min=437499.5625&max=562499.4375",
+          "tooltip": "Sampled step 531,1640.4458205409737323"
+        }
+      ],
+      "longTasks": [
+        {
+          "startTime": 32.20000000298023,
+          "duration": 71
+        },
+        {
+          "startTime": 162.5,
+          "duration": 93
+        },
+        {
+          "startTime": 396.3999999985099,
+          "duration": 61
+        }
+      ],
+      "memoryAtOverview": {
+        "contexts": [
+          {
+            "target": "page",
+            "usedSize": 3802688,
+            "totalSize": 4538368,
+            "embedderHeapUsedSize": 1685696,
+            "backingStorageSize": 415107
+          },
+          {
+            "target": "worker",
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 338696,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32007569
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 36564060,
+        "rendererRssBytes": 540884992,
+        "rendererCount": 3,
+        "errors": [],
+        "scope": "V8 total includes measured page+dedicated-worker JS heap and backing stores after explicit GC in both contexts; excludes native/GPU allocations. RSS sums renderer processes in an isolated one-page browser and may include spare renderers; browser/GPU/utility processes are excluded. RSS is an approximation of tab footprint, not the browser Task Manager private-memory number."
+      },
+      "domainEvidence": "actual uPlot draw-hook domains",
+      "traceFile": null,
+      "traceSummary": null
+    },
+    {
+      "iteration": 4,
+      "browserVersion": "156.0.8078.81",
+      "firstRenderMs": 495.8999999985099,
+      "zooms": [
+        {
+          "durationMs": 92.30000000447035,
+          "isTrusted": true,
+          "startTime": 604.6999999955297,
+          "endTime": 697,
+          "hash": "#/runs/run-001?min=249999.75&max=749999.25"
+        },
+        {
+          "durationMs": 61.69999999552965,
+          "isTrusted": true,
+          "startTime": 750.8999999985099,
+          "endTime": 812.5999999940395,
+          "hash": "#/runs/run-001?min=374999.625&max=624999.375"
+        },
+        {
+          "durationMs": 45.80000000447035,
+          "isTrusted": true,
+          "startTime": 866.5999999940395,
+          "endTime": 912.3999999985099,
+          "hash": "#/runs/run-001?min=437499.5625&max=562499.4375"
+        }
+      ],
+      "hovers": [
+        {
+          "durationMs": 32.5,
+          "isTrusted": true,
+          "startTime": 996.2999999970198,
+          "endTime": 1028.7999999970198,
+          "hash": "#/runs/run-001?min=437499.5625&max=562499.4375",
+          "tooltip": "Sampled step 468,6670.4324610170587735"
+        },
+        {
+          "durationMs": 31.5,
+          "isTrusted": true,
+          "startTime": 1063.3999999985099,
+          "endTime": 1094.8999999985099,
+          "hash": "#/runs/run-001?min=437499.5625&max=562499.4375",
+          "tooltip": "Sampled step 499,9990.4523629027052376"
+        },
+        {
+          "durationMs": 32.899999998509884,
+          "isTrusted": true,
+          "startTime": 1130,
+          "endTime": 1162.8999999985099,
+          "hash": "#/runs/run-001?min=437499.5625&max=562499.4375",
+          "tooltip": "Sampled step 531,1640.4458205409737323"
+        }
+      ],
+      "longTasks": [
+        {
+          "startTime": 30,
+          "duration": 71
+        },
+        {
+          "startTime": 160.39999999850988,
+          "duration": 96
+        },
+        {
+          "startTime": 398.79999999701977,
+          "duration": 59
+        }
+      ],
+      "memoryAtOverview": {
+        "contexts": [
+          {
+            "target": "page",
+            "usedSize": 3802780,
+            "totalSize": 4276224,
+            "embedderHeapUsedSize": 2217432,
+            "backingStorageSize": 415104
+          },
+          {
+            "target": "worker",
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 338696,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32007569
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 36564149,
+        "rendererRssBytes": 542457856,
+        "rendererCount": 3,
+        "errors": [],
+        "scope": "V8 total includes measured page+dedicated-worker JS heap and backing stores after explicit GC in both contexts; excludes native/GPU allocations. RSS sums renderer processes in an isolated one-page browser and may include spare renderers; browser/GPU/utility processes are excluded. RSS is an approximation of tab footprint, not the browser Task Manager private-memory number."
+      },
+      "domainEvidence": "actual uPlot draw-hook domains",
+      "traceFile": null,
+      "traceSummary": null
+    },
+    {
+      "iteration": 5,
+      "browserVersion": "156.0.8078.81",
+      "firstRenderMs": 476.3999999985099,
+      "zooms": [
+        {
+          "durationMs": 93.89999999850988,
+          "isTrusted": true,
+          "startTime": 584.2000000029802,
+          "endTime": 678.1000000014901,
+          "hash": "#/runs/run-001?min=249999.75&max=749999.25"
+        },
+        {
+          "durationMs": 62.900000005960464,
+          "isTrusted": true,
+          "startTime": 730.2999999970198,
+          "endTime": 793.2000000029802,
+          "hash": "#/runs/run-001?min=374999.625&max=624999.375"
+        },
+        {
+          "durationMs": 47.600000001490116,
+          "isTrusted": true,
+          "startTime": 845.8999999985099,
+          "endTime": 893.5,
+          "hash": "#/runs/run-001?min=437499.5625&max=562499.4375"
+        }
+      ],
+      "hovers": [
+        {
+          "durationMs": 33.400000005960464,
+          "isTrusted": true,
+          "startTime": 976.7999999970198,
+          "endTime": 1010.2000000029802,
+          "hash": "#/runs/run-001?min=437499.5625&max=562499.4375",
+          "tooltip": "Sampled step 468,6670.4324610170587735"
+        },
+        {
+          "durationMs": 33,
+          "isTrusted": true,
+          "startTime": 1044.1000000014901,
+          "endTime": 1077.1000000014901,
+          "hash": "#/runs/run-001?min=437499.5625&max=562499.4375",
+          "tooltip": "Sampled step 499,9990.4523629027052376"
+        },
+        {
+          "durationMs": 32.79999999701977,
+          "isTrusted": true,
+          "startTime": 1110.6000000014901,
+          "endTime": 1143.3999999985099,
+          "hash": "#/runs/run-001?min=437499.5625&max=562499.4375",
+          "tooltip": "Sampled step 531,1640.4458205409737323"
+        }
+      ],
+      "longTasks": [
+        {
+          "startTime": 30.600000001490116,
+          "duration": 71
+        },
+        {
+          "startTime": 158.29999999701977,
+          "duration": 95
+        },
+        {
+          "startTime": 384.6000000014901,
+          "duration": 61
+        }
+      ],
+      "memoryAtOverview": {
+        "contexts": [
+          {
+            "target": "page",
+            "usedSize": 3802700,
+            "totalSize": 4276224,
+            "embedderHeapUsedSize": 2224368,
+            "backingStorageSize": 415105
+          },
+          {
+            "target": "worker",
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 338696,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32007569
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 36564070,
+        "rendererRssBytes": 541032448,
+        "rendererCount": 3,
+        "errors": [],
+        "scope": "V8 total includes measured page+dedicated-worker JS heap and backing stores after explicit GC in both contexts; excludes native/GPU allocations. RSS sums renderer processes in an isolated one-page browser and may include spare renderers; browser/GPU/utility processes are excluded. RSS is an approximation of tab footprint, not the browser Task Manager private-memory number."
+      },
+      "domainEvidence": "actual uPlot draw-hook domains",
+      "traceFile": null,
+      "traceSummary": null
+    }
+  ],
+  "attributedMemory": [
+    {
+      "mode": "baseline",
+      "traceFile": "baseline.memory.trace.json",
+      "dump": {
+        "dumpGuid": "0x2",
+        "success": true
+      },
+      "frameProcesses": [
+        {
+          "frame": "1F17999FD7C5E7FA7547056574A06854",
+          "isInPrimaryMainFrame": true,
+          "isOutermostMainFrame": true,
+          "name": "",
+          "processId": 51504,
+          "url": "http://127.0.0.1:4173/benchmark.html?mode=baseline"
+        }
+      ],
+      "workerProcesses": [],
+      "attributedProcessIds": [
+        51504
+      ],
+      "attributedRendererPrivateFootprintBytes": 93849600,
+      "attributedRendererRssBytes": 231931904,
+      "v8AndRss": {
+        "contexts": [
+          {
+            "target": "page",
+            "usedSize": 24965772,
+            "totalSize": 25477120,
+            "embedderHeapUsedSize": 467128,
+            "backingStorageSize": 32067338
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 57033110,
+        "rendererRssBytes": 521060352,
+        "rendererCount": 3,
+        "errors": [],
+        "scope": "V8 total includes measured page+dedicated-worker JS heap and backing stores after explicit GC in both contexts; excludes native/GPU allocations. RSS sums renderer processes in an isolated one-page browser and may include spare renderers; browser/GPU/utility processes are excluded. RSS is an approximation of tab footprint, not the browser Task Manager private-memory number."
+      },
+      "scope": "Single observed overview in a fresh browser. Main frame and data worker are attributed through actual trace frame/worker metadata; PIDs are deduplicated. MemoryInfra process_totals.private_footprint_bytes is summed only for those renderer processes. Spare renderers, browser, GPU and utility processes are excluded. This is stronger renderer-private footprint attribution, not a claim to account for all shared browser/GPU resources or every byte a Task Manager might assign to a tab."
+    },
+    {
+      "mode": "sampled-main",
+      "traceFile": "sampled-main.memory.trace.json",
+      "dump": {
+        "dumpGuid": "0x2",
+        "success": true
+      },
+      "frameProcesses": [
+        {
+          "frame": "787090B92A9E81BE7BD0F32666882114",
+          "isInPrimaryMainFrame": true,
+          "isOutermostMainFrame": true,
+          "name": "",
+          "processId": 51565,
+          "url": "http://127.0.0.1:4173/benchmark.html?mode=sampled-main"
+        }
+      ],
+      "workerProcesses": [],
+      "attributedProcessIds": [
+        51565
+      ],
+      "attributedRendererPrivateFootprintBytes": 69552128,
+      "attributedRendererRssBytes": 206077952,
+      "v8AndRss": {
+        "contexts": [
+          {
+            "target": "page",
+            "usedSize": 1784496,
+            "totalSize": 2441216,
+            "embedderHeapUsedSize": 467000,
+            "backingStorageSize": 32067343
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 33851839,
+        "rendererRssBytes": 495878144,
+        "rendererCount": 3,
+        "errors": [],
+        "scope": "V8 total includes measured page+dedicated-worker JS heap and backing stores after explicit GC in both contexts; excludes native/GPU allocations. RSS sums renderer processes in an isolated one-page browser and may include spare renderers; browser/GPU/utility processes are excluded. RSS is an approximation of tab footprint, not the browser Task Manager private-memory number."
+      },
+      "scope": "Single observed overview in a fresh browser. Main frame and data worker are attributed through actual trace frame/worker metadata; PIDs are deduplicated. MemoryInfra process_totals.private_footprint_bytes is summed only for those renderer processes. Spare renderers, browser, GPU and utility processes are excluded. This is stronger renderer-private footprint attribution, not a claim to account for all shared browser/GPU resources or every byte a Task Manager might assign to a tab."
+    },
+    {
+      "mode": "optimized",
+      "traceFile": "optimized.memory.trace.json",
+      "dump": {
+        "dumpGuid": "0x2",
+        "success": true
+      },
+      "frameProcesses": [
+        {
+          "frame": "C25DA9FACD08EF977894AEBE9610FEBC",
+          "isInPrimaryMainFrame": true,
+          "isOutermostMainFrame": true,
+          "name": "",
+          "processId": 51641,
+          "url": "http://127.0.0.1:4173/benchmark.html?mode=optimized"
+        }
+      ],
+      "workerProcesses": [
+        {
+          "pid": 51641,
+          "frame": "C25DA9FACD08EF977894AEBE9610FEBC",
+          "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+          "workerId": "9A9EC8C11D0047E8CA28A591382AE01A",
+          "workerThreadId": 1754071
+        }
+      ],
+      "attributedProcessIds": [
+        51641
+      ],
+      "attributedRendererPrivateFootprintBytes": 73025536,
+      "attributedRendererRssBytes": 210649088,
+      "v8AndRss": {
+        "contexts": [
+          {
+            "target": "page",
+            "usedSize": 1770080,
+            "totalSize": 2441216,
+            "embedderHeapUsedSize": 470400,
+            "backingStorageSize": 67305
+          },
+          {
+            "target": "worker",
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 338696,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32007569
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 34183650,
+        "rendererRssBytes": 499892224,
+        "rendererCount": 3,
+        "errors": [],
+        "scope": "V8 total includes measured page+dedicated-worker JS heap and backing stores after explicit GC in both contexts; excludes native/GPU allocations. RSS sums renderer processes in an isolated one-page browser and may include spare renderers; browser/GPU/utility processes are excluded. RSS is an approximation of tab footprint, not the browser Task Manager private-memory number."
+      },
+      "scope": "Single observed overview in a fresh browser. Main frame and data worker are attributed through actual trace frame/worker metadata; PIDs are deduplicated. MemoryInfra process_totals.private_footprint_bytes is summed only for those renderer processes. Spare renderers, browser, GPU and utility processes are excluded. This is stronger renderer-private footprint attribution, not a claim to account for all shared browser/GPU resources or every byte a Task Manager might assign to a tab."
+    },
+    {
+      "mode": "application",
+      "traceFile": "application.memory.trace.json",
+      "dump": {
+        "dumpGuid": "0x2",
+        "success": true
+      },
+      "frameProcesses": [
+        {
+          "frame": "89806C6040215B2EDA6278FE09558F68",
+          "isInPrimaryMainFrame": true,
+          "isOutermostMainFrame": true,
+          "name": "",
+          "processId": 51703,
+          "url": "http://127.0.0.1:4173/"
+        }
+      ],
+      "workerProcesses": [
+        {
+          "pid": 51703,
+          "frame": "89806C6040215B2EDA6278FE09558F68",
+          "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+          "workerId": "E1AC34546FA3CC00B91BB8FDDF05DB92",
+          "workerThreadId": 1754351
+        }
+      ],
+      "attributedProcessIds": [
+        51703
+      ],
+      "attributedRendererPrivateFootprintBytes": 102418432,
+      "attributedRendererRssBytes": 251822080,
+      "v8AndRss": {
+        "contexts": [
+          {
+            "target": "page",
+            "usedSize": 3778768,
+            "totalSize": 4276224,
+            "embedderHeapUsedSize": 1683040,
+            "backingStorageSize": 414963
+          },
+          {
+            "target": "worker",
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 338696,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32007569
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 36539996,
+        "rendererRssBytes": 539639808,
+        "rendererCount": 3,
+        "errors": [],
+        "scope": "V8 total includes measured page+dedicated-worker JS heap and backing stores after explicit GC in both contexts; excludes native/GPU allocations. RSS sums renderer processes in an isolated one-page browser and may include spare renderers; browser/GPU/utility processes are excluded. RSS is an approximation of tab footprint, not the browser Task Manager private-memory number."
+      },
+      "scope": "Single observed overview in a fresh browser. Main frame and data worker are attributed through actual trace frame/worker metadata; PIDs are deduplicated. MemoryInfra process_totals.private_footprint_bytes is summed only for those renderer processes. Spare renderers, browser, GPU and utility processes are excluded. This is stronger renderer-private footprint attribution, not a claim to account for all shared browser/GPU resources or every byte a Task Manager might assign to a tab."
+    }
+  ]
+}

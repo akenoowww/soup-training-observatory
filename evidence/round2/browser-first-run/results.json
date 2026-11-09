@@ -1,0 +1,750 @@
+{
+  "config": {
+    "argv": [
+      "/opt/homebrew/Cellar/node/24.3.0/bin/node",
+      "/Users/noname/Desktop/personal-projects/soup/node_modules/.bin/playwright",
+      "test",
+      "tests/e2e/adversarial.spec.ts",
+      "--project=chromium"
+    ],
+    "configFile": "/Users/noname/Desktop/personal-projects/soup/playwright.config.ts",
+    "rootDir": "/Users/noname/Desktop/personal-projects/soup/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 3
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/noname/Desktop/personal-projects/soup/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/noname/Desktop/personal-projects/soup/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/noname/Desktop/personal-projects/soup/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/noname/Desktop/personal-projects/soup/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/noname/Desktop/personal-projects/soup/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/noname/Desktop/personal-projects/soup/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/noname/Desktop/personal-projects/soup/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "name": "chromium",
+        "testDir": "/Users/noname/Desktop/personal-projects/soup/tests/e2e",
+        "snapshotDir": "/Users/noname/Desktop/personal-projects/soup/tests/e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.8127.18 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "launchOptions": {
+            "executablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/round2/e2e-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.0",
+    "workers": 3,
+    "webServer": {
+      "command": "npm run preview -- --port 4173 --strictPort",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": true,
+      "timeout": 30000
+    }
+  },
+  "suites": [
+    {
+      "title": "adversarial.spec.ts",
+      "file": "adversarial.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "actual React route keeps old-run data out while real worker replies arrive in reverse selection order",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1231,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T20:36:10.778Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-a705fc0428439aba07b0",
+          "file": "adversarial.spec.ts",
+          "line": 69,
+          "column": 1
+        },
+        {
+          "title": "superseded same-run range cannot overwrite a newer zoom when its genuine response arrives late",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1000,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T20:36:10.768Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-8c57e44f517de85d9eda",
+          "file": "adversarial.spec.ts",
+          "line": 97,
+          "column": 1
+        },
+        {
+          "title": "dragging an auxiliary chart sets the same numeric viewport on all metrics and double-click resets all",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "failed",
+                  "duration": 11257,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('chart-loss')\nExpected: \u001b[32m\"349740\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" getByTestId('chart-loss') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('chart-loss')\u001b[22m\n\u001b[2m    24 × locator resolved to <div tabindex=\"0\" role=\"group\" data-max-value=\"9.4\" aria-describedby=\"_r_6_\" data-testid=\"chart-loss\" data-rendered-points=\"3760\" data-source-points=\"297929\" class=\"metric-chart__interactive\" data-min-value=\"0.2880360910450614\" aria-label=\"Training loss interactive chart\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"null\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('chart-loss')\nExpected: \u001b[32m\"349740\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" getByTestId('chart-loss') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('chart-loss')\u001b[22m\n\u001b[2m    24 × locator resolved to <div tabindex=\"0\" role=\"group\" data-max-value=\"9.4\" aria-describedby=\"_r_6_\" data-testid=\"chart-loss\" data-rendered-points=\"3760\" data-source-points=\"297929\" class=\"metric-chart__interactive\" data-min-value=\"0.2880360910450614\" aria-label=\"Training loss interactive chart\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"null\"\u001b[22m\n\n    at /Users/noname/Desktop/personal-projects/soup/tests/e2e/adversarial.spec.ts:138:25",
+                    "location": {
+                      "file": "/Users/noname/Desktop/personal-projects/soup/tests/e2e/adversarial.spec.ts",
+                      "column": 25,
+                      "line": 138
+                    },
+                    "snippet": " \u001b[90m 136 |\u001b[39m     \u001b[36mconst\u001b[39m chart \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m`chart-${metric}`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 137 |\u001b[39m     \u001b[36mawait\u001b[39m expect(chart)\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m'data-source-points'\u001b[39m\u001b[33m,\u001b[39m \u001b[33mString\u001b[39m(to \u001b[33m-\u001b[39m \u001b[36mfrom\u001b[39m \u001b[33m+\u001b[39m \u001b[35m1\u001b[39m))\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 138 |\u001b[39m     \u001b[36mawait\u001b[39m expect(chart)\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m'data-x-min'\u001b[39m\u001b[33m,\u001b[39m \u001b[33mString\u001b[39m(\u001b[36mfrom\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 139 |\u001b[39m     \u001b[36mawait\u001b[39m expect(chart)\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m'data-x-max'\u001b[39m\u001b[33m,\u001b[39m \u001b[33mString\u001b[39m(to))\u001b[33m;\u001b[39m\n \u001b[90m 140 |\u001b[39m   }\n \u001b[90m 141 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByTestId(\u001b[32m'chart-loss'\u001b[39m))\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m'data-max-value'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'9.4'\u001b[39m)\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/noname/Desktop/personal-projects/soup/tests/e2e/adversarial.spec.ts",
+                        "column": 25,
+                        "line": 138
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('chart-loss')\nExpected: \u001b[32m\"349740\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" getByTestId('chart-loss') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('chart-loss')\u001b[22m\n\u001b[2m    24 × locator resolved to <div tabindex=\"0\" role=\"group\" data-max-value=\"9.4\" aria-describedby=\"_r_6_\" data-testid=\"chart-loss\" data-rendered-points=\"3760\" data-source-points=\"297929\" class=\"metric-chart__interactive\" data-min-value=\"0.2880360910450614\" aria-label=\"Training loss interactive chart\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"null\"\u001b[22m\n\n\n  136 |     const chart = page.getByTestId(`chart-${metric}`);\n  137 |     await expect(chart).toHaveAttribute('data-source-points', String(to - from + 1));\n> 138 |     await expect(chart).toHaveAttribute('data-x-min', String(from));\n      |                         ^\n  139 |     await expect(chart).toHaveAttribute('data-x-max', String(to));\n  140 |   }\n  141 |   await expect(page.getByTestId('chart-loss')).toHaveAttribute('data-max-value', '9.4');\n    at /Users/noname/Desktop/personal-projects/soup/tests/e2e/adversarial.spec.ts:138:25"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T20:36:10.775Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/noname/Desktop/personal-projects/soup/test-results/adversarial-dragging-an-au-f0544-and-double-click-resets-all-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/noname/Desktop/personal-projects/soup/test-results/adversarial-dragging-an-au-f0544-and-double-click-resets-all-chromium/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/noname/Desktop/personal-projects/soup/test-results/adversarial-dragging-an-au-f0544-and-double-click-resets-all-chromium/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/noname/Desktop/personal-projects/soup/tests/e2e/adversarial.spec.ts",
+                    "column": 25,
+                    "line": 138
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-20191c62bb97b3e00061",
+          "file": "adversarial.spec.ts",
+          "line": 117,
+          "column": 1
+        },
+        {
+          "title": "chart keyboard zoom and roving tabs remain usable without a pointer",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 10453,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.metric-chart--loss .metric-chart__tooltip')\nExpected substring: \u001b[32m\"16,199\"\u001b[39m\nReceived string:    \u001b[31m\"Sampled step 16,2000.4270788993874785\"\u001b[39m\nTimeout: 10000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('.metric-chart--loss .metric-chart__tooltip') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.metric-chart--loss .metric-chart__tooltip')\u001b[22m\n\u001b[2m    24 × locator resolved to <div aria-hidden=\"true\" class=\"metric-chart__tooltip\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Sampled step 16,2000.4270788993874785\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.metric-chart--loss .metric-chart__tooltip')\nExpected substring: \u001b[32m\"16,199\"\u001b[39m\nReceived string:    \u001b[31m\"Sampled step 16,2000.4270788993874785\"\u001b[39m\nTimeout: 10000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('.metric-chart--loss .metric-chart__tooltip') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.metric-chart--loss .metric-chart__tooltip')\u001b[22m\n\u001b[2m    24 × locator resolved to <div aria-hidden=\"true\" class=\"metric-chart__tooltip\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Sampled step 16,2000.4270788993874785\"\u001b[22m\n\n    at /Users/noname/Desktop/personal-projects/soup/tests/e2e/adversarial.spec.ts:162:76",
+                    "location": {
+                      "file": "/Users/noname/Desktop/personal-projects/soup/tests/e2e/adversarial.spec.ts",
+                      "column": 76,
+                      "line": 162
+                    },
+                    "snippet": " \u001b[90m 160 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'.metric-chart--loss .metric-chart__tooltip'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'Sampled step'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 161 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mkeyboard\u001b[33m.\u001b[39mpress(\u001b[32m'End'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 162 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'.metric-chart--loss .metric-chart__tooltip'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'16,199'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 163 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'tab'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Metrics'\u001b[39m\u001b[33m,\u001b[39m exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\u001b[33m.\u001b[39mfocus()\u001b[33m;\u001b[39m\n \u001b[90m 164 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mkeyboard\u001b[33m.\u001b[39mpress(\u001b[32m'ArrowRight'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 165 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'tab'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[35m/Data quality/\u001b[39m }))\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m'aria-selected'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'true'\u001b[39m)\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/noname/Desktop/personal-projects/soup/tests/e2e/adversarial.spec.ts",
+                        "column": 76,
+                        "line": 162
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.metric-chart--loss .metric-chart__tooltip')\nExpected substring: \u001b[32m\"16,199\"\u001b[39m\nReceived string:    \u001b[31m\"Sampled step 16,2000.4270788993874785\"\u001b[39m\nTimeout: 10000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('.metric-chart--loss .metric-chart__tooltip') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.metric-chart--loss .metric-chart__tooltip')\u001b[22m\n\u001b[2m    24 × locator resolved to <div aria-hidden=\"true\" class=\"metric-chart__tooltip\">…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Sampled step 16,2000.4270788993874785\"\u001b[22m\n\n\n  160 |   await expect(page.locator('.metric-chart--loss .metric-chart__tooltip')).toContainText('Sampled step');\n  161 |   await page.keyboard.press('End');\n> 162 |   await expect(page.locator('.metric-chart--loss .metric-chart__tooltip')).toContainText('16,199');\n      |                                                                            ^\n  163 |   await page.getByRole('tab', { name: 'Metrics', exact: true }).focus();\n  164 |   await page.keyboard.press('ArrowRight');\n  165 |   await expect(page.getByRole('tab', { name: /Data quality/ })).toHaveAttribute('aria-selected', 'true');\n    at /Users/noname/Desktop/personal-projects/soup/tests/e2e/adversarial.spec.ts:162:76"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T20:36:12.281Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/noname/Desktop/personal-projects/soup/test-results/adversarial-chart-keyboard-8ba92-in-usable-without-a-pointer-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/noname/Desktop/personal-projects/soup/test-results/adversarial-chart-keyboard-8ba92-in-usable-without-a-pointer-chromium/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/noname/Desktop/personal-projects/soup/test-results/adversarial-chart-keyboard-8ba92-in-usable-without-a-pointer-chromium/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/noname/Desktop/personal-projects/soup/tests/e2e/adversarial.spec.ts",
+                    "column": 76,
+                    "line": 162
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-7a30175d79121eebd767",
+          "file": "adversarial.spec.ts",
+          "line": 151,
+          "column": 1
+        },
+        {
+          "title": "search dialog traps focus in both directions and returns focus to the trigger on Escape",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 434,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T20:36:12.501Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-40bdbaff46f223102de0",
+          "file": "adversarial.spec.ts",
+          "line": 174,
+          "column": 1
+        },
+        {
+          "title": "bookmark survives reload and stays isolated by run, then can be removed",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 628,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T20:36:12.946Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-b68e8b03cdee743ae845",
+          "file": "adversarial.spec.ts",
+          "line": 195,
+          "column": 1
+        },
+        {
+          "title": "unavailable browser storage reports failed saving without a false saved state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 336,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T20:36:13.578Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-9983ff5ec05133cfe4c2",
+          "file": "adversarial.spec.ts",
+          "line": 209,
+          "column": 1
+        },
+        {
+          "title": "invalid URL range is disclosed and reset restores the full recorded domain",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 404,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T20:36:13.927Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-2afee337f6cc0cec5e6a",
+          "file": "adversarial.spec.ts",
+          "line": 217,
+          "column": 1
+        },
+        {
+          "title": "layout and reachable keyboard navigation at 320px",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 10414,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: 'Open navigation' })\nExpected: focused\nReceived: inactive\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" getByRole('button', { name: 'Open navigation' }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Open navigation' })\u001b[22m\n\u001b[2m    24 × locator resolved to <button aria-label=\"Open navigation\" class=\"icon-button mobile-menu\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: 'Open navigation' })\nExpected: focused\nReceived: inactive\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" getByRole('button', { name: 'Open navigation' }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Open navigation' })\u001b[22m\n\u001b[2m    24 × locator resolved to <button aria-label=\"Open navigation\" class=\"icon-button mobile-menu\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n    at /Users/noname/Desktop/personal-projects/soup/tests/e2e/adversarial.spec.ts:238:75",
+                    "location": {
+                      "file": "/Users/noname/Desktop/personal-projects/soup/tests/e2e/adversarial.spec.ts",
+                      "column": 75,
+                      "line": 238
+                    },
+                    "snippet": " \u001b[90m 236 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Skip to content'\u001b[39m }))\u001b[33m.\u001b[39mtoBeFocused()\u001b[33m;\u001b[39m\n \u001b[90m 237 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mkeyboard\u001b[33m.\u001b[39mpress(\u001b[32m'Tab'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 238 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Open navigation'\u001b[39m }))\u001b[33m.\u001b[39mtoBeFocused()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 239 |\u001b[39m     }\n \u001b[90m 240 |\u001b[39m     \u001b[36mawait\u001b[39m openReady(page)\u001b[33m;\u001b[39m\n \u001b[90m 241 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(() \u001b[33m=>\u001b[39m document\u001b[33m.\u001b[39mdocumentElement\u001b[33m.\u001b[39mscrollWidth))\u001b[33m.\u001b[39mtoBeLessThanOrEqual(width)\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/noname/Desktop/personal-projects/soup/tests/e2e/adversarial.spec.ts",
+                        "column": 75,
+                        "line": 238
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: 'Open navigation' })\nExpected: focused\nReceived: inactive\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" getByRole('button', { name: 'Open navigation' }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Open navigation' })\u001b[22m\n\u001b[2m    24 × locator resolved to <button aria-label=\"Open navigation\" class=\"icon-button mobile-menu\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n\n  236 |       await expect(page.getByRole('link', { name: 'Skip to content' })).toBeFocused();\n  237 |       await page.keyboard.press('Tab');\n> 238 |       await expect(page.getByRole('button', { name: 'Open navigation' })).toBeFocused();\n      |                                                                           ^\n  239 |     }\n  240 |     await openReady(page);\n  241 |     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);\n    at /Users/noname/Desktop/personal-projects/soup/tests/e2e/adversarial.spec.ts:238:75"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T20:36:14.337Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/noname/Desktop/personal-projects/soup/test-results/adversarial-layout-and-rea-3be50-eyboard-navigation-at-320px-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/noname/Desktop/personal-projects/soup/test-results/adversarial-layout-and-rea-3be50-eyboard-navigation-at-320px-chromium/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/noname/Desktop/personal-projects/soup/test-results/adversarial-layout-and-rea-3be50-eyboard-navigation-at-320px-chromium/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/noname/Desktop/personal-projects/soup/tests/e2e/adversarial.spec.ts",
+                    "column": 75,
+                    "line": 238
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-ec91a4e9812be9337fa1",
+          "file": "adversarial.spec.ts",
+          "line": 229,
+          "column": 3
+        },
+        {
+          "title": "layout and reachable keyboard navigation at 390px",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 2,
+                  "status": "failed",
+                  "duration": 10462,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: 'Open navigation' })\nExpected: focused\nReceived: inactive\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" getByRole('button', { name: 'Open navigation' }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Open navigation' })\u001b[22m\n\u001b[2m    24 × locator resolved to <button aria-label=\"Open navigation\" class=\"icon-button mobile-menu\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: 'Open navigation' })\nExpected: focused\nReceived: inactive\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" getByRole('button', { name: 'Open navigation' }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Open navigation' })\u001b[22m\n\u001b[2m    24 × locator resolved to <button aria-label=\"Open navigation\" class=\"icon-button mobile-menu\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n    at /Users/noname/Desktop/personal-projects/soup/tests/e2e/adversarial.spec.ts:238:75",
+                    "location": {
+                      "file": "/Users/noname/Desktop/personal-projects/soup/tests/e2e/adversarial.spec.ts",
+                      "column": 75,
+                      "line": 238
+                    },
+                    "snippet": " \u001b[90m 236 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Skip to content'\u001b[39m }))\u001b[33m.\u001b[39mtoBeFocused()\u001b[33m;\u001b[39m\n \u001b[90m 237 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mkeyboard\u001b[33m.\u001b[39mpress(\u001b[32m'Tab'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 238 |\u001b[39m       \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Open navigation'\u001b[39m }))\u001b[33m.\u001b[39mtoBeFocused()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 239 |\u001b[39m     }\n \u001b[90m 240 |\u001b[39m     \u001b[36mawait\u001b[39m openReady(page)\u001b[33m;\u001b[39m\n \u001b[90m 241 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(() \u001b[33m=>\u001b[39m document\u001b[33m.\u001b[39mdocumentElement\u001b[33m.\u001b[39mscrollWidth))\u001b[33m.\u001b[39mtoBeLessThanOrEqual(width)\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/noname/Desktop/personal-projects/soup/tests/e2e/adversarial.spec.ts",
+                        "column": 75,
+                        "line": 238
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: 'Open navigation' })\nExpected: focused\nReceived: inactive\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" getByRole('button', { name: 'Open navigation' }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Open navigation' })\u001b[22m\n\u001b[2m    24 × locator resolved to <button aria-label=\"Open navigation\" class=\"icon-button mobile-menu\">…</button>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n\n  236 |       await expect(page.getByRole('link', { name: 'Skip to content' })).toBeFocused();\n  237 |       await page.keyboard.press('Tab');\n> 238 |       await expect(page.getByRole('button', { name: 'Open navigation' })).toBeFocused();\n      |                                                                           ^\n  239 |     }\n  240 |     await openReady(page);\n  241 |     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);\n    at /Users/noname/Desktop/personal-projects/soup/tests/e2e/adversarial.spec.ts:238:75"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T20:36:23.050Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/noname/Desktop/personal-projects/soup/test-results/adversarial-layout-and-rea-4d529-eyboard-navigation-at-390px-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/noname/Desktop/personal-projects/soup/test-results/adversarial-layout-and-rea-4d529-eyboard-navigation-at-390px-chromium/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/noname/Desktop/personal-projects/soup/test-results/adversarial-layout-and-rea-4d529-eyboard-navigation-at-390px-chromium/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/noname/Desktop/personal-projects/soup/tests/e2e/adversarial.spec.ts",
+                    "column": 75,
+                    "line": 238
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-0bbccee74c7ad8071e80",
+          "file": "adversarial.spec.ts",
+          "line": 229,
+          "column": 3
+        },
+        {
+          "title": "layout and reachable keyboard navigation at 768px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 618,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-09T20:36:23.174Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-b8aca33d645e8bc0eebe",
+          "file": "adversarial.spec.ts",
+          "line": 229,
+          "column": 3
+        }
+      ],
+      "suites": [
+        {
+          "title": "high-density display",
+          "file": "adversarial.spec.ts",
+          "line": 246,
+          "column": 6,
+          "specs": [
+            {
+              "title": "the million-point curve remains usable and spike inspectable at DPR2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 925,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-09T20:36:24.059Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c8623cf54f8234f94483-00b0479d08043e0be554",
+              "file": "adversarial.spec.ts",
+              "line": 248,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-09T20:36:10.378Z",
+    "duration": 23473.054,
+    "expected": 8,
+    "skipped": 0,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}

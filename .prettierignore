@@ -1,0 +1,8 @@
+node_modules/
+dist/
+evidence/
+playwright-report/
+test-results/
+.frontend-workbench/
+package-lock.json
+docs/submission-note.html

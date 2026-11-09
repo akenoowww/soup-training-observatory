@@ -1,0 +1,9 @@
+# A rejected cache policy and its regression
+
+The first hardening candidate used a custom synchronous cache subscriber to retain at most 12 inactive views. Its three initial unit tests passed, as did the 132 browser executions. The longer actual-UI soak then found main-page retained heap rising from about 5.85 MB to 461.69 MB in 34 seconds; worker backing stores remained about 32.32 MB. Three canvases and stable DOM/listener counts ruled out simply accumulating visible chart instances.
+
+`observer-transition-before.txt` preserves the newly authored regression's original failure. At range 12, the real TanStack `QueryObserver` held a query that had already been removed from its cache. During an observer's transition, the new pending query temporarily has zero observers and `dataUpdatedAt: 0`. The synchronous pruning callback ran on removal from the previous query and evicted this new query before the observer attached. Repeated query recreation/refetch/rendering retained large responses. Allocation sampling separately found most retained sampled allocations under the worker response handler and query-result rebuilding; allocation stacks alone are not full retainer chains.
+
+The custom eviction mechanism was removed. Native TanStack lifecycle-aware `gcTime: 10_000` now expires inactive data. No custom notification-time query deletion remains, and no strict 12-entry cap is claimed. `observer-transition-after.txt` shows the same transition test passing across 40 ranges, plus inactive burst expiration and observed-query survival tests.
+
+The failed soak, original successful short tests, original performance measurements and bounded diagnostic profile remain in `../soak/` and `../performance/`. They are evidence for the rejected candidate, not final-release leak clearance. A new actual-browser repeated-range regression and a separate longer fixed-build soak determine whether the revision closes this failure.
