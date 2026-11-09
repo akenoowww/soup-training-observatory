@@ -1,0 +1,16 @@
+{
+  "status": "awaiting-export-and-publication-authorization",
+  "applicationBundle": "assets/app-DsJyw_oe.js",
+  "localCandidateCommit": "9626fbe",
+  "repositoryUrl": null,
+  "deployedUrl": null,
+  "hostedSmokePassed": false,
+  "checks": "evidence/round2/checks-final.txt",
+  "browserResults": "evidence/round2/e2e-results.json",
+  "browserScenarios": 45,
+  "browserExecutions": 135,
+  "performanceResults": "evidence/round2/performance-fixed/results.json",
+  "sustainedUse": "evidence/round2/soak/final-native-gc/latest.json",
+  "linuxCi": "configured-not-executed",
+  "exportApproval": "automatic-review-rejected-pending-explicit-user-authorization"
+}

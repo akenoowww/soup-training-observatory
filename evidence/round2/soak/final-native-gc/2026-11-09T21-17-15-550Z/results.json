@@ -1,0 +1,1524 @@
+{
+  "generatedAt": "2026-11-09T21:20:53.062Z",
+  "status": "completed",
+  "error": null,
+  "browser": "156.0.8078.81",
+  "machine": "darwin/arm64",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "cpuThrottle": 1,
+  "servedAssets": [
+    "./assets/app-DsJyw_oe.js",
+    "./assets/client-Saz_VHki.css",
+    "./assets/app-DfZOBv6h.css"
+  ],
+  "requestedActiveSeconds": 180,
+  "diagnostic": false,
+  "iterationLimit": null,
+  "requestedIdleSeconds": 35,
+  "elapsedSeconds": 217.07801025000003,
+  "pace": "At least one second between active-loop iterations, plus actual render/interaction time. Each iteration changes a run, submits one numeric range and inspects a sampled point; every third iteration also changes scale and resets zoom.",
+  "memoryScope": "GC requested in document and each matching dedicated data worker before each snapshot. Combined V8 heap+backing stores includes worker canonical typed arrays but excludes native/GPU allocations. Renderer RSS sums renderer processes in an isolated one-page browser, can include spare renderers and allocator retention, and excludes browser/GPU/utility processes.",
+  "standardizedCheckpoints": "Reload run002 then run001; reset full step domain and linear scale. This deliberately aligns the worker LRU data for retained-memory comparisons. Idle recovery keeps the same full run001 open, with no page interactions.",
+  "iterationCount": 136,
+  "interactionCount": 136,
+  "interactionCountMeaning": "Completed active iterations, not individual DOM events. Each iteration contains a run switch, range submission and keyboard inspection; every third also has two scale changes and reset.",
+  "actionCounts": {
+    "runSwitches": 136,
+    "rangeSubmissions": 136,
+    "keyboardInspections": 136,
+    "scaleChanges": 92,
+    "zoomResets": 46
+  },
+  "visitedRunIds": [
+    "run-002",
+    "run-003",
+    "run-004",
+    "run-005",
+    "run-006",
+    "run-007",
+    "run-008",
+    "run-009",
+    "run-010",
+    "run-011",
+    "run-012",
+    "run-013",
+    "run-014",
+    "run-015",
+    "run-016",
+    "run-017",
+    "run-018",
+    "run-019",
+    "run-020",
+    "run-001"
+  ],
+  "summary": {
+    "initialBytes": 38815967,
+    "maximumCheckpointBytes": 44927559,
+    "finalBytes": 41430779,
+    "finalMinusInitialBytes": 2614812,
+    "memoryVerdict": "Descriptive short-run evidence only. No automatic absence-of-leaks guarantee is inferred; review checkpoints, final idle recovery and bounded source/query cache policy."
+  },
+  "snapshots": [
+    {
+      "label": "warmup-full-1M",
+      "domCounters": {
+        "documents": 1,
+        "nodes": 638,
+        "jsEventListeners": 234
+      },
+      "elapsedMs": 765.1611670000001,
+      "mainV8HeapBytes": 5720084,
+      "mainBackingStorageBytes": 415886,
+      "workerV8HeapBytes": 362028,
+      "workerBackingStorageBytes": 32317969,
+      "combinedV8AndBackingBytes": 38815967,
+      "rendererRssBytes": 556744704,
+      "rendererCount": 3,
+      "workerCount": 1,
+      "contexts": {
+        "main": {
+          "usedSize": 5720084,
+          "totalSize": 6193152,
+          "embedderHeapUsedSize": 1840840,
+          "backingStorageSize": 415886
+        },
+        "workers": [
+          {
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 362028,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32317969
+          }
+        ]
+      },
+      "workerErrors": [],
+      "rendererMemoryError": null,
+      "observed": {
+        "route": "#/runs/run-001",
+        "canvasCount": 3,
+        "tooltipCount": 0,
+        "chartCount": 3,
+        "pageWidth": 1440,
+        "domNodeCount": 397,
+        "performanceEntryCount": 20
+      }
+    },
+    {
+      "label": "active-31s",
+      "domCounters": {
+        "documents": 1,
+        "nodes": 651,
+        "jsEventListeners": 240
+      },
+      "elapsedMs": 31582.211375,
+      "mainV8HeapBytes": 10288232,
+      "mainBackingStorageBytes": 418041,
+      "workerV8HeapBytes": 393084,
+      "workerBackingStorageBytes": 32317969,
+      "combinedV8AndBackingBytes": 43417326,
+      "rendererRssBytes": 473972736,
+      "rendererCount": 3,
+      "workerCount": 1,
+      "contexts": {
+        "main": {
+          "usedSize": 10288232,
+          "totalSize": 11173888,
+          "embedderHeapUsedSize": 2315472,
+          "backingStorageSize": 418041
+        },
+        "workers": [
+          {
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 393084,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32317969
+          }
+        ]
+      },
+      "workerErrors": [],
+      "rendererMemoryError": null,
+      "observed": {
+        "route": "#/runs/run-001",
+        "canvasCount": 3,
+        "tooltipCount": 0,
+        "chartCount": 3,
+        "pageWidth": 1440,
+        "domNodeCount": 397,
+        "performanceEntryCount": 145
+      }
+    },
+    {
+      "label": "active-61s",
+      "domCounters": {
+        "documents": 1,
+        "nodes": 651,
+        "jsEventListeners": 240
+      },
+      "elapsedMs": 62113.607375,
+      "mainV8HeapBytes": 10566176,
+      "mainBackingStorageBytes": 418047,
+      "workerV8HeapBytes": 418892,
+      "workerBackingStorageBytes": 32317969,
+      "combinedV8AndBackingBytes": 43721084,
+      "rendererRssBytes": 495255552,
+      "rendererCount": 3,
+      "workerCount": 1,
+      "contexts": {
+        "main": {
+          "usedSize": 10566176,
+          "totalSize": 11436032,
+          "embedderHeapUsedSize": 2340200,
+          "backingStorageSize": 418047
+        },
+        "workers": [
+          {
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 418892,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32317969
+          }
+        ]
+      },
+      "workerErrors": [],
+      "rendererMemoryError": null,
+      "observed": {
+        "route": "#/runs/run-001",
+        "canvasCount": 3,
+        "tooltipCount": 0,
+        "chartCount": 3,
+        "pageWidth": 1440,
+        "domNodeCount": 397,
+        "performanceEntryCount": 219
+      }
+    },
+    {
+      "label": "active-91s",
+      "domCounters": {
+        "documents": 1,
+        "nodes": 651,
+        "jsEventListeners": 240
+      },
+      "elapsedMs": 91478.235875,
+      "mainV8HeapBytes": 11237124,
+      "mainBackingStorageBytes": 418041,
+      "workerV8HeapBytes": 395540,
+      "workerBackingStorageBytes": 32317969,
+      "combinedV8AndBackingBytes": 44368674,
+      "rendererRssBytes": 501825536,
+      "rendererCount": 3,
+      "workerCount": 1,
+      "contexts": {
+        "main": {
+          "usedSize": 11237124,
+          "totalSize": 12222464,
+          "embedderHeapUsedSize": 2465552,
+          "backingStorageSize": 418041
+        },
+        "workers": [
+          {
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 395540,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32317969
+          }
+        ]
+      },
+      "workerErrors": [],
+      "rendererMemoryError": null,
+      "observed": {
+        "route": "#/runs/run-001",
+        "canvasCount": 3,
+        "tooltipCount": 0,
+        "chartCount": 3,
+        "pageWidth": 1440,
+        "domNodeCount": 397,
+        "performanceEntryCount": 288
+      }
+    },
+    {
+      "label": "active-121s",
+      "domCounters": {
+        "documents": 1,
+        "nodes": 651,
+        "jsEventListeners": 240
+      },
+      "elapsedMs": 122144.936084,
+      "mainV8HeapBytes": 11624204,
+      "mainBackingStorageBytes": 417950,
+      "workerV8HeapBytes": 420052,
+      "workerBackingStorageBytes": 32317969,
+      "combinedV8AndBackingBytes": 44780175,
+      "rendererRssBytes": 507592704,
+      "rendererCount": 3,
+      "workerCount": 1,
+      "contexts": {
+        "main": {
+          "usedSize": 11624204,
+          "totalSize": 12746752,
+          "embedderHeapUsedSize": 2406560,
+          "backingStorageSize": 417950
+        },
+        "workers": [
+          {
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 420052,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32317969
+          }
+        ]
+      },
+      "workerErrors": [],
+      "rendererMemoryError": null,
+      "observed": {
+        "route": "#/runs/run-001",
+        "canvasCount": 3,
+        "tooltipCount": 0,
+        "chartCount": 3,
+        "pageWidth": 1440,
+        "domNodeCount": 397,
+        "performanceEntryCount": 306
+      }
+    },
+    {
+      "label": "active-151s",
+      "domCounters": {
+        "documents": 1,
+        "nodes": 651,
+        "jsEventListeners": 240
+      },
+      "elapsedMs": 151543.59687500002,
+      "mainV8HeapBytes": 11795236,
+      "mainBackingStorageBytes": 417950,
+      "workerV8HeapBytes": 396404,
+      "workerBackingStorageBytes": 32317969,
+      "combinedV8AndBackingBytes": 44927559,
+      "rendererRssBytes": 510525440,
+      "rendererCount": 3,
+      "workerCount": 1,
+      "contexts": {
+        "main": {
+          "usedSize": 11795236,
+          "totalSize": 12746752,
+          "embedderHeapUsedSize": 2482128,
+          "backingStorageSize": 417950
+        },
+        "workers": [
+          {
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 396404,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32317969
+          }
+        ]
+      },
+      "workerErrors": [],
+      "rendererMemoryError": null,
+      "observed": {
+        "route": "#/runs/run-001",
+        "canvasCount": 3,
+        "tooltipCount": 0,
+        "chartCount": 3,
+        "pageWidth": 1440,
+        "domNodeCount": 397,
+        "performanceEntryCount": 306
+      }
+    },
+    {
+      "label": "after-active",
+      "domCounters": {
+        "documents": 1,
+        "nodes": 651,
+        "jsEventListeners": 240
+      },
+      "elapsedMs": 181976.473667,
+      "mainV8HeapBytes": 11525204,
+      "mainBackingStorageBytes": 417950,
+      "workerV8HeapBytes": 414344,
+      "workerBackingStorageBytes": 32317969,
+      "combinedV8AndBackingBytes": 44675467,
+      "rendererRssBytes": 500793344,
+      "rendererCount": 3,
+      "workerCount": 1,
+      "contexts": {
+        "main": {
+          "usedSize": 11525204,
+          "totalSize": 12746752,
+          "embedderHeapUsedSize": 2435848,
+          "backingStorageSize": 417950
+        },
+        "workers": [
+          {
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 414344,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32317969
+          }
+        ]
+      },
+      "workerErrors": [],
+      "rendererMemoryError": null,
+      "observed": {
+        "route": "#/runs/run-001",
+        "canvasCount": 3,
+        "tooltipCount": 0,
+        "chartCount": 3,
+        "pageWidth": 1440,
+        "domNodeCount": 397,
+        "performanceEntryCount": 306
+      }
+    },
+    {
+      "label": "after-idle-recovery",
+      "domCounters": {
+        "documents": 1,
+        "nodes": 651,
+        "jsEventListeners": 240
+      },
+      "elapsedMs": 217013.724709,
+      "mainV8HeapBytes": 8280516,
+      "mainBackingStorageBytes": 417950,
+      "workerV8HeapBytes": 414344,
+      "workerBackingStorageBytes": 32317969,
+      "combinedV8AndBackingBytes": 41430779,
+      "rendererRssBytes": 496762880,
+      "rendererCount": 3,
+      "workerCount": 1,
+      "contexts": {
+        "main": {
+          "usedSize": 8280516,
+          "totalSize": 9076736,
+          "embedderHeapUsedSize": 2409608,
+          "backingStorageSize": 417950
+        },
+        "workers": [
+          {
+            "url": "http://127.0.0.1:4173/assets/data.worker-BHtkh95n.js",
+            "usedSize": 414344,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 20000,
+            "backingStorageSize": 32317969
+          }
+        ]
+      },
+      "workerErrors": [],
+      "rendererMemoryError": null,
+      "observed": {
+        "route": "#/runs/run-001",
+        "canvasCount": 3,
+        "tooltipCount": 0,
+        "chartCount": 3,
+        "pageWidth": 1440,
+        "domNodeCount": 397,
+        "performanceEntryCount": 306
+      }
+    }
+  ],
+  "operations": [
+    {
+      "index": 0,
+      "elapsedMs": 1173.2615,
+      "runId": "run-002",
+      "min": 0,
+      "max": 969,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 1,
+      "elapsedMs": 2410.300209,
+      "runId": "run-003",
+      "min": 1481,
+      "max": 4331,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 2,
+      "elapsedMs": 3662.6706670000003,
+      "runId": "run-004",
+      "min": 3405,
+      "max": 8645,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 3,
+      "elapsedMs": 5071.847542,
+      "runId": "run-005",
+      "min": 5771,
+      "max": 7251,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 4,
+      "elapsedMs": 6310.413959,
+      "runId": "run-006",
+      "min": 8579,
+      "max": 12704,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 5,
+      "elapsedMs": 7560.027959,
+      "runId": "run-007",
+      "min": 915,
+      "max": 8243,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 6,
+      "elapsedMs": 8973.351042,
+      "runId": "run-008",
+      "min": 3581,
+      "max": 5571,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 7,
+      "elapsedMs": 10213.452917,
+      "runId": "run-009",
+      "min": 6695,
+      "max": 12095,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 8,
+      "elapsedMs": 11459.992584,
+      "runId": "run-010",
+      "min": 10251,
+      "max": 19571,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 9,
+      "elapsedMs": 12889.815209,
+      "runId": "run-011",
+      "min": 14249,
+      "max": 16749,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 10,
+      "elapsedMs": 14128.224834,
+      "runId": "run-012",
+      "min": 2669,
+      "max": 9344,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 11,
+      "elapsedMs": 15361.400542,
+      "runId": "run-013",
+      "min": 6531,
+      "max": 17891,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 12,
+      "elapsedMs": 16773.738875,
+      "runId": "run-014",
+      "min": 10835,
+      "max": 13845,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 13,
+      "elapsedMs": 18028.98,
+      "runId": "run-015",
+      "min": 15581,
+      "max": 23531,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 14,
+      "elapsedMs": 19278.613333999998,
+      "runId": "run-016",
+      "min": 669,
+      "max": 14069,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 15,
+      "elapsedMs": 20706.65125,
+      "runId": "run-017",
+      "min": 5279,
+      "max": 8799,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 16,
+      "elapsedMs": 21980.117709,
+      "runId": "run-018",
+      "min": 10331,
+      "max": 19556,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 17,
+      "elapsedMs": 23227.69675,
+      "runId": "run-019",
+      "min": 15825,
+      "max": 31265,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 18,
+      "elapsedMs": 24623.305459,
+      "runId": "run-020",
+      "min": 21761,
+      "max": 25791,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 19,
+      "elapsedMs": 26009.673667,
+      "runId": "run-001",
+      "min": 69999,
+      "max": 319999,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 20,
+      "elapsedMs": 27279.269042,
+      "runId": "run-002",
+      "min": 1939,
+      "max": 5819,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 21,
+      "elapsedMs": 28673.783375,
+      "runId": "run-003",
+      "min": 3761,
+      "max": 4901,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 22,
+      "elapsedMs": 29909.347374999998,
+      "runId": "run-004",
+      "min": 6025,
+      "max": 9300,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 23,
+      "elapsedMs": 31161.588874999998,
+      "runId": "run-005",
+      "min": 8731,
+      "max": 14651,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 24,
+      "elapsedMs": 33071.059875,
+      "runId": "run-006",
+      "min": 1979,
+      "max": 3629,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 25,
+      "elapsedMs": 34309.951709,
+      "runId": "run-007",
+      "min": 4579,
+      "max": 9159,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 26,
+      "elapsedMs": 35541.28525,
+      "runId": "run-008",
+      "min": 7561,
+      "max": 15521,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 27,
+      "elapsedMs": 36971.488959,
+      "runId": "run-009",
+      "min": 11015,
+      "max": 13175,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 28,
+      "elapsedMs": 38209.279125,
+      "runId": "run-010",
+      "min": 931,
+      "max": 6756,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 29,
+      "elapsedMs": 39445.573584000005,
+      "runId": "run-011",
+      "min": 4249,
+      "max": 14249,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 30,
+      "elapsedMs": 40837.844834,
+      "runId": "run-012",
+      "min": 8009,
+      "max": 10679,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 31,
+      "elapsedMs": 42077.188542,
+      "runId": "run-013",
+      "min": 12211,
+      "max": 19311,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 32,
+      "elapsedMs": 43325.383292,
+      "runId": "run-014",
+      "min": 16855,
+      "max": 28895,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 33,
+      "elapsedMs": 44721.253917,
+      "runId": "run-015",
+      "min": 2861,
+      "max": 6041,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 34,
+      "elapsedMs": 45959.288917000005,
+      "runId": "run-016",
+      "min": 7369,
+      "max": 15744,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 35,
+      "elapsedMs": 47193.871209000004,
+      "runId": "run-017",
+      "min": 12319,
+      "max": 26399,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 36,
+      "elapsedMs": 48589.073584000005,
+      "runId": "run-018",
+      "min": 17711,
+      "max": 21401,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 37,
+      "elapsedMs": 49828.740375,
+      "runId": "run-019",
+      "min": 385,
+      "max": 10035,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 38,
+      "elapsedMs": 51075.263834000005,
+      "runId": "run-020",
+      "min": 5641,
+      "max": 21761,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 39,
+      "elapsedMs": 52636.704417,
+      "runId": "run-001",
+      "min": 269999,
+      "max": 369999,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 40,
+      "elapsedMs": 53894.653042000005,
+      "runId": "run-002",
+      "min": 3879,
+      "max": 6304,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 41,
+      "elapsedMs": 55141.310417,
+      "runId": "run-003",
+      "min": 6041,
+      "max": 10601,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 42,
+      "elapsedMs": 56555.137375,
+      "runId": "run-004",
+      "min": 785,
+      "max": 2095,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 43,
+      "elapsedMs": 57793.192625,
+      "runId": "run-005",
+      "min": 2811,
+      "max": 6511,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 44,
+      "elapsedMs": 59042.314834000004,
+      "runId": "run-006",
+      "min": 5279,
+      "max": 11879,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 45,
+      "elapsedMs": 60455.43475,
+      "runId": "run-007",
+      "min": 8243,
+      "max": 10075,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 46,
+      "elapsedMs": 61691.293292,
+      "runId": "run-008",
+      "min": 11541,
+      "max": 16516,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 47,
+      "elapsedMs": 63441.359584000005,
+      "runId": "run-009",
+      "min": 2375,
+      "max": 11015,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 48,
+      "elapsedMs": 64837.825792,
+      "runId": "run-010",
+      "min": 5591,
+      "max": 7921,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 49,
+      "elapsedMs": 66077.090042,
+      "runId": "run-011",
+      "min": 9249,
+      "max": 15499,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 50,
+      "elapsedMs": 67341.437834,
+      "runId": "run-012",
+      "min": 13349,
+      "max": 24029,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 51,
+      "elapsedMs": 68771.737,
+      "runId": "run-013",
+      "min": 851,
+      "max": 3691,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 52,
+      "elapsedMs": 70007.60195899999,
+      "runId": "run-014",
+      "min": 4815,
+      "max": 12340,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 53,
+      "elapsedMs": 71241.59537499999,
+      "runId": "run-015",
+      "min": 9221,
+      "max": 21941,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 54,
+      "elapsedMs": 72672.11687499999,
+      "runId": "run-016",
+      "min": 14069,
+      "max": 17419,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 55,
+      "elapsedMs": 73910.698125,
+      "runId": "run-017",
+      "min": 19359,
+      "max": 28159,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 56,
+      "elapsedMs": 75158.822,
+      "runId": "run-018",
+      "min": 2951,
+      "max": 17711,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 57,
+      "elapsedMs": 76571.589167,
+      "runId": "run-019",
+      "min": 8105,
+      "max": 11965,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 58,
+      "elapsedMs": 77810.651709,
+      "runId": "run-020",
+      "min": 13701,
+      "max": 23776,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 59,
+      "elapsedMs": 79207.444917,
+      "runId": "run-001",
+      "min": 469999,
+      "max": 869999,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 60,
+      "elapsedMs": 80620.293125,
+      "runId": "run-002",
+      "min": 0,
+      "max": 969,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 61,
+      "elapsedMs": 81858.125292,
+      "runId": "run-003",
+      "min": 1481,
+      "max": 4331,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 62,
+      "elapsedMs": 83126.615417,
+      "runId": "run-004",
+      "min": 3405,
+      "max": 8645,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 63,
+      "elapsedMs": 84537.521834,
+      "runId": "run-005",
+      "min": 5771,
+      "max": 7251,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 64,
+      "elapsedMs": 85774.85325,
+      "runId": "run-006",
+      "min": 8579,
+      "max": 12704,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 65,
+      "elapsedMs": 87041.450667,
+      "runId": "run-007",
+      "min": 915,
+      "max": 8243,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 66,
+      "elapsedMs": 88452.6725,
+      "runId": "run-008",
+      "min": 3581,
+      "max": 5571,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 67,
+      "elapsedMs": 89690.536125,
+      "runId": "run-009",
+      "min": 6695,
+      "max": 12095,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 68,
+      "elapsedMs": 90957.01433399999,
+      "runId": "run-010",
+      "min": 10251,
+      "max": 19571,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 69,
+      "elapsedMs": 92970.42083399999,
+      "runId": "run-011",
+      "min": 14249,
+      "max": 16749,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 70,
+      "elapsedMs": 94208.173709,
+      "runId": "run-012",
+      "min": 2669,
+      "max": 9344,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 71,
+      "elapsedMs": 95458.813834,
+      "runId": "run-013",
+      "min": 6531,
+      "max": 17891,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 72,
+      "elapsedMs": 96887.093042,
+      "runId": "run-014",
+      "min": 10835,
+      "max": 13845,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 73,
+      "elapsedMs": 98124.324792,
+      "runId": "run-015",
+      "min": 15581,
+      "max": 23531,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 74,
+      "elapsedMs": 99360.009209,
+      "runId": "run-016",
+      "min": 669,
+      "max": 14069,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 75,
+      "elapsedMs": 100770.211167,
+      "runId": "run-017",
+      "min": 5279,
+      "max": 8799,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 76,
+      "elapsedMs": 102008.826084,
+      "runId": "run-018",
+      "min": 10331,
+      "max": 19556,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 77,
+      "elapsedMs": 103239.580959,
+      "runId": "run-019",
+      "min": 15825,
+      "max": 31265,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 78,
+      "elapsedMs": 104635.592375,
+      "runId": "run-020",
+      "min": 21761,
+      "max": 25791,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 79,
+      "elapsedMs": 106039.10983399999,
+      "runId": "run-001",
+      "min": 69999,
+      "max": 319999,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 80,
+      "elapsedMs": 107276.261292,
+      "runId": "run-002",
+      "min": 1939,
+      "max": 5819,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 81,
+      "elapsedMs": 108685.105292,
+      "runId": "run-003",
+      "min": 3761,
+      "max": 4901,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 82,
+      "elapsedMs": 109941.605709,
+      "runId": "run-004",
+      "min": 6025,
+      "max": 9300,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 83,
+      "elapsedMs": 111190.71554199999,
+      "runId": "run-005",
+      "min": 8731,
+      "max": 14651,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 84,
+      "elapsedMs": 112600.839459,
+      "runId": "run-006",
+      "min": 1979,
+      "max": 3629,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 85,
+      "elapsedMs": 113838.77558399999,
+      "runId": "run-007",
+      "min": 4579,
+      "max": 9159,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 86,
+      "elapsedMs": 115073.88341699999,
+      "runId": "run-008",
+      "min": 7561,
+      "max": 15521,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 87,
+      "elapsedMs": 116467.48983399999,
+      "runId": "run-009",
+      "min": 11015,
+      "max": 13175,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 88,
+      "elapsedMs": 117719.944209,
+      "runId": "run-010",
+      "min": 931,
+      "max": 6756,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 89,
+      "elapsedMs": 118972.310667,
+      "runId": "run-011",
+      "min": 4249,
+      "max": 14249,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 90,
+      "elapsedMs": 120369.22258399999,
+      "runId": "run-012",
+      "min": 8009,
+      "max": 10679,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 91,
+      "elapsedMs": 121606.886459,
+      "runId": "run-013",
+      "min": 12211,
+      "max": 19311,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 92,
+      "elapsedMs": 123472.4185,
+      "runId": "run-014",
+      "min": 16855,
+      "max": 28895,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 93,
+      "elapsedMs": 124869.12183399999,
+      "runId": "run-015",
+      "min": 2861,
+      "max": 6041,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 94,
+      "elapsedMs": 126105.219917,
+      "runId": "run-016",
+      "min": 7369,
+      "max": 15744,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 95,
+      "elapsedMs": 127358.435459,
+      "runId": "run-017",
+      "min": 12319,
+      "max": 26399,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 96,
+      "elapsedMs": 128769.162292,
+      "runId": "run-018",
+      "min": 17711,
+      "max": 21401,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 97,
+      "elapsedMs": 130010.597667,
+      "runId": "run-019",
+      "min": 385,
+      "max": 10035,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 98,
+      "elapsedMs": 131257.060792,
+      "runId": "run-020",
+      "min": 5641,
+      "max": 21761,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 99,
+      "elapsedMs": 132833.853584,
+      "runId": "run-001",
+      "min": 269999,
+      "max": 369999,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 100,
+      "elapsedMs": 134091.090292,
+      "runId": "run-002",
+      "min": 3879,
+      "max": 6304,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 101,
+      "elapsedMs": 135339.591875,
+      "runId": "run-003",
+      "min": 6041,
+      "max": 10601,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 102,
+      "elapsedMs": 136768.704667,
+      "runId": "run-004",
+      "min": 785,
+      "max": 2095,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 103,
+      "elapsedMs": 138024.60475,
+      "runId": "run-005",
+      "min": 2811,
+      "max": 6511,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 104,
+      "elapsedMs": 139273.451292,
+      "runId": "run-006",
+      "min": 5279,
+      "max": 11879,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 105,
+      "elapsedMs": 140683.62825,
+      "runId": "run-007",
+      "min": 8243,
+      "max": 10075,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 106,
+      "elapsedMs": 141941.50395900002,
+      "runId": "run-008",
+      "min": 11541,
+      "max": 16516,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 107,
+      "elapsedMs": 143188.19995900002,
+      "runId": "run-009",
+      "min": 2375,
+      "max": 11015,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 108,
+      "elapsedMs": 144601.51083400002,
+      "runId": "run-010",
+      "min": 5591,
+      "max": 7921,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 109,
+      "elapsedMs": 145856.804042,
+      "runId": "run-011",
+      "min": 9249,
+      "max": 15499,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 110,
+      "elapsedMs": 147104.04154200002,
+      "runId": "run-012",
+      "min": 13349,
+      "max": 24029,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 111,
+      "elapsedMs": 148535.06512500002,
+      "runId": "run-013",
+      "min": 851,
+      "max": 3691,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 112,
+      "elapsedMs": 149773.580709,
+      "runId": "run-014",
+      "min": 4815,
+      "max": 12340,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 113,
+      "elapsedMs": 151023.488542,
+      "runId": "run-015",
+      "min": 9221,
+      "max": 21941,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 114,
+      "elapsedMs": 153034.685292,
+      "runId": "run-016",
+      "min": 14069,
+      "max": 17419,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 115,
+      "elapsedMs": 154271.19737500002,
+      "runId": "run-017",
+      "min": 19359,
+      "max": 28159,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 116,
+      "elapsedMs": 155507.79225,
+      "runId": "run-018",
+      "min": 2951,
+      "max": 17711,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 117,
+      "elapsedMs": 156917.23112500002,
+      "runId": "run-019",
+      "min": 8105,
+      "max": 11965,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 118,
+      "elapsedMs": 158189.75658400002,
+      "runId": "run-020",
+      "min": 13701,
+      "max": 23776,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 119,
+      "elapsedMs": 159487.602084,
+      "runId": "run-001",
+      "min": 469999,
+      "max": 869999,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 120,
+      "elapsedMs": 160916.915084,
+      "runId": "run-002",
+      "min": 0,
+      "max": 969,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 121,
+      "elapsedMs": 162159.912667,
+      "runId": "run-003",
+      "min": 1481,
+      "max": 4331,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 122,
+      "elapsedMs": 163403.923042,
+      "runId": "run-004",
+      "min": 3405,
+      "max": 8645,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 123,
+      "elapsedMs": 164817.04754200001,
+      "runId": "run-005",
+      "min": 5771,
+      "max": 7251,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 124,
+      "elapsedMs": 166056.215084,
+      "runId": "run-006",
+      "min": 8579,
+      "max": 12704,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 125,
+      "elapsedMs": 167303.24683400002,
+      "runId": "run-007",
+      "min": 915,
+      "max": 8243,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 126,
+      "elapsedMs": 168716.087709,
+      "runId": "run-008",
+      "min": 3581,
+      "max": 5571,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 127,
+      "elapsedMs": 169973.270209,
+      "runId": "run-009",
+      "min": 6695,
+      "max": 12095,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 128,
+      "elapsedMs": 171219.87516700002,
+      "runId": "run-010",
+      "min": 10251,
+      "max": 19571,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 129,
+      "elapsedMs": 172633.40308400002,
+      "runId": "run-011",
+      "min": 14249,
+      "max": 16749,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 130,
+      "elapsedMs": 173871.446042,
+      "runId": "run-012",
+      "min": 2669,
+      "max": 9344,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 131,
+      "elapsedMs": 175120.25195900002,
+      "runId": "run-013",
+      "min": 6531,
+      "max": 17891,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 132,
+      "elapsedMs": 176533.5465,
+      "runId": "run-014",
+      "min": 10835,
+      "max": 13845,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 133,
+      "elapsedMs": 177770.991667,
+      "runId": "run-015",
+      "min": 15581,
+      "max": 23531,
+      "inspectedBoundary": "first"
+    },
+    {
+      "index": 134,
+      "elapsedMs": 179020.536167,
+      "runId": "run-016",
+      "min": 669,
+      "max": 14069,
+      "inspectedBoundary": "last"
+    },
+    {
+      "index": 135,
+      "elapsedMs": 180433.798209,
+      "runId": "run-017",
+      "min": 5279,
+      "max": 8799,
+      "inspectedBoundary": "first"
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "limits": [
+    "One desktop Chromium engine on one machine.",
+    "Three-minute activity plus finite idle cannot exclude slower leaks or production-only behavior.",
+    "No real network source, cluster, account or user telemetry is involved.",
+    "GC checkpoint intervention changes natural GC scheduling; this run measures retained allocations, not unforced peak memory."
+  ]
+}
