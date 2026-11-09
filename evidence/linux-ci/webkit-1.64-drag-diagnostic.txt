@@ -1,0 +1,49 @@
+
+Running 1 test using 1 worker
+
+(node:87834) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [webkit] › tests/e2e/adversarial.spec.ts:266:1 › dragging an auxiliary chart sets the same numeric viewport on all metrics and double-click resets all (11.9s)
+
+
+  1) [webkit] › tests/e2e/adversarial.spec.ts:266:1 › dragging an auxiliary chart sets the same numeric viewport on all metrics and double-click resets all 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  getByTestId('chart-grad_norm').locator('.u-select')
+    Expected: visible
+    Received: hidden
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toBeVisible" getByTestId('chart-grad_norm').locator('.u-select') with timeout 10000ms
+      - waiting for getByTestId('chart-grad_norm').locator('.u-select')
+        24 × locator resolved to <div class="u-select"></div>
+           - unexpected value "hidden"
+
+
+      305 |     });
+      306 |     const selection = chart.locator('.u-select');
+    > 307 |     await expect(selection).toBeVisible();
+          |                             ^
+      308 |     await expect.poll(async () => (await selection.boundingBox())?.width ?? 0).toBeGreaterThan(4);
+      309 |     await recordDragPhase(page, 'selection-before-release');
+      310 |     await page.mouse.up();
+        at /Users/noname/Desktop/personal-projects/soup/tests/e2e/adversarial.spec.ts:307:29
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/adversarial-dragging-an-au-f0544-and-double-click-resets-all-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/adversarial-dragging-an-au-f0544-and-double-click-resets-all-webkit/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/adversarial-dragging-an-au-f0544-and-double-click-resets-all-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/adversarial-dragging-an-au-f0544-and-double-click-resets-all-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [webkit] › tests/e2e/adversarial.spec.ts:266:1 › dragging an auxiliary chart sets the same numeric viewport on all metrics and double-click resets all 

@@ -14,7 +14,20 @@ permissions:
   contents: read
 jobs:
   verify:
+    name: ${{ matrix.browser }} (Playwright ${{ matrix.playwright }})
     runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - browser: chromium
+            playwright: 1.65.0
+          # Firefox 159's cross-world ARIA regression: microsoft/playwright#43967.
+          - browser: firefox
+            playwright: 1.64.1
+          # WebKit needs the input-delta fix released in 1.65: #43417 / #43443.
+          - browser: webkit
+            playwright: 1.65.0
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
@@ -22,16 +35,27 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
+      - name: Align the isolated Firefox test driver
+        if: matrix.browser == 'firefox'
+        run: |
+          npm pkg set 'devDependencies.@playwright/test=1.64.1' 'overrides.playwright-core=1.64.1'
+          npm install --ignore-scripts --no-audit
+      - name: Record the actual test driver
+        run: |
+          mkdir -p evidence/linux-ci
+          npm ls @playwright/test playwright playwright-core > evidence/linux-ci/driver-${{ matrix.browser }}.txt
       - run: npm run check
-      - run: npx playwright install --with-deps chromium firefox webkit
-      - run: npm run test:e2e
+      - run: npx playwright install --with-deps ${{ matrix.browser }}
+      - name: Run every scenario for this engine
+        run: npx playwright test --project=${{ matrix.browser }}
       - uses: actions/upload-artifact@v7
         if: always()
         with:
-          name: browser-results
+          name: browser-results-${{ matrix.browser }}
           path: |
             playwright-report/
             test-results/
             evidence/round2/e2e-results.json
-            evidence/round2/accessibility/*.json
+            evidence/round2/accessibility/${{ matrix.browser }}-*.json
+            evidence/linux-ci/driver-${{ matrix.browser }}.txt
           retention-days: 14

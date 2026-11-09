@@ -65,6 +65,8 @@ docs/                  design and engineering decisions
 
 Rendering, data acquisition and pure transformations are separated. `loadRun` is the replaceable data boundary for a future real API. TanStack Query keys include run identity and viewport; AbortSignal plus worker request IDs prevent late replies from populating a different run. Worker timeout/crash invalidates the worker so retry can recover.
 
+The local/current SDK is Playwright **1.65.0**. Linux CI isolates one internally consistent SDK per browser: Chromium/WebKit use 1.65.0; Firefox uses 1.64.1 until the [Firefox ARIA-reflection regression](https://github.com/microsoft/playwright/issues/43967) is fixed in a published roll. WebKit needs 1.65's [native input-delta fix](https://github.com/microsoft/playwright/issues/43417). Each disposable CI checkout runs the same 45 scenarios and all axe rules, with matching driver/core packages; no Page objects cross versions. Linux full-matrix reproduction follows the exact per-engine steps in [.github/workflows/ci.yml](.github/workflows/ci.yml). The compatibility rationale and original failures are in [the investigation](docs/axe-linux-investigation.md).
+
 ## Deployment
 
 `npm run build` produces a static `dist/` with application and benchmark entries.

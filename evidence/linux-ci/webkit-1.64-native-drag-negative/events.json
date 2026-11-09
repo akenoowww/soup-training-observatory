@@ -1,0 +1,1402 @@
+{
+  "events": [
+    {
+      "time": 438,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 0
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "focus",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      }
+    },
+    {
+      "time": 438,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 0
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "focusin",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      }
+    },
+    {
+      "time": 439,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "scroll",
+      "trusted": true,
+      "target": {
+        "tag": "document",
+        "class": null,
+        "label": null
+      }
+    },
+    {
+      "time": 488,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "pointermove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 1022,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": -1,
+      "buttons": 0
+    },
+    {
+      "time": 488,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "mousemove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 1022,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": 0,
+      "buttons": 0
+    },
+    {
+      "time": 643,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "pointermove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 964,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": -1,
+      "buttons": 0
+    },
+    {
+      "time": 643,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "mousemove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 964,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": 0,
+      "buttons": 0
+    },
+    {
+      "time": 646,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "pointerdown",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 964,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": 0,
+      "buttons": 1
+    },
+    {
+      "time": 646,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "mousedown",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 964,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": 0,
+      "buttons": 1
+    },
+    {
+      "time": 649,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "pointermove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 973,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": -1,
+      "buttons": 1
+    },
+    {
+      "time": 649,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "mousemove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 973,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": 0,
+      "buttons": 1
+    },
+    {
+      "time": 650,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "pointermove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 983,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": -1,
+      "buttons": 1
+    },
+    {
+      "time": 650,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "mousemove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 983,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": 0,
+      "buttons": 1
+    },
+    {
+      "time": 652,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "pointermove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 993,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": -1,
+      "buttons": 1
+    },
+    {
+      "time": 652,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "mousemove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 993,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": 0,
+      "buttons": 1
+    },
+    {
+      "time": 653,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "pointermove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 1002,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": -1,
+      "buttons": 1
+    },
+    {
+      "time": 653,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "mousemove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 1002,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": 0,
+      "buttons": 1
+    },
+    {
+      "time": 653,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "pointermove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 1012,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": -1,
+      "buttons": 1
+    },
+    {
+      "time": 653,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "mousemove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 1012,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": 0,
+      "buttons": 1
+    },
+    {
+      "time": 653,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "pointermove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 1022,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": -1,
+      "buttons": 1
+    },
+    {
+      "time": 653,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "mousemove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 1022,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": 0,
+      "buttons": 1
+    },
+    {
+      "time": 653,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "pointermove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 1031,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": -1,
+      "buttons": 1
+    },
+    {
+      "time": 653,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "mousemove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 1031,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": 0,
+      "buttons": 1
+    },
+    {
+      "time": 654,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "pointermove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 1041,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": -1,
+      "buttons": 1
+    },
+    {
+      "time": 654,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "mousemove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 1041,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": 0,
+      "buttons": 1
+    },
+    {
+      "time": 654,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "pointermove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 1050,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": -1,
+      "buttons": 1
+    },
+    {
+      "time": 654,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "mousemove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 1050,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": 0,
+      "buttons": 1
+    },
+    {
+      "time": 654,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "pointermove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 1060,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": -1,
+      "buttons": 1
+    },
+    {
+      "time": 654,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "mousemove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 1060,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": 0,
+      "buttons": 1
+    },
+    {
+      "time": 654,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "pointermove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 1070,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": -1,
+      "buttons": 1
+    },
+    {
+      "time": 654,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "mousemove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 1070,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": 0,
+      "buttons": 1
+    },
+    {
+      "time": 655,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "pointermove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 1079,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": -1,
+      "buttons": 1
+    },
+    {
+      "time": 655,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "mousemove",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 1079,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": 0,
+      "buttons": 1
+    },
+    {
+      "time": 10665,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "pointerup",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 1079,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": 0,
+      "buttons": 0
+    },
+    {
+      "time": 10665,
+      "url": "http://127.0.0.1:4173/#/runs/run-001",
+      "ready": "true",
+      "busy": "false",
+      "xMin": "0",
+      "xMax": "999999",
+      "selectionWidth": 0,
+      "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+      "documentHasFocus": true,
+      "active": {
+        "tag": "DIV",
+        "class": "metric-chart__interactive",
+        "label": "Gradient norm interactive chart"
+      },
+      "scroll": {
+        "x": 0,
+        "y": 857
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "type": "mouseup",
+      "trusted": true,
+      "target": {
+        "tag": "DIV",
+        "class": "u-over",
+        "label": null
+      },
+      "clientX": 1079,
+      "clientY": 347,
+      "movementX": 0,
+      "movementY": 0,
+      "button": 0,
+      "buttons": 0
+    }
+  ],
+  "phases": [
+    {
+      "phase": "prepared",
+      "state": {
+        "time": 641,
+        "url": "http://127.0.0.1:4173/#/runs/run-001",
+        "ready": "true",
+        "busy": "false",
+        "xMin": "0",
+        "xMax": "999999",
+        "selectionWidth": 0,
+        "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+        "documentHasFocus": true,
+        "active": {
+          "tag": "DIV",
+          "class": "metric-chart__interactive",
+          "label": "Gradient norm interactive chart"
+        },
+        "scroll": {
+          "x": 0,
+          "y": 857
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "details": {
+        "bounds": {
+          "x": 829,
+          "y": 265.515625,
+          "width": 386,
+          "height": 164
+        }
+      }
+    },
+    {
+      "phase": "pressed",
+      "state": {
+        "time": 648,
+        "url": "http://127.0.0.1:4173/#/runs/run-001",
+        "ready": "true",
+        "busy": "false",
+        "xMin": "0",
+        "xMax": "999999",
+        "selectionWidth": 0,
+        "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+        "documentHasFocus": true,
+        "active": {
+          "tag": "DIV",
+          "class": "metric-chart__interactive",
+          "label": "Gradient norm interactive chart"
+        },
+        "scroll": {
+          "x": 0,
+          "y": 857
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        }
+      }
+    },
+    {
+      "phase": "failure",
+      "state": {
+        "time": 10661,
+        "url": "http://127.0.0.1:4173/#/runs/run-001",
+        "ready": "true",
+        "busy": "false",
+        "xMin": "0",
+        "xMax": "999999",
+        "selectionWidth": 0,
+        "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+        "documentHasFocus": true,
+        "active": {
+          "tag": "DIV",
+          "class": "metric-chart__interactive",
+          "label": "Gradient norm interactive chart"
+        },
+        "scroll": {
+          "x": 0,
+          "y": 857
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "details": {
+        "message": "\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('chart-grad_norm').locator('.u-select')\nExpected: visible\nReceived: hidden\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByTestId('chart-grad_norm').locator('.u-select') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('chart-grad_norm').locator('.u-select')\u001b[22m\n\u001b[2m    24 × locator resolved to <div class=\"u-select\"></div>\u001b[22m\n\u001b[2m       - unexpected value \"hidden\"\u001b[22m\n"
+      }
+    },
+    {
+      "phase": "cleanup-release",
+      "state": {
+        "time": 10664,
+        "url": "http://127.0.0.1:4173/#/runs/run-001",
+        "ready": "true",
+        "busy": "false",
+        "xMin": "0",
+        "xMax": "999999",
+        "selectionWidth": 0,
+        "selectionStyle": "left: 0px; top: 0px; width: 0px; height: 0px;",
+        "documentHasFocus": true,
+        "active": {
+          "tag": "DIV",
+          "class": "metric-chart__interactive",
+          "label": "Gradient norm interactive chart"
+        },
+        "scroll": {
+          "x": 0,
+          "y": 857
+        },
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        }
+      }
+    }
+  ]
+}

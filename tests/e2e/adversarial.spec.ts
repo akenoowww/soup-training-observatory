@@ -1,5 +1,10 @@
 import { test, expect, type Page } from '@playwright/test';
 import { waitRenderedViewport } from './support/chart-assertions';
+import {
+  installDragObserver,
+  readDragObservations,
+  recordDragPhase,
+} from './support/drag-observer';
 
 interface TransportRequest {
   requestId: number;
@@ -260,44 +265,95 @@ for (const malformed of ['identity', 'columns', 'stale'] as const) {
 
 test('dragging an auxiliary chart sets the same numeric viewport on all metrics and double-click resets all', async ({
   page,
-}) => {
+}, testInfo) => {
   await openReady(page);
-  const surface = page.getByTestId('chart-grad_norm').locator('.u-over');
-  await surface.scrollIntoViewIfNeeded();
-  const bounds = await surface.boundingBox();
-  expect(bounds).not.toBeNull();
-  await page.mouse.move(bounds!.x + bounds!.width * 0.35, bounds!.y + bounds!.height * 0.5);
-  await page.mouse.down();
-  await page.mouse.move(bounds!.x + bounds!.width * 0.65, bounds!.y + bounds!.height * 0.5, {
-    steps: 12,
-  });
-  await page.mouse.up();
-  await expect(page).toHaveURL(/min=/);
-  const requested = new URLSearchParams(new URL(page.url()).hash.split('?')[1]);
-  const from = Number(requested.get('min'));
-  const to = Number(requested.get('max'));
-  await waitRenderedViewport(page, from, to);
-  expect(from).toBeGreaterThan(300000);
-  expect(from).toBeLessThan(400000);
-  expect(to).toBeGreaterThan(600000);
-  expect(to).toBeLessThan(700000);
-  for (const metric of ['loss', 'lr', 'grad_norm']) {
-    const chart = page.getByTestId(`chart-${metric}`);
-    await expect(chart).toHaveAttribute('data-source-points', String(to - from + 1));
-    await expect(chart).toHaveAttribute('data-x-min', String(from));
-    await expect(chart).toHaveAttribute('data-x-max', String(to));
-  }
-  await expect(page.getByTestId('chart-loss')).toHaveAttribute('data-max-value', '9.4');
-  await page.getByTestId('chart-lr').locator('.u-over').dblclick();
-  await expect(page).not.toHaveURL(/min=/);
   await waitRenderedViewport(page, 0, 999999);
-  for (const metric of ['loss', 'lr', 'grad_norm']) {
-    await expect(page.getByTestId(`chart-${metric}`)).toHaveAttribute(
-      'data-source-points',
-      '1000000',
-    );
-    await expect(page.getByTestId(`chart-${metric}`)).toHaveAttribute('data-x-min', '0');
-    await expect(page.getByTestId(`chart-${metric}`)).toHaveAttribute('data-x-max', '999999');
+  await installDragObserver(page);
+  let pressed = false;
+  try {
+    await page.bringToFront();
+    const chart = page.getByTestId('chart-grad_norm');
+    const surface = chart.locator('.u-over');
+    await chart.focus();
+    await expect(chart).toBeFocused();
+    await surface.hover();
+    await expect(chart.locator('..')).toHaveAttribute('aria-busy', 'false');
+    let previous: { x: number; y: number; width: number; height: number } | null = null;
+    await expect
+      .poll(async () => {
+        const next = await surface.boundingBox();
+        if (!next) return false;
+        const unchanged =
+          previous !== null &&
+          ['x', 'y', 'width', 'height'].every(
+            (key) =>
+              Math.abs(next[key as keyof typeof next] - previous![key as keyof typeof next]) < 0.25,
+          );
+        previous = next;
+        return unchanged;
+      })
+      .toBe(true);
+    const bounds = await surface.boundingBox();
+    if (!bounds) throw new Error('Prepared drag surface has no bounding box.');
+    await recordDragPhase(page, 'prepared', { bounds });
+    await page.mouse.move(bounds.x + bounds.width * 0.35, bounds.y + bounds.height * 0.5);
+    await page.mouse.down();
+    pressed = true;
+    await recordDragPhase(page, 'pressed');
+    await page.mouse.move(bounds.x + bounds.width * 0.65, bounds.y + bounds.height * 0.5, {
+      steps: 12,
+    });
+    const selection = chart.locator('.u-select');
+    await expect(selection).toBeVisible();
+    await expect.poll(async () => (await selection.boundingBox())?.width ?? 0).toBeGreaterThan(4);
+    await recordDragPhase(page, 'selection-before-release');
+    await page.mouse.up();
+    pressed = false;
+    await recordDragPhase(page, 'released');
+    await expect(page).toHaveURL(/min=/);
+    const requested = new URLSearchParams(new URL(page.url()).hash.split('?')[1]);
+    const from = Number(requested.get('min'));
+    const to = Number(requested.get('max'));
+    await waitRenderedViewport(page, from, to);
+    expect(from).toBeGreaterThan(300000);
+    expect(from).toBeLessThan(400000);
+    expect(to).toBeGreaterThan(600000);
+    expect(to).toBeLessThan(700000);
+    for (const metric of ['loss', 'lr', 'grad_norm']) {
+      const metricChart = page.getByTestId(`chart-${metric}`);
+      await expect(metricChart).toHaveAttribute('data-source-points', String(to - from + 1));
+      await expect(metricChart).toHaveAttribute('data-x-min', String(from));
+      await expect(metricChart).toHaveAttribute('data-x-max', String(to));
+    }
+    await expect(page.getByTestId('chart-loss')).toHaveAttribute('data-max-value', '9.4');
+    await recordDragPhase(page, 'range-painted', { from, to });
+    await page.getByTestId('chart-lr').locator('.u-over').dblclick();
+    await expect(page).not.toHaveURL(/min=/);
+    await waitRenderedViewport(page, 0, 999999);
+    for (const metric of ['loss', 'lr', 'grad_norm']) {
+      await expect(page.getByTestId(`chart-${metric}`)).toHaveAttribute(
+        'data-source-points',
+        '1000000',
+      );
+    }
+    await recordDragPhase(page, 'reset-painted');
+  } catch (error) {
+    await recordDragPhase(page, 'failure', {
+      message: error instanceof Error ? error.message : String(error),
+    }).catch(() => {});
+    throw error;
+  } finally {
+    if (pressed) {
+      await recordDragPhase(page, 'cleanup-release').catch(() => {});
+      await page.mouse.up().catch(() => {});
+    }
+    const observations = await readDragObservations(page).catch((error) => ({
+      captureError: String(error),
+    }));
+    await testInfo.attach('actual-drag-events', {
+      body: JSON.stringify(observations, null, 2),
+      contentType: 'application/json',
+    });
   }
 });
 
