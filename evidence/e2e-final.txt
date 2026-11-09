@@ -1,0 +1,28 @@
+
+> soup-training-observatory@1.0.0 test:e2e
+> playwright test
+
+
+Running 13 tests using 3 workers
+
+(node:9483) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:9485) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:9484) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   3 [chromium] › tests/e2e/observatory.spec.ts:77:1 › non-finite values produce visible disclosure and exact missing-value inspection (919ms)
+  ✓   1 [chromium] › tests/e2e/observatory.spec.ts:34:1 › run browser filters, searches, sorts, persists URL state, and recovers from empty results (1.0s)
+  ✓   2 [chromium] › tests/e2e/observatory.spec.ts:55:1 › million-point spike remains painted in overview, narrow zoom and reset (1.4s)
+  ✓   5 [chromium] › tests/e2e/observatory.spec.ts:104:1 › log scale discloses zero exclusions and linear restores the measured zero (506ms)
+  ✓   4 [chromium] › tests/e2e/observatory.spec.ts:92:1 › duplicate, unordered and missing-step observations remain discoverable (732ms)
+  ✓   6 [chromium] › tests/e2e/observatory.spec.ts:115:1 › rapid run switching never paints previous run measurements under the next run title (604ms)
+  ✓   7 [chromium] › tests/e2e/observatory.spec.ts:128:1 › keyboard search opens a run and chart keyboard inspection reveals measured values (589ms)
+  ✓   8 [chromium] › tests/e2e/observatory.spec.ts:146:1 › export identifies a sampled viewport and retains spike numeric value (606ms)
+  ✓  10 [chromium] › tests/e2e/observatory.spec.ts:175:1 › unknown run fails clearly with a working recovery route (385ms)
+  ✓  11 [chromium] › tests/e2e/observatory.spec.ts:183:1 › a worker failure never substitutes fabricated values and has a working retry path (514ms)
+  ✓   9 [chromium] › tests/e2e/observatory.spec.ts:160:1 › mobile layout fits viewport and navigation remains reachable (973ms)
+  ✓  12 [chromium] › tests/e2e/observatory.spec.ts:194:1 › an entirely invalid viewport shows unavailable values and never fabricates a zero curve (479ms)
+  ✓  13 [chromium] › tests/e2e/observatory.spec.ts:204:1 › loading keeps previous-run charts out of the new run before worker data arrives (516ms)
+
+  13 passed (4.2s)

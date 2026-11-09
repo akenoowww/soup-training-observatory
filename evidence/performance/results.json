@@ -1,0 +1,391 @@
+{
+  "generatedAt": "2026-11-09T20:18:10.743Z",
+  "cpuThrottle": 4,
+  "repetitions": 3,
+  "viewport": {
+    "width": 1100,
+    "height": 850
+  },
+  "browser": "Headless Google Chrome 156.0.8078.81",
+  "cpuThrottleScope": "Emulation.setCPUThrottlingRate(rate:4) applied to page target. Dedicated-worker scheduling is browser-defined; equivalent worker slowdown is not asserted. Worker generation is included in measured end-to-end latency.",
+  "machine": "darwin/arm64",
+  "fixture": "isolated same uPlot loss chart, run-001; baseline main-thread generation and 1M arrays; optimized actual data worker and extrema sampler; both keep canonical source measurements",
+  "timingScope": "Navigation start through data preparation and two animation frames after chart construction; zoom includes actual viewport change (and worker resampling for optimized); hover is real mousemove handler to two animation frames. This is a controlled chart fixture, not React app initial render or real-cluster network latency.",
+  "memoryScope": "Renderer RSS is the sum of all renderer processes in a fresh isolated Chromium instance containing one page. It includes native/canvas memory and worker renderers but may include spare-renderer overhead; it is an approximation of tab footprint. V8+backing storage includes measured page and worker contexts, excludes native/GPU allocations. Browser/GPU/utility processes are excluded.",
+  "summary": {
+    "baseline": {
+      "firstRenderMedianMs": 601.1000000014901,
+      "zoomMedianMs": 6.9000000059604645,
+      "hoverMedianMs": 30.600000001490116,
+      "rendererRssMedianBytes": 526532608,
+      "v8AndBackingStorageMedianBytes": 57109332,
+      "plottedPoints": 1000000
+    },
+    "optimized": {
+      "firstRenderMedianMs": 243.20000000298023,
+      "zoomMedianMs": 33.29999999701977,
+      "hoverMedianMs": 30.899999998509884,
+      "rendererRssMedianBytes": 507854848,
+      "v8AndBackingStorageMedianBytes": 34575153,
+      "plottedPoints": 3580
+    }
+  },
+  "actualApplication": {
+    "firstRenderMs": 548.2999999970198,
+    "zoomMs": 192.29999999701977,
+    "hoverMs": 41.20000000298023,
+    "memoryAtOverview": {
+      "mainThreadV8HeapUsedBytes": 3642896,
+      "contexts": [
+        {
+          "usedSize": 3642896,
+          "totalSize": 4014080,
+          "embedderHeapUsedSize": 1918600,
+          "backingStorageSize": 404445
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/data.worker-CckBE9yV.js",
+          "usedSize": 971184,
+          "totalSize": 4194304,
+          "embedderHeapUsedSize": 773712,
+          "backingStorageSize": 32007174
+        }
+      ],
+      "combinedV8HeapAndBackingStorageBytes": 37025699,
+      "rendererRssBytes": 549928960,
+      "rendererCount": 3,
+      "workerError": null,
+      "rendererMemoryError": null,
+      "scope": "Renderer RSS is the sum of all renderer processes in a fresh isolated Chromium instance containing one page. It includes native/canvas memory and worker renderers but may include spare-renderer overhead; it is an approximation of tab footprint. V8+backing storage includes measured page and worker contexts, excludes native/GPU allocations. Browser/GPU/utility processes are excluded."
+    },
+    "browserVersion": "156.0.8078.81",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "scope": "Actual production React route run-001 with all three metrics. User-action timings include Playwright click/mouse transport and two animation frames; compare separately from in-page fixture timings. One observed run, not a median or SLA."
+  },
+  "runs": [
+    {
+      "mode": "baseline",
+      "iteration": 1,
+      "browserVersion": "156.0.8078.81",
+      "executable": "Google Chrome",
+      "firstRenderMs": 614.6000000014901,
+      "sourcePoints": 1000000,
+      "renderedPoints": 1000000,
+      "spikeRetained": true,
+      "zoomMs": [],
+      "hoverMs": [],
+      "zoom": {
+        "durationMs": 6.600000001490116,
+        "renderedPoints": 1000000,
+        "sourcePoints": 20001,
+        "spikeRetained": true
+      },
+      "hovers": [
+        {
+          "durationMs": 29.700000002980232,
+          "step": 497986
+        },
+        {
+          "durationMs": 30.600000001490116,
+          "step": 500000
+        },
+        {
+          "durationMs": 30.900000005960464,
+          "step": 501990
+        }
+      ],
+      "memoryAtOverview": {
+        "mainThreadV8HeapUsedBytes": 25047112,
+        "contexts": [
+          {
+            "usedSize": 25047112,
+            "totalSize": 25739264,
+            "embedderHeapUsedSize": 462488,
+            "backingStorageSize": 32062220
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 57109332,
+        "rendererRssBytes": 526237696,
+        "rendererCount": 3,
+        "workerError": null,
+        "rendererMemoryError": null,
+        "scope": "Renderer RSS is the sum of all renderer processes in a fresh isolated Chromium instance containing one page. It includes native/canvas memory and worker renderers but may include spare-renderer overhead; it is an approximation of tab footprint. V8+backing storage includes measured page and worker contexts, excludes native/GPU allocations. Browser/GPU/utility processes are excluded."
+      },
+      "traceFile": "baseline-1.trace.json"
+    },
+    {
+      "mode": "baseline",
+      "iteration": 2,
+      "browserVersion": "156.0.8078.81",
+      "executable": "Google Chrome",
+      "firstRenderMs": 587.2999999970198,
+      "sourcePoints": 1000000,
+      "renderedPoints": 1000000,
+      "spikeRetained": true,
+      "zoomMs": [],
+      "hoverMs": [],
+      "zoom": {
+        "durationMs": 25.799999997019768,
+        "renderedPoints": 1000000,
+        "sourcePoints": 20001,
+        "spikeRetained": true
+      },
+      "hovers": [
+        {
+          "durationMs": 27.80000000447035,
+          "step": 497986
+        },
+        {
+          "durationMs": 32.20000000298023,
+          "step": 500000
+        },
+        {
+          "durationMs": 30.600000001490116,
+          "step": 501990
+        }
+      ],
+      "memoryAtOverview": {
+        "mainThreadV8HeapUsedBytes": 25051764,
+        "contexts": [
+          {
+            "usedSize": 25051764,
+            "totalSize": 25477120,
+            "embedderHeapUsedSize": 462488,
+            "backingStorageSize": 32062220
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 57113984,
+        "rendererRssBytes": 526532608,
+        "rendererCount": 3,
+        "workerError": null,
+        "rendererMemoryError": null,
+        "scope": "Renderer RSS is the sum of all renderer processes in a fresh isolated Chromium instance containing one page. It includes native/canvas memory and worker renderers but may include spare-renderer overhead; it is an approximation of tab footprint. V8+backing storage includes measured page and worker contexts, excludes native/GPU allocations. Browser/GPU/utility processes are excluded."
+      },
+      "traceFile": "baseline-2.trace.json"
+    },
+    {
+      "mode": "baseline",
+      "iteration": 3,
+      "browserVersion": "156.0.8078.81",
+      "executable": "Google Chrome",
+      "firstRenderMs": 601.1000000014901,
+      "sourcePoints": 1000000,
+      "renderedPoints": 1000000,
+      "spikeRetained": true,
+      "zoomMs": [],
+      "hoverMs": [],
+      "zoom": {
+        "durationMs": 6.9000000059604645,
+        "renderedPoints": 1000000,
+        "sourcePoints": 20001,
+        "spikeRetained": true
+      },
+      "hovers": [
+        {
+          "durationMs": 28.399999998509884,
+          "step": 497986
+        },
+        {
+          "durationMs": 30.69999999552965,
+          "step": 500000
+        },
+        {
+          "durationMs": 31.200000002980232,
+          "step": 501990
+        }
+      ],
+      "memoryAtOverview": {
+        "mainThreadV8HeapUsedBytes": 25047112,
+        "contexts": [
+          {
+            "usedSize": 25047112,
+            "totalSize": 25477120,
+            "embedderHeapUsedSize": 462488,
+            "backingStorageSize": 32062220
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 57109332,
+        "rendererRssBytes": 527482880,
+        "rendererCount": 3,
+        "workerError": null,
+        "rendererMemoryError": null,
+        "scope": "Renderer RSS is the sum of all renderer processes in a fresh isolated Chromium instance containing one page. It includes native/canvas memory and worker renderers but may include spare-renderer overhead; it is an approximation of tab footprint. V8+backing storage includes measured page and worker contexts, excludes native/GPU allocations. Browser/GPU/utility processes are excluded."
+      },
+      "traceFile": "baseline-3.trace.json"
+    },
+    {
+      "mode": "optimized",
+      "iteration": 1,
+      "browserVersion": "156.0.8078.81",
+      "executable": "Google Chrome",
+      "firstRenderMs": 243.20000000298023,
+      "sourcePoints": 1000000,
+      "renderedPoints": 3580,
+      "spikeRetained": true,
+      "zoomMs": [],
+      "hoverMs": [],
+      "zoom": {
+        "durationMs": 28.100000001490116,
+        "renderedPoints": 2074,
+        "sourcePoints": 20001,
+        "spikeRetained": true
+      },
+      "hovers": [
+        {
+          "durationMs": 30.099999994039536,
+          "step": 497978
+        },
+        {
+          "durationMs": 30.899999998509884,
+          "step": 500000
+        },
+        {
+          "durationMs": 32,
+          "step": 501999
+        }
+      ],
+      "memoryAtOverview": {
+        "mainThreadV8HeapUsedBytes": 1834748,
+        "contexts": [
+          {
+            "usedSize": 1834748,
+            "totalSize": 2179072,
+            "embedderHeapUsedSize": 463856,
+            "backingStorageSize": 62207
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/data.worker-CckBE9yV.js",
+            "usedSize": 671024,
+            "totalSize": 4194304,
+            "embedderHeapUsedSize": 773712,
+            "backingStorageSize": 32007174
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 34575153,
+        "rendererRssBytes": 507297792,
+        "rendererCount": 3,
+        "workerError": null,
+        "rendererMemoryError": null,
+        "scope": "Renderer RSS is the sum of all renderer processes in a fresh isolated Chromium instance containing one page. It includes native/canvas memory and worker renderers but may include spare-renderer overhead; it is an approximation of tab footprint. V8+backing storage includes measured page and worker contexts, excludes native/GPU allocations. Browser/GPU/utility processes are excluded."
+      },
+      "traceFile": "optimized-1.trace.json"
+    },
+    {
+      "mode": "optimized",
+      "iteration": 2,
+      "browserVersion": "156.0.8078.81",
+      "executable": "Google Chrome",
+      "firstRenderMs": 241.30000000447035,
+      "sourcePoints": 1000000,
+      "renderedPoints": 3580,
+      "spikeRetained": true,
+      "zoomMs": [],
+      "hoverMs": [],
+      "zoom": {
+        "durationMs": 33.29999999701977,
+        "renderedPoints": 2074,
+        "sourcePoints": 20001,
+        "spikeRetained": true
+      },
+      "hovers": [
+        {
+          "durationMs": 29.100000001490116,
+          "step": 497978
+        },
+        {
+          "durationMs": 31.200000002980232,
+          "step": 500000
+        },
+        {
+          "durationMs": 31.100000001490116,
+          "step": 501999
+        }
+      ],
+      "memoryAtOverview": {
+        "mainThreadV8HeapUsedBytes": 1840536,
+        "contexts": [
+          {
+            "usedSize": 1840536,
+            "totalSize": 2441216,
+            "embedderHeapUsedSize": 463856,
+            "backingStorageSize": 62207
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/data.worker-CckBE9yV.js",
+            "usedSize": 524884,
+            "totalSize": 4194304,
+            "embedderHeapUsedSize": 773712,
+            "backingStorageSize": 32007174
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 34434801,
+        "rendererRssBytes": 509640704,
+        "rendererCount": 3,
+        "workerError": null,
+        "rendererMemoryError": null,
+        "scope": "Renderer RSS is the sum of all renderer processes in a fresh isolated Chromium instance containing one page. It includes native/canvas memory and worker renderers but may include spare-renderer overhead; it is an approximation of tab footprint. V8+backing storage includes measured page and worker contexts, excludes native/GPU allocations. Browser/GPU/utility processes are excluded."
+      },
+      "traceFile": "optimized-2.trace.json"
+    },
+    {
+      "mode": "optimized",
+      "iteration": 3,
+      "browserVersion": "156.0.8078.81",
+      "executable": "Google Chrome",
+      "firstRenderMs": 246.30000000447035,
+      "sourcePoints": 1000000,
+      "renderedPoints": 3580,
+      "spikeRetained": true,
+      "zoomMs": [],
+      "hoverMs": [],
+      "zoom": {
+        "durationMs": 33.5,
+        "renderedPoints": 2074,
+        "sourcePoints": 20001,
+        "spikeRetained": true
+      },
+      "hovers": [
+        {
+          "durationMs": 30,
+          "step": 497978
+        },
+        {
+          "durationMs": 31.100000001490116,
+          "step": 500000
+        },
+        {
+          "durationMs": 30.700000002980232,
+          "step": 501999
+        }
+      ],
+      "memoryAtOverview": {
+        "mainThreadV8HeapUsedBytes": 1842008,
+        "contexts": [
+          {
+            "usedSize": 1842008,
+            "totalSize": 2441216,
+            "embedderHeapUsedSize": 463856,
+            "backingStorageSize": 62207
+          },
+          {
+            "url": "http://127.0.0.1:4173/assets/data.worker-CckBE9yV.js",
+            "usedSize": 684432,
+            "totalSize": 4194304,
+            "embedderHeapUsedSize": 773712,
+            "backingStorageSize": 32007174
+          }
+        ],
+        "combinedV8HeapAndBackingStorageBytes": 34595821,
+        "rendererRssBytes": 507854848,
+        "rendererCount": 3,
+        "workerError": null,
+        "rendererMemoryError": null,
+        "scope": "Renderer RSS is the sum of all renderer processes in a fresh isolated Chromium instance containing one page. It includes native/canvas memory and worker renderers but may include spare-renderer overhead; it is an approximation of tab footprint. V8+backing storage includes measured page and worker contexts, excludes native/GPU allocations. Browser/GPU/utility processes are excluded."
+      },
+      "traceFile": "optimized-3.trace.json"
+    }
+  ]
+}

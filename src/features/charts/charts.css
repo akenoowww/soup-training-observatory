@@ -1,0 +1,43 @@
+.metric-chart { min-width: 0; position: relative; border: 1px solid var(--border, #334E68); border-radius: 10px; background: var(--surface, #243B53); overflow: hidden; }
+.metric-chart__header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; padding: 21px 23px 13px; }
+.metric-chart__header h3 { display: flex; align-items: center; gap: 9px; margin: 0; color: var(--text, #F0F4F8); font-size: 13px; line-height: 1.5; font-weight: 600; }
+.metric-chart__dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+.metric-chart__header p { margin: 5px 0 0 16px; color: var(--muted, #9FB3C8); font-size: 11px; }
+.metric-chart__latest { display: flex; flex-direction: column; align-items: flex-end; gap: 3px; }
+.metric-chart__latest strong { font-family: var(--font-mono, 'IBM Plex Mono', monospace); font-size: 19px; font-weight: 500; line-height: 1.25; font-variant-numeric: tabular-nums; }
+.metric-chart__latest span { color: var(--muted, #9FB3C8); font-size: 10px; white-space: nowrap; }
+.metric-chart__interactive { position: relative; outline: none; margin: 0 11px; border-radius: 5px; }
+.metric-chart__interactive:focus-visible { outline: 2px solid var(--accent, #65D6AD); outline-offset: 3px; }
+.metric-chart__canvas { width: 100%; min-height: 216px; }
+.metric-chart--loss .metric-chart__canvas { min-height: 252px; }
+.metric-chart .uplot { font-family: inherit; }
+.metric-chart .u-select { background: #62B0E833; }
+.metric-chart .u-cursor-x { border-color: #9FB3C8; border-left-width: 1px; border-left-style: dashed; }
+.metric-chart .u-cursor-pt { box-shadow: 0 0 0 3px #102A4380; }
+.metric-chart__axis-label { margin: -2px 0 9px; text-align: center; color: var(--muted, #9FB3C8); font-size: 10px; }
+.metric-chart__footer { display: flex; justify-content: space-between; gap: 10px; padding: 12px 22px; border-top: 1px solid var(--border, #334E68); color: var(--muted, #9FB3C8); font-size: 10px; line-height: 1.5; }
+.metric-chart__render-note { display: flex; align-items: center; gap: 6px; }
+.metric-chart__linear-note { white-space: nowrap; }
+.metric-chart__tooltip { pointer-events: none; position: absolute; z-index: 3; top: 5px; right: 10px; display: flex; flex-direction: column; gap: 4px; max-width: calc(100% - 30px); padding: 9px 11px; border: 1px solid var(--border, #334E68); border-radius: 6px; background: var(--background, #102A43); box-shadow: 0 4px 16px #102A4360; color: var(--text, #F0F4F8); font-size: 10px; }
+.metric-chart__tooltip span { color: var(--muted, #9FB3C8); }
+.metric-chart__tooltip strong { overflow-wrap: anywhere; font: 11px var(--font-mono, 'IBM Plex Mono', monospace); }
+.metric-chart__empty, .metric-chart__updating { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 10px; color: var(--muted, #9FB3C8); font-size: 12px; }
+.metric-chart__empty { flex-direction: column; pointer-events: none; }
+.metric-chart__updating { z-index: 4; background: #102A43CC; color: var(--text, #F0F4F8); }
+.metric-chart__spinner { display: inline-block; width: 13px; height: 13px; border: 2px solid var(--border, #334E68); border-top-color: var(--accent, #65D6AD); border-radius: 50%; animation: chart-spin .7s linear infinite; }
+.metric-chart__warning { display: flex; align-items: flex-start; gap: 7px; margin: 0; padding: 10px 20px; border-top: 1px solid var(--border, #334E68); color: #F7C948; font-size: 11px; line-height: 1.6; }
+.metric-chart__warning svg { flex-shrink: 0; margin-top: 2px; }
+.metric-chart__data { border-top: 1px solid var(--border, #334E68); color: var(--muted, #9FB3C8); font-size: 10px; }
+.metric-chart__data summary { display: flex; align-items: center; gap: 7px; width: fit-content; padding: 10px 22px; cursor: pointer; list-style: none; }
+.metric-chart__data summary::after { content: '+'; margin-left: 4px; font-size: 13px; }
+.metric-chart__data[open] summary::after { content: '−'; }
+.metric-chart__data summary:focus-visible { outline: 2px solid var(--accent, #65D6AD); outline-offset: -3px; border-radius: 4px; }
+.metric-chart__table-wrap { padding: 0 22px 15px; overflow-x: auto; }
+.metric-chart__table-wrap p { font-size: 10px; line-height: 1.6; }
+.metric-chart__table-wrap table { width: 100%; border-collapse: collapse; font: 11px var(--font-mono, 'IBM Plex Mono', monospace); }
+.metric-chart__table-wrap th, .metric-chart__table-wrap td { padding: 7px 9px; border-bottom: 1px solid var(--border, #334E68); text-align: left; font-weight: 400; }
+.metric-chart__table-wrap thead th { color: var(--text, #F0F4F8); font-family: inherit; font-weight: 600; }
+.metric-chart__table-wrap tr[aria-current='true'] { background: var(--background, #102A43); color: var(--text, #F0F4F8); }
+@keyframes chart-spin { to { transform: rotate(360deg); } }
+@media (max-width: 600px) { .metric-chart__header { padding: 17px 16px 10px; } .metric-chart__latest strong { font-size: 17px; } .metric-chart__footer { padding: 11px 16px; font-size: 9px; } .metric-chart__interactive { margin: 0 6px; } .metric-chart__data summary { padding: 10px 16px; } }
+@media (prefers-reduced-motion: reduce) { .metric-chart__spinner { animation: none; } }

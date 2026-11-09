@@ -1,0 +1,55 @@
+
+> soup-training-observatory@1.0.0 check
+> npm run typecheck && npm run lint && npm test && npm run build
+
+
+> soup-training-observatory@1.0.0 typecheck
+> tsc -b
+
+
+> soup-training-observatory@1.0.0 lint
+> eslint .
+
+
+> soup-training-observatory@1.0.0 test
+> vitest run
+
+
+ RUN  v4.1.12 /Users/noname/Desktop/personal-projects/soup
+
+
+ Test Files  5 passed (5)
+      Tests  41 passed (41)
+   Start at  01:20:25
+   Duration  593ms (transform 174ms, setup 0ms, import 234ms, tests 710ms, environment 0ms)
+
+
+> soup-training-observatory@1.0.0 build
+> tsc -b && vite build
+
+vite v7.3.8 building client environment for production...
+transforming...
+✓ 1660 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                              0.85 kB │ gzip:   0.46 kB
+dist/benchmark.html                                          1.86 kB │ gzip:   1.05 kB
+dist/assets/data.worker-CckBE9yV.js                          7.11 kB
+dist/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff    13.14 kB
+dist/assets/ibm-plex-mono-latin-500-normal-CB9ihrfo.woff    13.16 kB
+dist/assets/dm-sans-latin-600-normal-Aqo67rzb.woff2         14.14 kB
+dist/assets/dm-sans-latin-400-normal-CW0RaeGs.woff2         14.20 kB
+dist/assets/dm-sans-latin-500-normal-B9HHJjqV.woff2         14.30 kB
+dist/assets/dm-sans-latin-700-normal-DvUfVpUG.woff2         14.35 kB
+dist/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2   14.71 kB
+dist/assets/ibm-plex-mono-latin-500-normal-DSY6xOcd.woff2   14.89 kB
+dist/assets/dm-sans-latin-600-normal-BmdmIIQ2.woff          18.32 kB
+dist/assets/dm-sans-latin-400-normal-BwCSEQnW.woff          18.36 kB
+dist/assets/dm-sans-latin-700-normal-CUSSCpQX.woff          18.50 kB
+dist/assets/dm-sans-latin-500-normal-Dr3UlScf.woff          18.52 kB
+dist/assets/client-Saz_VHki.css                              1.63 kB │ gzip:   0.69 kB
+dist/assets/app-CgftppmL.css                                33.52 kB │ gzip:   7.09 kB
+dist/assets/benchmark-BK-aihnX.js                            5.17 kB │ gzip:   2.35 kB │ map:    21.30 kB
+dist/assets/client-DPAzVVhi.js                              56.46 kB │ gzip:  25.13 kB │ map:   294.74 kB
+dist/assets/app-DNK9M_fo.js                                341.38 kB │ gzip: 107.53 kB │ map: 1,851.76 kB
+✓ built in 1.15s
