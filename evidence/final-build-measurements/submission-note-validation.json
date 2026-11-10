@@ -10,7 +10,7 @@
     {
       "height": 1123,
       "scrollHeight": 1123,
-      "footerGap": 141.78125
+      "footerGap": 59.46875
     }
   ],
   "performancePath": "evidence/final-build-measurements/performance/results.json",
@@ -88,5 +88,6 @@
   },
   "checkedAgainstRawRecords": true,
   "visuallyInspectedBothRenderedPages": true,
-  "pdfSha256": "ce9b35dab76cdfd8cd374e58f608118d8b5f0c2a7dc38c982ad204daa9d82372"
+  "pdfSha256": "535609722083c54a00a3b475cd64af188d9b4d24ed328c53ffd673ff6f1ae82c",
+  "directReviewAttribution": "Codex; source/PDF/raw-evidence review distinguished from automated suites"
 }
