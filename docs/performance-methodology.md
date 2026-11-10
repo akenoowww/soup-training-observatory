@@ -4,6 +4,8 @@
 
 The task asks for first render, zoom, hover, memory at one million points, before/after numbers and a Chrome Performance trace under CPU x4. The collector measures the actual plotting/data pipeline and the complete React application separately. It does not relabel the fixture as application behavior, main-page heap as total tab memory, or a five-sample maximum as a reliable population tail.
 
+The results in `evidence/round2/performance-fixed/` describe the measured SHIP baseline `app-DsJyw_oe.js`, before the subsequent log-gap correction. They remain unchanged historical evidence; no post-fix timing or memory is inferred from them.
+
 The source is deterministic synthetic data. Measurements model local browser work against a production build served on localhost. They do not model training-cluster traffic, deployment network latency or a named low-end device.
 
 ## A consequential discovery: page throttling does not throttle this worker
@@ -30,7 +32,19 @@ The official protocol defines the requested slowdown through [`Emulation.setCPUT
 
 The old build lacks actual-draw domain attributes. For its baseline, settlement requires URL-span-matched source counts on all three populated canvases plus two frames. The final build supplies uPlot draw-hook domains. Each run records the exact domain-evidence type. These checks bound paint completion but do not timestamp display photons; load and input markers and Chrome Paint events remain inspectable in the trace.
 
-Each fresh-browser application repetition includes three consecutive zooms and three hover positions. Report raw observations, median and nearest-rank P95. With five cold loads and fifteen input observations, P95 is a descriptive order statistic and usually close to the largest sample; it is not an SLA or statistically stable tail estimate.
+Each fresh-browser **fixture** repetition includes one zoom and three hover positions. With five repetitions, each fixture mode therefore has **5 first-render, 5 zoom and 15 hover observations**. Each fresh-browser **complete-application** repetition includes three consecutive zooms and three hover positions, giving **5 first-render, 15 zoom and 15 hover observations** for both the before and measured-baseline builds.
+
+| Evidence group                               | First-render observations | Zoom observations | Hover observations |
+| -------------------------------------------- | ------------------------: | ----------------: | -----------------: |
+| Raw 1M fixture                               |                         5 |                 5 |                 15 |
+| Main-thread sampled fixture                  |                         5 |                 5 |                 15 |
+| Worker sampled fixture                       |                         5 |                 5 |                 15 |
+| Complete application, before                 |                         5 |                15 |                 15 |
+| Complete application, measured SHIP baseline |                         5 |                15 |                 15 |
+
+The generator independently derives these counts from raw `fixtureRuns[].zoom.durationMs`, `fixtureRuns[].hovers[]`, and `applicationRuns[].zooms[]`/`.hovers[]`, then checks the corresponding summary `count` and `values` arrays. The unused fixture `zoomMs`/`hoverMs` arrays are not observations. `node scripts/build-submission-note.mjs --verify-measurements` verifies and prints the counts without launching Chrome or changing artifacts.
+
+Report raw observations, median and nearest-rank P95. A fixture zoom P95 uses only five values, while fixture hover and application input P95s use fifteen. These are descriptive order statistics, usually close to the largest sample; they are not SLAs or statistically stable tail estimates.
 
 The first repetition of each fixture mode/application is traced; later repetitions omit tracing overhead and have `traceFile: null`. The same schedule is used for every mode. The representative trace and all numeric observations remain separate evidence, with the instrumentation limit stated rather than treating them as identical runs.
 
@@ -44,7 +58,7 @@ The first repetition of each fixture mode/application is traced; later repetitio
 
 A worker optimization may improve first render/memory without improving zoom. Such regressions remain visible; a negative result is not deleted or relabeled.
 
-Final fixed-build controlled fixture medians (five cold samples per mode; fifteen trusted mouse observations):
+Measured-baseline controlled fixture medians (per mode: five cold loads, five zooms and fifteen trusted hover observations):
 
 | Measurement                     | Raw 1M main thread | Sampled main thread | Actual worker + sampling |
 | ------------------------------- | -----------------: | ------------------: | -----------------------: |

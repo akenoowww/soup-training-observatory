@@ -1,0 +1,91 @@
+
+> soup-training-observatory@1.0.0 test
+> vitest run src/domain/log-sampling.test.ts --reporter=verbose
+
+
+ RUN  v4.1.12 /workspace/soup
+
+ × src/domain/log-sampling.test.ts > log-aware source reduction > retains the second zero in one bucket instead of reconnecting the positive line through it 3ms
+   → expected [ +0, 1, 3, 6 ] to include 5
+ × src/domain/log-sampling.test.ts > log-aware source reduction > does not let a more-negative bucket minimum erase later zero or lesser-negative boundaries 2ms
+   → positive line 3..8 crosses an excluded measurement: expected false to be true // Object.is equality
+ ✓ src/domain/log-sampling.test.ts > log-aware source reduction > keeps raw nonpositive latest values and extrema, including an all-zero or all-negative range 0ms
+ ✓ src/domain/log-sampling.test.ts > log-aware source reduction > retains non-finite and absent-step breaks alongside log exclusions 0ms
+ × src/domain/log-sampling.test.ts > log-aware source reduction > uses the last duplicate observation before choosing log boundaries 0ms
+   → positive line 2..6 crosses an excluded measurement: expected false to be true // Object.is equality
+ ✓ src/domain/log-sampling.test.ts > log-aware source reduction > buckets long nonpositive plateaus rather than emitting every excluded measurement 31ms
+ × src/domain/log-sampling.test.ts > log-aware source reduction > keeps the shared snapshot continuous on linear scale instead of inventing gaps at zero or negative values 1ms
+   → expected [ 5, -10, 12, 6 ] to include +0
+
+ Test Files  1 failed (1)
+      Tests  4 failed | 3 passed (7)
+   Start at  03:59:54
+   Duration  156ms (transform 27ms, setup 0ms, import 34ms, tests 38ms, environment 0ms)
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/domain/log-sampling.test.ts > log-aware source reduction > retains the second zero in one bucket instead of reconnecting the positive line through it
+AssertionError: expected [ +0, 1, 3, 6 ] to include 5
+ ❯ src/domain/log-sampling.test.ts:36:23
+     34|     const rows = [5, 0, 4, 10, 3, 0, 2].map((value, step) => point(ste…
+     35|     const sampled = sampleMetric(canonicalize(rows), 'loss', 1);
+     36|     expect(sampled.x).toContain(5);
+       |                       ^
+     37|     expect(sampled.y[sampled.x.indexOf(5)]).toBe(0);
+     38|     assertNoPositiveBridge(rows, 'loss', sampled);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯
+
+ FAIL  src/domain/log-sampling.test.ts > log-aware source reduction > does not let a more-negative bucket minimum erase later zero or lesser-negative boundaries
+AssertionError: positive line 3..8 crosses an excluded measurement: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ assertNoPositiveBridge src/domain/log-sampling.test.ts:24:7
+     22|       source.every((row) => Number.isFinite(row[metric]) && row[metric…
+     23|       `positive line ${from}..${to} crosses an excluded measurement`,
+     24|     ).toBe(true);
+       |       ^
+     25|     expect(
+     26|       source.slice(1).every((row, offset) => row.step - source[offset]…
+ ❯ src/domain/log-sampling.test.ts:49:7
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯
+
+ FAIL  src/domain/log-sampling.test.ts > log-aware source reduction > uses the last duplicate observation before choosing log boundaries
+AssertionError: positive line 2..6 crosses an excluded measurement: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ assertNoPositiveBridge src/domain/log-sampling.test.ts:24:7
+     22|       source.every((row) => Number.isFinite(row[metric]) && row[metric…
+     23|       `positive line ${from}..${to} crosses an excluded measurement`,
+     24|     ).toBe(true);
+       |       ^
+     25|     expect(
+     26|       source.slice(1).every((row, offset) => row.step - source[offset]…
+ ❯ src/domain/log-sampling.test.ts:109:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/4]⎯
+
+ FAIL  src/domain/log-sampling.test.ts > log-aware source reduction > keeps the shared snapshot continuous on linear scale instead of inventing gaps at zero or negative values
+AssertionError: expected [ 5, -10, 12, 6 ] to include +0
+ ❯ src/domain/log-sampling.test.ts:130:23
+    128|     const sampled = sampleMetric(run, 'loss', 1);
+    129|     expect(sampled.y.every((value) => value !== null && Number.isFinit…
+    130|     expect(sampled.y).toContain(0);
+       |                       ^
+    131|     expect(sampled.min).toBe(-10);
+    132|     expect(sampled.max).toBe(12);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/4]⎯
+

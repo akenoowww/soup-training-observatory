@@ -17,7 +17,7 @@ The client checks the expected source kind/revision/recorded time, run identity,
 ## What the reduction preserves
 
 1. Restrict the canonical series to the requested numeric viewport.
-2. Split it into finite segments at non-finite measurements and missing integer training steps.
+2. Split it into finite segments at non-finite measurements and missing integer training steps, and split the reduction state at positive/nonpositive transitions. Sign transitions retain original numeric values: they do not create nulls in the linear snapshot; log masking subsequently makes each nonpositive interval a break.
 3. Divide the viewport into numeric-step buckets using the supplied pixel budget.
 4. Within each finite segment/bucket, retain its first, last, minimum and maximum observation; emit them in source-step order and eliminate repeated selections of the same row.
 5. Emit an explicit null marker at invalid observations or inside an absent-step interval so the line renderer cannot connect separated finite segments.
@@ -52,8 +52,16 @@ These are deterministic adversarial tests plus a correctness argument, not a for
 
 The line connects retained finite observations within each valid segment. This compresses intermediate timing and shape: it preserves extrema, not every local oscillation or every smaller peak sharing a bucket with a larger peak. The single-outlier guarantee is stronger than the guarantee for arbitrary many dense outliers. A one-point gap can be less than one physical pixel at an overview scale; visible missingness counts and zoom remain necessary.
 
-The usual output bound is at most four retained finite observations per pixel bucket for a continuous series. Many discontinuities deliberately add segment boundaries and null markers rather than concealing gaps, so an adversarial alternating finite/invalid series can exceed that budget. The application must disclose or reject unsupported render workloads instead of calling them bounded merely because the ordinary fixture is small.
+The usual output bound is at most four retained finite observations per pixel bucket for a continuous series without sign changes. Many invalid/missing-step discontinuities or repeated sign changes deliberately add segment boundaries and retained markers rather than concealing gaps, so an adversarial alternating finite/invalid series can exceed that budget. The application must disclose or reject unsupported render workloads instead of calling them bounded merely because the ordinary fixture is small.
 
 Executed after the source-step and exact-upper-bound fixes: all six adversarial property tests passed in the scoped Vitest run (`evidence/round2/data-oracle-final.txt`, 10 November 2026). Full TypeScript compilation also passed during this check. The earlier failing outputs remain unchanged; the passing result does not erase the original counterexamples or establish browser rendering.
 
-The final data/domain run passed 46 scoped tests. Source-contract tests exercise stale-revision rejection, source chronology, and advancing preparation time without changing the recorded snapshot. Original failures are retained at `evidence/round2/source-contract-first-failure.txt` and `source-contract-integration-failure.txt`; final output is `evidence/round2/data-final.txt`.
+The original release data/domain run passed 46 scoped tests. Source-contract tests exercise stale-revision rejection, source chronology, and advancing preparation time without changing the recorded snapshot. Original failures are retained at `evidence/round2/source-contract-first-failure.txt` and `source-contract-integration-failure.txt`; final output is `evidence/round2/data-final.txt`.
+
+## Log-gap follow-up
+
+A single bucket minimum is insufficient for multiple nonpositive intervals: for example, one zero can survive while a later zero disappears between a retained positive maximum and endpoint. The shared reducer now starts a new extrema component at every positive/nonpositive boundary before discarding observations. At least one original nonpositive point remains in each such component, and the existing renderer turns those points into nulls only on a log scale. Positive extrema, full-source statistics and latest values remain intact; `invalidCount` still means non-finite source measurements. Linear rendering gains original numeric points and remains continuous through finite values.
+
+The first post-SHIP improvement remains explicit work/output budgets for fragmented inputs, now including frequent sign alternation. Current workload limits are stated rather than claiming a universal four-points-per-pixel bound. Directed and seeded regressions are in `src/domain/log-sampling.test.ts` and `log-sampling.property.test.ts`; the actual Canvas test renders a one-bucket reduction with two separate zero plateaus and verifies both log gaps and the linear zero controls.
+
+The log-topology follow-up passes 55 data/domain tests and 80 tests in the complete unit suite. The added Canvas scenario brings the browser matrix to 46 scenarios in each of three engines (138 executions). Current results and the original failing cases are in [the follow-up evidence](../evidence/followup-log-scale/README.md).

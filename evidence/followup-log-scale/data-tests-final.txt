@@ -1,0 +1,68 @@
+
+> soup-training-observatory@1.0.0 test
+> vitest run src/domain src/data --reporter=verbose
+
+
+ RUN  v4.1.12 /workspace/soup
+
+ ✓ src/domain/log-sampling.test.ts > log-aware source reduction > retains the second zero in one bucket instead of reconnecting the positive line through it 1ms
+ ✓ src/domain/log-sampling.test.ts > log-aware source reduction > does not let a more-negative bucket minimum erase later zero or lesser-negative boundaries 1ms
+ ✓ src/domain/log-sampling.test.ts > log-aware source reduction > keeps raw nonpositive latest values and extrema, including an all-zero or all-negative range 0ms
+ ✓ src/domain/log-sampling.test.ts > log-aware source reduction > retains non-finite and absent-step breaks alongside log exclusions 0ms
+ ✓ src/domain/log-sampling.test.ts > log-aware source reduction > uses the last duplicate observation before choosing log boundaries 0ms
+ ✓ src/domain/log-sampling.test.ts > log-aware source reduction > buckets long nonpositive plateaus rather than emitting every excluded measurement 56ms
+ ✓ src/domain/log-sampling.test.ts > log-aware source reduction > keeps the shared snapshot continuous on linear scale instead of inventing gaps at zero or negative values 0ms
+ ✓ src/data/client.test.ts > worker request isolation and recovery > keeps fast-switch responses attached to their original run even when replies arrive out of order 28ms
+ ✓ src/data/client.test.ts > worker request isolation and recovery > rejects an aborted selection and ignores its late worker response 6ms
+ ✓ src/data/client.test.ts > worker request isolation and recovery > does not start a worker for an already aborted signal 1ms
+ ✓ src/data/client.test.ts > worker request isolation and recovery > rejects worker failure and creates a fresh worker on retry 2ms
+ ✓ src/data/client.test.ts > worker request isolation and recovery > exposes a bounded timeout instead of leaving loading permanent 6ms
+ ✓ src/data/client.test.ts > worker request isolation and recovery > fails closed on a response belonging to a different run and recovers with a new worker 2ms
+ ✓ src/data/client.test.ts > worker request isolation and recovery > rejects shifted metric columns and contradictory extrema instead of painting them 2ms
+ ✓ src/data/client.test.ts > worker request isolation and recovery > ignores late errors and malformed messages from a replaced worker 3ms
+ ✓ src/data/client.test.ts > worker request isolation and recovery > rejects invalid viewport bounds before starting a worker 0ms
+ ✓ src/data/client.test.ts > worker request isolation and recovery > surfaces malformed envelopes and unreadable messages immediately instead of waiting for timeout 0ms
+ ✓ src/data/client.test.ts > worker request isolation and recovery > rejects an obsolete fixture revision even when the run and numeric measurements match 3ms
+ ✓ src/data/engine.test.ts > synthetic data source > contains exactly 20 stable IDs with ISO timestamps and one million-point run 2ms
+ ✓ src/data/engine.test.ts > synthetic data source > generates deterministic source values 36ms
+ ✓ src/data/engine.test.ts > synthetic data source > reports invalid measurements, sorted data, duplicates and gaps explicitly 67ms
+ ✓ src/domain/series.test.ts > canonical measurements > sorts numeric steps and applies last received duplicate to every metric 1ms
+ ✓ src/domain/series.test.ts > canonical measurements > rejects misaligned metric columns before measurements can shift against the x axis 1ms
+ ✓ src/domain/series.test.ts > canonical measurements > does not report sorted duplicate removal as out-of-order measurements 0ms
+ ✓ src/domain/series.test.ts > canonical measurements > does not replace an invalid newest duplicate with an older finite reading 0ms
+ ✓ src/domain/series.test.ts > canonical measurements > rejects non-finite steps rather than placing them at zero 0ms
+ ✓ src/domain/series.test.ts > truthful reduction > preserves the 1M-point single spike at all tested pixel budgets and zoom windows containing it 243ms
+ ✓ src/data/validate-response.test.ts > worker response boundary > accepts real full, finite/invalid-only, empty, and fractional-boundary viewports 276ms
+ ✓ src/data/validate-response.test.ts > worker response boundary > rejects malformed and mismatched identities, metadata, statistics, and coordinates 13ms
+ ✓ src/data/validate-response.test.ts > worker response boundary > rejects samples outside the requested viewport even if the full run identity matches 2ms
+ ✓ src/data/validate-response.test.ts > worker response boundary > rejects stale revisions, missing source identity and impossible source times 2ms
+ ✓ src/data/engine.test.ts > synthetic data source > keeps list summaries consistent with full-run detail observations and latest values 197ms
+ ✓ src/domain/series.test.ts > truthful reduction > retains each bucket minimum/maximum and emits only original finite values 67ms
+ ✓ src/domain/series.test.ts > truthful reduction > does not invent a spike in a viewport that excludes it 78ms
+ ✓ src/data/engine.test.ts > synthetic data source > does not substitute another run for an unknown identifier 0ms
+ ✓ src/data/engine.test.ts > synthetic data source > binds each sampled response to its requested run and zoom 1ms
+ ✓ src/data/engine.test.ts > synthetic data source > binds deterministic run chronology to the immutable recorded source snapshot 195ms
+ ✓ src/domain/series.test.ts > truthful reduction > keeps NaN and positive/negative Infinity as visible line breaks even within one bucket 0ms
+ ✓ src/domain/series.test.ts > truthful reduction > breaks across missing steps instead of interpolating an apparently valid line 0ms
+ ✓ src/domain/series.test.ts > truthful reduction > retains real zero values and does not change their numeric meaning 0ms
+ ✓ src/domain/series.test.ts > truthful reduction > reports exact extrema and the actual latest reading rather than a sampled average 0ms
+ ✓ src/domain/series.test.ts > truthful reduction > keeps an invalid final measurement unavailable instead of showing an older value as latest 0ms
+ ✓ src/domain/series.test.ts > truthful reduction > handles empty and entirely invalid intervals without fabricated statistics 0ms
+ ✓ src/domain/series.test.ts > truthful reduction > bounds the normal million-point render payload to four points per pixel bucket 97ms
+ ✓ src/domain/series.test.ts > truthful reduction > keeps a non-finite pixel budget bounded rather than emitting every source point 101ms
+ ✓ src/domain/series.test.ts > truthful reduction > provides an explicitly unreduced benchmark baseline 0ms
+ ✓ src/domain/series.test.ts > numeric range search > uses numeric ordering and correct inclusive range endpoints 0ms
+ ✓ src/domain/series.property.test.ts > adversarial deterministic sampling oracle > agrees with independent last-arrival normalization over 128 shuffled malformed inputs 24ms
+ ✓ src/domain/series.property.test.ts > adversarial deterministic sampling oracle > preserves source identity, exact statistics, each segment extrema and breaks for all three metrics over 192 seeded datasets 1546ms
+ ✓ src/domain/series.property.test.ts > adversarial deterministic sampling oracle > retains each required extrema when multiple positive and negative outliers sit on bucket and viewport edges 248ms
+ ✓ src/domain/series.property.test.ts > adversarial deterministic sampling oracle > uses exact inclusive integer bounds and excludes the next step beyond a fractional viewport endpoint 0ms
+ ✓ src/domain/series.property.test.ts > adversarial deterministic sampling oracle > rejects unsupported source step coordinates instead of silently rounding or inventing chart positions 0ms
+ ✓ src/domain/series.property.test.ts > adversarial deterministic sampling oracle > retains both finite extremes and a distinct gap marker near the largest supported source step 0ms
+ ✓ src/domain/log-sampling.property.test.ts > independent logarithmic reduction invariants > preserves every positive component around several excluded intervals over seeded arrivals 2330ms
+ ✓ src/domain/log-sampling.property.test.ts > independent logarithmic reduction invariants > reduces a long zero plateau while retaining its break and honest source statistics 5ms
+
+ Test Files  7 passed (7)
+      Tests  55 passed (55)
+   Start at  04:02:05
+   Duration  2.51s (transform 363ms, setup 0ms, import 466ms, tests 5.65s, environment 0ms)
+

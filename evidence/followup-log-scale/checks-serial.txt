@@ -1,0 +1,61 @@
+
+> soup-training-observatory@1.0.0 check
+> npm run format:check && npm run typecheck && npm run lint && npm test && npm run build
+
+
+> soup-training-observatory@1.0.0 format:check
+> prettier --check src tests scripts *.ts *.js *.json *.html README.md docs/*.md
+
+Checking formatting...
+All matched files use Prettier code style!
+
+> soup-training-observatory@1.0.0 typecheck
+> tsc -b
+
+
+> soup-training-observatory@1.0.0 lint
+> eslint .
+
+
+> soup-training-observatory@1.0.0 test
+> vitest run
+
+
+ RUN  v4.1.12 /workspace/soup
+
+
+ Test Files  11 passed (11)
+      Tests  80 passed (80)
+   Start at  10:22:24
+   Duration  6.55s (transform 101ms, setup 0ms, import 212ms, tests 5.54s, environment 1ms)
+
+
+> soup-training-observatory@1.0.0 build
+> tsc -b && vite build
+
+vite v7.3.8 building client environment for production...
+transforming...
+✓ 1673 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                              0.87 kB │ gzip:   0.47 kB
+dist/benchmark.html                                          2.73 kB │ gzip:   1.26 kB
+dist/assets/data.worker-pg0qDgzo.js                          7.56 kB
+dist/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff    13.14 kB
+dist/assets/ibm-plex-mono-latin-500-normal-CB9ihrfo.woff    13.16 kB
+dist/assets/dm-sans-latin-600-normal-Aqo67rzb.woff2         14.14 kB
+dist/assets/dm-sans-latin-400-normal-CW0RaeGs.woff2         14.20 kB
+dist/assets/dm-sans-latin-500-normal-B9HHJjqV.woff2         14.30 kB
+dist/assets/dm-sans-latin-700-normal-DvUfVpUG.woff2         14.35 kB
+dist/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2   14.71 kB
+dist/assets/ibm-plex-mono-latin-500-normal-DSY6xOcd.woff2   14.89 kB
+dist/assets/dm-sans-latin-600-normal-BmdmIIQ2.woff          18.32 kB
+dist/assets/dm-sans-latin-400-normal-BwCSEQnW.woff          18.36 kB
+dist/assets/dm-sans-latin-700-normal-CUSSCpQX.woff          18.50 kB
+dist/assets/dm-sans-latin-500-normal-Dr3UlScf.woff          18.52 kB
+dist/assets/client-Saz_VHki.css                              1.63 kB │ gzip:   0.69 kB
+dist/assets/app-DfZOBv6h.css                                35.17 kB │ gzip:   7.40 kB
+dist/assets/benchmark-uF4-TRUJ.js                            7.28 kB │ gzip:   3.18 kB │ map:    29.27 kB
+dist/assets/client-H3PN1umh.js                              59.51 kB │ gzip:  26.18 kB │ map:   308.14 kB
+dist/assets/app-pYEMV88W.js                                348.77 kB │ gzip: 109.93 kB │ map: 1,899.43 kB
+✓ built in 1.28s

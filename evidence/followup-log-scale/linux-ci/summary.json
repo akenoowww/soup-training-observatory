@@ -1,0 +1,54 @@
+{
+  "workflowUrl": "https://github.com/akenoowww/soup-training-observatory/actions/runs/42760822037",
+  "codeCommit": "aa273d70ba898ba6f13f7530ba240c10a972166d",
+  "conclusion": "success",
+  "executions": 138,
+  "same46TitlesInAllEngines": true,
+  "engines": [
+    {
+      "engine": "chromium",
+      "stats": {
+        "startTime": "2026-11-10T05:14:42.469Z",
+        "duration": 32552.308999999997,
+        "expected": 46,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "scenarioCount": 46,
+      "retries": 0,
+      "report": "chromium-results.json",
+      "driverGraph": "driver-chromium.txt"
+    },
+    {
+      "engine": "firefox",
+      "stats": {
+        "startTime": "2026-11-10T05:15:29.089Z",
+        "duration": 73061.635,
+        "expected": 46,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "scenarioCount": 46,
+      "retries": 0,
+      "report": "firefox-results.json",
+      "driverGraph": "driver-firefox.txt"
+    },
+    {
+      "engine": "webkit",
+      "stats": {
+        "startTime": "2026-11-10T05:18:12.501Z",
+        "duration": 74156.27,
+        "expected": 46,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "scenarioCount": 46,
+      "retries": 0,
+      "report": "webkit-results.json",
+      "driverGraph": "driver-webkit.txt"
+    }
+  ]
+}

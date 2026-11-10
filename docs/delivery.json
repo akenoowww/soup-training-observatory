@@ -1,21 +1,33 @@
 {
-  "status": "followup-validation-pending",
+  "status": "public-github-pages-verified",
   "applicationBundle": "assets/app-pYEMV88W.js",
-  "localCandidateCommit": "aa273d70ba898ba6f13f7530ba240c10a972166d",
+  "localCandidateCommit": "18e142564cc1b44069bae58a84a13d98f661db34",
   "repositoryUrl": "https://github.com/akenoowww/soup-training-observatory",
   "deployedUrl": "https://akenoowww.github.io/soup-training-observatory/",
-  "hostedSmokePassed": false,
-  "checks": "evidence/followup-log-scale/checks.txt",
+  "hostedSmokePassed": true,
+  "checks": "evidence/followup-log-scale/checks-serial.txt",
   "browserResults": "evidence/followup-log-scale/e2e-results.json",
   "browserScenarios": 46,
   "browserExecutions": 138,
   "performanceResults": "evidence/round2/performance-fixed/results.json",
   "sustainedUse": "evidence/round2/soak/final-native-gc/latest.json",
   "linuxCi": {
-    "conclusion": "pending",
-    "note": "Follow-up log topology fix is awaiting new complete CI."
+    "url": "https://github.com/akenoowww/soup-training-observatory/actions/runs/42761775159",
+    "commit": "18e142564cc1b44069bae58a84a13d98f661db34",
+    "conclusion": "success",
+    "browserExecutions": 138,
+    "reports": "evidence/followup-log-scale/linux-ci/final/summary.json"
   },
   "exportApproval": "explicit-user-public-github-and-pages-akenoowww",
-  "hostedSmokeResults": "evidence/hosted/2026-11-09T21-36-49-440Z/results.json",
-  "unitResults": "evidence/followup-log-scale/unit-results.json"
+  "hostedSmokeResults": "evidence/followup-log-scale/hosted/results.json",
+  "unitResults": "evidence/followup-log-scale/unit-serial-results.json",
+  "deployment": {
+    "workflowUrl": "https://github.com/akenoowww/soup-training-observatory/actions/runs/42761802036",
+    "commit": "18e142564cc1b44069bae58a84a13d98f661db34",
+    "conclusion": "success"
+  },
+  "applicationSha256": "67a08b9a7f8e221727ee09a74231dd8b010e3bfd1ff824badbabbbc75f0051d7",
+  "workerBundle": "assets/data.worker-pg0qDgzo.js",
+  "workerSha256": "bf1595d98be8e7f31da13faf50b2d043165c7cfdfb11a809dee69934a803f69c",
+  "performanceScope": "Historical app-DsJyw_oe.js baseline before the log-gap correction; current app-pYEMV88W.js timing/memory was not remeasured."
 }

@@ -1,0 +1,78 @@
+
+> soup-training-observatory@1.0.0 test
+> vitest run src/domain/log-sampling.test.ts --reporter=verbose
+
+
+ RUN  v4.1.12 /workspace/soup
+
+ × src/domain/log-sampling.test.ts > log-aware source reduction > retains the second zero in one bucket instead of reconnecting the positive line through it 3ms
+   → expected [ +0, 1, 3, 6 ] to include 5
+ × src/domain/log-sampling.test.ts > log-aware source reduction > does not let a more-negative bucket minimum erase later zero or lesser-negative boundaries 2ms
+   → positive line 3..8 crosses an excluded measurement: expected false to be true // Object.is equality
+ ✓ src/domain/log-sampling.test.ts > log-aware source reduction > keeps raw nonpositive latest values and extrema, including an all-zero or all-negative range 0ms
+ ✓ src/domain/log-sampling.test.ts > log-aware source reduction > retains non-finite and absent-step breaks alongside log exclusions 0ms
+ × src/domain/log-sampling.test.ts > log-aware source reduction > uses the last duplicate observation before choosing log boundaries 0ms
+   → positive line 2..6 crosses an excluded measurement: expected false to be true // Object.is equality
+ ✓ src/domain/log-sampling.test.ts > log-aware source reduction > buckets long nonpositive plateaus rather than emitting every excluded measurement 32ms
+ ✓ src/domain/log-sampling.test.ts > log-aware source reduction > leaves the linear reduction unchanged instead of turning valid zeros into missing source data 0ms
+
+ Test Files  1 failed (1)
+      Tests  3 failed | 4 passed (7)
+   Start at  03:58:39
+   Duration  161ms (transform 33ms, setup 0ms, import 40ms, tests 38ms, environment 0ms)
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/domain/log-sampling.test.ts > log-aware source reduction > retains the second zero in one bucket instead of reconnecting the positive line through it
+AssertionError: expected [ +0, 1, 3, 6 ] to include 5
+ ❯ src/domain/log-sampling.test.ts:23:23
+     21|     const rows = [5, 0, 4, 10, 3, 0, 2].map((value, step) => point(ste…
+     22|     const sampled = sampleMetric(canonicalize(rows), 'loss', 1, undefi…
+     23|     expect(sampled.x).toContain(5);
+       |                       ^
+     24|     expect(sampled.y[sampled.x.indexOf(5)]).toBe(0);
+     25|     assertNoPositiveBridge(rows, 'loss', sampled);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯
+
+ FAIL  src/domain/log-sampling.test.ts > log-aware source reduction > does not let a more-negative bucket minimum erase later zero or lesser-negative boundaries
+AssertionError: positive line 3..8 crosses an excluded measurement: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ assertNoPositiveBridge src/domain/log-sampling.test.ts:14:148
+     12|     const from = series.x[index - 1]!, to = series.x[index]!;
+     13|     const source = rows.filter((row) => row.step >= from && row.step <…
+     14|     expect(source.every((row) => Number.isFinite(row[metric]) && row[m…
+       |                                                                                                                                                    ^
+     15|     expect(source.slice(1).every((row, offset) => row.step - source[of…
+     16|   }
+ ❯ src/domain/log-sampling.test.ts:36:7
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/3]⎯
+
+ FAIL  src/domain/log-sampling.test.ts > log-aware source reduction > uses the last duplicate observation before choosing log boundaries
+AssertionError: positive line 2..6 crosses an excluded measurement: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ assertNoPositiveBridge src/domain/log-sampling.test.ts:14:148
+     12|     const from = series.x[index - 1]!, to = series.x[index]!;
+     13|     const source = rows.filter((row) => row.step >= from && row.step <…
+     14|     expect(source.every((row) => Number.isFinite(row[metric]) && row[m…
+       |                                                                                                                                                    ^
+     15|     expect(source.slice(1).every((row, offset) => row.step - source[of…
+     16|   }
+ ❯ src/domain/log-sampling.test.ts:72:5
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/3]⎯
+

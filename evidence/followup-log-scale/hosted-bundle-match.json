@@ -1,0 +1,35 @@
+{
+  "pass": true,
+  "matches": [
+    {
+      "engine": "chromium",
+      "asset": "app-pYEMV88W.js",
+      "sha256": "67a08b9a7f8e221727ee09a74231dd8b010e3bfd1ff824badbabbbc75f0051d7"
+    },
+    {
+      "engine": "chromium",
+      "asset": "data.worker-pg0qDgzo.js",
+      "sha256": "bf1595d98be8e7f31da13faf50b2d043165c7cfdfb11a809dee69934a803f69c"
+    },
+    {
+      "engine": "firefox",
+      "asset": "app-pYEMV88W.js",
+      "sha256": "67a08b9a7f8e221727ee09a74231dd8b010e3bfd1ff824badbabbbc75f0051d7"
+    },
+    {
+      "engine": "firefox",
+      "asset": "data.worker-pg0qDgzo.js",
+      "sha256": "bf1595d98be8e7f31da13faf50b2d043165c7cfdfb11a809dee69934a803f69c"
+    },
+    {
+      "engine": "webkit",
+      "asset": "app-pYEMV88W.js",
+      "sha256": "67a08b9a7f8e221727ee09a74231dd8b010e3bfd1ff824badbabbbc75f0051d7"
+    },
+    {
+      "engine": "webkit",
+      "asset": "data.worker-pg0qDgzo.js",
+      "sha256": "bf1595d98be8e7f31da13faf50b2d043165c7cfdfb11a809dee69934a803f69c"
+    }
+  ]
+}

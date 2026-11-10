@@ -1,0 +1,179 @@
+firefox (Playwright 1.64.1)	Run npm run check	﻿2026-11-10T05:20:00.2308044Z ##[group]Run npm run check
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:00.2308348Z ^[[36;1mnpm run check^[[0m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:00.2323721Z shell: /usr/bin/bash -e {0}
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:00.2324011Z ##[endgroup]
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:00.3354267Z 
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:00.3355206Z > soup-training-observatory@1.0.0 check
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:00.3356543Z > npm run format:check && npm run typecheck && npm run lint && npm test && npm run build
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:00.3357131Z 
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:00.4353150Z 
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:00.4354019Z > soup-training-observatory@1.0.0 format:check
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:00.4354992Z > prettier --check src tests scripts *.ts *.js *.json *.html README.md docs/*.md
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:00.4355514Z 
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:00.5280359Z Checking formatting...
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:02.7447454Z All matched files use Prettier code style!
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:02.8796504Z 
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:02.8797799Z > soup-training-observatory@1.0.0 typecheck
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:02.8798528Z > tsc -b
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:02.8798755Z 
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:06.5317451Z 
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:06.5318600Z > soup-training-observatory@1.0.0 lint
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:06.5319170Z > eslint .
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:06.5319376Z 
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:08.4336114Z 
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:08.4336984Z > soup-training-observatory@1.0.0 test
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:08.4337561Z > vitest run
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:08.4337753Z 
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:08.7136510Z 
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:08.7139500Z ^[[1m^[[30m^[[46m RUN ^[[49m^[[39m^[[22m ^[[36mv4.1.12 ^[[39m^[[90m/home/runner/work/soup-training-observatory/soup-training-observatory^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:08.7140652Z 
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:10.8136651Z  ^[[32m✓^[[39m src/domain/series.test.ts ^[[2m(^[[22m^[[2m18 tests^[[22m^[[2m)^[[22m^[[33m 1774^[[2mms^[[22m^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:10.8140503Z      ^[[33m^[[2m✓^[[22m^[[39m preserves the 1M-point single spike at all tested pixel budgets and zoom windows containing it ^[[33m 727^[[2mms^[[22m^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:10.8157814Z      ^[[33m^[[2m✓^[[22m^[[39m keeps a non-finite pixel budget bounded rather than emitting every source point ^[[33m 330^[[2mms^[[22m^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:11.2417951Z  ^[[32m✓^[[39m src/data/client.test.ts ^[[2m(^[[22m^[[2m11 tests^[[22m^[[2m)^[[22m^[[32m 172^[[2mms^[[22m^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:11.5507904Z  ^[[32m✓^[[39m src/domain/log-sampling.test.ts ^[[2m(^[[22m^[[2m7 tests^[[22m^[[2m)^[[22m^[[32m 143^[[2mms^[[22m^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:11.8288861Z  ^[[32m✓^[[39m src/features/charts/chart-format.test.ts ^[[2m(^[[22m^[[2m12 tests^[[22m^[[2m)^[[22m^[[32m 18^[[2mms^[[22m^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:13.1238292Z  ^[[32m✓^[[39m src/data/engine.test.ts ^[[2m(^[[22m^[[2m7 tests^[[22m^[[2m)^[[22m^[[33m 1129^[[2mms^[[22m^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:13.1329404Z      ^[[33m^[[2m✓^[[22m^[[39m keeps list summaries consistent with full-run detail observations and latest values ^[[33m 361^[[2mms^[[22m^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:13.1358198Z      ^[[33m^[[2m✓^[[22m^[[39m binds deterministic run chronology to the immutable recorded source snapshot ^[[33m 518^[[2mms^[[22m^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:13.9896525Z  ^[[32m✓^[[39m src/data/validate-response.test.ts ^[[2m(^[[22m^[[2m4 tests^[[22m^[[2m)^[[22m^[[33m 688^[[2mms^[[22m^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:13.9899513Z      ^[[33m^[[2m✓^[[22m^[[39m accepts real full, finite/invalid-only, empty, and fractional-boundary viewports ^[[33m 647^[[2mms^[[22m^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:14.2683867Z  ^[[32m✓^[[39m src/app/queryClient.test.ts ^[[2m(^[[22m^[[2m4 tests^[[22m^[[2m)^[[22m^[[32m 26^[[2mms^[[22m^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:14.4386000Z  ^[[32m✓^[[39m src/features/run-detail/run-view.test.ts ^[[2m(^[[22m^[[2m4 tests^[[22m^[[2m)^[[22m^[[32m 7^[[2mms^[[22m^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:14.6136674Z  ^[[32m✓^[[39m src/shared/format.test.ts ^[[2m(^[[22m^[[2m5 tests^[[22m^[[2m)^[[22m^[[32m 22^[[2mms^[[22m^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:14.9558070Z  ^[[31m❯^[[39m src/domain/series.property.test.ts ^[[2m(^[[22m^[[2m6 tests^[[22m^[[2m | ^[[22m^[[31m1 failed^[[39m^[[2m)^[[22m^[[33m 5944^[[2mms^[[22m^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:14.9559745Z      ^[[32m✓^[[39m agrees with independent last-arrival normalization over 128 shuffled malformed inputs^[[32m 61^[[2mms^[[22m^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:14.9561928Z ^[[31m     ^[[31m×^[[31m preserves source identity, exact statistics, each segment extrema and breaks for all three metrics over 192 seeded datasets^[[39m^[[33m 5142^[[2mms^[[22m^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:14.9564514Z      ^[[33m^[[2m✓^[[22m^[[39m retains each required extrema when multiple positive and negative outliers sit on bucket and viewport edges ^[[33m 737^[[2mms^[[22m^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:14.9566452Z      ^[[32m✓^[[39m uses exact inclusive integer bounds and excludes the next step beyond a fractional viewport endpoint^[[32m 1^[[2mms^[[22m^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:14.9568188Z      ^[[32m✓^[[39m rejects unsupported source step coordinates instead of silently rounding or inventing chart positions^[[32m 1^[[2mms^[[22m^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:14.9569849Z      ^[[32m✓^[[39m retains both finite extremes and a distinct gap marker near the largest supported source step^[[32m 1^[[2mms^[[22m^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:15.9691205Z  ^[[32m✓^[[39m src/domain/log-sampling.property.test.ts ^[[2m(^[[22m^[[2m2 tests^[[22m^[[2m)^[[22m^[[33m 6963^[[2mms^[[22m^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:15.9693706Z      ^[[33m^[[2m✓^[[22m^[[39m preserves every positive component around several excluded intervals over seeded arrivals ^[[33m 6946^[[2mms^[[22m^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:15.9720825Z 
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:15.9722221Z ^[[31m⎯⎯⎯⎯⎯⎯⎯^[[39m^[[1m^[[41m Failed Tests 1 ^[[49m^[[22m^[[31m⎯⎯⎯⎯⎯⎯⎯^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:15.9723012Z 
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:15.9727448Z ^[[41m^[[1m FAIL ^[[22m^[[49m src/domain/series.property.test.ts^[[2m > ^[[22madversarial deterministic sampling oracle^[[2m > ^[[22mpreserves source identity, exact statistics, each segment extrema and breaks for all three metrics over 192 seeded datasets
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:15.9733624Z ^[[31m^[[1mError^[[22m: Test timed out in 5000ms.
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:15.9735574Z If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:15.9737869Z ^[[36m ^[[2m❯^[[22m src/domain/series.property.test.ts:^[[2m147:3^[[22m^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:15.9804711Z     ^[[90m145|^[[39m   })^[[33m;^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:15.9812690Z     ^[[90m146|^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:15.9813072Z 
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:15.9814051Z     ^[[90m147|^[[39m   it('preserves source identity, exact statistics, each segment extrem…
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:15.9815060Z     ^[[90m   |^[[39m   ^[[31m^^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:15.9818122Z     ^[[90m148|^[[39m     ^[[35mfor^[[39m (^[[35mlet^[[39m seed ^[[33m=^[[39m ^[[34m1^[[39m^[[33m;^[[39m seed ^[[33m<=^[[39m ^[[34m192^[[39m^[[33m;^[[39m seed^[[33m++^[[39m) {
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:15.9819947Z     ^[[90m149|^[[39m       ^[[35mconst^[[39m random ^[[33m=^[[39m ^[[34mseedRandom^[[39m(seed ^[[33m^^[[39m ^[[34m0xa55a51^[[39m)^[[33m;^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:15.9820763Z 
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:15.9821435Z ^[[31m^[[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯^[[22m^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:15.9821883Z 
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:15.9828647Z ^[[2m Test Files ^[[22m ^[[1m^[[31m1 failed^[[39m^[[22m^[[2m | ^[[22m^[[1m^[[32m10 passed^[[39m^[[22m^[[90m (11)^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:15.9837338Z ^[[2m      Tests ^[[22m ^[[1m^[[31m1 failed^[[39m^[[22m^[[2m | ^[[22m^[[1m^[[32m79 passed^[[39m^[[22m^[[90m (80)^[[39m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:15.9838412Z ^[[2m   Start at ^[[22m 05:20:08
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:15.9840298Z ^[[2m   Duration ^[[22m 7.25s^[[2m (transform 432ms, setup 0ms, import 706ms, tests 16.89s, environment 1ms)^[[22m
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:15.9841173Z 
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:15.9841372Z 
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:15.9876969Z ##[error]Error: Test timed out in 5000ms.
+firefox (Playwright 1.64.1)	Run npm run check	If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+firefox (Playwright 1.64.1)	Run npm run check	 ❯ src/domain/series.property.test.ts:147:3
+firefox (Playwright 1.64.1)	Run npm run check	
+firefox (Playwright 1.64.1)	Run npm run check	
+firefox (Playwright 1.64.1)	Run npm run check	2026-11-10T05:20:16.0188271Z ##[error]Process completed with exit code 1.
+webkit (Playwright 1.65.0)	Run every scenario for this engine	﻿2026-11-10T05:20:52.6810397Z ##[group]Run npx playwright test --project=webkit
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:20:52.6810884Z ^[[36;1mnpx playwright test --project=webkit^[[0m
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:20:52.6831416Z shell: /usr/bin/bash -e {0}
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:20:52.6831723Z ##[endgroup]
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:20:54.2988542Z 
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:20:54.2989221Z Running 46 tests using 1 worker
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:20:54.2989856Z 
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:20:58.4672341Z   ✓   1 [webkit] › tests/e2e/accessibility.spec.ts:59:1 › automatic accessibility rules cover the full run browser (3.2s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:21:02.2592284Z   ✓   2 [webkit] › tests/e2e/accessibility.spec.ts:66:1 › automatic accessibility rules cover loaded numeric charts and their controls (3.8s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:21:05.7761758Z   ✓   3 [webkit] › tests/e2e/accessibility.spec.ts:78:1 › automatic accessibility rules cover the open search modal (3.5s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:21:07.4357132Z   ✓   4 [webkit] › tests/e2e/accessibility.spec.ts:87:1 › automatic accessibility rules cover the open narrow-screen navigation (1.6s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:21:20.2442428Z   ✘   5 [webkit] › tests/e2e/adversarial.spec.ts:128:1 › actual React route keeps old-run data out while real worker replies arrive in reverse selection order (12.5s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:21:23.0694232Z   ✓   6 [webkit] › tests/e2e/adversarial.spec.ts:162:1 › superseded same-run range cannot overwrite a newer zoom when its genuine response arrives late (2.3s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:21:25.3314706Z   ✓   7 [webkit] › tests/e2e/adversarial.spec.ts:189:1 › selected-range loading never presents full-run loss as the selected latest value (2.2s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:21:26.6025094Z   ✓   8 [webkit] › tests/e2e/adversarial.spec.ts:223:1 › a failed selected range leaves its summary unavailable instead of substituting a full-run statistic (1.3s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:21:28.2492636Z   ✓   9 [webkit] › tests/e2e/adversarial.spec.ts:241:3 › malformed worker identity fails closed and a genuine retry recovers (1.6s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:21:29.9176203Z   ✓  10 [webkit] › tests/e2e/adversarial.spec.ts:241:3 › malformed worker columns fails closed and a genuine retry recovers (1.6s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:21:31.6296245Z   ✓  11 [webkit] › tests/e2e/adversarial.spec.ts:241:3 › malformed worker stale fails closed and a genuine retry recovers (1.7s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:21:34.4535203Z   ✓  12 [webkit] › tests/e2e/adversarial.spec.ts:266:1 › dragging an auxiliary chart sets the same numeric viewport on all metrics and double-click resets all (2.8s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:21:35.9585225Z   ✓  13 [webkit] › tests/e2e/adversarial.spec.ts:360:1 › chart keyboard zoom and roving tabs remain usable without a pointer (1.5s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:21:37.2246413Z   ✓  14 [webkit] › tests/e2e/adversarial.spec.ts:391:1 › search dialog traps focus in both directions and returns focus to the trigger on Escape (1.3s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:21:39.4610437Z   ✓  15 [webkit] › tests/e2e/adversarial.spec.ts:414:1 › bookmark survives reload and stays isolated by run, then can be removed (2.2s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:21:40.7223716Z   ✓  16 [webkit] › tests/e2e/adversarial.spec.ts:442:1 › unavailable browser storage reports failed saving without a false saved state (1.2s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:21:42.0976904Z   ✓  17 [webkit] › tests/e2e/adversarial.spec.ts:459:1 › invalid URL range is disclosed and reset restores the full recorded domain (1.4s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:21:43.6856483Z   ✓  18 [webkit] › tests/e2e/adversarial.spec.ts:473:3 › layout and reachable keyboard navigation at 320px (1.6s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:21:45.2299191Z   ✓  19 [webkit] › tests/e2e/adversarial.spec.ts:473:3 › layout and reachable keyboard navigation at 390px (1.5s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:21:46.9184558Z   ✓  20 [webkit] › tests/e2e/adversarial.spec.ts:473:3 › layout and reachable keyboard navigation at 768px (1.7s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:21:49.1504941Z   ✓  21 [webkit] › tests/e2e/adversarial.spec.ts:502:3 › high-density display › the million-point curve remains usable and spike inspectable at DPR2 (2.2s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:21:50.4810644Z   ✓  22 [webkit] › tests/e2e/adversarial.spec.ts:521:3 › international browser settings › recorded times stay explicitly UTC and numeric step inputs keep their meaning (1.3s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:21:52.8064506Z   ✓  23 [webkit] › tests/e2e/adversarial.spec.ts:540:3 › touch input emulation › navigation and explicit zoom controls work through touchscreen taps (2.3s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:21:54.0984847Z   ✓  24 [webkit] › tests/e2e/adversarial.spec.ts:558:1 › reloading prepares a new view while keeping the recorded synthetic source time and revision distinct (1.3s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:21:55.6763019Z   ✓  25 [webkit] › tests/e2e/adversarial.spec.ts:583:1 › an already loaded synthetic workspace can prepare a new viewport while the browser is offline (1.6s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:03.6377293Z   ✓  26 [webkit] › tests/e2e/adversarial.spec.ts:610:1 › twenty distinct viewports settle with current rendered bounds and bounded real worker requests (7.9s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:05.3421680Z   ✓  27 [webkit] › tests/e2e/canvas-truth.spec.ts:110:1 › NaN interval is an actual unpainted gap with finite painted neighbours, not zero or interpolation (1.7s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:06.6298754Z   ✓  28 [webkit] › tests/e2e/canvas-truth.spec.ts:133:1 › painted values align with actual numeric x/y axis labels for every metric (1.3s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:08.0106058Z   ✓  29 [webkit] › tests/e2e/canvas-truth.spec.ts:216:1 › drawn deep-zoom step labels stay distinct and learning-rate labels retain nonzero magnitudes (1.4s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:09.7324906Z   ✓  30 [webkit] › tests/e2e/canvas-truth.spec.ts:242:1 › a finite singleton between missing measurements paints a real point and a later empty response clears it (1.7s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:11.1437314Z   ✓  31 [webkit] › tests/e2e/canvas-truth.spec.ts:296:1 › logarithmic axes draw only finite positive numeric tick labels (1.4s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:12.6087333Z   ✓  32 [webkit] › tests/e2e/canvas-truth.spec.ts:320:1 › an all-zero interval stays a real zero line on linear and becomes explicitly unplottable on log (1.5s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:14.1970179Z   ✓  33 [webkit] › tests/e2e/canvas-truth.spec.ts:345:1 › coarse reduction retains every zero interval before logarithmic rendering (1.6s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:15.9750835Z   ✓  34 [webkit] › tests/e2e/observatory.spec.ts:47:1 › run browser filters, searches, sorts, persists URL state, and recovers from empty results (1.8s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:18.6788358Z   ✓  35 [webkit] › tests/e2e/observatory.spec.ts:80:1 › million-point spike remains painted in overview, narrow zoom and reset (2.7s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:20.1684024Z   ✓  36 [webkit] › tests/e2e/observatory.spec.ts:104:1 › non-finite values produce visible disclosure and exact missing-value inspection (1.5s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:22.2440304Z   ✓  37 [webkit] › tests/e2e/observatory.spec.ts:127:1 › duplicate, unordered and missing-step observations remain discoverable (2.1s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:23.5230661Z   ✓  38 [webkit] › tests/e2e/observatory.spec.ts:139:1 › log scale discloses zero exclusions and linear restores the measured zero (1.3s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:25.0728216Z   ✓  39 [webkit] › tests/e2e/observatory.spec.ts:152:1 › rapid run switching never paints previous run measurements under the next run title (1.5s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:26.6882540Z   ✓  40 [webkit] › tests/e2e/observatory.spec.ts:167:1 › keyboard search opens a run and chart keyboard inspection reveals measured values (1.6s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:27.9921597Z   ✓  41 [webkit] › tests/e2e/observatory.spec.ts:190:1 › export identifies a sampled viewport and retains spike numeric value (1.3s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:30.1134513Z   ✓  42 [webkit] › tests/e2e/observatory.spec.ts:206:1 › mobile layout fits viewport and navigation remains reachable (2.1s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:31.0426851Z   ✓  43 [webkit] › tests/e2e/observatory.spec.ts:222:1 › unknown run fails clearly with a working recovery route (916ms)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:32.7261819Z   ✓  44 [webkit] › tests/e2e/observatory.spec.ts:230:1 › a worker failure never substitutes fabricated values and has a working retry path (1.7s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:33.9521146Z   ✓  45 [webkit] › tests/e2e/observatory.spec.ts:248:1 › an entirely invalid viewport shows unavailable values and never fabricates a zero curve (1.2s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.6184698Z   ✓  46 [webkit] › tests/e2e/observatory.spec.ts:262:1 › initial worker loading exposes a reserved loading view before any chart is drawn (1.7s)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8027908Z 
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8032734Z 
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8043305Z   1) [webkit] › tests/e2e/adversarial.spec.ts:128:1 › actual React route keeps old-run data out while real worker replies arrive in reverse selection order 
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8044383Z 
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8044737Z     Error: expect(locator).toHaveAttribute(expected) failed
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8045176Z 
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8045450Z     Locator:  locator('[data-run-id="run-003"]')
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8045972Z     Expected: "true"
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8046353Z     Received: "false"
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8046733Z     Timeout:  10000ms
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8046959Z 
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8047111Z     Call log:
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8047799Z       - Expect "toHaveAttribute" locator('[data-run-id="run-003"]') with timeout 10000ms
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8048676Z       - waiting for locator('[data-run-id="run-003"]')
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8049427Z         23 × locator resolved to <div data-ready="false" data-run-id="run-003" class="page detail-page">…</div>
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8050384Z            - unexpected value "false"
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8050674Z 
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8050682Z 
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8051023Z       145 |   const released = await page.evaluate(() => window.__soupWorkerGate.release('run-003'));
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8051558Z       146 |   expect(released).toBeGreaterThan(0);
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8052116Z     > 147 |   await expect(page.locator('[data-run-id="run-003"]')).toHaveAttribute('data-ready', 'true');
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8052658Z           |                                                         ^
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8053207Z       148 |   await expect(page.locator('.detail-stats .overview-card').first()).toContainText('0.2581');
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8053940Z       149 |   await expect(page.getByTestId('chart-loss')).toHaveAttribute('data-source-points', '11400');
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8054591Z       150 |   await page.evaluate(() => window.__soupWorkerGate.release('run-002'));
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8055338Z         at /home/runner/work/soup-training-observatory/soup-training-observatory/tests/e2e/adversarial.spec.ts:147:57
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8056055Z 
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8056506Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8057741Z     test-results/adversarial-actual-React-r-0dc84--in-reverse-selection-order-webkit/test-failed-1.png
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8058733Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8059038Z 
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8059514Z     Error Context: test-results/adversarial-actual-React-r-0dc84--in-reverse-selection-order-webkit/error-context.md
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8060420Z 
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8060857Z     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8061578Z     test-results/adversarial-actual-React-r-0dc84--in-reverse-selection-order-webkit/trace.zip
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8062098Z     Usage:
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8062214Z 
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8062697Z         npx playwright show-trace test-results/adversarial-actual-React-r-0dc84--in-reverse-selection-order-webkit/trace.zip
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8063219Z 
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8063574Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8063860Z 
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8063949Z   1 failed
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8064696Z     [webkit] › tests/e2e/adversarial.spec.ts:128:1 › actual React route keeps old-run data out while real worker replies arrive in reverse selection order 
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8065342Z   45 passed (1.7m)
+webkit (Playwright 1.65.0)	Run every scenario for this engine	2026-11-10T05:22:35.8969890Z ##[error]Process completed with exit code 1.

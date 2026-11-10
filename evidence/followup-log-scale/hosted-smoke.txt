@@ -1,0 +1,4 @@
+{"engine":"chromium","status":"pass","checks":8,"error":null}
+{"engine":"firefox","status":"pass","checks":8,"error":null}
+{"engine":"webkit","status":"pass","checks":8,"error":null}
+{"pass":true,"report":"/workspace/soup/evidence/followup-log-scale/hosted/results.json"}

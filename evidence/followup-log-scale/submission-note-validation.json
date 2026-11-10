@@ -1,0 +1,54 @@
+{
+  "verdict": "SHIP",
+  "pages": 2,
+  "layout": [
+    {
+      "height": 1123,
+      "scrollHeight": 1123,
+      "footerGap": 193.375
+    },
+    {
+      "height": 1123,
+      "scrollHeight": 1123,
+      "footerGap": 160.359375
+    }
+  ],
+  "performanceBundle": "app-DsJyw_oe.js",
+  "observationCounts": {
+    "measuredBaseline": {
+      "fixtures": {
+        "baseline": {
+          "firstRender": 5,
+          "zoom": 5,
+          "hover": 15
+        },
+        "sampled-main": {
+          "firstRender": 5,
+          "zoom": 5,
+          "hover": 15
+        },
+        "optimized": {
+          "firstRender": 5,
+          "zoom": 5,
+          "hover": 15
+        }
+      },
+      "application": {
+        "firstRender": 5,
+        "zoom": 15,
+        "hover": 15
+      }
+    },
+    "before": {
+      "fixtures": {},
+      "application": {
+        "firstRender": 5,
+        "zoom": 15,
+        "hover": 15
+      }
+    }
+  },
+  "checkedAgainstRawRecords": true,
+  "visuallyInspectedBothRenderedPages": true,
+  "pdfSha256": "90861ba67da98427bd5f13afe66e232d8a721086938b4eb475f8924223466e94"
+}

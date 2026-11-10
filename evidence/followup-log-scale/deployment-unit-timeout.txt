@@ -1,0 +1,80 @@
+build	Run npm run check	﻿2026-11-10T05:20:19.7033387Z ##[group]Run npm run check
+build	Run npm run check	2026-11-10T05:20:19.7033726Z ^[[36;1mnpm run check^[[0m
+build	Run npm run check	2026-11-10T05:20:19.7048129Z shell: /usr/bin/bash -e {0}
+build	Run npm run check	2026-11-10T05:20:19.7048458Z ##[endgroup]
+build	Run npm run check	2026-11-10T05:20:19.8062104Z 
+build	Run npm run check	2026-11-10T05:20:19.8062752Z > soup-training-observatory@1.0.0 check
+build	Run npm run check	2026-11-10T05:20:19.8063383Z > npm run format:check && npm run typecheck && npm run lint && npm test && npm run build
+build	Run npm run check	2026-11-10T05:20:19.8063729Z 
+build	Run npm run check	2026-11-10T05:20:19.9162709Z 
+build	Run npm run check	2026-11-10T05:20:19.9163629Z > soup-training-observatory@1.0.0 format:check
+build	Run npm run check	2026-11-10T05:20:19.9164299Z > prettier --check src tests scripts *.ts *.js *.json *.html README.md docs/*.md
+build	Run npm run check	2026-11-10T05:20:19.9164654Z 
+build	Run npm run check	2026-11-10T05:20:20.0126032Z Checking formatting...
+build	Run npm run check	2026-11-10T05:20:22.2156437Z All matched files use Prettier code style!
+build	Run npm run check	2026-11-10T05:20:22.3485747Z 
+build	Run npm run check	2026-11-10T05:20:22.3486923Z > soup-training-observatory@1.0.0 typecheck
+build	Run npm run check	2026-11-10T05:20:22.3487768Z > tsc -b
+build	Run npm run check	2026-11-10T05:20:22.3488063Z 
+build	Run npm run check	2026-11-10T05:20:26.0924326Z 
+build	Run npm run check	2026-11-10T05:20:26.0925475Z > soup-training-observatory@1.0.0 lint
+build	Run npm run check	2026-11-10T05:20:26.0926041Z > eslint .
+build	Run npm run check	2026-11-10T05:20:26.0926251Z 
+build	Run npm run check	2026-11-10T05:20:28.0799382Z 
+build	Run npm run check	2026-11-10T05:20:28.0800271Z > soup-training-observatory@1.0.0 test
+build	Run npm run check	2026-11-10T05:20:28.0800670Z > vitest run
+build	Run npm run check	2026-11-10T05:20:28.0800803Z 
+build	Run npm run check	2026-11-10T05:20:28.3521518Z 
+build	Run npm run check	2026-11-10T05:20:28.3524000Z ^[[1m^[[30m^[[46m RUN ^[[49m^[[39m^[[22m ^[[36mv4.1.12 ^[[39m^[[90m/home/runner/work/soup-training-observatory/soup-training-observatory^[[39m
+build	Run npm run check	2026-11-10T05:20:28.3525902Z 
+build	Run npm run check	2026-11-10T05:20:30.3393237Z  ^[[32m✓^[[39m src/domain/series.test.ts ^[[2m(^[[22m^[[2m18 tests^[[22m^[[2m)^[[22m^[[33m 1657^[[2mms^[[22m^[[39m
+build	Run npm run check	2026-11-10T05:20:30.3395370Z      ^[[33m^[[2m✓^[[22m^[[39m preserves the 1M-point single spike at all tested pixel budgets and zoom windows containing it ^[[33m 736^[[2mms^[[22m^[[39m
+build	Run npm run check	2026-11-10T05:20:30.8636763Z  ^[[32m✓^[[39m src/data/client.test.ts ^[[2m(^[[22m^[[2m11 tests^[[22m^[[2m)^[[22m^[[32m 192^[[2mms^[[22m^[[39m
+build	Run npm run check	2026-11-10T05:20:31.2289037Z  ^[[32m✓^[[39m src/domain/log-sampling.test.ts ^[[2m(^[[22m^[[2m7 tests^[[22m^[[2m)^[[22m^[[32m 142^[[2mms^[[22m^[[39m
+build	Run npm run check	2026-11-10T05:20:31.4719209Z  ^[[32m✓^[[39m src/features/charts/chart-format.test.ts ^[[2m(^[[22m^[[2m12 tests^[[22m^[[2m)^[[22m^[[32m 10^[[2mms^[[22m^[[39m
+build	Run npm run check	2026-11-10T05:20:32.9062530Z  ^[[32m✓^[[39m src/data/engine.test.ts ^[[2m(^[[22m^[[2m7 tests^[[22m^[[2m)^[[22m^[[33m 1271^[[2mms^[[22m^[[39m
+build	Run npm run check	2026-11-10T05:20:32.9086901Z      ^[[33m^[[2m✓^[[22m^[[39m keeps list summaries consistent with full-run detail observations and latest values ^[[33m 608^[[2mms^[[22m^[[39m
+build	Run npm run check	2026-11-10T05:20:32.9116948Z      ^[[33m^[[2m✓^[[22m^[[39m binds deterministic run chronology to the immutable recorded source snapshot ^[[33m 392^[[2mms^[[22m^[[39m
+build	Run npm run check	2026-11-10T05:20:33.6606004Z  ^[[32m✓^[[39m src/data/validate-response.test.ts ^[[2m(^[[22m^[[2m4 tests^[[22m^[[2m)^[[22m^[[33m 590^[[2mms^[[22m^[[39m
+build	Run npm run check	2026-11-10T05:20:33.6608128Z      ^[[33m^[[2m✓^[[22m^[[39m accepts real full, finite/invalid-only, empty, and fractional-boundary viewports ^[[33m 556^[[2mms^[[22m^[[39m
+build	Run npm run check	2026-11-10T05:20:33.9663304Z  ^[[32m✓^[[39m src/app/queryClient.test.ts ^[[2m(^[[22m^[[2m4 tests^[[22m^[[2m)^[[22m^[[32m 38^[[2mms^[[22m^[[39m
+build	Run npm run check	2026-11-10T05:20:34.2239414Z  ^[[32m✓^[[39m src/features/run-detail/run-view.test.ts ^[[2m(^[[22m^[[2m4 tests^[[22m^[[2m)^[[22m^[[32m 10^[[2mms^[[22m^[[39m
+build	Run npm run check	2026-11-10T05:20:34.4611064Z  ^[[32m✓^[[39m src/shared/format.test.ts ^[[2m(^[[22m^[[2m5 tests^[[22m^[[2m)^[[22m^[[32m 23^[[2mms^[[22m^[[39m
+build	Run npm run check	2026-11-10T05:20:34.7127808Z  ^[[31m❯^[[39m src/domain/series.property.test.ts ^[[2m(^[[22m^[[2m6 tests^[[22m^[[2m | ^[[22m^[[31m1 failed^[[39m^[[2m)^[[22m^[[33m 6056^[[2mms^[[22m^[[39m
+build	Run npm run check	2026-11-10T05:20:34.7137462Z      ^[[32m✓^[[39m agrees with independent last-arrival normalization over 128 shuffled malformed inputs^[[32m 58^[[2mms^[[22m^[[39m
+build	Run npm run check	2026-11-10T05:20:34.7146625Z ^[[31m     ^[[31m×^[[31m preserves source identity, exact statistics, each segment extrema and breaks for all three metrics over 192 seeded datasets^[[39m^[[33m 5273^[[2mms^[[22m^[[39m
+build	Run npm run check	2026-11-10T05:20:34.7148018Z      ^[[33m^[[2m✓^[[22m^[[39m retains each required extrema when multiple positive and negative outliers sit on bucket and viewport edges ^[[33m 722^[[2mms^[[22m^[[39m
+build	Run npm run check	2026-11-10T05:20:34.7149448Z      ^[[32m✓^[[39m uses exact inclusive integer bounds and excludes the next step beyond a fractional viewport endpoint^[[32m 1^[[2mms^[[22m^[[39m
+build	Run npm run check	2026-11-10T05:20:34.7151101Z      ^[[32m✓^[[39m rejects unsupported source step coordinates instead of silently rounding or inventing chart positions^[[32m 0^[[2mms^[[22m^[[39m
+build	Run npm run check	2026-11-10T05:20:34.7152533Z      ^[[32m✓^[[39m retains both finite extremes and a distinct gap marker near the largest supported source step^[[32m 0^[[2mms^[[22m^[[39m
+build	Run npm run check	2026-11-10T05:20:35.5368842Z  ^[[32m✓^[[39m src/domain/log-sampling.property.test.ts ^[[2m(^[[22m^[[2m2 tests^[[22m^[[2m)^[[22m^[[33m 6885^[[2mms^[[22m^[[39m
+build	Run npm run check	2026-11-10T05:20:35.5371458Z      ^[[33m^[[2m✓^[[22m^[[39m preserves every positive component around several excluded intervals over seeded arrivals ^[[33m 6868^[[2mms^[[22m^[[39m
+build	Run npm run check	2026-11-10T05:20:35.5407319Z 
+build	Run npm run check	2026-11-10T05:20:35.5408641Z ^[[31m⎯⎯⎯⎯⎯⎯⎯^[[39m^[[1m^[[41m Failed Tests 1 ^[[49m^[[22m^[[31m⎯⎯⎯⎯⎯⎯⎯^[[39m
+build	Run npm run check	2026-11-10T05:20:35.5409227Z 
+build	Run npm run check	2026-11-10T05:20:35.5412472Z ^[[41m^[[1m FAIL ^[[22m^[[49m src/domain/series.property.test.ts^[[2m > ^[[22madversarial deterministic sampling oracle^[[2m > ^[[22mpreserves source identity, exact statistics, each segment extrema and breaks for all three metrics over 192 seeded datasets
+build	Run npm run check	2026-11-10T05:20:35.5417839Z ^[[31m^[[1mError^[[22m: Test timed out in 5000ms.
+build	Run npm run check	2026-11-10T05:20:35.5419343Z If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".^[[39m
+build	Run npm run check	2026-11-10T05:20:35.5420940Z ^[[36m ^[[2m❯^[[22m src/domain/series.property.test.ts:^[[2m147:3^[[22m^[[39m
+build	Run npm run check	2026-11-10T05:20:35.5503334Z     ^[[90m145|^[[39m   })^[[33m;^[[39m
+build	Run npm run check	2026-11-10T05:20:35.5504569Z     ^[[90m146|^[[39m
+build	Run npm run check	2026-11-10T05:20:35.5505813Z     ^[[90m147|^[[39m   it('preserves source identity, exact statistics, each segment extrem…
+build	Run npm run check	2026-11-10T05:20:35.5506759Z     ^[[90m   |^[[39m   ^[[31m^^[[39m
+build	Run npm run check	2026-11-10T05:20:35.5508016Z     ^[[90m148|^[[39m     ^[[35mfor^[[39m (^[[35mlet^[[39m seed ^[[33m=^[[39m ^[[34m1^[[39m^[[33m;^[[39m seed ^[[33m<=^[[39m ^[[34m192^[[39m^[[33m;^[[39m seed^[[33m++^[[39m) {
+build	Run npm run check	2026-11-10T05:20:35.5509649Z     ^[[90m149|^[[39m       ^[[35mconst^[[39m random ^[[33m=^[[39m ^[[34mseedRandom^[[39m(seed ^[[33m^^[[39m ^[[34m0xa55a51^[[39m)^[[33m;^[[39m
+build	Run npm run check	2026-11-10T05:20:35.5510353Z 
+build	Run npm run check	2026-11-10T05:20:35.5510551Z 
+build	Run npm run check	2026-11-10T05:20:35.5511082Z ^[[31m^[[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯^[[22m^[[39m
+build	Run npm run check	2026-11-10T05:20:35.5511549Z 
+build	Run npm run check	2026-11-10T05:20:35.5527147Z ^[[2m Test Files ^[[22m ^[[1m^[[31m1 failed^[[39m^[[22m^[[2m | ^[[22m^[[1m^[[32m10 passed^[[39m^[[22m^[[90m (11)^[[39m
+build	Run npm run check	2026-11-10T05:20:35.5536487Z ^[[2m      Tests ^[[22m ^[[1m^[[31m1 failed^[[39m^[[22m^[[2m | ^[[22m^[[1m^[[32m79 passed^[[39m^[[22m^[[90m (80)^[[39m
+build	Run npm run check	2026-11-10T05:20:35.5537608Z ^[[2m   Start at ^[[22m 05:20:28
+build	Run npm run check	2026-11-10T05:20:35.5538813Z ^[[2m   Duration ^[[22m 7.18s^[[2m (transform 392ms, setup 0ms, import 756ms, tests 16.87s, environment 1ms)^[[22m
+build	Run npm run check	2026-11-10T05:20:35.5539648Z 
+build	Run npm run check	2026-11-10T05:20:35.5541381Z 
+build	Run npm run check	2026-11-10T05:20:35.5573418Z ##[error]Error: Test timed out in 5000ms.
+build	Run npm run check	If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+build	Run npm run check	 ❯ src/domain/series.property.test.ts:147:3
+build	Run npm run check	
+build	Run npm run check	
+build	Run npm run check	2026-11-10T05:20:35.5899177Z ##[error]Process completed with exit code 1.

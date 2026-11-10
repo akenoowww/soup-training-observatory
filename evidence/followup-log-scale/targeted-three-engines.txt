@@ -1,0 +1,21 @@
+
+Running 6 tests using 3 workers
+
+(node:22255) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:22254) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:22256) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [firefox] › tests/e2e/canvas-truth.spec.ts:345:1 › coarse reduction retains every zero interval before logarithmic rendering (1.5s)
+  ✓  2 [chromium] › tests/e2e/observatory.spec.ts:262:1 › initial worker loading exposes a reserved loading view before any chart is drawn (1.1s)
+  ✓  3 [chromium] › tests/e2e/canvas-truth.spec.ts:345:1 › coarse reduction retains every zero interval before logarithmic rendering (1.2s)
+  ✓  4 [firefox] › tests/e2e/observatory.spec.ts:262:1 › initial worker loading exposes a reserved loading view before any chart is drawn (638ms)
+(node:22339) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:22340) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  6 [webkit] › tests/e2e/observatory.spec.ts:262:1 › initial worker loading exposes a reserved loading view before any chart is drawn (920ms)
+  ✓  5 [webkit] › tests/e2e/canvas-truth.spec.ts:345:1 › coarse reduction retains every zero interval before logarithmic rendering (973ms)
+
+  6 passed (4.7s)

@@ -1,0 +1,37 @@
+{
+  "observationCounts": {
+    "measuredBaseline": {
+      "fixtures": {
+        "baseline": {
+          "firstRender": 5,
+          "zoom": 5,
+          "hover": 15
+        },
+        "sampled-main": {
+          "firstRender": 5,
+          "zoom": 5,
+          "hover": 15
+        },
+        "optimized": {
+          "firstRender": 5,
+          "zoom": 5,
+          "hover": 15
+        }
+      },
+      "application": {
+        "firstRender": 5,
+        "zoom": 15,
+        "hover": 15
+      }
+    },
+    "before": {
+      "fixtures": {},
+      "application": {
+        "firstRender": 5,
+        "zoom": 15,
+        "hover": 15
+      }
+    }
+  },
+  "checkedAgainstRawRecords": true
+}

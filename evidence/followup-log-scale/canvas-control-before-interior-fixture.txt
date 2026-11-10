@@ -1,0 +1,42 @@
+
+Running 1 test using 1 worker
+
+(node:11383) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [chromium] › tests/e2e/canvas-truth.spec.ts:345:1 › coarse reduction retains every zero interval before logarithmic rendering (2.5s)
+
+
+  1) [chromium] › tests/e2e/canvas-truth.spec.ts:345:1 › coarse reduction retains every zero interval before logarithmic rendering 
+
+    Error: positive source components must still be painted
+
+    expect(received).toBeGreaterThan(expected)
+
+    Expected: > 10
+    Received:   0
+
+      427 |   const log = await greenInkInPlot(page, bands);
+      428 |   for (const index of [0, 2, 4])
+    > 429 |     expect(log[index], 'positive source components must still be painted').toBeGreaterThan(10);
+          |                                                                            ^
+      430 |   expect(log[1], 'log must not bridge the first reduced zero interval').toBe(0);
+      431 |   expect(log[3], 'log must not bridge the second reduced zero interval').toBe(0);
+      432 |   await page.getByRole('combobox', { name: 'Chart scale' }).selectOption('linear');
+        at /workspace/soup/tests/e2e/canvas-truth.spec.ts:429:76
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/canvas-truth-coarse-reduct-a210d-efore-logarithmic-rendering-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/canvas-truth-coarse-reduct-a210d-efore-logarithmic-rendering-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/canvas-truth-coarse-reduct-a210d-efore-logarithmic-rendering-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/canvas-truth-coarse-reduct-a210d-efore-logarithmic-rendering-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [chromium] › tests/e2e/canvas-truth.spec.ts:345:1 › coarse reduction retains every zero interval before logarithmic rendering 

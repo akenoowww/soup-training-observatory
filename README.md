@@ -37,9 +37,9 @@ For the complete browser suite, install all engines with `npx playwright install
 
 This is explicitly a **synthetic workspace**. No training cluster, account, paid API, secrets or backend is needed. `Running` describes a static fixture, not a live job; reloading does not advance training. The UI does not claim to stop or mutate real runs.
 
-Source training steps must be nonnegative safe integers. Unsupported source steps are rejected and counted; they are never rounded. Viewport bounds may be fractional. Steps are normalized numerically. The last received observation at a duplicate step wins, including when that value is invalid. Non-finite values and missing training steps break the line. Each pixel bucket retains first/last/minimum/maximum values independently for every metric; smoothing is never enabled. Hover inspects retained observations and does not claim to search all raw points. Logarithmic mode explicitly excludes and discloses nonpositive plotted samples.
+Source training steps must be nonnegative safe integers. Unsupported source steps are rejected and counted; they are never rounded. Viewport bounds may be fractional. Steps are normalized numerically. The last received observation at a duplicate step wins, including when that value is invalid. Non-finite values and missing training steps break the line. Each finite sign-component/pixel bucket retains first/last/minimum/maximum values independently for every metric; positive/nonpositive boundaries survive before log masking; smoothing is never enabled. Hover inspects retained observations and does not claim to search all raw points. Logarithmic mode explicitly excludes and discloses nonpositive plotted samples.
 
-Each response carries the immutable fixture revision and recording time, separately from the time this browser prepared the view. Old revisions, mismatched run IDs, malformed columns and inconsistent statistics fail closed. The worker retains the canonical typed arrays (32 MB for the million-point run), while the UI receives a small extrema-preserving viewport. A two-run LRU bounds worker retention; TanStack Query expires inactive viewport queries after 10 seconds. No custom cache-notification eviction runs during observer transitions. Pathological discontinuities may exceed the normal four-points-per-pixel budget rather than conceal missing data.
+Each response carries the immutable fixture revision and recording time, separately from the time this browser prepared the view. Old revisions, mismatched run IDs, malformed columns and inconsistent statistics fail closed. The worker retains the canonical typed arrays (32 MB for the million-point run), while the UI receives a small extrema-preserving viewport. A two-run LRU bounds worker retention; TanStack Query expires inactive viewport queries after 10 seconds. No custom cache-notification eviction runs during observer transitions. Pathological discontinuities or sign changes may exceed the normal four-points-per-pixel budget rather than conceal missing data.
 
 ## Structure
 
@@ -65,7 +65,7 @@ docs/                  design and engineering decisions
 
 Rendering, data acquisition and pure transformations are separated. `loadRun` is the replaceable data boundary for a future real API. TanStack Query keys include run identity and viewport; AbortSignal plus worker request IDs prevent late replies from populating a different run. Worker timeout/crash invalidates the worker so retry can recover.
 
-The local/current SDK is Playwright **1.65.0**. Linux CI isolates one internally consistent SDK per browser: Chromium/WebKit use 1.65.0; Firefox uses 1.64.1 until the [Firefox ARIA-reflection regression](https://github.com/microsoft/playwright/issues/43967) is fixed in a published roll. WebKit needs 1.65's [native input-delta fix](https://github.com/microsoft/playwright/issues/43417). Each disposable CI checkout runs the same 45 scenarios and all axe rules, with matching driver/core packages; no Page objects cross versions. Linux full-matrix reproduction follows the exact per-engine steps in [.github/workflows/ci.yml](.github/workflows/ci.yml); [fresh-checkout commands](evidence/linux-ci/README.md#reproduce-the-isolated-linux-profiles) are also provided. The compatibility rationale and original failures are in [the investigation](docs/axe-linux-investigation.md).
+The local/current SDK is Playwright **1.65.0**. Linux CI isolates one internally consistent SDK per browser: Chromium/WebKit use 1.65.0; Firefox uses 1.64.1 until the [Firefox ARIA-reflection regression](https://github.com/microsoft/playwright/issues/43967) is fixed in a published roll. WebKit needs 1.65's [native input-delta fix](https://github.com/microsoft/playwright/issues/43417). Each disposable CI checkout runs the same 46 scenarios and all axe rules, with matching driver/core packages; no Page objects cross versions. Linux full-matrix reproduction follows the exact per-engine steps in [.github/workflows/ci.yml](.github/workflows/ci.yml); [fresh-checkout commands](evidence/linux-ci/README.md#reproduce-the-isolated-linux-profiles) are also provided. The compatibility rationale and original failures are in [the investigation](docs/axe-linux-investigation.md).
 
 ## Deployment
 
@@ -78,17 +78,17 @@ The benchmark page is a labeled engineering fixture, not an alternative product 
 
 ## Verification and evidence
 
-The hardened candidate passes **71 unit tests** and **45 browser scenarios across three engines: 135 executions**, with zero skipped or flaky scenarios in the recorded run. The suite tests actual Canvas pixels, drawn axis labels and coordinates, deliberately reordered real Worker deliveries, unavailable/error recovery, source revisions, keyboard focus, viewport/touch/DPR adaptation, and optional browser storage failures.
+The hardened candidate passes **80 unit tests** and **46 browser scenarios across three engines: 138 executions**, with zero skipped or flaky scenarios in the recorded run. The suite tests actual Canvas pixels, drawn axis labels and coordinates, deliberately reordered real Worker deliveries, unavailable/error recovery, source revisions, keyboard focus, viewport/touch/DPR adaptation, and optional browser storage failures.
 
-- [Final types/lint/unit/build output](evidence/round2/checks-final.txt)
-- [Final Chromium / Firefox / WebKit output](evidence/round2/e2e-final.txt)
+- [Final types/lint/unit/build output](evidence/followup-log-scale/checks-serial.txt)
+- [Final Chromium / Firefox / WebKit output](evidence/followup-log-scale/e2e-results.txt)
 - [Independent sampling oracle and correctness argument](docs/sampling-correctness.md)
 - [Browser test methods and limits](tests/e2e/README.md)
 - [Performance methodology and CPU-throttling scope](docs/performance-methodology.md)
 - [Requirements and evidence matrix](docs/acceptance-matrix.md)
 - [Two-page submission note](docs/submission-note.pdf)
 
-Original failed tests and the original performance results remain in `evidence/`; the hardening round has separate files under `evidence/round2/`. Automated accessibility findings and manually examined incomplete checks are reported separately. [Actual Linux CI passed all three isolated jobs](https://github.com/akenoowww/soup-training-observatory/actions/runs/42712785795): **45 scenarios per engine, 135 passed in total**, zero retries or skipped tests. The original failed runs and their diagnoses remain in `evidence/linux-ci/`. The [deployed-site smoke report](evidence/hosted/2026-11-09T21-36-49-440Z/results.json) separately confirms eight check groups in each of three engines.
+Original failed tests and the original performance results remain in `evidence/`; the hardening round has separate files under `evidence/round2/`. Automated accessibility findings and manually examined incomplete checks are reported separately. [Actual Linux CI passed all three isolated jobs](https://github.com/akenoowww/soup-training-observatory/actions/runs/42761775159): **46 scenarios per engine, 138 passed in total**, zero retries or skipped tests. The original failed runs and their diagnoses remain in `evidence/linux-ci/`; current raw reports and the log-gap correction are in [the follow-up evidence](evidence/followup-log-scale/README.md). The [deployed-site smoke report](evidence/followup-log-scale/hosted/results.json) separately confirms eight check groups in each of three engines.
 
 ## Evidence and delivery limits
 
