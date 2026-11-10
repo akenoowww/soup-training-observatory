@@ -1,4 +1,7 @@
 import { expect, test, type Page } from '@playwright/test';
+import { canonicalize, sampleMetric } from '../../src/domain/series';
+import { getRunDetail } from '../../src/data/engine';
+import type { RunDetail } from '../../src/domain/types';
 
 interface CanvasLabel {
   text: string;
@@ -337,4 +340,107 @@ test('an all-zero interval stays a real zero line on linear and becomes explicit
   await expect(page.locator('.metric-chart--loss .metric-chart__empty')).toHaveCount(0);
   const restored = await greenInkInPlot(page, [[0.3, 0.7]]);
   expect(restored[0], 'returning to linear restores the actual zero line').toBeGreaterThan(20);
+});
+
+test('coarse reduction retains every zero interval before logarithmic rendering', async ({
+  page,
+}) => {
+  // This fixture deliberately has two zero plateaus in ONE reduction bucket.
+  // The global maximum lies between them: retaining only one bucket minimum
+  // would connect that maximum to the final point through the second zero.
+  const original = getRunDetail('run-008');
+  const source = canonicalize(
+    Array.from({ length: original.run.pointCount }, (_, step) => {
+      const zero = (step >= 5_000 && step <= 5_499) || (step >= 11_000 && step <= 11_499);
+      // A negative endpoint puts zero strictly inside the linear plot for the
+      // pixel control, independently of boundary-stroke clipping.
+      // A positive trough also keeps finite log controls off the y-axis edge.
+      const loss = step === 0 ? -1 : zero ? 0 : step === 1_000 ? 1 : step === 9_000 ? 3 : 2;
+      return { step, loss, lr: loss / 1_000, grad_norm: loss * 2 };
+    }),
+  );
+  const detail: RunDetail = {
+    ...original,
+    run: { ...original.run, loss: 2, issueCount: 1 },
+    metrics: {
+      loss: sampleMetric(source, 'loss', 1),
+      lr: sampleMetric(source, 'lr', 1),
+      grad_norm: sampleMetric(source, 'grad_norm', 1),
+    },
+    issues: [
+      {
+        kind: 'zero',
+        message: 'Synthetic regression source contains two zero intervals and a negative endpoint.',
+        count: 1_001,
+      },
+    ],
+  };
+  await page.addInitScript((replacement) => {
+    const NativeWorker = window.Worker;
+    window.Worker = class extends NativeWorker {
+      constructor(url: string | URL, options?: WorkerOptions) {
+        super(url, options);
+        this.addEventListener(
+          'message',
+          (event: MessageEvent) => {
+            if (event.data?.detail?.run?.id === 'run-008') {
+              // Samples come from the production reducer above; native client,
+              // response validation, query state and Canvas rendering stay real.
+              Object.assign(event.data.detail, replacement);
+            }
+          },
+          { capture: true },
+        );
+      }
+    };
+  }, detail);
+  await openRun(page, 'run-008', 0, original.run.steps);
+  await expect(page.getByTestId('chart-loss')).toHaveAttribute('data-min-value', '-1');
+  const bands: [number, number][] = [
+    [0.2, 0.23],
+    [0.257, 0.27],
+    [0.35, 0.38],
+    [0.56, 0.574],
+    [0.64, 0.68],
+  ];
+  const linear = await greenInkInPlot(page, bands);
+  expect(
+    linear[1],
+    'the first real zero plateau must remain visible on linear scale',
+  ).toBeGreaterThan(10);
+  expect(
+    linear[3],
+    'the second real zero plateau must remain visible on linear scale',
+  ).toBeGreaterThan(10);
+  await page.getByRole('combobox', { name: 'Chart scale' }).selectOption('log');
+  await expect(page.locator('.metric-chart--loss .metric-chart__linear-note')).toHaveText(
+    'Log scale',
+  );
+  await expect
+    .poll(async () => Number(await page.getByTestId('chart-loss').getAttribute('data-y-min')))
+    .toBeGreaterThan(0);
+  await page.evaluate(
+    () =>
+      new Promise<void>((resolve) =>
+        requestAnimationFrame(() => requestAnimationFrame(() => resolve())),
+      ),
+  );
+  const log = await greenInkInPlot(page, bands);
+  for (const index of [0, 2, 4])
+    expect(log[index], 'positive source components must still be painted').toBeGreaterThan(10);
+  expect(log[1], 'log must not bridge the first reduced zero interval').toBe(0);
+  expect(log[3], 'log must not bridge the second reduced zero interval').toBe(0);
+  await page.getByRole('combobox', { name: 'Chart scale' }).selectOption('linear');
+  await expect(page.locator('.metric-chart--loss .metric-chart__linear-note')).toHaveText(
+    'No smoothing',
+  );
+  await page.evaluate(
+    () =>
+      new Promise<void>((resolve) =>
+        requestAnimationFrame(() => requestAnimationFrame(() => resolve())),
+      ),
+  );
+  const restored = await greenInkInPlot(page, bands);
+  expect(restored[1]).toBeGreaterThan(10);
+  expect(restored[3]).toBeGreaterThan(10);
 });

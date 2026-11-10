@@ -270,7 +270,9 @@ test('initial worker loading exposes a reserved loading view before any chart is
     await gate;
     await route.continue();
   });
-  await page.goto('/#/runs/run-001');
+  // Firefox includes the deliberately blocked worker in the load event.
+  // Observe the loading UI before releasing it instead of waiting for that event.
+  await page.goto('/#/runs/run-001', { waitUntil: 'domcontentloaded' });
   await expect(page.getByRole('status', { name: 'Loading run metrics' })).toBeVisible();
   await expect(page.getByText('Preparing training metrics…', { exact: true })).toBeVisible();
   await expect(page.getByTestId('chart-loss')).toHaveCount(0);

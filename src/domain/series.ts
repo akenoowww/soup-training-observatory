@@ -93,6 +93,10 @@ export function upperBound(values: Float64Array, target: number): number {
 /** Extrema sampling, never averaging. Each pixel bucket retains its first/last,
  * minimum and maximum in original order. Invalid measurements and missing-step
  * boundaries split segments before sampling, so no reduction bridges a gap.
+ * Positive/nonpositive transitions also split the reduction state. Their original
+ * numeric endpoints remain ordinary finite values on a linear plot, while a log
+ * renderer can mask them without reconnecting across a discarded zero/negative
+ * interval. One shared snapshot therefore preserves both render transforms.
  */
 export function sampleMetric(
   run: CanonicalRun,
@@ -163,6 +167,14 @@ export function sampleMetric(
       invalidCount++;
       latest = null;
       continue;
+    }
+    if (first >= 0) {
+      // A single bucket minimum is insufficient: a second zero or a less-negative
+      // interval can otherwise disappear, joining positive observations across it
+      // after log masking. Keep each sign component's boundaries and extrema.
+      const segmentIsPositive = values[first]! > 0;
+      const nextIsPositive = value > 0;
+      if (segmentIsPositive !== nextIsPositive) flush();
     }
     minimumValue = Math.min(minimumValue, value);
     maximumValue = Math.max(maximumValue, value);
