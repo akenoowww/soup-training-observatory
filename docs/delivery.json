@@ -1,27 +1,21 @@
 {
-  "status": "ready",
-  "applicationBundle": "assets/app-DsJyw_oe.js",
-  "localCandidateCommit": "76fd9d62f74ecf97795cab030c389a288e641df2",
+  "status": "followup-validation-pending",
+  "applicationBundle": "assets/app-pYEMV88W.js",
+  "localCandidateCommit": "aa273d70ba898ba6f13f7530ba240c10a972166d",
   "repositoryUrl": "https://github.com/akenoowww/soup-training-observatory",
   "deployedUrl": "https://akenoowww.github.io/soup-training-observatory/",
-  "hostedSmokePassed": true,
-  "checks": "evidence/round2/checks-final.txt",
-  "browserResults": "evidence/round2/e2e-results.json",
-  "browserScenarios": 45,
-  "browserExecutions": 135,
+  "hostedSmokePassed": false,
+  "checks": "evidence/followup-log-scale/checks.txt",
+  "browserResults": "evidence/followup-log-scale/e2e-results.json",
+  "browserScenarios": 46,
+  "browserExecutions": 138,
   "performanceResults": "evidence/round2/performance-fixed/results.json",
   "sustainedUse": "evidence/round2/soak/final-native-gc/latest.json",
   "linuxCi": {
-    "conclusion": "success",
-    "runUrl": "https://github.com/akenoowww/soup-training-observatory/actions/runs/42712785795",
-    "runId": 42712785795,
-    "codeCommit": "76fd9d62f74ecf97795cab030c389a288e641df2",
-    "resultSummary": "evidence/linux-ci/final/summary.json",
-    "passedExecutions": 135,
-    "uniqueScenarios": 45,
-    "retries": 0,
-    "skipped": 0
+    "conclusion": "pending",
+    "note": "Follow-up log topology fix is awaiting new complete CI."
   },
   "exportApproval": "explicit-user-public-github-and-pages-akenoowww",
-  "hostedSmokeResults": "evidence/hosted/2026-11-09T21-36-49-440Z/results.json"
+  "hostedSmokeResults": "evidence/hosted/2026-11-09T21-36-49-440Z/results.json",
+  "unitResults": "evidence/followup-log-scale/unit-results.json"
 }
