@@ -1,0 +1,7 @@
+soup-training-observatory@1.0.0 /home/runner/work/soup-training-observatory/soup-training-observatory
+├─┬ @axe-core/playwright@4.14.0
+│ └── playwright-core@1.65.0 overridden
+└─┬ @playwright/test@1.65.0
+  └─┬ playwright@1.65.0
+    └── playwright-core@1.65.0 deduped
+

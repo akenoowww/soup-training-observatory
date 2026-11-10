@@ -4,7 +4,7 @@ The canonical short submission note is [the two-page PDF](submission-note.pdf). 
 
 ## Verdict
 
-**SHIP within the assignment's generated-data scope.** The [public repository](https://github.com/akenoowww/soup-training-observatory), [deployed application](https://akenoowww.github.io/soup-training-observatory/) and [successful complete Linux CI](https://github.com/akenoowww/soup-training-observatory/actions/runs/42761775159) are available. Local checks, Linux CI and hosted smoke passed for the log-gap correction. Current-bundle timing, overview memory and sustained use are recorded below; earlier measurements remain explicitly historical. **First improvement after SHIP:** impose explicit processing and rendered-output budgets for extremely fragmented series with many breaks. If preserving the real breaks exceeds the budget, show an actionable narrower-range state rather than silently discarding discontinuities. This exercise does not require a real training backend.
+**SHIP within the assignment's generated-data scope.** The [public repository](https://github.com/akenoowww/soup-training-observatory), [deployed application](https://akenoowww.github.io/soup-training-observatory/) and [successful complete Linux CI](https://github.com/akenoowww/soup-training-observatory/actions/runs/42803764078) are available. Local checks, Linux CI and hosted smoke passed for the log-gap correction. Current-bundle timing, overview memory and sustained use are recorded below; earlier measurements remain explicitly historical. **First improvement after SHIP:** impose explicit processing and rendered-output budgets for extremely fragmented series with many breaks. If preserving the real breaks exceeds the budget, show an actionable narrower-range state rather than silently discarding discontinuities. This exercise does not require a real training backend.
 
 ## Truthfulness
 
@@ -18,10 +18,10 @@ Hover and export identify sampled observations. Viewport statistics come from al
 
 - **80 unit tests:** normalization, independent sampling oracle, statistics, source/protocol validation, request cancellation/recovery, cache bounds, URL/storage contracts and UTC/numeric precision.
 - **46 browser scenarios x 3 engines = 138 passed**, zero skipped/flaky: Chromium, Firefox and WebKit on macOS. These include actual Canvas spike/gap/singleton/zero geometry, axis `fillText` labels, shared drag/reset, controlled real-Worker response order through React/query/client, pending/error scopes, malformed source rejection, reload, storage failures, keyboard/modal focus, 320/390/768px, DPR2 and touch emulation.
-- Formatting, TypeScript, ESLint and production build pass. Actual pinned Ubuntu 24.04 CI passed all three isolated browser jobs, 46 scenarios each, 138 in total; the machine-readable reports are in `evidence/followup-log-scale/linux-ci/final/`.
+- Formatting, TypeScript, ESLint and production build pass. Actual pinned Ubuntu 24.04 CI passed all three isolated browser jobs, 46 scenarios each, 138 in total; the machine-readable reports are in `evidence/final-build-measurements/linux-ci/`.
 - Fifteen axe state reports contain zero confirmed violations. Three mobile native-dialog scans retain an incomplete background/contrast category. All 31 flagged nodes were examined through computed colors, opacity, hit tests and three actual screenshots: contrast 5.27-13.25:1. The incomplete reports remain unchanged; this is not full accessibility certification.
 
-Outputs: [checks](../evidence/followup-log-scale/checks-serial.txt), [browser run](../evidence/followup-log-scale/e2e-results.txt), [browser methods](../tests/e2e/README.md), [current axe reports](../evidence/followup-log-scale/accessibility/) and [earlier manual checks](../evidence/round2/accessibility/manual/README.md).
+Outputs: [checks](../evidence/final-build-measurements/checks.txt), [browser run](../evidence/followup-log-scale/e2e-results.txt), [browser methods](../tests/e2e/README.md), [current axe reports](../evidence/followup-log-scale/accessibility/) and [earlier manual checks](../evidence/round2/accessibility/manual/README.md).
 
 ## Silent failures
 

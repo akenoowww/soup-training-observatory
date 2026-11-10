@@ -1,0 +1,1937 @@
+{
+  "config": {
+    "argv": [
+      "/opt/hostedtoolcache/node/24.22.2/x64/bin/node",
+      "/home/runner/work/soup-training-observatory/soup-training-observatory/node_modules/.bin/playwright",
+      "test",
+      "--project=firefox"
+    ],
+    "configFile": "/home/runner/work/soup-training-observatory/soup-training-observatory/playwright.config.ts",
+    "rootDir": "/home/runner/work/soup-training-observatory/soup-training-observatory/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": true,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 900000,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/akenoowww/soup-training-observatory/commit/cdbfcf86b1ba31531cf1611e217e7d60ae299544",
+        "commitHash": "cdbfcf86b1ba31531cf1611e217e7d60ae299544",
+        "buildHref": "https://github.com/akenoowww/soup-training-observatory/actions/runs/42803764078"
+      },
+      "gitCommit": {
+        "shortHash": "cdbfcf8",
+        "hash": "cdbfcf86b1ba31531cf1611e217e7d60ae299544",
+        "subject": "Remeasure final runtime timing memory and sustained use",
+        "body": "Remeasure final runtime timing memory and sustained use\n",
+        "author": {
+          "name": "akenoowww",
+          "email": "307097692+akenoowww@users.noreply.github.com",
+          "time": 1794303218000
+        },
+        "committer": {
+          "name": "akenoowww",
+          "email": "307097692+akenoowww@users.noreply.github.com",
+          "time": 1794303218000
+        },
+        "branch": "main"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/runner/work/soup-training-observatory/soup-training-observatory/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/akenoowww/soup-training-observatory/commit/cdbfcf86b1ba31531cf1611e217e7d60ae299544",
+            "commitHash": "cdbfcf86b1ba31531cf1611e217e7d60ae299544",
+            "buildHref": "https://github.com/akenoowww/soup-training-observatory/actions/runs/42803764078"
+          },
+          "gitCommit": {
+            "shortHash": "cdbfcf8",
+            "hash": "cdbfcf86b1ba31531cf1611e217e7d60ae299544",
+            "subject": "Remeasure final runtime timing memory and sustained use",
+            "body": "Remeasure final runtime timing memory and sustained use\n",
+            "author": {
+              "name": "akenoowww",
+              "email": "307097692+akenoowww@users.noreply.github.com",
+              "time": 1794303218000
+            },
+            "committer": {
+              "name": "akenoowww",
+              "email": "307097692+akenoowww@users.noreply.github.com",
+              "time": 1794303218000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/runner/work/soup-training-observatory/soup-training-observatory/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/runner/work/soup-training-observatory/soup-training-observatory/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/akenoowww/soup-training-observatory/commit/cdbfcf86b1ba31531cf1611e217e7d60ae299544",
+            "commitHash": "cdbfcf86b1ba31531cf1611e217e7d60ae299544",
+            "buildHref": "https://github.com/akenoowww/soup-training-observatory/actions/runs/42803764078"
+          },
+          "gitCommit": {
+            "shortHash": "cdbfcf8",
+            "hash": "cdbfcf86b1ba31531cf1611e217e7d60ae299544",
+            "subject": "Remeasure final runtime timing memory and sustained use",
+            "body": "Remeasure final runtime timing memory and sustained use\n",
+            "author": {
+              "name": "akenoowww",
+              "email": "307097692+akenoowww@users.noreply.github.com",
+              "time": 1794303218000
+            },
+            "committer": {
+              "name": "akenoowww",
+              "email": "307097692+akenoowww@users.noreply.github.com",
+              "time": 1794303218000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/home/runner/work/soup-training-observatory/soup-training-observatory/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/runner/work/soup-training-observatory/soup-training-observatory/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/akenoowww/soup-training-observatory/commit/cdbfcf86b1ba31531cf1611e217e7d60ae299544",
+            "commitHash": "cdbfcf86b1ba31531cf1611e217e7d60ae299544",
+            "buildHref": "https://github.com/akenoowww/soup-training-observatory/actions/runs/42803764078"
+          },
+          "gitCommit": {
+            "shortHash": "cdbfcf8",
+            "hash": "cdbfcf86b1ba31531cf1611e217e7d60ae299544",
+            "subject": "Remeasure final runtime timing memory and sustained use",
+            "body": "Remeasure final runtime timing memory and sustained use\n",
+            "author": {
+              "name": "akenoowww",
+              "email": "307097692+akenoowww@users.noreply.github.com",
+              "time": 1794303218000
+            },
+            "committer": {
+              "name": "akenoowww",
+              "email": "307097692+akenoowww@users.noreply.github.com",
+              "time": 1794303218000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/home/runner/work/soup-training-observatory/soup-training-observatory/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/runner/work/soup-training-observatory/soup-training-observatory/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/akenoowww/soup-training-observatory/commit/cdbfcf86b1ba31531cf1611e217e7d60ae299544",
+            "commitHash": "cdbfcf86b1ba31531cf1611e217e7d60ae299544",
+            "buildHref": "https://github.com/akenoowww/soup-training-observatory/actions/runs/42803764078"
+          },
+          "gitCommit": {
+            "shortHash": "cdbfcf8",
+            "hash": "cdbfcf86b1ba31531cf1611e217e7d60ae299544",
+            "subject": "Remeasure final runtime timing memory and sustained use",
+            "body": "Remeasure final runtime timing memory and sustained use\n",
+            "author": {
+              "name": "akenoowww",
+              "email": "307097692+akenoowww@users.noreply.github.com",
+              "time": 1794303218000
+            },
+            "committer": {
+              "name": "akenoowww",
+              "email": "307097692+akenoowww@users.noreply.github.com",
+              "time": 1794303218000
+            },
+            "branch": "main"
+          },
+          "actualWorkers": 1
+        },
+        "name": "firefox",
+        "testDir": "/home/runner/work/soup-training-observatory/soup-training-observatory/tests/e2e",
+        "snapshotDir": "/home/runner/work/soup-training-observatory/soup-training-observatory/tests/e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4173",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "firefox"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "firefox"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/round2/e2e-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run preview -- --port 4173 --strictPort",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": true,
+      "timeout": 30000
+    }
+  },
+  "suites": [
+    {
+      "title": "accessibility.spec.ts",
+      "file": "accessibility.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "automatic accessibility rules cover the full run browser",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2482,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:08.030Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "axe-run-browser",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXB0dXJlZEF0IjogIjIwMjYtMTEtMTBUMTE6MDQ6MTAuOTgwWiIsCiAgInByb2plY3QiOiAiZmlyZWZveCIsCiAgImJyb3dzZXJWZXJzaW9uIjogIjE1Ny4wIiwKICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jLyIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA3MjAKICB9LAogICJzdGF0ZSI6ICJydW4tYnJvd3NlciIsCiAgInRhZ3MiOiBbCiAgICAid2NhZzJhIiwKICAgICJ3Y2FnMmFhIiwKICAgICJ3Y2FnMjFhIiwKICAgICJ3Y2FnMjFhYSIKICBdLAogICJheGVWZXJzaW9uIjogIjQuMTQuMCIsCiAgImNvdW50cyI6IHsKICAgICJwYXNzZXMiOiAyNiwKICAgICJpbmFwcGxpY2FibGUiOiAzNywKICAgICJ2aW9sYXRpb25zIjogMCwKICAgICJpbmNvbXBsZXRlIjogMAogIH0sCiAgInZpb2xhdGlvbnMiOiBbXSwKICAiaW5jb21wbGV0ZSI6IFtdLAogICJsaW1pdHMiOiBbCiAgICAiQXV0b21hdGVkIFdDQUcgcnVsZSBjaGVja3Mgb24gdGhpcyBjYXB0dXJlZCBicm93c2VyIHN0YXRlIG9ubHk7IG5vdCBhbiBhY2Nlc3NpYmlsaXR5IGNvbmZvcm1hbmNlIGNsYWltLiIsCiAgICAiSW5jb21wbGV0ZSBjaGVja3MgcmVxdWlyZSBtYW51YWwgYXNzZXNzbWVudCBhbmQgYXJlIG5vdCBzaWxlbnRseSB0cmVhdGVkIGFzIHBhc3Nlcy4iLAogICAgIk5vIHBoeXNpY2FsLWRldmljZSBlcmdvbm9taWNzLCBhc3Npc3RpdmUtdGVjaG5vbG9neSB1c2FiaWxpdHkgb3IgZnVsbCBhcHBsaWNhdGlvbi1zdGF0ZSBjb3ZlcmFnZSBpcyBlc3RhYmxpc2hlZCBieSB0aGlzIGFydGlmYWN0LiIKICBdCn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ddd864604af8a6a0198f-f9322a8d985a1edd4baa",
+          "file": "accessibility.spec.ts",
+          "line": 59,
+          "column": 1
+        },
+        {
+          "title": "automatic accessibility rules cover loaded numeric charts and their controls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2744,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:11.040Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "axe-loaded-run",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXB0dXJlZEF0IjogIjIwMjYtMTEtMTBUMTE6MDQ6MTIuNzEzWiIsCiAgInByb2plY3QiOiAiZmlyZWZveCIsCiAgImJyb3dzZXJWZXJzaW9uIjogIjE1Ny4wIiwKICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMSIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA3MjAKICB9LAogICJzdGF0ZSI6ICJsb2FkZWQtcnVuIiwKICAidGFncyI6IFsKICAgICJ3Y2FnMmEiLAogICAgIndjYWcyYWEiLAogICAgIndjYWcyMWEiLAogICAgIndjYWcyMWFhIgogIF0sCiAgImF4ZVZlcnNpb24iOiAiNC4xNC4wIiwKICAiY291bnRzIjogewogICAgInBhc3NlcyI6IDI4LAogICAgImluYXBwbGljYWJsZSI6IDM1LAogICAgInZpb2xhdGlvbnMiOiAwLAogICAgImluY29tcGxldGUiOiAwCiAgfSwKICAidmlvbGF0aW9ucyI6IFtdLAogICJpbmNvbXBsZXRlIjogW10sCiAgImxpbWl0cyI6IFsKICAgICJBdXRvbWF0ZWQgV0NBRyBydWxlIGNoZWNrcyBvbiB0aGlzIGNhcHR1cmVkIGJyb3dzZXIgc3RhdGUgb25seTsgbm90IGFuIGFjY2Vzc2liaWxpdHkgY29uZm9ybWFuY2UgY2xhaW0uIiwKICAgICJJbmNvbXBsZXRlIGNoZWNrcyByZXF1aXJlIG1hbnVhbCBhc3Nlc3NtZW50IGFuZCBhcmUgbm90IHNpbGVudGx5IHRyZWF0ZWQgYXMgcGFzc2VzLiIsCiAgICAiTm8gcGh5c2ljYWwtZGV2aWNlIGVyZ29ub21pY3MsIGFzc2lzdGl2ZS10ZWNobm9sb2d5IHVzYWJpbGl0eSBvciBmdWxsIGFwcGxpY2F0aW9uLXN0YXRlIGNvdmVyYWdlIGlzIGVzdGFibGlzaGVkIGJ5IHRoaXMgYXJ0aWZhY3QuIgogIF0KfQ=="
+                    },
+                    {
+                      "name": "axe-loaded-run-inspector",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXB0dXJlZEF0IjogIjIwMjYtMTEtMTBUMTE6MDQ6MTMuNzQyWiIsCiAgInByb2plY3QiOiAiZmlyZWZveCIsCiAgImJyb3dzZXJWZXJzaW9uIjogIjE1Ny4wIiwKICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMSIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA3MjAKICB9LAogICJzdGF0ZSI6ICJsb2FkZWQtcnVuLWluc3BlY3RvciIsCiAgInRhZ3MiOiBbCiAgICAid2NhZzJhIiwKICAgICJ3Y2FnMmFhIiwKICAgICJ3Y2FnMjFhIiwKICAgICJ3Y2FnMjFhYSIKICBdLAogICJheGVWZXJzaW9uIjogIjQuMTQuMCIsCiAgImNvdW50cyI6IHsKICAgICJwYXNzZXMiOiAzMCwKICAgICJpbmFwcGxpY2FibGUiOiAzMywKICAgICJ2aW9sYXRpb25zIjogMCwKICAgICJpbmNvbXBsZXRlIjogMAogIH0sCiAgInZpb2xhdGlvbnMiOiBbXSwKICAiaW5jb21wbGV0ZSI6IFtdLAogICJsaW1pdHMiOiBbCiAgICAiQXV0b21hdGVkIFdDQUcgcnVsZSBjaGVja3Mgb24gdGhpcyBjYXB0dXJlZCBicm93c2VyIHN0YXRlIG9ubHk7IG5vdCBhbiBhY2Nlc3NpYmlsaXR5IGNvbmZvcm1hbmNlIGNsYWltLiIsCiAgICAiSW5jb21wbGV0ZSBjaGVja3MgcmVxdWlyZSBtYW51YWwgYXNzZXNzbWVudCBhbmQgYXJlIG5vdCBzaWxlbnRseSB0cmVhdGVkIGFzIHBhc3Nlcy4iLAogICAgIk5vIHBoeXNpY2FsLWRldmljZSBlcmdvbm9taWNzLCBhc3Npc3RpdmUtdGVjaG5vbG9neSB1c2FiaWxpdHkgb3IgZnVsbCBhcHBsaWNhdGlvbi1zdGF0ZSBjb3ZlcmFnZSBpcyBlc3RhYmxpc2hlZCBieSB0aGlzIGFydGlmYWN0LiIKICBdCn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ddd864604af8a6a0198f-624bc85e2dd10389767e",
+          "file": "accessibility.spec.ts",
+          "line": 66,
+          "column": 1
+        },
+        {
+          "title": "automatic accessibility rules cover the open search modal",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1481,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:13.795Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "axe-search-modal",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXB0dXJlZEF0IjogIjIwMjYtMTEtMTBUMTE6MDQ6MTUuMTg3WiIsCiAgInByb2plY3QiOiAiZmlyZWZveCIsCiAgImJyb3dzZXJWZXJzaW9uIjogIjE1Ny4wIiwKICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jLyIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA3MjAKICB9LAogICJzdGF0ZSI6ICJzZWFyY2gtbW9kYWwiLAogICJ0YWdzIjogWwogICAgIndjYWcyYSIsCiAgICAid2NhZzJhYSIsCiAgICAid2NhZzIxYSIsCiAgICAid2NhZzIxYWEiCiAgXSwKICAiYXhlVmVyc2lvbiI6ICI0LjE0LjAiLAogICJjb3VudHMiOiB7CiAgICAicGFzc2VzIjogMTUsCiAgICAiaW5hcHBsaWNhYmxlIjogNDgsCiAgICAidmlvbGF0aW9ucyI6IDAsCiAgICAiaW5jb21wbGV0ZSI6IDAKICB9LAogICJ2aW9sYXRpb25zIjogW10sCiAgImluY29tcGxldGUiOiBbXSwKICAibGltaXRzIjogWwogICAgIkF1dG9tYXRlZCBXQ0FHIHJ1bGUgY2hlY2tzIG9uIHRoaXMgY2FwdHVyZWQgYnJvd3NlciBzdGF0ZSBvbmx5OyBub3QgYW4gYWNjZXNzaWJpbGl0eSBjb25mb3JtYW5jZSBjbGFpbS4iLAogICAgIkluY29tcGxldGUgY2hlY2tzIHJlcXVpcmUgbWFudWFsIGFzc2Vzc21lbnQgYW5kIGFyZSBub3Qgc2lsZW50bHkgdHJlYXRlZCBhcyBwYXNzZXMuIiwKICAgICJObyBwaHlzaWNhbC1kZXZpY2UgZXJnb25vbWljcywgYXNzaXN0aXZlLXRlY2hub2xvZ3kgdXNhYmlsaXR5IG9yIGZ1bGwgYXBwbGljYXRpb24tc3RhdGUgY292ZXJhZ2UgaXMgZXN0YWJsaXNoZWQgYnkgdGhpcyBhcnRpZmFjdC4iCiAgXQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ddd864604af8a6a0198f-19f008760ccd7db48c3a",
+          "file": "accessibility.spec.ts",
+          "line": 78,
+          "column": 1
+        },
+        {
+          "title": "automatic accessibility rules cover the open narrow-screen navigation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1322,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:15.286Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "axe-mobile-navigation",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXB0dXJlZEF0IjogIjIwMjYtMTEtMTBUMTE6MDQ6MTYuNTc1WiIsCiAgInByb2plY3QiOiAiZmlyZWZveCIsCiAgImJyb3dzZXJWZXJzaW9uIjogIjE1Ny4wIiwKICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jLyIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMzkwLAogICAgImhlaWdodCI6IDg0NAogIH0sCiAgInN0YXRlIjogIm1vYmlsZS1uYXZpZ2F0aW9uIiwKICAidGFncyI6IFsKICAgICJ3Y2FnMmEiLAogICAgIndjYWcyYWEiLAogICAgIndjYWcyMWEiLAogICAgIndjYWcyMWFhIgogIF0sCiAgImF4ZVZlcnNpb24iOiAiNC4xNC4wIiwKICAiY291bnRzIjogewogICAgInBhc3NlcyI6IDE0LAogICAgImluYXBwbGljYWJsZSI6IDQ5LAogICAgInZpb2xhdGlvbnMiOiAwLAogICAgImluY29tcGxldGUiOiAxCiAgfSwKICAidmlvbGF0aW9ucyI6IFtdLAogICJpbmNvbXBsZXRlIjogWwogICAgewogICAgICAiaWQiOiAiY29sb3ItY29udHJhc3QiLAogICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAidGFncyI6IFsKICAgICAgICAiY2F0LmNvbG9yIiwKICAgICAgICAid2NhZzJhYSIsCiAgICAgICAgIndjYWcxNDMiLAogICAgICAgICJUVHY1IiwKICAgICAgICAiVFQxMy5jIiwKICAgICAgICAiRU4tMzAxLTU0OSIsCiAgICAgICAgIkVOLTkuMS40LjMiLAogICAgICAgICJBQ1QiLAogICAgICAgICJSR0FBdjQiLAogICAgICAgICJSR0FBLTMuMi4xIgogICAgICBdLAogICAgICAiZGVzY3JpcHRpb24iOiAiRW5zdXJlIHRoZSBjb250cmFzdCBiZXR3ZWVuIGZvcmVncm91bmQgYW5kIGJhY2tncm91bmQgY29sb3JzIG1lZXRzIFdDQUcgMiBBQSBtaW5pbXVtIGNvbnRyYXN0IHJhdGlvIHRocmVzaG9sZHMiLAogICAgICAiaGVscCI6ICJFbGVtZW50cyBtdXN0IG1lZXQgbWluaW11bSBjb2xvciBjb250cmFzdCByYXRpbyB0aHJlc2hvbGRzIiwKICAgICAgImhlbHBVcmwiOiAiaHR0cHM6Ly9kZXF1ZXVuaXZlcnNpdHkuY29tL3J1bGVzL2F4ZS80LjE0L2NvbG9yLWNvbnRyYXN0P2FwcGxpY2F0aW9uPXBsYXl3cmlnaHQiLAogICAgICAibm9kZXMiOiBbCiAgICAgICAgewogICAgICAgICAgImFueSI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJpZCI6ICJjb2xvci1jb250cmFzdCIsCiAgICAgICAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAgICAgICAiY29udHJhc3RSYXRpbyI6IDAsCiAgICAgICAgICAgICAgICAiZm9udFNpemUiOiAiOS4wcHQgKDEycHgpIiwKICAgICAgICAgICAgICAgICJmb250V2VpZ2h0IjogIm5vcm1hbCIsCiAgICAgICAgICAgICAgICAibWVzc2FnZUtleSI6ICJiZ092ZXJsYXAiLAogICAgICAgICAgICAgICAgImV4cGVjdGVkQ29udHJhc3RSYXRpbyI6ICI0LjU6MSIKICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICJyZWxhdGVkTm9kZXMiOiBbXSwKICAgICAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgICAgICJtZXNzYWdlIjogIkVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgICAgIH0KICAgICAgICAgIF0sCiAgICAgICAgICAiYWxsIjogW10sCiAgICAgICAgICAibm9uZSI6IFtdLAogICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICJodG1sIjogIjxzcGFuPlRyYWluaW5nIHJ1bnM8L3NwYW4+IiwKICAgICAgICAgICJ0YXJnZXQiOiBbCiAgICAgICAgICAgICIubmF2LWl0ZW0uYWN0aXZlW2FyaWEtY3VycmVudD1cInBhZ2VcIl0gPiBzcGFuOm50aC1jaGlsZCgyKSIKICAgICAgICAgIF0sCiAgICAgICAgICAiZmFpbHVyZVN1bW1hcnkiOiAiRml4IGFueSBvZiB0aGUgZm9sbG93aW5nOlxuICBFbGVtZW50J3MgYmFja2dyb3VuZCBjb2xvciBjb3VsZCBub3QgYmUgZGV0ZXJtaW5lZCBiZWNhdXNlIGl0IGlzIG92ZXJsYXBwZWQgYnkgYW5vdGhlciBlbGVtZW50IgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImFueSI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJpZCI6ICJjb2xvci1jb250cmFzdCIsCiAgICAgICAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAgICAgICAiY29udHJhc3RSYXRpbyI6IDAsCiAgICAgICAgICAgICAgICAiZm9udFNpemUiOiAiNy41cHQgKDEwcHgpIiwKICAgICAgICAgICAgICAgICJmb250V2VpZ2h0IjogIm5vcm1hbCIsCiAgICAgICAgICAgICAgICAibWVzc2FnZUtleSI6ICJiZ092ZXJsYXAiLAogICAgICAgICAgICAgICAgImV4cGVjdGVkQ29udHJhc3RSYXRpbyI6ICI0LjU6MSIKICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICJyZWxhdGVkTm9kZXMiOiBbXSwKICAgICAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgICAgICJtZXNzYWdlIjogIkVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgICAgIH0KICAgICAgICAgIF0sCiAgICAgICAgICAiYWxsIjogW10sCiAgICAgICAgICAibm9uZSI6IFtdLAogICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICJodG1sIjogIjxzcGFuIGNsYXNzPVwibmF2LWNvdW50XCI+MjA8L3NwYW4+IiwKICAgICAgICAgICJ0YXJnZXQiOiBbCiAgICAgICAgICAgICIubmF2LWNvdW50IgogICAgICAgICAgXSwKICAgICAgICAgICJmYWlsdXJlU3VtbWFyeSI6ICJGaXggYW55IG9mIHRoZSBmb2xsb3dpbmc6XG4gIEVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiYW55IjogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgImlkIjogImNvbG9yLWNvbnRyYXN0IiwKICAgICAgICAgICAgICAiZGF0YSI6IHsKICAgICAgICAgICAgICAgICJjb250cmFzdFJhdGlvIjogMCwKICAgICAgICAgICAgICAgICJmb250U2l6ZSI6ICI5LjBwdCAoMTJweCkiLAogICAgICAgICAgICAgICAgImZvbnRXZWlnaHQiOiAibm9ybWFsIiwKICAgICAgICAgICAgICAgICJtZXNzYWdlS2V5IjogImJnT3ZlcmxhcCIsCiAgICAgICAgICAgICAgICAiZXhwZWN0ZWRDb250cmFzdFJhdGlvIjogIjQuNToxIgogICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgInJlbGF0ZWROb2RlcyI6IFtdLAogICAgICAgICAgICAgICJpbXBhY3QiOiAic2VyaW91cyIsCiAgICAgICAgICAgICAgIm1lc3NhZ2UiOiAiRWxlbWVudCdzIGJhY2tncm91bmQgY29sb3IgY291bGQgbm90IGJlIGRldGVybWluZWQgYmVjYXVzZSBpdCBpcyBvdmVybGFwcGVkIGJ5IGFub3RoZXIgZWxlbWVudCIKICAgICAgICAgICAgfQogICAgICAgICAgXSwKICAgICAgICAgICJhbGwiOiBbXSwKICAgICAgICAgICJub25lIjogW10sCiAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgImh0bWwiOiAiPHNwYW4+RmllbGQgZ3VpZGU8L3NwYW4+IiwKICAgICAgICAgICJ0YXJnZXQiOiBbCiAgICAgICAgICAgICJhW2hyZWYkPVwiIy9ndWlkZVwiXSA+IHNwYW4iCiAgICAgICAgICBdLAogICAgICAgICAgImZhaWx1cmVTdW1tYXJ5IjogIkZpeCBhbnkgb2YgdGhlIGZvbGxvd2luZzpcbiAgRWxlbWVudCdzIGJhY2tncm91bmQgY29sb3IgY291bGQgbm90IGJlIGRldGVybWluZWQgYmVjYXVzZSBpdCBpcyBvdmVybGFwcGVkIGJ5IGFub3RoZXIgZWxlbWVudCIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJhbnkiOiBbCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAiaWQiOiAiY29sb3ItY29udHJhc3QiLAogICAgICAgICAgICAgICJkYXRhIjogewogICAgICAgICAgICAgICAgImNvbnRyYXN0UmF0aW8iOiAwLAogICAgICAgICAgICAgICAgImZvbnRTaXplIjogIjYuOHB0ICg5cHgpIiwKICAgICAgICAgICAgICAgICJmb250V2VpZ2h0IjogIm5vcm1hbCIsCiAgICAgICAgICAgICAgICAibWVzc2FnZUtleSI6ICJiZ092ZXJsYXAiLAogICAgICAgICAgICAgICAgImV4cGVjdGVkQ29udHJhc3RSYXRpbyI6ICI0LjU6MSIKICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICJyZWxhdGVkTm9kZXMiOiBbXSwKICAgICAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgICAgICJtZXNzYWdlIjogIkVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgICAgIH0KICAgICAgICAgIF0sCiAgICAgICAgICAiYWxsIjogW10sCiAgICAgICAgICAibm9uZSI6IFtdLAogICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICJodG1sIjogIjxzcGFuIGNsYXNzPVwibmF2LWxhYmVsXCI+UFJPSkVDVDwvc3Bhbj4iLAogICAgICAgICAgInRhcmdldCI6IFsKICAgICAgICAgICAgIi5zaWRlYmFyLXByb2plY3QgPiAubmF2LWxhYmVsIgogICAgICAgICAgXSwKICAgICAgICAgICJmYWlsdXJlU3VtbWFyeSI6ICJGaXggYW55IG9mIHRoZSBmb2xsb3dpbmc6XG4gIEVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiYW55IjogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgImlkIjogImNvbG9yLWNvbnRyYXN0IiwKICAgICAgICAgICAgICAiZGF0YSI6IHsKICAgICAgICAgICAgICAgICJjb250cmFzdFJhdGlvIjogMCwKICAgICAgICAgICAgICAgICJmb250U2l6ZSI6ICI4LjNwdCAoMTFweCkiLAogICAgICAgICAgICAgICAgImZvbnRXZWlnaHQiOiAibm9ybWFsIiwKICAgICAgICAgICAgICAgICJtZXNzYWdlS2V5IjogImJnT3ZlcmxhcCIsCiAgICAgICAgICAgICAgICAiZXhwZWN0ZWRDb250cmFzdFJhdGlvIjogIjQuNToxIgogICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgInJlbGF0ZWROb2RlcyI6IFtdLAogICAgICAgICAgICAgICJpbXBhY3QiOiAic2VyaW91cyIsCiAgICAgICAgICAgICAgIm1lc3NhZ2UiOiAiRWxlbWVudCdzIGJhY2tncm91bmQgY29sb3IgY291bGQgbm90IGJlIGRldGVybWluZWQgYmVjYXVzZSBpdCBpcyBvdmVybGFwcGVkIGJ5IGFub3RoZXIgZWxlbWVudCIKICAgICAgICAgICAgfQogICAgICAgICAgXSwKICAgICAgICAgICJhbGwiOiBbXSwKICAgICAgICAgICJub25lIjogW10sCiAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgImh0bWwiOiAiPHNwYW4gY2xhc3M9XCJwcm9qZWN0LWl0ZW1cIj48c3BhbiBjbGFzcz1cInByb2plY3QtZG90XCI+PC9zcGFuPiBGb3VuZGF0aW9uIG1vZGVsczwvc3Bhbj4iLAogICAgICAgICAgInRhcmdldCI6IFsKICAgICAgICAgICAgIi5wcm9qZWN0LWl0ZW0iCiAgICAgICAgICBdLAogICAgICAgICAgImZhaWx1cmVTdW1tYXJ5IjogIkZpeCBhbnkgb2YgdGhlIGZvbGxvd2luZzpcbiAgRWxlbWVudCdzIGJhY2tncm91bmQgY29sb3IgY291bGQgbm90IGJlIGRldGVybWluZWQgYmVjYXVzZSBpdCBpcyBvdmVybGFwcGVkIGJ5IGFub3RoZXIgZWxlbWVudCIKICAgICAgICB9LAogICAgICAgIHsKICAgICAgICAgICJhbnkiOiBbCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAiaWQiOiAiY29sb3ItY29udHJhc3QiLAogICAgICAgICAgICAgICJkYXRhIjogewogICAgICAgICAgICAgICAgImNvbnRyYXN0UmF0aW8iOiAwLAogICAgICAgICAgICAgICAgImZvbnRTaXplIjogIjcuNXB0ICgxMHB4KSIsCiAgICAgICAgICAgICAgICAiZm9udFdlaWdodCI6ICJub3JtYWwiLAogICAgICAgICAgICAgICAgIm1lc3NhZ2VLZXkiOiAiYmdPdmVybGFwIiwKICAgICAgICAgICAgICAgICJleHBlY3RlZENvbnRyYXN0UmF0aW8iOiAiNC41OjEiCiAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAicmVsYXRlZE5vZGVzIjogW10sCiAgICAgICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICAgICAibWVzc2FnZSI6ICJFbGVtZW50J3MgYmFja2dyb3VuZCBjb2xvciBjb3VsZCBub3QgYmUgZGV0ZXJtaW5lZCBiZWNhdXNlIGl0IGlzIG92ZXJsYXBwZWQgYnkgYW5vdGhlciBlbGVtZW50IgogICAgICAgICAgICB9CiAgICAgICAgICBdLAogICAgICAgICAgImFsbCI6IFtdLAogICAgICAgICAgIm5vbmUiOiBbXSwKICAgICAgICAgICJpbXBhY3QiOiAic2VyaW91cyIsCiAgICAgICAgICAiaHRtbCI6ICI8c21hbGw+MjAgZXhwZXJpbWVudHMgwrcgMyBtZXRyaWNzPC9zbWFsbD4iLAogICAgICAgICAgInRhcmdldCI6IFsKICAgICAgICAgICAgIi5zaWRlYmFyLXByb2plY3QgPiBzbWFsbCIKICAgICAgICAgIF0sCiAgICAgICAgICAiZmFpbHVyZVN1bW1hcnkiOiAiRml4IGFueSBvZiB0aGUgZm9sbG93aW5nOlxuICBFbGVtZW50J3MgYmFja2dyb3VuZCBjb2xvciBjb3VsZCBub3QgYmUgZGV0ZXJtaW5lZCBiZWNhdXNlIGl0IGlzIG92ZXJsYXBwZWQgYnkgYW5vdGhlciBlbGVtZW50IgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImFueSI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJpZCI6ICJjb2xvci1jb250cmFzdCIsCiAgICAgICAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAgICAgICAiY29udHJhc3RSYXRpbyI6IDAsCiAgICAgICAgICAgICAgICAiZm9udFNpemUiOiAiNy41cHQgKDEwcHgpIiwKICAgICAgICAgICAgICAgICJmb250V2VpZ2h0IjogIm5vcm1hbCIsCiAgICAgICAgICAgICAgICAibWVzc2FnZUtleSI6ICJiZ092ZXJsYXAiLAogICAgICAgICAgICAgICAgImV4cGVjdGVkQ29udHJhc3RSYXRpbyI6ICI0LjU6MSIKICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICJyZWxhdGVkTm9kZXMiOiBbXSwKICAgICAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgICAgICJtZXNzYWdlIjogIkVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgICAgIH0KICAgICAgICAgIF0sCiAgICAgICAgICAiYWxsIjogW10sCiAgICAgICAgICAibm9uZSI6IFtdLAogICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICJodG1sIjogIjxzdHJvbmc+QSBsaXR0bGUgcm9vbSB0byBleHBlcmltZW50Ljwvc3Ryb25nPiIsCiAgICAgICAgICAidGFyZ2V0IjogWwogICAgICAgICAgICAiZGl2ID4gc3Ryb25nIgogICAgICAgICAgXSwKICAgICAgICAgICJmYWlsdXJlU3VtbWFyeSI6ICJGaXggYW55IG9mIHRoZSBmb2xsb3dpbmc6XG4gIEVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiYW55IjogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgImlkIjogImNvbG9yLWNvbnRyYXN0IiwKICAgICAgICAgICAgICAiZGF0YSI6IHsKICAgICAgICAgICAgICAgICJjb250cmFzdFJhdGlvIjogMCwKICAgICAgICAgICAgICAgICJmb250U2l6ZSI6ICI3LjVwdCAoMTBweCkiLAogICAgICAgICAgICAgICAgImZvbnRXZWlnaHQiOiAibm9ybWFsIiwKICAgICAgICAgICAgICAgICJtZXNzYWdlS2V5IjogImJnT3ZlcmxhcCIsCiAgICAgICAgICAgICAgICAiZXhwZWN0ZWRDb250cmFzdFJhdGlvIjogIjQuNToxIgogICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgInJlbGF0ZWROb2RlcyI6IFtdLAogICAgICAgICAgICAgICJpbXBhY3QiOiAic2VyaW91cyIsCiAgICAgICAgICAgICAgIm1lc3NhZ2UiOiAiRWxlbWVudCdzIGJhY2tncm91bmQgY29sb3IgY291bGQgbm90IGJlIGRldGVybWluZWQgYmVjYXVzZSBpdCBpcyBvdmVybGFwcGVkIGJ5IGFub3RoZXIgZWxlbWVudCIKICAgICAgICAgICAgfQogICAgICAgICAgXSwKICAgICAgICAgICJhbGwiOiBbXSwKICAgICAgICAgICJub25lIjogW10sCiAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgImh0bWwiOiAiPHA+RXhwbG9yZSBzeW50aGV0aWMgcnVucy4gWW91ciBwcm9kdWN0aW9uIHRyYWluaW5nIGlzIHVudG91Y2hlZC48L3A+IiwKICAgICAgICAgICJ0YXJnZXQiOiBbCiAgICAgICAgICAgICIuZGVtby1ub3RlID4gZGl2ID4gcCIKICAgICAgICAgIF0sCiAgICAgICAgICAiZmFpbHVyZVN1bW1hcnkiOiAiRml4IGFueSBvZiB0aGUgZm9sbG93aW5nOlxuICBFbGVtZW50J3MgYmFja2dyb3VuZCBjb2xvciBjb3VsZCBub3QgYmUgZGV0ZXJtaW5lZCBiZWNhdXNlIGl0IGlzIG92ZXJsYXBwZWQgYnkgYW5vdGhlciBlbGVtZW50IgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImFueSI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJpZCI6ICJjb2xvci1jb250cmFzdCIsCiAgICAgICAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAgICAgICAiY29udHJhc3RSYXRpbyI6IDAsCiAgICAgICAgICAgICAgICAiZm9udFNpemUiOiAiNy41cHQgKDEwcHgpIiwKICAgICAgICAgICAgICAgICJmb250V2VpZ2h0IjogIm5vcm1hbCIsCiAgICAgICAgICAgICAgICAibWVzc2FnZUtleSI6ICJiZ092ZXJsYXAiLAogICAgICAgICAgICAgICAgImV4cGVjdGVkQ29udHJhc3RSYXRpbyI6ICI0LjU6MSIKICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICJyZWxhdGVkTm9kZXMiOiBbXSwKICAgICAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgICAgICJtZXNzYWdlIjogIkVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgICAgIH0KICAgICAgICAgIF0sCiAgICAgICAgICAiYWxsIjogW10sCiAgICAgICAgICAibm9uZSI6IFtdLAogICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICJodG1sIjogIjxzcGFuIGNsYXNzPVwicHJvZmlsZS1hdmF0YXJcIj5TQzwvc3Bhbj4iLAogICAgICAgICAgInRhcmdldCI6IFsKICAgICAgICAgICAgIi5wcm9maWxlLWF2YXRhciIKICAgICAgICAgIF0sCiAgICAgICAgICAiZmFpbHVyZVN1bW1hcnkiOiAiRml4IGFueSBvZiB0aGUgZm9sbG93aW5nOlxuICBFbGVtZW50J3MgYmFja2dyb3VuZCBjb2xvciBjb3VsZCBub3QgYmUgZGV0ZXJtaW5lZCBiZWNhdXNlIGl0IGlzIG92ZXJsYXBwZWQgYnkgYW5vdGhlciBlbGVtZW50IgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgImFueSI6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICJpZCI6ICJjb2xvci1jb250cmFzdCIsCiAgICAgICAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAgICAgICAiY29udHJhc3RSYXRpbyI6IDAsCiAgICAgICAgICAgICAgICAiZm9udFNpemUiOiAiOC4zcHQgKDExcHgpIiwKICAgICAgICAgICAgICAgICJmb250V2VpZ2h0IjogIm5vcm1hbCIsCiAgICAgICAgICAgICAgICAibWVzc2FnZUtleSI6ICJiZ092ZXJsYXAiLAogICAgICAgICAgICAgICAgImV4cGVjdGVkQ29udHJhc3RSYXRpbyI6ICI0LjU6MSIKICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICJyZWxhdGVkTm9kZXMiOiBbXSwKICAgICAgICAgICAgICAiaW1wYWN0IjogInNlcmlvdXMiLAogICAgICAgICAgICAgICJtZXNzYWdlIjogIkVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgICAgIH0KICAgICAgICAgIF0sCiAgICAgICAgICAiYWxsIjogW10sCiAgICAgICAgICAibm9uZSI6IFtdLAogICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICJodG1sIjogIjxzdHJvbmc+U291cCBjb2xsZWN0aXZlPC9zdHJvbmc+IiwKICAgICAgICAgICJ0YXJnZXQiOiBbCiAgICAgICAgICAgICIucHJvZmlsZSA+IHNwYW46bnRoLWNoaWxkKDIpID4gc3Ryb25nIgogICAgICAgICAgXSwKICAgICAgICAgICJmYWlsdXJlU3VtbWFyeSI6ICJGaXggYW55IG9mIHRoZSBmb2xsb3dpbmc6XG4gIEVsZW1lbnQncyBiYWNrZ3JvdW5kIGNvbG9yIGNvdWxkIG5vdCBiZSBkZXRlcm1pbmVkIGJlY2F1c2UgaXQgaXMgb3ZlcmxhcHBlZCBieSBhbm90aGVyIGVsZW1lbnQiCiAgICAgICAgfSwKICAgICAgICB7CiAgICAgICAgICAiYW55IjogWwogICAgICAgICAgICB7CiAgICAgICAgICAgICAgImlkIjogImNvbG9yLWNvbnRyYXN0IiwKICAgICAgICAgICAgICAiZGF0YSI6IHsKICAgICAgICAgICAgICAgICJjb250cmFzdFJhdGlvIjogMCwKICAgICAgICAgICAgICAgICJmb250U2l6ZSI6ICI2LjhwdCAoOXB4KSIsCiAgICAgICAgICAgICAgICAiZm9udFdlaWdodCI6ICJub3JtYWwiLAogICAgICAgICAgICAgICAgIm1lc3NhZ2VLZXkiOiAiYmdPdmVybGFwIiwKICAgICAgICAgICAgICAgICJleHBlY3RlZENvbnRyYXN0UmF0aW8iOiAiNC41OjEiCiAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAicmVsYXRlZE5vZGVzIjogW10sCiAgICAgICAgICAgICAgImltcGFjdCI6ICJzZXJpb3VzIiwKICAgICAgICAgICAgICAibWVzc2FnZSI6ICJFbGVtZW50J3MgYmFja2dyb3VuZCBjb2xvciBjb3VsZCBub3QgYmUgZGV0ZXJtaW5lZCBiZWNhdXNlIGl0IGlzIG92ZXJsYXBwZWQgYnkgYW5vdGhlciBlbGVtZW50IgogICAgICAgICAgICB9CiAgICAgICAgICBdLAogICAgICAgICAgImFsbCI6IFtdLAogICAgICAgICAgIm5vbmUiOiBbXSwKICAgICAgICAgICJpbXBhY3QiOiAic2VyaW91cyIsCiAgICAgICAgICAiaHRtbCI6ICI8c21hbGw+UmVzZWFyY2ggd29ya3NwYWNlPC9zbWFsbD4iLAogICAgICAgICAgInRhcmdldCI6IFsKICAgICAgICAgICAgIi5wcm9maWxlID4gc3BhbjpudGgtY2hpbGQoMikgPiBzbWFsbCIKICAgICAgICAgIF0sCiAgICAgICAgICAiZmFpbHVyZVN1bW1hcnkiOiAiRml4IGFueSBvZiB0aGUgZm9sbG93aW5nOlxuICBFbGVtZW50J3MgYmFja2dyb3VuZCBjb2xvciBjb3VsZCBub3QgYmUgZGV0ZXJtaW5lZCBiZWNhdXNlIGl0IGlzIG92ZXJsYXBwZWQgYnkgYW5vdGhlciBlbGVtZW50IgogICAgICAgIH0KICAgICAgXQogICAgfQogIF0sCiAgImxpbWl0cyI6IFsKICAgICJBdXRvbWF0ZWQgV0NBRyBydWxlIGNoZWNrcyBvbiB0aGlzIGNhcHR1cmVkIGJyb3dzZXIgc3RhdGUgb25seTsgbm90IGFuIGFjY2Vzc2liaWxpdHkgY29uZm9ybWFuY2UgY2xhaW0uIiwKICAgICJJbmNvbXBsZXRlIGNoZWNrcyByZXF1aXJlIG1hbnVhbCBhc3Nlc3NtZW50IGFuZCBhcmUgbm90IHNpbGVudGx5IHRyZWF0ZWQgYXMgcGFzc2VzLiIsCiAgICAiTm8gcGh5c2ljYWwtZGV2aWNlIGVyZ29ub21pY3MsIGFzc2lzdGl2ZS10ZWNobm9sb2d5IHVzYWJpbGl0eSBvciBmdWxsIGFwcGxpY2F0aW9uLXN0YXRlIGNvdmVyYWdlIGlzIGVzdGFibGlzaGVkIGJ5IHRoaXMgYXJ0aWZhY3QuIgogIF0KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ddd864604af8a6a0198f-3b0d289ad7c9a5d002ed",
+          "file": "accessibility.spec.ts",
+          "line": 87,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "adversarial.spec.ts",
+      "file": "adversarial.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "actual React route keeps old-run data out while real worker replies arrive in reverse selection order",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1270,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:16.632Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-09a5c8deb5bcdbe7def7",
+          "file": "adversarial.spec.ts",
+          "line": 128,
+          "column": 1
+        },
+        {
+          "title": "superseded same-run range cannot overwrite a newer zoom when its genuine response arrives late",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1071,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:17.912Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-d86102aa2ddb38a3b2b0",
+          "file": "adversarial.spec.ts",
+          "line": 162,
+          "column": 1
+        },
+        {
+          "title": "selected-range loading never presents full-run loss as the selected latest value",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1069,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:18.993Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-35496186d311cca484f6",
+          "file": "adversarial.spec.ts",
+          "line": 189,
+          "column": 1
+        },
+        {
+          "title": "a failed selected range leaves its summary unavailable instead of substituting a full-run statistic",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 640,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:20.070Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-f17873098b62cbe769cb",
+          "file": "adversarial.spec.ts",
+          "line": 223,
+          "column": 1
+        },
+        {
+          "title": "malformed worker identity fails closed and a genuine retry recovers",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 981,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:20.719Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-7bfffc2e2d70da09d01e",
+          "file": "adversarial.spec.ts",
+          "line": 241,
+          "column": 3
+        },
+        {
+          "title": "malformed worker columns fails closed and a genuine retry recovers",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2021,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:21.711Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-484c0baf543a313839a2",
+          "file": "adversarial.spec.ts",
+          "line": 241,
+          "column": 3
+        },
+        {
+          "title": "malformed worker stale fails closed and a genuine retry recovers",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 994,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:23.742Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-153a2c5db266e60d402c",
+          "file": "adversarial.spec.ts",
+          "line": 241,
+          "column": 3
+        },
+        {
+          "title": "dragging an auxiliary chart sets the same numeric viewport on all metrics and double-click resets all",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1752,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:24.745Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "actual-drag-events",
+                      "contentType": "application/json",
+                      "body": "ewogICJldmVudHMiOiBbCiAgICB7CiAgICAgICJ0aW1lIjogNjk0LAogICAgICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMSIsCiAgICAgICJyZWFkeSI6ICJ0cnVlIiwKICAgICAgImJ1c3kiOiAiZmFsc2UiLAogICAgICAieE1pbiI6ICIwIiwKICAgICAgInhNYXgiOiAiOTk5OTk5IiwKICAgICAgInNlbGVjdGlvbldpZHRoIjogMCwKICAgICAgInNlbGVjdGlvblN0eWxlIjogImxlZnQ6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAwcHg7IGhlaWdodDogMHB4OyIsCiAgICAgICJkb2N1bWVudEhhc0ZvY3VzIjogdHJ1ZSwKICAgICAgImFjdGl2ZSI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogIm1ldHJpYy1jaGFydF9faW50ZXJhY3RpdmUiLAogICAgICAgICJsYWJlbCI6ICJHcmFkaWVudCBub3JtIGludGVyYWN0aXZlIGNoYXJ0IgogICAgICB9LAogICAgICAic2Nyb2xsIjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDg1OAogICAgICB9LAogICAgICAidmlld3BvcnQiOiB7CiAgICAgICAgIndpZHRoIjogMTI4MCwKICAgICAgICAiaGVpZ2h0IjogNzIwCiAgICAgIH0sCiAgICAgICJ0eXBlIjogImZvY3VzIiwKICAgICAgInRydXN0ZWQiOiB0cnVlLAogICAgICAidGFyZ2V0IjogewogICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAiY2xhc3MiOiAibWV0cmljLWNoYXJ0X19pbnRlcmFjdGl2ZSIsCiAgICAgICAgImxhYmVsIjogIkdyYWRpZW50IG5vcm0gaW50ZXJhY3RpdmUgY2hhcnQiCiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogNjk5LAogICAgICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMSIsCiAgICAgICJyZWFkeSI6ICJ0cnVlIiwKICAgICAgImJ1c3kiOiAiZmFsc2UiLAogICAgICAieE1pbiI6ICIwIiwKICAgICAgInhNYXgiOiAiOTk5OTk5IiwKICAgICAgInNlbGVjdGlvbldpZHRoIjogMCwKICAgICAgInNlbGVjdGlvblN0eWxlIjogImxlZnQ6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAwcHg7IGhlaWdodDogMHB4OyIsCiAgICAgICJkb2N1bWVudEhhc0ZvY3VzIjogdHJ1ZSwKICAgICAgImFjdGl2ZSI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogIm1ldHJpYy1jaGFydF9faW50ZXJhY3RpdmUiLAogICAgICAgICJsYWJlbCI6ICJHcmFkaWVudCBub3JtIGludGVyYWN0aXZlIGNoYXJ0IgogICAgICB9LAogICAgICAic2Nyb2xsIjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDg1OAogICAgICB9LAogICAgICAidmlld3BvcnQiOiB7CiAgICAgICAgIndpZHRoIjogMTI4MCwKICAgICAgICAiaGVpZ2h0IjogNzIwCiAgICAgIH0sCiAgICAgICJ0eXBlIjogImZvY3VzaW4iLAogICAgICAidHJ1c3RlZCI6IHRydWUsCiAgICAgICJ0YXJnZXQiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJtZXRyaWMtY2hhcnRfX2ludGVyYWN0aXZlIiwKICAgICAgICAibGFiZWwiOiAiR3JhZGllbnQgbm9ybSBpbnRlcmFjdGl2ZSBjaGFydCIKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiA2OTksCiAgICAgICJ1cmwiOiAiaHR0cDovLzEyNy4wLjAuMTo0MTczLyMvcnVucy9ydW4tMDAxIiwKICAgICAgInJlYWR5IjogInRydWUiLAogICAgICAiYnVzeSI6ICJmYWxzZSIsCiAgICAgICJ4TWluIjogIjAiLAogICAgICAieE1heCI6ICI5OTk5OTkiLAogICAgICAic2VsZWN0aW9uV2lkdGgiOiAwLAogICAgICAic2VsZWN0aW9uU3R5bGUiOiAibGVmdDogMHB4OyB0b3A6IDBweDsgd2lkdGg6IDBweDsgaGVpZ2h0OiAwcHg7IiwKICAgICAgImRvY3VtZW50SGFzRm9jdXMiOiB0cnVlLAogICAgICAiYWN0aXZlIjogewogICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAiY2xhc3MiOiAibWV0cmljLWNoYXJ0X19pbnRlcmFjdGl2ZSIsCiAgICAgICAgImxhYmVsIjogIkdyYWRpZW50IG5vcm0gaW50ZXJhY3RpdmUgY2hhcnQiCiAgICAgIH0sCiAgICAgICJzY3JvbGwiOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogODU4CiAgICAgIH0sCiAgICAgICJ2aWV3cG9ydCI6IHsKICAgICAgICAid2lkdGgiOiAxMjgwLAogICAgICAgICJoZWlnaHQiOiA3MjAKICAgICAgfSwKICAgICAgInR5cGUiOiAic2Nyb2xsIiwKICAgICAgInRydXN0ZWQiOiB0cnVlLAogICAgICAidGFyZ2V0IjogewogICAgICAgICJ0YWciOiAiZG9jdW1lbnQiLAogICAgICAgICJjbGFzcyI6IG51bGwsCiAgICAgICAgImxhYmVsIjogbnVsbAogICAgICB9CiAgICB9LAogICAgewogICAgICAidGltZSI6IDc1MiwKICAgICAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIy9ydW5zL3J1bi0wMDEiLAogICAgICAicmVhZHkiOiAidHJ1ZSIsCiAgICAgICJidXN5IjogImZhbHNlIiwKICAgICAgInhNaW4iOiAiMCIsCiAgICAgICJ4TWF4IjogIjk5OTk5OSIsCiAgICAgICJzZWxlY3Rpb25XaWR0aCI6IDAsCiAgICAgICJzZWxlY3Rpb25TdHlsZSI6ICJsZWZ0OiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMHB4OyBoZWlnaHQ6IDBweDsiLAogICAgICAiZG9jdW1lbnRIYXNGb2N1cyI6IHRydWUsCiAgICAgICJhY3RpdmUiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJtZXRyaWMtY2hhcnRfX2ludGVyYWN0aXZlIiwKICAgICAgICAibGFiZWwiOiAiR3JhZGllbnQgbm9ybSBpbnRlcmFjdGl2ZSBjaGFydCIKICAgICAgfSwKICAgICAgInNjcm9sbCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiA4NTgKICAgICAgfSwKICAgICAgInZpZXdwb3J0IjogewogICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgImhlaWdodCI6IDcyMAogICAgICB9LAogICAgICAidHlwZSI6ICJwb2ludGVybW92ZSIsCiAgICAgICJ0cnVzdGVkIjogdHJ1ZSwKICAgICAgInRhcmdldCI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogInUtb3ZlciIsCiAgICAgICAgImxhYmVsIjogbnVsbAogICAgICB9LAogICAgICAiY2xpZW50WCI6IDEwMjIsCiAgICAgICJjbGllbnRZIjogMzQ2LjU4MzM0MzUwNTg1OTQsCiAgICAgICJtb3ZlbWVudFgiOiAwLAogICAgICAibW92ZW1lbnRZIjogMCwKICAgICAgImJ1dHRvbiI6IC0xLAogICAgICAiYnV0dG9ucyI6IDAKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogNzUyLAogICAgICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMSIsCiAgICAgICJyZWFkeSI6ICJ0cnVlIiwKICAgICAgImJ1c3kiOiAiZmFsc2UiLAogICAgICAieE1pbiI6ICIwIiwKICAgICAgInhNYXgiOiAiOTk5OTk5IiwKICAgICAgInNlbGVjdGlvbldpZHRoIjogMCwKICAgICAgInNlbGVjdGlvblN0eWxlIjogImxlZnQ6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAwcHg7IGhlaWdodDogMHB4OyIsCiAgICAgICJkb2N1bWVudEhhc0ZvY3VzIjogdHJ1ZSwKICAgICAgImFjdGl2ZSI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogIm1ldHJpYy1jaGFydF9faW50ZXJhY3RpdmUiLAogICAgICAgICJsYWJlbCI6ICJHcmFkaWVudCBub3JtIGludGVyYWN0aXZlIGNoYXJ0IgogICAgICB9LAogICAgICAic2Nyb2xsIjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDg1OAogICAgICB9LAogICAgICAidmlld3BvcnQiOiB7CiAgICAgICAgIndpZHRoIjogMTI4MCwKICAgICAgICAiaGVpZ2h0IjogNzIwCiAgICAgIH0sCiAgICAgICJ0eXBlIjogIm1vdXNlbW92ZSIsCiAgICAgICJ0cnVzdGVkIjogdHJ1ZSwKICAgICAgInRhcmdldCI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogInUtb3ZlciIsCiAgICAgICAgImxhYmVsIjogbnVsbAogICAgICB9LAogICAgICAiY2xpZW50WCI6IDEwMjIsCiAgICAgICJjbGllbnRZIjogMzQ3LAogICAgICAibW92ZW1lbnRYIjogMCwKICAgICAgIm1vdmVtZW50WSI6IDAsCiAgICAgICJidXR0b24iOiAwLAogICAgICAiYnV0dG9ucyI6IDAKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogOTI0LAogICAgICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMSIsCiAgICAgICJyZWFkeSI6ICJ0cnVlIiwKICAgICAgImJ1c3kiOiAiZmFsc2UiLAogICAgICAieE1pbiI6ICIwIiwKICAgICAgInhNYXgiOiAiOTk5OTk5IiwKICAgICAgInNlbGVjdGlvbldpZHRoIjogMCwKICAgICAgInNlbGVjdGlvblN0eWxlIjogImxlZnQ6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAwcHg7IGhlaWdodDogMHB4OyIsCiAgICAgICJkb2N1bWVudEhhc0ZvY3VzIjogdHJ1ZSwKICAgICAgImFjdGl2ZSI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogIm1ldHJpYy1jaGFydF9faW50ZXJhY3RpdmUiLAogICAgICAgICJsYWJlbCI6ICJHcmFkaWVudCBub3JtIGludGVyYWN0aXZlIGNoYXJ0IgogICAgICB9LAogICAgICAic2Nyb2xsIjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDg1OAogICAgICB9LAogICAgICAidmlld3BvcnQiOiB7CiAgICAgICAgIndpZHRoIjogMTI4MCwKICAgICAgICAiaGVpZ2h0IjogNzIwCiAgICAgIH0sCiAgICAgICJ0eXBlIjogInBvaW50ZXJtb3ZlIiwKICAgICAgInRydXN0ZWQiOiB0cnVlLAogICAgICAidGFyZ2V0IjogewogICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAiY2xhc3MiOiAidS1vdmVyIiwKICAgICAgICAibGFiZWwiOiBudWxsCiAgICAgIH0sCiAgICAgICJjbGllbnRYIjogOTY0LAogICAgICAiY2xpZW50WSI6IDM0Ni41ODMzNDM1MDU4NTk0LAogICAgICAibW92ZW1lbnRYIjogLTU4LAogICAgICAibW92ZW1lbnRZIjogMCwKICAgICAgImJ1dHRvbiI6IC0xLAogICAgICAiYnV0dG9ucyI6IDAKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogOTI0LAogICAgICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMSIsCiAgICAgICJyZWFkeSI6ICJ0cnVlIiwKICAgICAgImJ1c3kiOiAiZmFsc2UiLAogICAgICAieE1pbiI6ICIwIiwKICAgICAgInhNYXgiOiAiOTk5OTk5IiwKICAgICAgInNlbGVjdGlvbldpZHRoIjogMCwKICAgICAgInNlbGVjdGlvblN0eWxlIjogImxlZnQ6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAwcHg7IGhlaWdodDogMHB4OyIsCiAgICAgICJkb2N1bWVudEhhc0ZvY3VzIjogdHJ1ZSwKICAgICAgImFjdGl2ZSI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogIm1ldHJpYy1jaGFydF9faW50ZXJhY3RpdmUiLAogICAgICAgICJsYWJlbCI6ICJHcmFkaWVudCBub3JtIGludGVyYWN0aXZlIGNoYXJ0IgogICAgICB9LAogICAgICAic2Nyb2xsIjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDg1OAogICAgICB9LAogICAgICAidmlld3BvcnQiOiB7CiAgICAgICAgIndpZHRoIjogMTI4MCwKICAgICAgICAiaGVpZ2h0IjogNzIwCiAgICAgIH0sCiAgICAgICJ0eXBlIjogIm1vdXNlbW92ZSIsCiAgICAgICJ0cnVzdGVkIjogdHJ1ZSwKICAgICAgInRhcmdldCI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogInUtb3ZlciIsCiAgICAgICAgImxhYmVsIjogbnVsbAogICAgICB9LAogICAgICAiY2xpZW50WCI6IDk2NCwKICAgICAgImNsaWVudFkiOiAzNDcsCiAgICAgICJtb3ZlbWVudFgiOiAtNTgsCiAgICAgICJtb3ZlbWVudFkiOiAwLAogICAgICAiYnV0dG9uIjogMCwKICAgICAgImJ1dHRvbnMiOiAwCiAgICB9LAogICAgewogICAgICAidGltZSI6IDkzMiwKICAgICAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIy9ydW5zL3J1bi0wMDEiLAogICAgICAicmVhZHkiOiAidHJ1ZSIsCiAgICAgICJidXN5IjogImZhbHNlIiwKICAgICAgInhNaW4iOiAiMCIsCiAgICAgICJ4TWF4IjogIjk5OTk5OSIsCiAgICAgICJzZWxlY3Rpb25XaWR0aCI6IDAsCiAgICAgICJzZWxlY3Rpb25TdHlsZSI6ICJsZWZ0OiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMHB4OyBoZWlnaHQ6IDBweDsiLAogICAgICAiZG9jdW1lbnRIYXNGb2N1cyI6IHRydWUsCiAgICAgICJhY3RpdmUiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJtZXRyaWMtY2hhcnRfX2ludGVyYWN0aXZlIiwKICAgICAgICAibGFiZWwiOiAiR3JhZGllbnQgbm9ybSBpbnRlcmFjdGl2ZSBjaGFydCIKICAgICAgfSwKICAgICAgInNjcm9sbCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiA4NTgKICAgICAgfSwKICAgICAgInZpZXdwb3J0IjogewogICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgImhlaWdodCI6IDcyMAogICAgICB9LAogICAgICAidHlwZSI6ICJwb2ludGVyZG93biIsCiAgICAgICJ0cnVzdGVkIjogdHJ1ZSwKICAgICAgInRhcmdldCI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogInUtb3ZlciIsCiAgICAgICAgImxhYmVsIjogbnVsbAogICAgICB9LAogICAgICAiY2xpZW50WCI6IDk2NCwKICAgICAgImNsaWVudFkiOiAzNDYuNTgzMzQzNTA1ODU5NCwKICAgICAgIm1vdmVtZW50WCI6IDAsCiAgICAgICJtb3ZlbWVudFkiOiAwLAogICAgICAiYnV0dG9uIjogMCwKICAgICAgImJ1dHRvbnMiOiAxCiAgICB9LAogICAgewogICAgICAidGltZSI6IDkzMiwKICAgICAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIy9ydW5zL3J1bi0wMDEiLAogICAgICAicmVhZHkiOiAidHJ1ZSIsCiAgICAgICJidXN5IjogImZhbHNlIiwKICAgICAgInhNaW4iOiAiMCIsCiAgICAgICJ4TWF4IjogIjk5OTk5OSIsCiAgICAgICJzZWxlY3Rpb25XaWR0aCI6IDAsCiAgICAgICJzZWxlY3Rpb25TdHlsZSI6ICJsZWZ0OiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMHB4OyBoZWlnaHQ6IDBweDsiLAogICAgICAiZG9jdW1lbnRIYXNGb2N1cyI6IHRydWUsCiAgICAgICJhY3RpdmUiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJtZXRyaWMtY2hhcnRfX2ludGVyYWN0aXZlIiwKICAgICAgICAibGFiZWwiOiAiR3JhZGllbnQgbm9ybSBpbnRlcmFjdGl2ZSBjaGFydCIKICAgICAgfSwKICAgICAgInNjcm9sbCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiA4NTgKICAgICAgfSwKICAgICAgInZpZXdwb3J0IjogewogICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgImhlaWdodCI6IDcyMAogICAgICB9LAogICAgICAidHlwZSI6ICJtb3VzZWRvd24iLAogICAgICAidHJ1c3RlZCI6IHRydWUsCiAgICAgICJ0YXJnZXQiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJ1LW92ZXIiLAogICAgICAgICJsYWJlbCI6IG51bGwKICAgICAgfSwKICAgICAgImNsaWVudFgiOiA5NjQsCiAgICAgICJjbGllbnRZIjogMzQ3LAogICAgICAibW92ZW1lbnRYIjogMCwKICAgICAgIm1vdmVtZW50WSI6IDAsCiAgICAgICJidXR0b24iOiAwLAogICAgICAiYnV0dG9ucyI6IDEKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogOTUxLAogICAgICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMSIsCiAgICAgICJyZWFkeSI6ICJ0cnVlIiwKICAgICAgImJ1c3kiOiAiZmFsc2UiLAogICAgICAieE1pbiI6ICIwIiwKICAgICAgInhNYXgiOiAiOTk5OTk5IiwKICAgICAgInNlbGVjdGlvbldpZHRoIjogMCwKICAgICAgInNlbGVjdGlvblN0eWxlIjogImxlZnQ6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAwcHg7IGhlaWdodDogMHB4OyIsCiAgICAgICJkb2N1bWVudEhhc0ZvY3VzIjogdHJ1ZSwKICAgICAgImFjdGl2ZSI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogIm1ldHJpYy1jaGFydF9faW50ZXJhY3RpdmUiLAogICAgICAgICJsYWJlbCI6ICJHcmFkaWVudCBub3JtIGludGVyYWN0aXZlIGNoYXJ0IgogICAgICB9LAogICAgICAic2Nyb2xsIjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDg1OAogICAgICB9LAogICAgICAidmlld3BvcnQiOiB7CiAgICAgICAgIndpZHRoIjogMTI4MCwKICAgICAgICAiaGVpZ2h0IjogNzIwCiAgICAgIH0sCiAgICAgICJ0eXBlIjogInBvaW50ZXJtb3ZlIiwKICAgICAgInRydXN0ZWQiOiB0cnVlLAogICAgICAidGFyZ2V0IjogewogICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAiY2xhc3MiOiAidS1vdmVyIiwKICAgICAgICAibGFiZWwiOiBudWxsCiAgICAgIH0sCiAgICAgICJjbGllbnRYIjogOTczLAogICAgICAiY2xpZW50WSI6IDM0Ni41ODMzNDM1MDU4NTk0LAogICAgICAibW92ZW1lbnRYIjogOSwKICAgICAgIm1vdmVtZW50WSI6IDAsCiAgICAgICJidXR0b24iOiAtMSwKICAgICAgImJ1dHRvbnMiOiAxCiAgICB9LAogICAgewogICAgICAidGltZSI6IDk1MiwKICAgICAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIy9ydW5zL3J1bi0wMDEiLAogICAgICAicmVhZHkiOiAidHJ1ZSIsCiAgICAgICJidXN5IjogImZhbHNlIiwKICAgICAgInhNaW4iOiAiMCIsCiAgICAgICJ4TWF4IjogIjk5OTk5OSIsCiAgICAgICJzZWxlY3Rpb25XaWR0aCI6IDAsCiAgICAgICJzZWxlY3Rpb25TdHlsZSI6ICJsZWZ0OiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMHB4OyBoZWlnaHQ6IDBweDsiLAogICAgICAiZG9jdW1lbnRIYXNGb2N1cyI6IHRydWUsCiAgICAgICJhY3RpdmUiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJtZXRyaWMtY2hhcnRfX2ludGVyYWN0aXZlIiwKICAgICAgICAibGFiZWwiOiAiR3JhZGllbnQgbm9ybSBpbnRlcmFjdGl2ZSBjaGFydCIKICAgICAgfSwKICAgICAgInNjcm9sbCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiA4NTgKICAgICAgfSwKICAgICAgInZpZXdwb3J0IjogewogICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgImhlaWdodCI6IDcyMAogICAgICB9LAogICAgICAidHlwZSI6ICJtb3VzZW1vdmUiLAogICAgICAidHJ1c3RlZCI6IHRydWUsCiAgICAgICJ0YXJnZXQiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJ1LW92ZXIiLAogICAgICAgICJsYWJlbCI6IG51bGwKICAgICAgfSwKICAgICAgImNsaWVudFgiOiA5NzMsCiAgICAgICJjbGllbnRZIjogMzQ3LAogICAgICAibW92ZW1lbnRYIjogOSwKICAgICAgIm1vdmVtZW50WSI6IDAsCiAgICAgICJidXR0b24iOiAwLAogICAgICAiYnV0dG9ucyI6IDEKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogOTY4LAogICAgICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMSIsCiAgICAgICJyZWFkeSI6ICJ0cnVlIiwKICAgICAgImJ1c3kiOiAiZmFsc2UiLAogICAgICAieE1pbiI6ICIwIiwKICAgICAgInhNYXgiOiAiOTk5OTk5IiwKICAgICAgInNlbGVjdGlvbldpZHRoIjogOSwKICAgICAgInNlbGVjdGlvblN0eWxlIjogImxlZnQ6IDEzNXB4OyB0b3A6IDBweDsgd2lkdGg6IDlweDsgaGVpZ2h0OiAxNjRweDsiLAogICAgICAiZG9jdW1lbnRIYXNGb2N1cyI6IHRydWUsCiAgICAgICJhY3RpdmUiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJtZXRyaWMtY2hhcnRfX2ludGVyYWN0aXZlIiwKICAgICAgICAibGFiZWwiOiAiR3JhZGllbnQgbm9ybSBpbnRlcmFjdGl2ZSBjaGFydCIKICAgICAgfSwKICAgICAgInNjcm9sbCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiA4NTgKICAgICAgfSwKICAgICAgInZpZXdwb3J0IjogewogICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgImhlaWdodCI6IDcyMAogICAgICB9LAogICAgICAidHlwZSI6ICJwb2ludGVybW92ZSIsCiAgICAgICJ0cnVzdGVkIjogdHJ1ZSwKICAgICAgInRhcmdldCI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogInUtb3ZlciIsCiAgICAgICAgImxhYmVsIjogbnVsbAogICAgICB9LAogICAgICAiY2xpZW50WCI6IDk4MywKICAgICAgImNsaWVudFkiOiAzNDYuNTgzMzQzNTA1ODU5NCwKICAgICAgIm1vdmVtZW50WCI6IDEwLAogICAgICAibW92ZW1lbnRZIjogMCwKICAgICAgImJ1dHRvbiI6IC0xLAogICAgICAiYnV0dG9ucyI6IDEKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogOTcwLAogICAgICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMSIsCiAgICAgICJyZWFkeSI6ICJ0cnVlIiwKICAgICAgImJ1c3kiOiAiZmFsc2UiLAogICAgICAieE1pbiI6ICIwIiwKICAgICAgInhNYXgiOiAiOTk5OTk5IiwKICAgICAgInNlbGVjdGlvbldpZHRoIjogOSwKICAgICAgInNlbGVjdGlvblN0eWxlIjogImxlZnQ6IDEzNXB4OyB0b3A6IDBweDsgd2lkdGg6IDlweDsgaGVpZ2h0OiAxNjRweDsiLAogICAgICAiZG9jdW1lbnRIYXNGb2N1cyI6IHRydWUsCiAgICAgICJhY3RpdmUiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJtZXRyaWMtY2hhcnRfX2ludGVyYWN0aXZlIiwKICAgICAgICAibGFiZWwiOiAiR3JhZGllbnQgbm9ybSBpbnRlcmFjdGl2ZSBjaGFydCIKICAgICAgfSwKICAgICAgInNjcm9sbCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiA4NTgKICAgICAgfSwKICAgICAgInZpZXdwb3J0IjogewogICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgImhlaWdodCI6IDcyMAogICAgICB9LAogICAgICAidHlwZSI6ICJtb3VzZW1vdmUiLAogICAgICAidHJ1c3RlZCI6IHRydWUsCiAgICAgICJ0YXJnZXQiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJ1LW92ZXIiLAogICAgICAgICJsYWJlbCI6IG51bGwKICAgICAgfSwKICAgICAgImNsaWVudFgiOiA5ODMsCiAgICAgICJjbGllbnRZIjogMzQ3LAogICAgICAibW92ZW1lbnRYIjogMTAsCiAgICAgICJtb3ZlbWVudFkiOiAwLAogICAgICAiYnV0dG9uIjogMCwKICAgICAgImJ1dHRvbnMiOiAxCiAgICB9LAogICAgewogICAgICAidGltZSI6IDk4NSwKICAgICAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIy9ydW5zL3J1bi0wMDEiLAogICAgICAicmVhZHkiOiAidHJ1ZSIsCiAgICAgICJidXN5IjogImZhbHNlIiwKICAgICAgInhNaW4iOiAiMCIsCiAgICAgICJ4TWF4IjogIjk5OTk5OSIsCiAgICAgICJzZWxlY3Rpb25XaWR0aCI6IDE5LAogICAgICAic2VsZWN0aW9uU3R5bGUiOiAibGVmdDogMTM1cHg7IHRvcDogMHB4OyB3aWR0aDogMTlweDsgaGVpZ2h0OiAxNjRweDsiLAogICAgICAiZG9jdW1lbnRIYXNGb2N1cyI6IHRydWUsCiAgICAgICJhY3RpdmUiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJtZXRyaWMtY2hhcnRfX2ludGVyYWN0aXZlIiwKICAgICAgICAibGFiZWwiOiAiR3JhZGllbnQgbm9ybSBpbnRlcmFjdGl2ZSBjaGFydCIKICAgICAgfSwKICAgICAgInNjcm9sbCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiA4NTgKICAgICAgfSwKICAgICAgInZpZXdwb3J0IjogewogICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgImhlaWdodCI6IDcyMAogICAgICB9LAogICAgICAidHlwZSI6ICJwb2ludGVybW92ZSIsCiAgICAgICJ0cnVzdGVkIjogdHJ1ZSwKICAgICAgInRhcmdldCI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogInUtb3ZlciIsCiAgICAgICAgImxhYmVsIjogbnVsbAogICAgICB9LAogICAgICAiY2xpZW50WCI6IDk5MywKICAgICAgImNsaWVudFkiOiAzNDYuNTgzMzQzNTA1ODU5NCwKICAgICAgIm1vdmVtZW50WCI6IDEwLAogICAgICAibW92ZW1lbnRZIjogMCwKICAgICAgImJ1dHRvbiI6IC0xLAogICAgICAiYnV0dG9ucyI6IDEKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogOTg1LAogICAgICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMSIsCiAgICAgICJyZWFkeSI6ICJ0cnVlIiwKICAgICAgImJ1c3kiOiAiZmFsc2UiLAogICAgICAieE1pbiI6ICIwIiwKICAgICAgInhNYXgiOiAiOTk5OTk5IiwKICAgICAgInNlbGVjdGlvbldpZHRoIjogMTksCiAgICAgICJzZWxlY3Rpb25TdHlsZSI6ICJsZWZ0OiAxMzVweDsgdG9wOiAwcHg7IHdpZHRoOiAxOXB4OyBoZWlnaHQ6IDE2NHB4OyIsCiAgICAgICJkb2N1bWVudEhhc0ZvY3VzIjogdHJ1ZSwKICAgICAgImFjdGl2ZSI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogIm1ldHJpYy1jaGFydF9faW50ZXJhY3RpdmUiLAogICAgICAgICJsYWJlbCI6ICJHcmFkaWVudCBub3JtIGludGVyYWN0aXZlIGNoYXJ0IgogICAgICB9LAogICAgICAic2Nyb2xsIjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDg1OAogICAgICB9LAogICAgICAidmlld3BvcnQiOiB7CiAgICAgICAgIndpZHRoIjogMTI4MCwKICAgICAgICAiaGVpZ2h0IjogNzIwCiAgICAgIH0sCiAgICAgICJ0eXBlIjogIm1vdXNlbW92ZSIsCiAgICAgICJ0cnVzdGVkIjogdHJ1ZSwKICAgICAgInRhcmdldCI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogInUtb3ZlciIsCiAgICAgICAgImxhYmVsIjogbnVsbAogICAgICB9LAogICAgICAiY2xpZW50WCI6IDk5MywKICAgICAgImNsaWVudFkiOiAzNDcsCiAgICAgICJtb3ZlbWVudFgiOiAxMCwKICAgICAgIm1vdmVtZW50WSI6IDAsCiAgICAgICJidXR0b24iOiAwLAogICAgICAiYnV0dG9ucyI6IDEKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTAwMiwKICAgICAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIy9ydW5zL3J1bi0wMDEiLAogICAgICAicmVhZHkiOiAidHJ1ZSIsCiAgICAgICJidXN5IjogImZhbHNlIiwKICAgICAgInhNaW4iOiAiMCIsCiAgICAgICJ4TWF4IjogIjk5OTk5OSIsCiAgICAgICJzZWxlY3Rpb25XaWR0aCI6IDI5LAogICAgICAic2VsZWN0aW9uU3R5bGUiOiAibGVmdDogMTM1cHg7IHRvcDogMHB4OyB3aWR0aDogMjlweDsgaGVpZ2h0OiAxNjRweDsiLAogICAgICAiZG9jdW1lbnRIYXNGb2N1cyI6IHRydWUsCiAgICAgICJhY3RpdmUiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJtZXRyaWMtY2hhcnRfX2ludGVyYWN0aXZlIiwKICAgICAgICAibGFiZWwiOiAiR3JhZGllbnQgbm9ybSBpbnRlcmFjdGl2ZSBjaGFydCIKICAgICAgfSwKICAgICAgInNjcm9sbCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiA4NTgKICAgICAgfSwKICAgICAgInZpZXdwb3J0IjogewogICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgImhlaWdodCI6IDcyMAogICAgICB9LAogICAgICAidHlwZSI6ICJwb2ludGVybW92ZSIsCiAgICAgICJ0cnVzdGVkIjogdHJ1ZSwKICAgICAgInRhcmdldCI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogInUtb3ZlciIsCiAgICAgICAgImxhYmVsIjogbnVsbAogICAgICB9LAogICAgICAiY2xpZW50WCI6IDEwMDIsCiAgICAgICJjbGllbnRZIjogMzQ2LjU4MzM0MzUwNTg1OTQsCiAgICAgICJtb3ZlbWVudFgiOiA5LAogICAgICAibW92ZW1lbnRZIjogMCwKICAgICAgImJ1dHRvbiI6IC0xLAogICAgICAiYnV0dG9ucyI6IDEKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTAwMywKICAgICAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIy9ydW5zL3J1bi0wMDEiLAogICAgICAicmVhZHkiOiAidHJ1ZSIsCiAgICAgICJidXN5IjogImZhbHNlIiwKICAgICAgInhNaW4iOiAiMCIsCiAgICAgICJ4TWF4IjogIjk5OTk5OSIsCiAgICAgICJzZWxlY3Rpb25XaWR0aCI6IDI5LAogICAgICAic2VsZWN0aW9uU3R5bGUiOiAibGVmdDogMTM1cHg7IHRvcDogMHB4OyB3aWR0aDogMjlweDsgaGVpZ2h0OiAxNjRweDsiLAogICAgICAiZG9jdW1lbnRIYXNGb2N1cyI6IHRydWUsCiAgICAgICJhY3RpdmUiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJtZXRyaWMtY2hhcnRfX2ludGVyYWN0aXZlIiwKICAgICAgICAibGFiZWwiOiAiR3JhZGllbnQgbm9ybSBpbnRlcmFjdGl2ZSBjaGFydCIKICAgICAgfSwKICAgICAgInNjcm9sbCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiA4NTgKICAgICAgfSwKICAgICAgInZpZXdwb3J0IjogewogICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgImhlaWdodCI6IDcyMAogICAgICB9LAogICAgICAidHlwZSI6ICJtb3VzZW1vdmUiLAogICAgICAidHJ1c3RlZCI6IHRydWUsCiAgICAgICJ0YXJnZXQiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJ1LW92ZXIiLAogICAgICAgICJsYWJlbCI6IG51bGwKICAgICAgfSwKICAgICAgImNsaWVudFgiOiAxMDAyLAogICAgICAiY2xpZW50WSI6IDM0NywKICAgICAgIm1vdmVtZW50WCI6IDksCiAgICAgICJtb3ZlbWVudFkiOiAwLAogICAgICAiYnV0dG9uIjogMCwKICAgICAgImJ1dHRvbnMiOiAxCiAgICB9LAogICAgewogICAgICAidGltZSI6IDEwMTgsCiAgICAgICJ1cmwiOiAiaHR0cDovLzEyNy4wLjAuMTo0MTczLyMvcnVucy9ydW4tMDAxIiwKICAgICAgInJlYWR5IjogInRydWUiLAogICAgICAiYnVzeSI6ICJmYWxzZSIsCiAgICAgICJ4TWluIjogIjAiLAogICAgICAieE1heCI6ICI5OTk5OTkiLAogICAgICAic2VsZWN0aW9uV2lkdGgiOiAzOCwKICAgICAgInNlbGVjdGlvblN0eWxlIjogImxlZnQ6IDEzNXB4OyB0b3A6IDBweDsgd2lkdGg6IDM4cHg7IGhlaWdodDogMTY0cHg7IiwKICAgICAgImRvY3VtZW50SGFzRm9jdXMiOiB0cnVlLAogICAgICAiYWN0aXZlIjogewogICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAiY2xhc3MiOiAibWV0cmljLWNoYXJ0X19pbnRlcmFjdGl2ZSIsCiAgICAgICAgImxhYmVsIjogIkdyYWRpZW50IG5vcm0gaW50ZXJhY3RpdmUgY2hhcnQiCiAgICAgIH0sCiAgICAgICJzY3JvbGwiOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogODU4CiAgICAgIH0sCiAgICAgICJ2aWV3cG9ydCI6IHsKICAgICAgICAid2lkdGgiOiAxMjgwLAogICAgICAgICJoZWlnaHQiOiA3MjAKICAgICAgfSwKICAgICAgInR5cGUiOiAicG9pbnRlcm1vdmUiLAogICAgICAidHJ1c3RlZCI6IHRydWUsCiAgICAgICJ0YXJnZXQiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJ1LW92ZXIiLAogICAgICAgICJsYWJlbCI6IG51bGwKICAgICAgfSwKICAgICAgImNsaWVudFgiOiAxMDEyLAogICAgICAiY2xpZW50WSI6IDM0Ni41ODMzNDM1MDU4NTk0LAogICAgICAibW92ZW1lbnRYIjogMTAsCiAgICAgICJtb3ZlbWVudFkiOiAwLAogICAgICAiYnV0dG9uIjogLTEsCiAgICAgICJidXR0b25zIjogMQogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxMDE4LAogICAgICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMSIsCiAgICAgICJyZWFkeSI6ICJ0cnVlIiwKICAgICAgImJ1c3kiOiAiZmFsc2UiLAogICAgICAieE1pbiI6ICIwIiwKICAgICAgInhNYXgiOiAiOTk5OTk5IiwKICAgICAgInNlbGVjdGlvbldpZHRoIjogMzgsCiAgICAgICJzZWxlY3Rpb25TdHlsZSI6ICJsZWZ0OiAxMzVweDsgdG9wOiAwcHg7IHdpZHRoOiAzOHB4OyBoZWlnaHQ6IDE2NHB4OyIsCiAgICAgICJkb2N1bWVudEhhc0ZvY3VzIjogdHJ1ZSwKICAgICAgImFjdGl2ZSI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogIm1ldHJpYy1jaGFydF9faW50ZXJhY3RpdmUiLAogICAgICAgICJsYWJlbCI6ICJHcmFkaWVudCBub3JtIGludGVyYWN0aXZlIGNoYXJ0IgogICAgICB9LAogICAgICAic2Nyb2xsIjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDg1OAogICAgICB9LAogICAgICAidmlld3BvcnQiOiB7CiAgICAgICAgIndpZHRoIjogMTI4MCwKICAgICAgICAiaGVpZ2h0IjogNzIwCiAgICAgIH0sCiAgICAgICJ0eXBlIjogIm1vdXNlbW92ZSIsCiAgICAgICJ0cnVzdGVkIjogdHJ1ZSwKICAgICAgInRhcmdldCI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogInUtb3ZlciIsCiAgICAgICAgImxhYmVsIjogbnVsbAogICAgICB9LAogICAgICAiY2xpZW50WCI6IDEwMTIsCiAgICAgICJjbGllbnRZIjogMzQ3LAogICAgICAibW92ZW1lbnRYIjogMTAsCiAgICAgICJtb3ZlbWVudFkiOiAwLAogICAgICAiYnV0dG9uIjogMCwKICAgICAgImJ1dHRvbnMiOiAxCiAgICB9LAogICAgewogICAgICAidGltZSI6IDEwMzUsCiAgICAgICJ1cmwiOiAiaHR0cDovLzEyNy4wLjAuMTo0MTczLyMvcnVucy9ydW4tMDAxIiwKICAgICAgInJlYWR5IjogInRydWUiLAogICAgICAiYnVzeSI6ICJmYWxzZSIsCiAgICAgICJ4TWluIjogIjAiLAogICAgICAieE1heCI6ICI5OTk5OTkiLAogICAgICAic2VsZWN0aW9uV2lkdGgiOiA0OCwKICAgICAgInNlbGVjdGlvblN0eWxlIjogImxlZnQ6IDEzNXB4OyB0b3A6IDBweDsgd2lkdGg6IDQ4cHg7IGhlaWdodDogMTY0cHg7IiwKICAgICAgImRvY3VtZW50SGFzRm9jdXMiOiB0cnVlLAogICAgICAiYWN0aXZlIjogewogICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAiY2xhc3MiOiAibWV0cmljLWNoYXJ0X19pbnRlcmFjdGl2ZSIsCiAgICAgICAgImxhYmVsIjogIkdyYWRpZW50IG5vcm0gaW50ZXJhY3RpdmUgY2hhcnQiCiAgICAgIH0sCiAgICAgICJzY3JvbGwiOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogODU4CiAgICAgIH0sCiAgICAgICJ2aWV3cG9ydCI6IHsKICAgICAgICAid2lkdGgiOiAxMjgwLAogICAgICAgICJoZWlnaHQiOiA3MjAKICAgICAgfSwKICAgICAgInR5cGUiOiAicG9pbnRlcm1vdmUiLAogICAgICAidHJ1c3RlZCI6IHRydWUsCiAgICAgICJ0YXJnZXQiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJ1LW92ZXIiLAogICAgICAgICJsYWJlbCI6IG51bGwKICAgICAgfSwKICAgICAgImNsaWVudFgiOiAxMDIyLAogICAgICAiY2xpZW50WSI6IDM0Ni41ODMzNDM1MDU4NTk0LAogICAgICAibW92ZW1lbnRYIjogMTAsCiAgICAgICJtb3ZlbWVudFkiOiAwLAogICAgICAiYnV0dG9uIjogLTEsCiAgICAgICJidXR0b25zIjogMQogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxMDM1LAogICAgICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMSIsCiAgICAgICJyZWFkeSI6ICJ0cnVlIiwKICAgICAgImJ1c3kiOiAiZmFsc2UiLAogICAgICAieE1pbiI6ICIwIiwKICAgICAgInhNYXgiOiAiOTk5OTk5IiwKICAgICAgInNlbGVjdGlvbldpZHRoIjogNDgsCiAgICAgICJzZWxlY3Rpb25TdHlsZSI6ICJsZWZ0OiAxMzVweDsgdG9wOiAwcHg7IHdpZHRoOiA0OHB4OyBoZWlnaHQ6IDE2NHB4OyIsCiAgICAgICJkb2N1bWVudEhhc0ZvY3VzIjogdHJ1ZSwKICAgICAgImFjdGl2ZSI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogIm1ldHJpYy1jaGFydF9faW50ZXJhY3RpdmUiLAogICAgICAgICJsYWJlbCI6ICJHcmFkaWVudCBub3JtIGludGVyYWN0aXZlIGNoYXJ0IgogICAgICB9LAogICAgICAic2Nyb2xsIjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDg1OAogICAgICB9LAogICAgICAidmlld3BvcnQiOiB7CiAgICAgICAgIndpZHRoIjogMTI4MCwKICAgICAgICAiaGVpZ2h0IjogNzIwCiAgICAgIH0sCiAgICAgICJ0eXBlIjogIm1vdXNlbW92ZSIsCiAgICAgICJ0cnVzdGVkIjogdHJ1ZSwKICAgICAgInRhcmdldCI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogInUtb3ZlciIsCiAgICAgICAgImxhYmVsIjogbnVsbAogICAgICB9LAogICAgICAiY2xpZW50WCI6IDEwMjIsCiAgICAgICJjbGllbnRZIjogMzQ3LAogICAgICAibW92ZW1lbnRYIjogMTAsCiAgICAgICJtb3ZlbWVudFkiOiAwLAogICAgICAiYnV0dG9uIjogMCwKICAgICAgImJ1dHRvbnMiOiAxCiAgICB9LAogICAgewogICAgICAidGltZSI6IDEwNTEsCiAgICAgICJ1cmwiOiAiaHR0cDovLzEyNy4wLjAuMTo0MTczLyMvcnVucy9ydW4tMDAxIiwKICAgICAgInJlYWR5IjogInRydWUiLAogICAgICAiYnVzeSI6ICJmYWxzZSIsCiAgICAgICJ4TWluIjogIjAiLAogICAgICAieE1heCI6ICI5OTk5OTkiLAogICAgICAic2VsZWN0aW9uV2lkdGgiOiA1OCwKICAgICAgInNlbGVjdGlvblN0eWxlIjogImxlZnQ6IDEzNXB4OyB0b3A6IDBweDsgd2lkdGg6IDU4cHg7IGhlaWdodDogMTY0cHg7IiwKICAgICAgImRvY3VtZW50SGFzRm9jdXMiOiB0cnVlLAogICAgICAiYWN0aXZlIjogewogICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAiY2xhc3MiOiAibWV0cmljLWNoYXJ0X19pbnRlcmFjdGl2ZSIsCiAgICAgICAgImxhYmVsIjogIkdyYWRpZW50IG5vcm0gaW50ZXJhY3RpdmUgY2hhcnQiCiAgICAgIH0sCiAgICAgICJzY3JvbGwiOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogODU4CiAgICAgIH0sCiAgICAgICJ2aWV3cG9ydCI6IHsKICAgICAgICAid2lkdGgiOiAxMjgwLAogICAgICAgICJoZWlnaHQiOiA3MjAKICAgICAgfSwKICAgICAgInR5cGUiOiAicG9pbnRlcm1vdmUiLAogICAgICAidHJ1c3RlZCI6IHRydWUsCiAgICAgICJ0YXJnZXQiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJ1LW92ZXIiLAogICAgICAgICJsYWJlbCI6IG51bGwKICAgICAgfSwKICAgICAgImNsaWVudFgiOiAxMDMxLAogICAgICAiY2xpZW50WSI6IDM0Ni41ODMzNDM1MDU4NTk0LAogICAgICAibW92ZW1lbnRYIjogOSwKICAgICAgIm1vdmVtZW50WSI6IDAsCiAgICAgICJidXR0b24iOiAtMSwKICAgICAgImJ1dHRvbnMiOiAxCiAgICB9LAogICAgewogICAgICAidGltZSI6IDEwNTEsCiAgICAgICJ1cmwiOiAiaHR0cDovLzEyNy4wLjAuMTo0MTczLyMvcnVucy9ydW4tMDAxIiwKICAgICAgInJlYWR5IjogInRydWUiLAogICAgICAiYnVzeSI6ICJmYWxzZSIsCiAgICAgICJ4TWluIjogIjAiLAogICAgICAieE1heCI6ICI5OTk5OTkiLAogICAgICAic2VsZWN0aW9uV2lkdGgiOiA1OCwKICAgICAgInNlbGVjdGlvblN0eWxlIjogImxlZnQ6IDEzNXB4OyB0b3A6IDBweDsgd2lkdGg6IDU4cHg7IGhlaWdodDogMTY0cHg7IiwKICAgICAgImRvY3VtZW50SGFzRm9jdXMiOiB0cnVlLAogICAgICAiYWN0aXZlIjogewogICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAiY2xhc3MiOiAibWV0cmljLWNoYXJ0X19pbnRlcmFjdGl2ZSIsCiAgICAgICAgImxhYmVsIjogIkdyYWRpZW50IG5vcm0gaW50ZXJhY3RpdmUgY2hhcnQiCiAgICAgIH0sCiAgICAgICJzY3JvbGwiOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogODU4CiAgICAgIH0sCiAgICAgICJ2aWV3cG9ydCI6IHsKICAgICAgICAid2lkdGgiOiAxMjgwLAogICAgICAgICJoZWlnaHQiOiA3MjAKICAgICAgfSwKICAgICAgInR5cGUiOiAibW91c2Vtb3ZlIiwKICAgICAgInRydXN0ZWQiOiB0cnVlLAogICAgICAidGFyZ2V0IjogewogICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAiY2xhc3MiOiAidS1vdmVyIiwKICAgICAgICAibGFiZWwiOiBudWxsCiAgICAgIH0sCiAgICAgICJjbGllbnRYIjogMTAzMSwKICAgICAgImNsaWVudFkiOiAzNDcsCiAgICAgICJtb3ZlbWVudFgiOiA5LAogICAgICAibW92ZW1lbnRZIjogMCwKICAgICAgImJ1dHRvbiI6IDAsCiAgICAgICJidXR0b25zIjogMQogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxMDY5LAogICAgICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMSIsCiAgICAgICJyZWFkeSI6ICJ0cnVlIiwKICAgICAgImJ1c3kiOiAiZmFsc2UiLAogICAgICAieE1pbiI6ICIwIiwKICAgICAgInhNYXgiOiAiOTk5OTk5IiwKICAgICAgInNlbGVjdGlvbldpZHRoIjogNjcsCiAgICAgICJzZWxlY3Rpb25TdHlsZSI6ICJsZWZ0OiAxMzVweDsgdG9wOiAwcHg7IHdpZHRoOiA2N3B4OyBoZWlnaHQ6IDE2NHB4OyIsCiAgICAgICJkb2N1bWVudEhhc0ZvY3VzIjogdHJ1ZSwKICAgICAgImFjdGl2ZSI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogIm1ldHJpYy1jaGFydF9faW50ZXJhY3RpdmUiLAogICAgICAgICJsYWJlbCI6ICJHcmFkaWVudCBub3JtIGludGVyYWN0aXZlIGNoYXJ0IgogICAgICB9LAogICAgICAic2Nyb2xsIjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDg1OAogICAgICB9LAogICAgICAidmlld3BvcnQiOiB7CiAgICAgICAgIndpZHRoIjogMTI4MCwKICAgICAgICAiaGVpZ2h0IjogNzIwCiAgICAgIH0sCiAgICAgICJ0eXBlIjogInBvaW50ZXJtb3ZlIiwKICAgICAgInRydXN0ZWQiOiB0cnVlLAogICAgICAidGFyZ2V0IjogewogICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAiY2xhc3MiOiAidS1vdmVyIiwKICAgICAgICAibGFiZWwiOiBudWxsCiAgICAgIH0sCiAgICAgICJjbGllbnRYIjogMTA0MSwKICAgICAgImNsaWVudFkiOiAzNDYuNTgzMzQzNTA1ODU5NCwKICAgICAgIm1vdmVtZW50WCI6IDEwLAogICAgICAibW92ZW1lbnRZIjogMCwKICAgICAgImJ1dHRvbiI6IC0xLAogICAgICAiYnV0dG9ucyI6IDEKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTA2OSwKICAgICAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIy9ydW5zL3J1bi0wMDEiLAogICAgICAicmVhZHkiOiAidHJ1ZSIsCiAgICAgICJidXN5IjogImZhbHNlIiwKICAgICAgInhNaW4iOiAiMCIsCiAgICAgICJ4TWF4IjogIjk5OTk5OSIsCiAgICAgICJzZWxlY3Rpb25XaWR0aCI6IDY3LAogICAgICAic2VsZWN0aW9uU3R5bGUiOiAibGVmdDogMTM1cHg7IHRvcDogMHB4OyB3aWR0aDogNjdweDsgaGVpZ2h0OiAxNjRweDsiLAogICAgICAiZG9jdW1lbnRIYXNGb2N1cyI6IHRydWUsCiAgICAgICJhY3RpdmUiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJtZXRyaWMtY2hhcnRfX2ludGVyYWN0aXZlIiwKICAgICAgICAibGFiZWwiOiAiR3JhZGllbnQgbm9ybSBpbnRlcmFjdGl2ZSBjaGFydCIKICAgICAgfSwKICAgICAgInNjcm9sbCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiA4NTgKICAgICAgfSwKICAgICAgInZpZXdwb3J0IjogewogICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgImhlaWdodCI6IDcyMAogICAgICB9LAogICAgICAidHlwZSI6ICJtb3VzZW1vdmUiLAogICAgICAidHJ1c3RlZCI6IHRydWUsCiAgICAgICJ0YXJnZXQiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJ1LW92ZXIiLAogICAgICAgICJsYWJlbCI6IG51bGwKICAgICAgfSwKICAgICAgImNsaWVudFgiOiAxMDQxLAogICAgICAiY2xpZW50WSI6IDM0NywKICAgICAgIm1vdmVtZW50WCI6IDEwLAogICAgICAibW92ZW1lbnRZIjogMCwKICAgICAgImJ1dHRvbiI6IDAsCiAgICAgICJidXR0b25zIjogMQogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxMDg1LAogICAgICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMSIsCiAgICAgICJyZWFkeSI6ICJ0cnVlIiwKICAgICAgImJ1c3kiOiAiZmFsc2UiLAogICAgICAieE1pbiI6ICIwIiwKICAgICAgInhNYXgiOiAiOTk5OTk5IiwKICAgICAgInNlbGVjdGlvbldpZHRoIjogNzcsCiAgICAgICJzZWxlY3Rpb25TdHlsZSI6ICJsZWZ0OiAxMzVweDsgdG9wOiAwcHg7IHdpZHRoOiA3N3B4OyBoZWlnaHQ6IDE2NHB4OyIsCiAgICAgICJkb2N1bWVudEhhc0ZvY3VzIjogdHJ1ZSwKICAgICAgImFjdGl2ZSI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogIm1ldHJpYy1jaGFydF9faW50ZXJhY3RpdmUiLAogICAgICAgICJsYWJlbCI6ICJHcmFkaWVudCBub3JtIGludGVyYWN0aXZlIGNoYXJ0IgogICAgICB9LAogICAgICAic2Nyb2xsIjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDg1OAogICAgICB9LAogICAgICAidmlld3BvcnQiOiB7CiAgICAgICAgIndpZHRoIjogMTI4MCwKICAgICAgICAiaGVpZ2h0IjogNzIwCiAgICAgIH0sCiAgICAgICJ0eXBlIjogInBvaW50ZXJtb3ZlIiwKICAgICAgInRydXN0ZWQiOiB0cnVlLAogICAgICAidGFyZ2V0IjogewogICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAiY2xhc3MiOiAidS1vdmVyIiwKICAgICAgICAibGFiZWwiOiBudWxsCiAgICAgIH0sCiAgICAgICJjbGllbnRYIjogMTA1MCwKICAgICAgImNsaWVudFkiOiAzNDYuNTgzMzQzNTA1ODU5NCwKICAgICAgIm1vdmVtZW50WCI6IDksCiAgICAgICJtb3ZlbWVudFkiOiAwLAogICAgICAiYnV0dG9uIjogLTEsCiAgICAgICJidXR0b25zIjogMQogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxMDg1LAogICAgICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMSIsCiAgICAgICJyZWFkeSI6ICJ0cnVlIiwKICAgICAgImJ1c3kiOiAiZmFsc2UiLAogICAgICAieE1pbiI6ICIwIiwKICAgICAgInhNYXgiOiAiOTk5OTk5IiwKICAgICAgInNlbGVjdGlvbldpZHRoIjogNzcsCiAgICAgICJzZWxlY3Rpb25TdHlsZSI6ICJsZWZ0OiAxMzVweDsgdG9wOiAwcHg7IHdpZHRoOiA3N3B4OyBoZWlnaHQ6IDE2NHB4OyIsCiAgICAgICJkb2N1bWVudEhhc0ZvY3VzIjogdHJ1ZSwKICAgICAgImFjdGl2ZSI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogIm1ldHJpYy1jaGFydF9faW50ZXJhY3RpdmUiLAogICAgICAgICJsYWJlbCI6ICJHcmFkaWVudCBub3JtIGludGVyYWN0aXZlIGNoYXJ0IgogICAgICB9LAogICAgICAic2Nyb2xsIjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDg1OAogICAgICB9LAogICAgICAidmlld3BvcnQiOiB7CiAgICAgICAgIndpZHRoIjogMTI4MCwKICAgICAgICAiaGVpZ2h0IjogNzIwCiAgICAgIH0sCiAgICAgICJ0eXBlIjogIm1vdXNlbW92ZSIsCiAgICAgICJ0cnVzdGVkIjogdHJ1ZSwKICAgICAgInRhcmdldCI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogInUtb3ZlciIsCiAgICAgICAgImxhYmVsIjogbnVsbAogICAgICB9LAogICAgICAiY2xpZW50WCI6IDEwNTAsCiAgICAgICJjbGllbnRZIjogMzQ3LAogICAgICAibW92ZW1lbnRYIjogOSwKICAgICAgIm1vdmVtZW50WSI6IDAsCiAgICAgICJidXR0b24iOiAwLAogICAgICAiYnV0dG9ucyI6IDEKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTEwMiwKICAgICAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIy9ydW5zL3J1bi0wMDEiLAogICAgICAicmVhZHkiOiAidHJ1ZSIsCiAgICAgICJidXN5IjogImZhbHNlIiwKICAgICAgInhNaW4iOiAiMCIsCiAgICAgICJ4TWF4IjogIjk5OTk5OSIsCiAgICAgICJzZWxlY3Rpb25XaWR0aCI6IDg2LAogICAgICAic2VsZWN0aW9uU3R5bGUiOiAibGVmdDogMTM1cHg7IHRvcDogMHB4OyB3aWR0aDogODZweDsgaGVpZ2h0OiAxNjRweDsiLAogICAgICAiZG9jdW1lbnRIYXNGb2N1cyI6IHRydWUsCiAgICAgICJhY3RpdmUiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJtZXRyaWMtY2hhcnRfX2ludGVyYWN0aXZlIiwKICAgICAgICAibGFiZWwiOiAiR3JhZGllbnQgbm9ybSBpbnRlcmFjdGl2ZSBjaGFydCIKICAgICAgfSwKICAgICAgInNjcm9sbCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiA4NTgKICAgICAgfSwKICAgICAgInZpZXdwb3J0IjogewogICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgImhlaWdodCI6IDcyMAogICAgICB9LAogICAgICAidHlwZSI6ICJwb2ludGVybW92ZSIsCiAgICAgICJ0cnVzdGVkIjogdHJ1ZSwKICAgICAgInRhcmdldCI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogInUtb3ZlciIsCiAgICAgICAgImxhYmVsIjogbnVsbAogICAgICB9LAogICAgICAiY2xpZW50WCI6IDEwNjAsCiAgICAgICJjbGllbnRZIjogMzQ2LjU4MzM0MzUwNTg1OTQsCiAgICAgICJtb3ZlbWVudFgiOiAxMCwKICAgICAgIm1vdmVtZW50WSI6IDAsCiAgICAgICJidXR0b24iOiAtMSwKICAgICAgImJ1dHRvbnMiOiAxCiAgICB9LAogICAgewogICAgICAidGltZSI6IDExMDIsCiAgICAgICJ1cmwiOiAiaHR0cDovLzEyNy4wLjAuMTo0MTczLyMvcnVucy9ydW4tMDAxIiwKICAgICAgInJlYWR5IjogInRydWUiLAogICAgICAiYnVzeSI6ICJmYWxzZSIsCiAgICAgICJ4TWluIjogIjAiLAogICAgICAieE1heCI6ICI5OTk5OTkiLAogICAgICAic2VsZWN0aW9uV2lkdGgiOiA4NiwKICAgICAgInNlbGVjdGlvblN0eWxlIjogImxlZnQ6IDEzNXB4OyB0b3A6IDBweDsgd2lkdGg6IDg2cHg7IGhlaWdodDogMTY0cHg7IiwKICAgICAgImRvY3VtZW50SGFzRm9jdXMiOiB0cnVlLAogICAgICAiYWN0aXZlIjogewogICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAiY2xhc3MiOiAibWV0cmljLWNoYXJ0X19pbnRlcmFjdGl2ZSIsCiAgICAgICAgImxhYmVsIjogIkdyYWRpZW50IG5vcm0gaW50ZXJhY3RpdmUgY2hhcnQiCiAgICAgIH0sCiAgICAgICJzY3JvbGwiOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogODU4CiAgICAgIH0sCiAgICAgICJ2aWV3cG9ydCI6IHsKICAgICAgICAid2lkdGgiOiAxMjgwLAogICAgICAgICJoZWlnaHQiOiA3MjAKICAgICAgfSwKICAgICAgInR5cGUiOiAibW91c2Vtb3ZlIiwKICAgICAgInRydXN0ZWQiOiB0cnVlLAogICAgICAidGFyZ2V0IjogewogICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAiY2xhc3MiOiAidS1vdmVyIiwKICAgICAgICAibGFiZWwiOiBudWxsCiAgICAgIH0sCiAgICAgICJjbGllbnRYIjogMTA2MCwKICAgICAgImNsaWVudFkiOiAzNDcsCiAgICAgICJtb3ZlbWVudFgiOiAxMCwKICAgICAgIm1vdmVtZW50WSI6IDAsCiAgICAgICJidXR0b24iOiAwLAogICAgICAiYnV0dG9ucyI6IDEKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTExOSwKICAgICAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIy9ydW5zL3J1bi0wMDEiLAogICAgICAicmVhZHkiOiAidHJ1ZSIsCiAgICAgICJidXN5IjogImZhbHNlIiwKICAgICAgInhNaW4iOiAiMCIsCiAgICAgICJ4TWF4IjogIjk5OTk5OSIsCiAgICAgICJzZWxlY3Rpb25XaWR0aCI6IDk2LAogICAgICAic2VsZWN0aW9uU3R5bGUiOiAibGVmdDogMTM1cHg7IHRvcDogMHB4OyB3aWR0aDogOTZweDsgaGVpZ2h0OiAxNjRweDsiLAogICAgICAiZG9jdW1lbnRIYXNGb2N1cyI6IHRydWUsCiAgICAgICJhY3RpdmUiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJtZXRyaWMtY2hhcnRfX2ludGVyYWN0aXZlIiwKICAgICAgICAibGFiZWwiOiAiR3JhZGllbnQgbm9ybSBpbnRlcmFjdGl2ZSBjaGFydCIKICAgICAgfSwKICAgICAgInNjcm9sbCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiA4NTgKICAgICAgfSwKICAgICAgInZpZXdwb3J0IjogewogICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgImhlaWdodCI6IDcyMAogICAgICB9LAogICAgICAidHlwZSI6ICJwb2ludGVybW92ZSIsCiAgICAgICJ0cnVzdGVkIjogdHJ1ZSwKICAgICAgInRhcmdldCI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogInUtb3ZlciIsCiAgICAgICAgImxhYmVsIjogbnVsbAogICAgICB9LAogICAgICAiY2xpZW50WCI6IDEwNzAsCiAgICAgICJjbGllbnRZIjogMzQ2LjU4MzM0MzUwNTg1OTQsCiAgICAgICJtb3ZlbWVudFgiOiAxMCwKICAgICAgIm1vdmVtZW50WSI6IDAsCiAgICAgICJidXR0b24iOiAtMSwKICAgICAgImJ1dHRvbnMiOiAxCiAgICB9LAogICAgewogICAgICAidGltZSI6IDExMjAsCiAgICAgICJ1cmwiOiAiaHR0cDovLzEyNy4wLjAuMTo0MTczLyMvcnVucy9ydW4tMDAxIiwKICAgICAgInJlYWR5IjogInRydWUiLAogICAgICAiYnVzeSI6ICJmYWxzZSIsCiAgICAgICJ4TWluIjogIjAiLAogICAgICAieE1heCI6ICI5OTk5OTkiLAogICAgICAic2VsZWN0aW9uV2lkdGgiOiA5NiwKICAgICAgInNlbGVjdGlvblN0eWxlIjogImxlZnQ6IDEzNXB4OyB0b3A6IDBweDsgd2lkdGg6IDk2cHg7IGhlaWdodDogMTY0cHg7IiwKICAgICAgImRvY3VtZW50SGFzRm9jdXMiOiB0cnVlLAogICAgICAiYWN0aXZlIjogewogICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAiY2xhc3MiOiAibWV0cmljLWNoYXJ0X19pbnRlcmFjdGl2ZSIsCiAgICAgICAgImxhYmVsIjogIkdyYWRpZW50IG5vcm0gaW50ZXJhY3RpdmUgY2hhcnQiCiAgICAgIH0sCiAgICAgICJzY3JvbGwiOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogODU4CiAgICAgIH0sCiAgICAgICJ2aWV3cG9ydCI6IHsKICAgICAgICAid2lkdGgiOiAxMjgwLAogICAgICAgICJoZWlnaHQiOiA3MjAKICAgICAgfSwKICAgICAgInR5cGUiOiAibW91c2Vtb3ZlIiwKICAgICAgInRydXN0ZWQiOiB0cnVlLAogICAgICAidGFyZ2V0IjogewogICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAiY2xhc3MiOiAidS1vdmVyIiwKICAgICAgICAibGFiZWwiOiBudWxsCiAgICAgIH0sCiAgICAgICJjbGllbnRYIjogMTA3MCwKICAgICAgImNsaWVudFkiOiAzNDcsCiAgICAgICJtb3ZlbWVudFgiOiAxMCwKICAgICAgIm1vdmVtZW50WSI6IDAsCiAgICAgICJidXR0b24iOiAwLAogICAgICAiYnV0dG9ucyI6IDEKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTEzNSwKICAgICAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIy9ydW5zL3J1bi0wMDEiLAogICAgICAicmVhZHkiOiAidHJ1ZSIsCiAgICAgICJidXN5IjogImZhbHNlIiwKICAgICAgInhNaW4iOiAiMCIsCiAgICAgICJ4TWF4IjogIjk5OTk5OSIsCiAgICAgICJzZWxlY3Rpb25XaWR0aCI6IDEwNiwKICAgICAgInNlbGVjdGlvblN0eWxlIjogImxlZnQ6IDEzNXB4OyB0b3A6IDBweDsgd2lkdGg6IDEwNnB4OyBoZWlnaHQ6IDE2NHB4OyIsCiAgICAgICJkb2N1bWVudEhhc0ZvY3VzIjogdHJ1ZSwKICAgICAgImFjdGl2ZSI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogIm1ldHJpYy1jaGFydF9faW50ZXJhY3RpdmUiLAogICAgICAgICJsYWJlbCI6ICJHcmFkaWVudCBub3JtIGludGVyYWN0aXZlIGNoYXJ0IgogICAgICB9LAogICAgICAic2Nyb2xsIjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDg1OAogICAgICB9LAogICAgICAidmlld3BvcnQiOiB7CiAgICAgICAgIndpZHRoIjogMTI4MCwKICAgICAgICAiaGVpZ2h0IjogNzIwCiAgICAgIH0sCiAgICAgICJ0eXBlIjogInBvaW50ZXJtb3ZlIiwKICAgICAgInRydXN0ZWQiOiB0cnVlLAogICAgICAidGFyZ2V0IjogewogICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAiY2xhc3MiOiAidS1vdmVyIiwKICAgICAgICAibGFiZWwiOiBudWxsCiAgICAgIH0sCiAgICAgICJjbGllbnRYIjogMTA3OSwKICAgICAgImNsaWVudFkiOiAzNDYuNTgzMzQzNTA1ODU5NCwKICAgICAgIm1vdmVtZW50WCI6IDksCiAgICAgICJtb3ZlbWVudFkiOiAwLAogICAgICAiYnV0dG9uIjogLTEsCiAgICAgICJidXR0b25zIjogMQogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxMTM1LAogICAgICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMSIsCiAgICAgICJyZWFkeSI6ICJ0cnVlIiwKICAgICAgImJ1c3kiOiAiZmFsc2UiLAogICAgICAieE1pbiI6ICIwIiwKICAgICAgInhNYXgiOiAiOTk5OTk5IiwKICAgICAgInNlbGVjdGlvbldpZHRoIjogMTA2LAogICAgICAic2VsZWN0aW9uU3R5bGUiOiAibGVmdDogMTM1cHg7IHRvcDogMHB4OyB3aWR0aDogMTA2cHg7IGhlaWdodDogMTY0cHg7IiwKICAgICAgImRvY3VtZW50SGFzRm9jdXMiOiB0cnVlLAogICAgICAiYWN0aXZlIjogewogICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAiY2xhc3MiOiAibWV0cmljLWNoYXJ0X19pbnRlcmFjdGl2ZSIsCiAgICAgICAgImxhYmVsIjogIkdyYWRpZW50IG5vcm0gaW50ZXJhY3RpdmUgY2hhcnQiCiAgICAgIH0sCiAgICAgICJzY3JvbGwiOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogODU4CiAgICAgIH0sCiAgICAgICJ2aWV3cG9ydCI6IHsKICAgICAgICAid2lkdGgiOiAxMjgwLAogICAgICAgICJoZWlnaHQiOiA3MjAKICAgICAgfSwKICAgICAgInR5cGUiOiAibW91c2Vtb3ZlIiwKICAgICAgInRydXN0ZWQiOiB0cnVlLAogICAgICAidGFyZ2V0IjogewogICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAiY2xhc3MiOiAidS1vdmVyIiwKICAgICAgICAibGFiZWwiOiBudWxsCiAgICAgIH0sCiAgICAgICJjbGllbnRYIjogMTA3OSwKICAgICAgImNsaWVudFkiOiAzNDcsCiAgICAgICJtb3ZlbWVudFgiOiA5LAogICAgICAibW92ZW1lbnRZIjogMCwKICAgICAgImJ1dHRvbiI6IDAsCiAgICAgICJidXR0b25zIjogMQogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxMTcwLAogICAgICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMSIsCiAgICAgICJyZWFkeSI6ICJ0cnVlIiwKICAgICAgImJ1c3kiOiAiZmFsc2UiLAogICAgICAieE1pbiI6ICIwIiwKICAgICAgInhNYXgiOiAiOTk5OTk5IiwKICAgICAgInNlbGVjdGlvbldpZHRoIjogMTE1LAogICAgICAic2VsZWN0aW9uU3R5bGUiOiAibGVmdDogMTM1cHg7IHRvcDogMHB4OyB3aWR0aDogMTE1cHg7IGhlaWdodDogMTY0cHg7IiwKICAgICAgImRvY3VtZW50SGFzRm9jdXMiOiB0cnVlLAogICAgICAiYWN0aXZlIjogewogICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAiY2xhc3MiOiAibWV0cmljLWNoYXJ0X19pbnRlcmFjdGl2ZSIsCiAgICAgICAgImxhYmVsIjogIkdyYWRpZW50IG5vcm0gaW50ZXJhY3RpdmUgY2hhcnQiCiAgICAgIH0sCiAgICAgICJzY3JvbGwiOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogODU4CiAgICAgIH0sCiAgICAgICJ2aWV3cG9ydCI6IHsKICAgICAgICAid2lkdGgiOiAxMjgwLAogICAgICAgICJoZWlnaHQiOiA3MjAKICAgICAgfSwKICAgICAgInR5cGUiOiAicG9pbnRlcnVwIiwKICAgICAgInRydXN0ZWQiOiB0cnVlLAogICAgICAidGFyZ2V0IjogewogICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAiY2xhc3MiOiAidS1vdmVyIiwKICAgICAgICAibGFiZWwiOiBudWxsCiAgICAgIH0sCiAgICAgICJjbGllbnRYIjogMTA3OSwKICAgICAgImNsaWVudFkiOiAzNDYuNTgzMzQzNTA1ODU5NCwKICAgICAgIm1vdmVtZW50WCI6IDAsCiAgICAgICJtb3ZlbWVudFkiOiAwLAogICAgICAiYnV0dG9uIjogMCwKICAgICAgImJ1dHRvbnMiOiAwCiAgICB9LAogICAgewogICAgICAidGltZSI6IDExNzAsCiAgICAgICJ1cmwiOiAiaHR0cDovLzEyNy4wLjAuMTo0MTczLyMvcnVucy9ydW4tMDAxIiwKICAgICAgInJlYWR5IjogInRydWUiLAogICAgICAiYnVzeSI6ICJmYWxzZSIsCiAgICAgICJ4TWluIjogIjAiLAogICAgICAieE1heCI6ICI5OTk5OTkiLAogICAgICAic2VsZWN0aW9uV2lkdGgiOiAxMTUsCiAgICAgICJzZWxlY3Rpb25TdHlsZSI6ICJsZWZ0OiAxMzVweDsgdG9wOiAwcHg7IHdpZHRoOiAxMTVweDsgaGVpZ2h0OiAxNjRweDsiLAogICAgICAiZG9jdW1lbnRIYXNGb2N1cyI6IHRydWUsCiAgICAgICJhY3RpdmUiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJtZXRyaWMtY2hhcnRfX2ludGVyYWN0aXZlIiwKICAgICAgICAibGFiZWwiOiAiR3JhZGllbnQgbm9ybSBpbnRlcmFjdGl2ZSBjaGFydCIKICAgICAgfSwKICAgICAgInNjcm9sbCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiA4NTgKICAgICAgfSwKICAgICAgInZpZXdwb3J0IjogewogICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgImhlaWdodCI6IDcyMAogICAgICB9LAogICAgICAidHlwZSI6ICJtb3VzZXVwIiwKICAgICAgInRydXN0ZWQiOiB0cnVlLAogICAgICAidGFyZ2V0IjogewogICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAiY2xhc3MiOiAidS1vdmVyIiwKICAgICAgICAibGFiZWwiOiBudWxsCiAgICAgIH0sCiAgICAgICJjbGllbnRYIjogMTA3OSwKICAgICAgImNsaWVudFkiOiAzNDcsCiAgICAgICJtb3ZlbWVudFgiOiAwLAogICAgICAibW92ZW1lbnRZIjogMCwKICAgICAgImJ1dHRvbiI6IDAsCiAgICAgICJidXR0b25zIjogMAogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxMTkwLAogICAgICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMT9taW49MzQ5NzQwJm1heD02NDc2NjgiLAogICAgICAicmVhZHkiOiAiZmFsc2UiLAogICAgICAiYnVzeSI6ICJ0cnVlIiwKICAgICAgInhNaW4iOiAiMCIsCiAgICAgICJ4TWF4IjogIjk5OTk5OSIsCiAgICAgICJzZWxlY3Rpb25XaWR0aCI6IDAsCiAgICAgICJzZWxlY3Rpb25TdHlsZSI6ICJsZWZ0OiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMHB4OyBoZWlnaHQ6IDBweDsiLAogICAgICAiZG9jdW1lbnRIYXNGb2N1cyI6IHRydWUsCiAgICAgICJhY3RpdmUiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJtZXRyaWMtY2hhcnRfX2ludGVyYWN0aXZlIiwKICAgICAgICAibGFiZWwiOiAiR3JhZGllbnQgbm9ybSBpbnRlcmFjdGl2ZSBjaGFydCIKICAgICAgfSwKICAgICAgInNjcm9sbCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiA3OTUKICAgICAgfSwKICAgICAgInZpZXdwb3J0IjogewogICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgImhlaWdodCI6IDcyMAogICAgICB9LAogICAgICAidHlwZSI6ICJzY3JvbGwiLAogICAgICAidHJ1c3RlZCI6IHRydWUsCiAgICAgICJ0YXJnZXQiOiB7CiAgICAgICAgInRhZyI6ICJkb2N1bWVudCIsCiAgICAgICAgImNsYXNzIjogbnVsbCwKICAgICAgICAibGFiZWwiOiBudWxsCiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTM4NSwKICAgICAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIy9ydW5zL3J1bi0wMDE/bWluPTM0OTc0MCZtYXg9NjQ3NjY4IiwKICAgICAgInJlYWR5IjogInRydWUiLAogICAgICAiYnVzeSI6ICJmYWxzZSIsCiAgICAgICJ4TWluIjogIjM0OTc0MCIsCiAgICAgICJ4TWF4IjogIjY0NzY2OCIsCiAgICAgICJzZWxlY3Rpb25XaWR0aCI6IDAsCiAgICAgICJzZWxlY3Rpb25TdHlsZSI6ICJsZWZ0OiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMHB4OyBoZWlnaHQ6IDBweDsiLAogICAgICAiZG9jdW1lbnRIYXNGb2N1cyI6IHRydWUsCiAgICAgICJhY3RpdmUiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJtZXRyaWMtY2hhcnRfX2ludGVyYWN0aXZlIiwKICAgICAgICAibGFiZWwiOiAiR3JhZGllbnQgbm9ybSBpbnRlcmFjdGl2ZSBjaGFydCIKICAgICAgfSwKICAgICAgInNjcm9sbCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiA3OTUKICAgICAgfSwKICAgICAgInZpZXdwb3J0IjogewogICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgImhlaWdodCI6IDcyMAogICAgICB9LAogICAgICAidHlwZSI6ICJwb2ludGVybW92ZSIsCiAgICAgICJ0cnVzdGVkIjogdHJ1ZSwKICAgICAgInRhcmdldCI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogInUtb3ZlciIsCiAgICAgICAgImxhYmVsIjogbnVsbAogICAgICB9LAogICAgICAiY2xpZW50WCI6IDUyOSwKICAgICAgImNsaWVudFkiOiAzNDYuNTgzMzQzNTA1ODU5NCwKICAgICAgIm1vdmVtZW50WCI6IC01NTAsCiAgICAgICJtb3ZlbWVudFkiOiAwLAogICAgICAiYnV0dG9uIjogLTEsCiAgICAgICJidXR0b25zIjogMAogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxMzg2LAogICAgICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMT9taW49MzQ5NzQwJm1heD02NDc2NjgiLAogICAgICAicmVhZHkiOiAidHJ1ZSIsCiAgICAgICJidXN5IjogImZhbHNlIiwKICAgICAgInhNaW4iOiAiMzQ5NzQwIiwKICAgICAgInhNYXgiOiAiNjQ3NjY4IiwKICAgICAgInNlbGVjdGlvbldpZHRoIjogMCwKICAgICAgInNlbGVjdGlvblN0eWxlIjogImxlZnQ6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAwcHg7IGhlaWdodDogMHB4OyIsCiAgICAgICJkb2N1bWVudEhhc0ZvY3VzIjogdHJ1ZSwKICAgICAgImFjdGl2ZSI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogIm1ldHJpYy1jaGFydF9faW50ZXJhY3RpdmUiLAogICAgICAgICJsYWJlbCI6ICJHcmFkaWVudCBub3JtIGludGVyYWN0aXZlIGNoYXJ0IgogICAgICB9LAogICAgICAic2Nyb2xsIjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDc5NQogICAgICB9LAogICAgICAidmlld3BvcnQiOiB7CiAgICAgICAgIndpZHRoIjogMTI4MCwKICAgICAgICAiaGVpZ2h0IjogNzIwCiAgICAgIH0sCiAgICAgICJ0eXBlIjogIm1vdXNlbW92ZSIsCiAgICAgICJ0cnVzdGVkIjogdHJ1ZSwKICAgICAgInRhcmdldCI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogInUtb3ZlciIsCiAgICAgICAgImxhYmVsIjogbnVsbAogICAgICB9LAogICAgICAiY2xpZW50WCI6IDUyOSwKICAgICAgImNsaWVudFkiOiAzNDcsCiAgICAgICJtb3ZlbWVudFgiOiAtNTUwLAogICAgICAibW92ZW1lbnRZIjogMCwKICAgICAgImJ1dHRvbiI6IDAsCiAgICAgICJidXR0b25zIjogMAogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxMzkwLAogICAgICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMT9taW49MzQ5NzQwJm1heD02NDc2NjgiLAogICAgICAicmVhZHkiOiAidHJ1ZSIsCiAgICAgICJidXN5IjogImZhbHNlIiwKICAgICAgInhNaW4iOiAiMzQ5NzQwIiwKICAgICAgInhNYXgiOiAiNjQ3NjY4IiwKICAgICAgInNlbGVjdGlvbldpZHRoIjogMCwKICAgICAgInNlbGVjdGlvblN0eWxlIjogImxlZnQ6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAwcHg7IGhlaWdodDogMHB4OyIsCiAgICAgICJkb2N1bWVudEhhc0ZvY3VzIjogdHJ1ZSwKICAgICAgImFjdGl2ZSI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogIm1ldHJpYy1jaGFydF9faW50ZXJhY3RpdmUiLAogICAgICAgICJsYWJlbCI6ICJHcmFkaWVudCBub3JtIGludGVyYWN0aXZlIGNoYXJ0IgogICAgICB9LAogICAgICAic2Nyb2xsIjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDc5NQogICAgICB9LAogICAgICAidmlld3BvcnQiOiB7CiAgICAgICAgIndpZHRoIjogMTI4MCwKICAgICAgICAiaGVpZ2h0IjogNzIwCiAgICAgIH0sCiAgICAgICJ0eXBlIjogInBvaW50ZXJkb3duIiwKICAgICAgInRydXN0ZWQiOiB0cnVlLAogICAgICAidGFyZ2V0IjogewogICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAiY2xhc3MiOiAidS1vdmVyIiwKICAgICAgICAibGFiZWwiOiBudWxsCiAgICAgIH0sCiAgICAgICJjbGllbnRYIjogNTI5LAogICAgICAiY2xpZW50WSI6IDM0Ni41ODMzNDM1MDU4NTk0LAogICAgICAibW92ZW1lbnRYIjogMCwKICAgICAgIm1vdmVtZW50WSI6IDAsCiAgICAgICJidXR0b24iOiAwLAogICAgICAiYnV0dG9ucyI6IDEKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTM5MCwKICAgICAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIy9ydW5zL3J1bi0wMDE/bWluPTM0OTc0MCZtYXg9NjQ3NjY4IiwKICAgICAgInJlYWR5IjogInRydWUiLAogICAgICAiYnVzeSI6ICJmYWxzZSIsCiAgICAgICJ4TWluIjogIjM0OTc0MCIsCiAgICAgICJ4TWF4IjogIjY0NzY2OCIsCiAgICAgICJzZWxlY3Rpb25XaWR0aCI6IDAsCiAgICAgICJzZWxlY3Rpb25TdHlsZSI6ICJsZWZ0OiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMHB4OyBoZWlnaHQ6IDBweDsiLAogICAgICAiZG9jdW1lbnRIYXNGb2N1cyI6IHRydWUsCiAgICAgICJhY3RpdmUiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJtZXRyaWMtY2hhcnRfX2ludGVyYWN0aXZlIiwKICAgICAgICAibGFiZWwiOiAiR3JhZGllbnQgbm9ybSBpbnRlcmFjdGl2ZSBjaGFydCIKICAgICAgfSwKICAgICAgInNjcm9sbCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiA3OTUKICAgICAgfSwKICAgICAgInZpZXdwb3J0IjogewogICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgImhlaWdodCI6IDcyMAogICAgICB9LAogICAgICAidHlwZSI6ICJtb3VzZWRvd24iLAogICAgICAidHJ1c3RlZCI6IHRydWUsCiAgICAgICJ0YXJnZXQiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJ1LW92ZXIiLAogICAgICAgICJsYWJlbCI6IG51bGwKICAgICAgfSwKICAgICAgImNsaWVudFgiOiA1MjksCiAgICAgICJjbGllbnRZIjogMzQ3LAogICAgICAibW92ZW1lbnRYIjogMCwKICAgICAgIm1vdmVtZW50WSI6IDAsCiAgICAgICJidXR0b24iOiAwLAogICAgICAiYnV0dG9ucyI6IDEKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTM5MCwKICAgICAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIy9ydW5zL3J1bi0wMDE/bWluPTM0OTc0MCZtYXg9NjQ3NjY4IiwKICAgICAgInJlYWR5IjogInRydWUiLAogICAgICAiYnVzeSI6ICJmYWxzZSIsCiAgICAgICJ4TWluIjogIjM0OTc0MCIsCiAgICAgICJ4TWF4IjogIjY0NzY2OCIsCiAgICAgICJzZWxlY3Rpb25XaWR0aCI6IDAsCiAgICAgICJzZWxlY3Rpb25TdHlsZSI6ICJsZWZ0OiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMHB4OyBoZWlnaHQ6IDBweDsiLAogICAgICAiZG9jdW1lbnRIYXNGb2N1cyI6IHRydWUsCiAgICAgICJhY3RpdmUiOiB7CiAgICAgICAgInRhZyI6ICJCT0RZIiwKICAgICAgICAiY2xhc3MiOiBudWxsLAogICAgICAgICJsYWJlbCI6IG51bGwKICAgICAgfSwKICAgICAgInNjcm9sbCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiA3OTUKICAgICAgfSwKICAgICAgInZpZXdwb3J0IjogewogICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgImhlaWdodCI6IDcyMAogICAgICB9LAogICAgICAidHlwZSI6ICJibHVyIiwKICAgICAgInRydXN0ZWQiOiB0cnVlLAogICAgICAidGFyZ2V0IjogewogICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAiY2xhc3MiOiAibWV0cmljLWNoYXJ0X19pbnRlcmFjdGl2ZSIsCiAgICAgICAgImxhYmVsIjogIkdyYWRpZW50IG5vcm0gaW50ZXJhY3RpdmUgY2hhcnQiCiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTM5MCwKICAgICAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIy9ydW5zL3J1bi0wMDE/bWluPTM0OTc0MCZtYXg9NjQ3NjY4IiwKICAgICAgInJlYWR5IjogInRydWUiLAogICAgICAiYnVzeSI6ICJmYWxzZSIsCiAgICAgICJ4TWluIjogIjM0OTc0MCIsCiAgICAgICJ4TWF4IjogIjY0NzY2OCIsCiAgICAgICJzZWxlY3Rpb25XaWR0aCI6IDAsCiAgICAgICJzZWxlY3Rpb25TdHlsZSI6ICJsZWZ0OiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMHB4OyBoZWlnaHQ6IDBweDsiLAogICAgICAiZG9jdW1lbnRIYXNGb2N1cyI6IHRydWUsCiAgICAgICJhY3RpdmUiOiB7CiAgICAgICAgInRhZyI6ICJCT0RZIiwKICAgICAgICAiY2xhc3MiOiBudWxsLAogICAgICAgICJsYWJlbCI6IG51bGwKICAgICAgfSwKICAgICAgInNjcm9sbCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiA3OTUKICAgICAgfSwKICAgICAgInZpZXdwb3J0IjogewogICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgImhlaWdodCI6IDcyMAogICAgICB9LAogICAgICAidHlwZSI6ICJmb2N1c291dCIsCiAgICAgICJ0cnVzdGVkIjogdHJ1ZSwKICAgICAgInRhcmdldCI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogIm1ldHJpYy1jaGFydF9faW50ZXJhY3RpdmUiLAogICAgICAgICJsYWJlbCI6ICJHcmFkaWVudCBub3JtIGludGVyYWN0aXZlIGNoYXJ0IgogICAgICB9CiAgICB9LAogICAgewogICAgICAidGltZSI6IDEzOTAsCiAgICAgICJ1cmwiOiAiaHR0cDovLzEyNy4wLjAuMTo0MTczLyMvcnVucy9ydW4tMDAxP21pbj0zNDk3NDAmbWF4PTY0NzY2OCIsCiAgICAgICJyZWFkeSI6ICJ0cnVlIiwKICAgICAgImJ1c3kiOiAiZmFsc2UiLAogICAgICAieE1pbiI6ICIzNDk3NDAiLAogICAgICAieE1heCI6ICI2NDc2NjgiLAogICAgICAic2VsZWN0aW9uV2lkdGgiOiAwLAogICAgICAic2VsZWN0aW9uU3R5bGUiOiAibGVmdDogMHB4OyB0b3A6IDBweDsgd2lkdGg6IDBweDsgaGVpZ2h0OiAwcHg7IiwKICAgICAgImRvY3VtZW50SGFzRm9jdXMiOiB0cnVlLAogICAgICAiYWN0aXZlIjogewogICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAiY2xhc3MiOiAibWV0cmljLWNoYXJ0X19pbnRlcmFjdGl2ZSIsCiAgICAgICAgImxhYmVsIjogIkxlYXJuaW5nIHJhdGUgaW50ZXJhY3RpdmUgY2hhcnQiCiAgICAgIH0sCiAgICAgICJzY3JvbGwiOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogNzk1CiAgICAgIH0sCiAgICAgICJ2aWV3cG9ydCI6IHsKICAgICAgICAid2lkdGgiOiAxMjgwLAogICAgICAgICJoZWlnaHQiOiA3MjAKICAgICAgfSwKICAgICAgInR5cGUiOiAiZm9jdXMiLAogICAgICAidHJ1c3RlZCI6IHRydWUsCiAgICAgICJ0YXJnZXQiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJtZXRyaWMtY2hhcnRfX2ludGVyYWN0aXZlIiwKICAgICAgICAibGFiZWwiOiAiTGVhcm5pbmcgcmF0ZSBpbnRlcmFjdGl2ZSBjaGFydCIKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxMzkwLAogICAgICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMT9taW49MzQ5NzQwJm1heD02NDc2NjgiLAogICAgICAicmVhZHkiOiAidHJ1ZSIsCiAgICAgICJidXN5IjogImZhbHNlIiwKICAgICAgInhNaW4iOiAiMzQ5NzQwIiwKICAgICAgInhNYXgiOiAiNjQ3NjY4IiwKICAgICAgInNlbGVjdGlvbldpZHRoIjogMCwKICAgICAgInNlbGVjdGlvblN0eWxlIjogImxlZnQ6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAwcHg7IGhlaWdodDogMHB4OyIsCiAgICAgICJkb2N1bWVudEhhc0ZvY3VzIjogdHJ1ZSwKICAgICAgImFjdGl2ZSI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogIm1ldHJpYy1jaGFydF9faW50ZXJhY3RpdmUiLAogICAgICAgICJsYWJlbCI6ICJMZWFybmluZyByYXRlIGludGVyYWN0aXZlIGNoYXJ0IgogICAgICB9LAogICAgICAic2Nyb2xsIjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDc5NQogICAgICB9LAogICAgICAidmlld3BvcnQiOiB7CiAgICAgICAgIndpZHRoIjogMTI4MCwKICAgICAgICAiaGVpZ2h0IjogNzIwCiAgICAgIH0sCiAgICAgICJ0eXBlIjogImZvY3VzaW4iLAogICAgICAidHJ1c3RlZCI6IHRydWUsCiAgICAgICJ0YXJnZXQiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJtZXRyaWMtY2hhcnRfX2ludGVyYWN0aXZlIiwKICAgICAgICAibGFiZWwiOiAiTGVhcm5pbmcgcmF0ZSBpbnRlcmFjdGl2ZSBjaGFydCIKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxMzkxLAogICAgICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMT9taW49MzQ5NzQwJm1heD02NDc2NjgiLAogICAgICAicmVhZHkiOiAidHJ1ZSIsCiAgICAgICJidXN5IjogImZhbHNlIiwKICAgICAgInhNaW4iOiAiMzQ5NzQwIiwKICAgICAgInhNYXgiOiAiNjQ3NjY4IiwKICAgICAgInNlbGVjdGlvbldpZHRoIjogMCwKICAgICAgInNlbGVjdGlvblN0eWxlIjogImxlZnQ6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAwcHg7IGhlaWdodDogMHB4OyIsCiAgICAgICJkb2N1bWVudEhhc0ZvY3VzIjogdHJ1ZSwKICAgICAgImFjdGl2ZSI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogIm1ldHJpYy1jaGFydF9faW50ZXJhY3RpdmUiLAogICAgICAgICJsYWJlbCI6ICJMZWFybmluZyByYXRlIGludGVyYWN0aXZlIGNoYXJ0IgogICAgICB9LAogICAgICAic2Nyb2xsIjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDc5NQogICAgICB9LAogICAgICAidmlld3BvcnQiOiB7CiAgICAgICAgIndpZHRoIjogMTI4MCwKICAgICAgICAiaGVpZ2h0IjogNzIwCiAgICAgIH0sCiAgICAgICJ0eXBlIjogInBvaW50ZXJ1cCIsCiAgICAgICJ0cnVzdGVkIjogdHJ1ZSwKICAgICAgInRhcmdldCI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogInUtb3ZlciIsCiAgICAgICAgImxhYmVsIjogbnVsbAogICAgICB9LAogICAgICAiY2xpZW50WCI6IDUyOSwKICAgICAgImNsaWVudFkiOiAzNDYuNTgzMzQzNTA1ODU5NCwKICAgICAgIm1vdmVtZW50WCI6IDAsCiAgICAgICJtb3ZlbWVudFkiOiAwLAogICAgICAiYnV0dG9uIjogMCwKICAgICAgImJ1dHRvbnMiOiAwCiAgICB9LAogICAgewogICAgICAidGltZSI6IDEzOTIsCiAgICAgICJ1cmwiOiAiaHR0cDovLzEyNy4wLjAuMTo0MTczLyMvcnVucy9ydW4tMDAxP21pbj0zNDk3NDAmbWF4PTY0NzY2OCIsCiAgICAgICJyZWFkeSI6ICJ0cnVlIiwKICAgICAgImJ1c3kiOiAiZmFsc2UiLAogICAgICAieE1pbiI6ICIzNDk3NDAiLAogICAgICAieE1heCI6ICI2NDc2NjgiLAogICAgICAic2VsZWN0aW9uV2lkdGgiOiAwLAogICAgICAic2VsZWN0aW9uU3R5bGUiOiAibGVmdDogMHB4OyB0b3A6IDBweDsgd2lkdGg6IDBweDsgaGVpZ2h0OiAwcHg7IiwKICAgICAgImRvY3VtZW50SGFzRm9jdXMiOiB0cnVlLAogICAgICAiYWN0aXZlIjogewogICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAiY2xhc3MiOiAibWV0cmljLWNoYXJ0X19pbnRlcmFjdGl2ZSIsCiAgICAgICAgImxhYmVsIjogIkxlYXJuaW5nIHJhdGUgaW50ZXJhY3RpdmUgY2hhcnQiCiAgICAgIH0sCiAgICAgICJzY3JvbGwiOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogNzk1CiAgICAgIH0sCiAgICAgICJ2aWV3cG9ydCI6IHsKICAgICAgICAid2lkdGgiOiAxMjgwLAogICAgICAgICJoZWlnaHQiOiA3MjAKICAgICAgfSwKICAgICAgInR5cGUiOiAibW91c2V1cCIsCiAgICAgICJ0cnVzdGVkIjogdHJ1ZSwKICAgICAgInRhcmdldCI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogInUtb3ZlciIsCiAgICAgICAgImxhYmVsIjogbnVsbAogICAgICB9LAogICAgICAiY2xpZW50WCI6IDUyOSwKICAgICAgImNsaWVudFkiOiAzNDcsCiAgICAgICJtb3ZlbWVudFgiOiAwLAogICAgICAibW92ZW1lbnRZIjogMCwKICAgICAgImJ1dHRvbiI6IDAsCiAgICAgICJidXR0b25zIjogMAogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxMzkyLAogICAgICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMT9taW49MzQ5NzQwJm1heD02NDc2NjgiLAogICAgICAicmVhZHkiOiAidHJ1ZSIsCiAgICAgICJidXN5IjogImZhbHNlIiwKICAgICAgInhNaW4iOiAiMzQ5NzQwIiwKICAgICAgInhNYXgiOiAiNjQ3NjY4IiwKICAgICAgInNlbGVjdGlvbldpZHRoIjogMCwKICAgICAgInNlbGVjdGlvblN0eWxlIjogImxlZnQ6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAwcHg7IGhlaWdodDogMHB4OyIsCiAgICAgICJkb2N1bWVudEhhc0ZvY3VzIjogdHJ1ZSwKICAgICAgImFjdGl2ZSI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogIm1ldHJpYy1jaGFydF9faW50ZXJhY3RpdmUiLAogICAgICAgICJsYWJlbCI6ICJMZWFybmluZyByYXRlIGludGVyYWN0aXZlIGNoYXJ0IgogICAgICB9LAogICAgICAic2Nyb2xsIjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDc5NQogICAgICB9LAogICAgICAidmlld3BvcnQiOiB7CiAgICAgICAgIndpZHRoIjogMTI4MCwKICAgICAgICAiaGVpZ2h0IjogNzIwCiAgICAgIH0sCiAgICAgICJ0eXBlIjogInBvaW50ZXJkb3duIiwKICAgICAgInRydXN0ZWQiOiB0cnVlLAogICAgICAidGFyZ2V0IjogewogICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAiY2xhc3MiOiAidS1vdmVyIiwKICAgICAgICAibGFiZWwiOiBudWxsCiAgICAgIH0sCiAgICAgICJjbGllbnRYIjogNTI5LAogICAgICAiY2xpZW50WSI6IDM0Ni41ODMzNDM1MDU4NTk0LAogICAgICAibW92ZW1lbnRYIjogMCwKICAgICAgIm1vdmVtZW50WSI6IDAsCiAgICAgICJidXR0b24iOiAwLAogICAgICAiYnV0dG9ucyI6IDEKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTM5MiwKICAgICAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIy9ydW5zL3J1bi0wMDE/bWluPTM0OTc0MCZtYXg9NjQ3NjY4IiwKICAgICAgInJlYWR5IjogInRydWUiLAogICAgICAiYnVzeSI6ICJmYWxzZSIsCiAgICAgICJ4TWluIjogIjM0OTc0MCIsCiAgICAgICJ4TWF4IjogIjY0NzY2OCIsCiAgICAgICJzZWxlY3Rpb25XaWR0aCI6IDAsCiAgICAgICJzZWxlY3Rpb25TdHlsZSI6ICJsZWZ0OiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMHB4OyBoZWlnaHQ6IDBweDsiLAogICAgICAiZG9jdW1lbnRIYXNGb2N1cyI6IHRydWUsCiAgICAgICJhY3RpdmUiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJtZXRyaWMtY2hhcnRfX2ludGVyYWN0aXZlIiwKICAgICAgICAibGFiZWwiOiAiTGVhcm5pbmcgcmF0ZSBpbnRlcmFjdGl2ZSBjaGFydCIKICAgICAgfSwKICAgICAgInNjcm9sbCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiA3OTUKICAgICAgfSwKICAgICAgInZpZXdwb3J0IjogewogICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgImhlaWdodCI6IDcyMAogICAgICB9LAogICAgICAidHlwZSI6ICJtb3VzZWRvd24iLAogICAgICAidHJ1c3RlZCI6IHRydWUsCiAgICAgICJ0YXJnZXQiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJ1LW92ZXIiLAogICAgICAgICJsYWJlbCI6IG51bGwKICAgICAgfSwKICAgICAgImNsaWVudFgiOiA1MjksCiAgICAgICJjbGllbnRZIjogMzQ3LAogICAgICAibW92ZW1lbnRYIjogMCwKICAgICAgIm1vdmVtZW50WSI6IDAsCiAgICAgICJidXR0b24iOiAwLAogICAgICAiYnV0dG9ucyI6IDEKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTM5MywKICAgICAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIy9ydW5zL3J1bi0wMDE/bWluPTM0OTc0MCZtYXg9NjQ3NjY4IiwKICAgICAgInJlYWR5IjogInRydWUiLAogICAgICAiYnVzeSI6ICJmYWxzZSIsCiAgICAgICJ4TWluIjogIjM0OTc0MCIsCiAgICAgICJ4TWF4IjogIjY0NzY2OCIsCiAgICAgICJzZWxlY3Rpb25XaWR0aCI6IDAsCiAgICAgICJzZWxlY3Rpb25TdHlsZSI6ICJsZWZ0OiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMHB4OyBoZWlnaHQ6IDBweDsiLAogICAgICAiZG9jdW1lbnRIYXNGb2N1cyI6IHRydWUsCiAgICAgICJhY3RpdmUiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJtZXRyaWMtY2hhcnRfX2ludGVyYWN0aXZlIiwKICAgICAgICAibGFiZWwiOiAiTGVhcm5pbmcgcmF0ZSBpbnRlcmFjdGl2ZSBjaGFydCIKICAgICAgfSwKICAgICAgInNjcm9sbCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiA3OTUKICAgICAgfSwKICAgICAgInZpZXdwb3J0IjogewogICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgImhlaWdodCI6IDcyMAogICAgICB9LAogICAgICAidHlwZSI6ICJwb2ludGVydXAiLAogICAgICAidHJ1c3RlZCI6IHRydWUsCiAgICAgICJ0YXJnZXQiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJ1LW92ZXIiLAogICAgICAgICJsYWJlbCI6IG51bGwKICAgICAgfSwKICAgICAgImNsaWVudFgiOiA1MjksCiAgICAgICJjbGllbnRZIjogMzQ2LjU4MzM0MzUwNTg1OTQsCiAgICAgICJtb3ZlbWVudFgiOiAwLAogICAgICAibW92ZW1lbnRZIjogMCwKICAgICAgImJ1dHRvbiI6IDAsCiAgICAgICJidXR0b25zIjogMAogICAgfSwKICAgIHsKICAgICAgInRpbWUiOiAxMzkzLAogICAgICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMT9taW49MzQ5NzQwJm1heD02NDc2NjgiLAogICAgICAicmVhZHkiOiAidHJ1ZSIsCiAgICAgICJidXN5IjogImZhbHNlIiwKICAgICAgInhNaW4iOiAiMzQ5NzQwIiwKICAgICAgInhNYXgiOiAiNjQ3NjY4IiwKICAgICAgInNlbGVjdGlvbldpZHRoIjogMCwKICAgICAgInNlbGVjdGlvblN0eWxlIjogImxlZnQ6IDBweDsgdG9wOiAwcHg7IHdpZHRoOiAwcHg7IGhlaWdodDogMHB4OyIsCiAgICAgICJkb2N1bWVudEhhc0ZvY3VzIjogdHJ1ZSwKICAgICAgImFjdGl2ZSI6IHsKICAgICAgICAidGFnIjogIkRJViIsCiAgICAgICAgImNsYXNzIjogIm1ldHJpYy1jaGFydF9faW50ZXJhY3RpdmUiLAogICAgICAgICJsYWJlbCI6ICJMZWFybmluZyByYXRlIGludGVyYWN0aXZlIGNoYXJ0IgogICAgICB9LAogICAgICAic2Nyb2xsIjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDc5NQogICAgICB9LAogICAgICAidmlld3BvcnQiOiB7CiAgICAgICAgIndpZHRoIjogMTI4MCwKICAgICAgICAiaGVpZ2h0IjogNzIwCiAgICAgIH0sCiAgICAgICJ0eXBlIjogIm1vdXNldXAiLAogICAgICAidHJ1c3RlZCI6IHRydWUsCiAgICAgICJ0YXJnZXQiOiB7CiAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICJjbGFzcyI6ICJ1LW92ZXIiLAogICAgICAgICJsYWJlbCI6IG51bGwKICAgICAgfSwKICAgICAgImNsaWVudFgiOiA1MjksCiAgICAgICJjbGllbnRZIjogMzQ3LAogICAgICAibW92ZW1lbnRYIjogMCwKICAgICAgIm1vdmVtZW50WSI6IDAsCiAgICAgICJidXR0b24iOiAwLAogICAgICAiYnV0dG9ucyI6IDAKICAgIH0sCiAgICB7CiAgICAgICJ0aW1lIjogMTQxMSwKICAgICAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIy9ydW5zL3J1bi0wMDEiLAogICAgICAicmVhZHkiOiAiZmFsc2UiLAogICAgICAiYnVzeSI6ICJmYWxzZSIsCiAgICAgICJ4TWluIjogIjAiLAogICAgICAieE1heCI6ICI5OTk5OTkiLAogICAgICAic2VsZWN0aW9uV2lkdGgiOiAwLAogICAgICAic2VsZWN0aW9uU3R5bGUiOiAibGVmdDogMHB4OyB0b3A6IDBweDsgd2lkdGg6IDBweDsgaGVpZ2h0OiAwcHg7IiwKICAgICAgImRvY3VtZW50SGFzRm9jdXMiOiB0cnVlLAogICAgICAiYWN0aXZlIjogewogICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAiY2xhc3MiOiAibWV0cmljLWNoYXJ0X19pbnRlcmFjdGl2ZSIsCiAgICAgICAgImxhYmVsIjogIkxlYXJuaW5nIHJhdGUgaW50ZXJhY3RpdmUgY2hhcnQiCiAgICAgIH0sCiAgICAgICJzY3JvbGwiOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogODU4CiAgICAgIH0sCiAgICAgICJ2aWV3cG9ydCI6IHsKICAgICAgICAid2lkdGgiOiAxMjgwLAogICAgICAgICJoZWlnaHQiOiA3MjAKICAgICAgfSwKICAgICAgInR5cGUiOiAic2Nyb2xsIiwKICAgICAgInRydXN0ZWQiOiB0cnVlLAogICAgICAidGFyZ2V0IjogewogICAgICAgICJ0YWciOiAiZG9jdW1lbnQiLAogICAgICAgICJjbGFzcyI6IG51bGwsCiAgICAgICAgImxhYmVsIjogbnVsbAogICAgICB9CiAgICB9CiAgXSwKICAicGhhc2VzIjogWwogICAgewogICAgICAicGhhc2UiOiAicHJlcGFyZWQiLAogICAgICAic3RhdGUiOiB7CiAgICAgICAgInRpbWUiOiA5MjAsCiAgICAgICAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIy9ydW5zL3J1bi0wMDEiLAogICAgICAgICJyZWFkeSI6ICJ0cnVlIiwKICAgICAgICAiYnVzeSI6ICJmYWxzZSIsCiAgICAgICAgInhNaW4iOiAiMCIsCiAgICAgICAgInhNYXgiOiAiOTk5OTk5IiwKICAgICAgICAic2VsZWN0aW9uV2lkdGgiOiAwLAogICAgICAgICJzZWxlY3Rpb25TdHlsZSI6ICJsZWZ0OiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMHB4OyBoZWlnaHQ6IDBweDsiLAogICAgICAgICJkb2N1bWVudEhhc0ZvY3VzIjogdHJ1ZSwKICAgICAgICAiYWN0aXZlIjogewogICAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICAgImNsYXNzIjogIm1ldHJpYy1jaGFydF9faW50ZXJhY3RpdmUiLAogICAgICAgICAgImxhYmVsIjogIkdyYWRpZW50IG5vcm0gaW50ZXJhY3RpdmUgY2hhcnQiCiAgICAgICAgfSwKICAgICAgICAic2Nyb2xsIjogewogICAgICAgICAgIngiOiAwLAogICAgICAgICAgInkiOiA4NTgKICAgICAgICB9LAogICAgICAgICJ2aWV3cG9ydCI6IHsKICAgICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgICAiaGVpZ2h0IjogNzIwCiAgICAgICAgfQogICAgICB9LAogICAgICAiZGV0YWlscyI6IHsKICAgICAgICAiYm91bmRzIjogewogICAgICAgICAgIngiOiA4MjksCiAgICAgICAgICAieSI6IDI2NS41ODMzNDM1MDU4NTk0LAogICAgICAgICAgIndpZHRoIjogMzg2LAogICAgICAgICAgImhlaWdodCI6IDE2NAogICAgICAgIH0KICAgICAgfQogICAgfSwKICAgIHsKICAgICAgInBoYXNlIjogInByZXNzZWQiLAogICAgICAic3RhdGUiOiB7CiAgICAgICAgInRpbWUiOiA5MzksCiAgICAgICAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIy9ydW5zL3J1bi0wMDEiLAogICAgICAgICJyZWFkeSI6ICJ0cnVlIiwKICAgICAgICAiYnVzeSI6ICJmYWxzZSIsCiAgICAgICAgInhNaW4iOiAiMCIsCiAgICAgICAgInhNYXgiOiAiOTk5OTk5IiwKICAgICAgICAic2VsZWN0aW9uV2lkdGgiOiAwLAogICAgICAgICJzZWxlY3Rpb25TdHlsZSI6ICJsZWZ0OiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMHB4OyBoZWlnaHQ6IDBweDsiLAogICAgICAgICJkb2N1bWVudEhhc0ZvY3VzIjogdHJ1ZSwKICAgICAgICAiYWN0aXZlIjogewogICAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICAgImNsYXNzIjogIm1ldHJpYy1jaGFydF9faW50ZXJhY3RpdmUiLAogICAgICAgICAgImxhYmVsIjogIkdyYWRpZW50IG5vcm0gaW50ZXJhY3RpdmUgY2hhcnQiCiAgICAgICAgfSwKICAgICAgICAic2Nyb2xsIjogewogICAgICAgICAgIngiOiAwLAogICAgICAgICAgInkiOiA4NTgKICAgICAgICB9LAogICAgICAgICJ2aWV3cG9ydCI6IHsKICAgICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgICAiaGVpZ2h0IjogNzIwCiAgICAgICAgfQogICAgICB9CiAgICB9LAogICAgewogICAgICAicGhhc2UiOiAic2VsZWN0aW9uLWJlZm9yZS1yZWxlYXNlIiwKICAgICAgInN0YXRlIjogewogICAgICAgICJ0aW1lIjogMTE2NCwKICAgICAgICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMSIsCiAgICAgICAgInJlYWR5IjogInRydWUiLAogICAgICAgICJidXN5IjogImZhbHNlIiwKICAgICAgICAieE1pbiI6ICIwIiwKICAgICAgICAieE1heCI6ICI5OTk5OTkiLAogICAgICAgICJzZWxlY3Rpb25XaWR0aCI6IDExNSwKICAgICAgICAic2VsZWN0aW9uU3R5bGUiOiAibGVmdDogMTM1cHg7IHRvcDogMHB4OyB3aWR0aDogMTE1cHg7IGhlaWdodDogMTY0cHg7IiwKICAgICAgICAiZG9jdW1lbnRIYXNGb2N1cyI6IHRydWUsCiAgICAgICAgImFjdGl2ZSI6IHsKICAgICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAgICJjbGFzcyI6ICJtZXRyaWMtY2hhcnRfX2ludGVyYWN0aXZlIiwKICAgICAgICAgICJsYWJlbCI6ICJHcmFkaWVudCBub3JtIGludGVyYWN0aXZlIGNoYXJ0IgogICAgICAgIH0sCiAgICAgICAgInNjcm9sbCI6IHsKICAgICAgICAgICJ4IjogMCwKICAgICAgICAgICJ5IjogODU4CiAgICAgICAgfSwKICAgICAgICAidmlld3BvcnQiOiB7CiAgICAgICAgICAid2lkdGgiOiAxMjgwLAogICAgICAgICAgImhlaWdodCI6IDcyMAogICAgICAgIH0KICAgICAgfQogICAgfSwKICAgIHsKICAgICAgInBoYXNlIjogInJlbGVhc2VkIiwKICAgICAgInN0YXRlIjogewogICAgICAgICJ0aW1lIjogMTE5MywKICAgICAgICAidXJsIjogImh0dHA6Ly8xMjcuMC4wLjE6NDE3My8jL3J1bnMvcnVuLTAwMT9taW49MzQ5NzQwJm1heD02NDc2NjgiLAogICAgICAgICJyZWFkeSI6ICJmYWxzZSIsCiAgICAgICAgImJ1c3kiOiAidHJ1ZSIsCiAgICAgICAgInhNaW4iOiAiMCIsCiAgICAgICAgInhNYXgiOiAiOTk5OTk5IiwKICAgICAgICAic2VsZWN0aW9uV2lkdGgiOiAwLAogICAgICAgICJzZWxlY3Rpb25TdHlsZSI6ICJsZWZ0OiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMHB4OyBoZWlnaHQ6IDBweDsiLAogICAgICAgICJkb2N1bWVudEhhc0ZvY3VzIjogdHJ1ZSwKICAgICAgICAiYWN0aXZlIjogewogICAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICAgImNsYXNzIjogIm1ldHJpYy1jaGFydF9faW50ZXJhY3RpdmUiLAogICAgICAgICAgImxhYmVsIjogIkdyYWRpZW50IG5vcm0gaW50ZXJhY3RpdmUgY2hhcnQiCiAgICAgICAgfSwKICAgICAgICAic2Nyb2xsIjogewogICAgICAgICAgIngiOiAwLAogICAgICAgICAgInkiOiA3OTUKICAgICAgICB9LAogICAgICAgICJ2aWV3cG9ydCI6IHsKICAgICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgICAiaGVpZ2h0IjogNzIwCiAgICAgICAgfQogICAgICB9CiAgICB9LAogICAgewogICAgICAicGhhc2UiOiAicmFuZ2UtcGFpbnRlZCIsCiAgICAgICJzdGF0ZSI6IHsKICAgICAgICAidGltZSI6IDEzNTcsCiAgICAgICAgInVybCI6ICJodHRwOi8vMTI3LjAuMC4xOjQxNzMvIy9ydW5zL3J1bi0wMDE/bWluPTM0OTc0MCZtYXg9NjQ3NjY4IiwKICAgICAgICAicmVhZHkiOiAidHJ1ZSIsCiAgICAgICAgImJ1c3kiOiAiZmFsc2UiLAogICAgICAgICJ4TWluIjogIjM0OTc0MCIsCiAgICAgICAgInhNYXgiOiAiNjQ3NjY4IiwKICAgICAgICAic2VsZWN0aW9uV2lkdGgiOiAwLAogICAgICAgICJzZWxlY3Rpb25TdHlsZSI6ICJsZWZ0OiAwcHg7IHRvcDogMHB4OyB3aWR0aDogMHB4OyBoZWlnaHQ6IDBweDsiLAogICAgICAgICJkb2N1bWVudEhhc0ZvY3VzIjogdHJ1ZSwKICAgICAgICAiYWN0aXZlIjogewogICAgICAgICAgInRhZyI6ICJESVYiLAogICAgICAgICAgImNsYXNzIjogIm1ldHJpYy1jaGFydF9faW50ZXJhY3RpdmUiLAogICAgICAgICAgImxhYmVsIjogIkdyYWRpZW50IG5vcm0gaW50ZXJhY3RpdmUgY2hhcnQiCiAgICAgICAgfSwKICAgICAgICAic2Nyb2xsIjogewogICAgICAgICAgIngiOiAwLAogICAgICAgICAgInkiOiA3OTUKICAgICAgICB9LAogICAgICAgICJ2aWV3cG9ydCI6IHsKICAgICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgICAiaGVpZ2h0IjogNzIwCiAgICAgICAgfQogICAgICB9LAogICAgICAiZGV0YWlscyI6IHsKICAgICAgICAiZnJvbSI6IDM0OTc0MCwKICAgICAgICAidG8iOiA2NDc2NjgKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgInBoYXNlIjogInJlc2V0LXBhaW50ZWQiLAogICAgICAic3RhdGUiOiB7CiAgICAgICAgInRpbWUiOiAxNTEwLAogICAgICAgICJ1cmwiOiAiaHR0cDovLzEyNy4wLjAuMTo0MTczLyMvcnVucy9ydW4tMDAxIiwKICAgICAgICAicmVhZHkiOiAidHJ1ZSIsCiAgICAgICAgImJ1c3kiOiAiZmFsc2UiLAogICAgICAgICJ4TWluIjogIjAiLAogICAgICAgICJ4TWF4IjogIjk5OTk5OSIsCiAgICAgICAgInNlbGVjdGlvbldpZHRoIjogMCwKICAgICAgICAic2VsZWN0aW9uU3R5bGUiOiAibGVmdDogMHB4OyB0b3A6IDBweDsgd2lkdGg6IDBweDsgaGVpZ2h0OiAwcHg7IiwKICAgICAgICAiZG9jdW1lbnRIYXNGb2N1cyI6IHRydWUsCiAgICAgICAgImFjdGl2ZSI6IHsKICAgICAgICAgICJ0YWciOiAiRElWIiwKICAgICAgICAgICJjbGFzcyI6ICJtZXRyaWMtY2hhcnRfX2ludGVyYWN0aXZlIiwKICAgICAgICAgICJsYWJlbCI6ICJMZWFybmluZyByYXRlIGludGVyYWN0aXZlIGNoYXJ0IgogICAgICAgIH0sCiAgICAgICAgInNjcm9sbCI6IHsKICAgICAgICAgICJ4IjogMCwKICAgICAgICAgICJ5IjogODU4CiAgICAgICAgfSwKICAgICAgICAidmlld3BvcnQiOiB7CiAgICAgICAgICAid2lkdGgiOiAxMjgwLAogICAgICAgICAgImhlaWdodCI6IDcyMAogICAgICAgIH0KICAgICAgfQogICAgfQogIF0KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-e6e32582a67ebd380b55",
+          "file": "adversarial.spec.ts",
+          "line": 266,
+          "column": 1
+        },
+        {
+          "title": "chart keyboard zoom and roving tabs remain usable without a pointer",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 837,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:26.506Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-b5c498d33a60f39e9f37",
+          "file": "adversarial.spec.ts",
+          "line": 360,
+          "column": 1
+        },
+        {
+          "title": "search dialog traps focus in both directions and returns focus to the trigger on Escape",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 808,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:27.352Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-dfd0facebf18880e8cf2",
+          "file": "adversarial.spec.ts",
+          "line": 391,
+          "column": 1
+        },
+        {
+          "title": "bookmark survives reload and stays isolated by run, then can be removed",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1212,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:28.168Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-77cb4b147799bea847e1",
+          "file": "adversarial.spec.ts",
+          "line": 414,
+          "column": 1
+        },
+        {
+          "title": "unavailable browser storage reports failed saving without a false saved state",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 726,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:29.392Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-fd5f90513672d25eb4ac",
+          "file": "adversarial.spec.ts",
+          "line": 442,
+          "column": 1
+        },
+        {
+          "title": "invalid URL range is disclosed and reset restores the full recorded domain",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 703,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:30.126Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-6d81e82d41dd2d70c435",
+          "file": "adversarial.spec.ts",
+          "line": 459,
+          "column": 1
+        },
+        {
+          "title": "layout and reachable keyboard navigation at 320px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 825,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:30.838Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-1b56954febcd58017b6e",
+          "file": "adversarial.spec.ts",
+          "line": 473,
+          "column": 3
+        },
+        {
+          "title": "layout and reachable keyboard navigation at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 839,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:31.671Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-5abf647bf2546316bec1",
+          "file": "adversarial.spec.ts",
+          "line": 473,
+          "column": 3
+        },
+        {
+          "title": "layout and reachable keyboard navigation at 768px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1789,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:32.518Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-3c3fedd3f21b9e3969d0",
+          "file": "adversarial.spec.ts",
+          "line": 473,
+          "column": 3
+        },
+        {
+          "title": "reloading prepares a new view while keeping the recorded synthetic source time and revision distinct",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 748,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:37.534Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-f39e2aeb4472adc53534",
+          "file": "adversarial.spec.ts",
+          "line": 558,
+          "column": 1
+        },
+        {
+          "title": "an already loaded synthetic workspace can prepare a new viewport while the browser is offline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 862,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:38.292Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-8faae008a9446d6c6745",
+          "file": "adversarial.spec.ts",
+          "line": 583,
+          "column": 1
+        },
+        {
+          "title": "twenty distinct viewports settle with current rendered bounds and bounded real worker requests",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "sequential-viewport-worker-requests",
+                  "description": "20 native worker requests for20 distinct completed viewports"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5368,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:39.167Z",
+                  "annotations": [
+                    {
+                      "type": "sequential-viewport-worker-requests",
+                      "description": "20 native worker requests for20 distinct completed viewports"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8623cf54f8234f94483-fa2e42c48c6ff56349cf",
+          "file": "adversarial.spec.ts",
+          "line": 610,
+          "column": 1
+        }
+      ],
+      "suites": [
+        {
+          "title": "high-density display",
+          "file": "adversarial.spec.ts",
+          "line": 500,
+          "column": 6,
+          "specs": [
+            {
+              "title": "the million-point curve remains usable and spike inspectable at DPR2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1219,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-10T11:04:34.315Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c8623cf54f8234f94483-47f058866c4f83a17011",
+              "file": "adversarial.spec.ts",
+              "line": 502,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "international browser settings",
+          "file": "adversarial.spec.ts",
+          "line": 519,
+          "column": 6,
+          "specs": [
+            {
+              "title": "recorded times stay explicitly UTC and numeric step inputs keep their meaning",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 760,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-10T11:04:35.545Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c8623cf54f8234f94483-b2ba809ec143ca9307df",
+              "file": "adversarial.spec.ts",
+              "line": 521,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "touch input emulation",
+          "file": "adversarial.spec.ts",
+          "line": 538,
+          "column": 6,
+          "specs": [
+            {
+              "title": "navigation and explicit zoom controls work through touchscreen taps",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1212,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-10T11:04:36.313Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c8623cf54f8234f94483-d2a586c86be476e2f47d",
+              "file": "adversarial.spec.ts",
+              "line": 540,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "canvas-truth.spec.ts",
+      "file": "canvas-truth.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "NaN interval is an actual unpainted gap with finite painted neighbours, not zero or interpolation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 795,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:44.551Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94470acaecc3b59dfd3c-10808cc2d78f44a9c279",
+          "file": "canvas-truth.spec.ts",
+          "line": 110,
+          "column": 1
+        },
+        {
+          "title": "painted values align with actual numeric x/y axis labels for every metric",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 687,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:45.354Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94470acaecc3b59dfd3c-f37bfcb530a4a6ae5364",
+          "file": "canvas-truth.spec.ts",
+          "line": 133,
+          "column": 1
+        },
+        {
+          "title": "drawn deep-zoom step labels stay distinct and learning-rate labels retain nonzero magnitudes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 731,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:46.048Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94470acaecc3b59dfd3c-2cff1f6c6fafba4971d2",
+          "file": "canvas-truth.spec.ts",
+          "line": 216,
+          "column": 1
+        },
+        {
+          "title": "a finite singleton between missing measurements paints a real point and a later empty response clears it",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1577,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:46.786Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94470acaecc3b59dfd3c-eed7f5f2bfa246e5a3af",
+          "file": "canvas-truth.spec.ts",
+          "line": 242,
+          "column": 1
+        },
+        {
+          "title": "logarithmic axes draw only finite positive numeric tick labels",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 643,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:48.371Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94470acaecc3b59dfd3c-145baf0fcca93950220e",
+          "file": "canvas-truth.spec.ts",
+          "line": 296,
+          "column": 1
+        },
+        {
+          "title": "an all-zero interval stays a real zero line on linear and becomes explicitly unplottable on log",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 748,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:49.024Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94470acaecc3b59dfd3c-01ed74e14d751e94b677",
+          "file": "canvas-truth.spec.ts",
+          "line": 320,
+          "column": 1
+        },
+        {
+          "title": "coarse reduction retains every zero interval before logarithmic rendering",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 826,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:49.781Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "94470acaecc3b59dfd3c-e4403a743984fa4a52ad",
+          "file": "canvas-truth.spec.ts",
+          "line": 345,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "observatory.spec.ts",
+      "file": "observatory.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "run browser filters, searches, sorts, persists URL state, and recovers from empty results",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1046,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:50.620Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d68d06cf89477466321-c1bd5b693b3389623fe7",
+          "file": "observatory.spec.ts",
+          "line": 47,
+          "column": 1
+        },
+        {
+          "title": "million-point spike remains painted in overview, narrow zoom and reset",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1446,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:51.675Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d68d06cf89477466321-acb498d76dd36cf6a0fb",
+          "file": "observatory.spec.ts",
+          "line": 80,
+          "column": 1
+        },
+        {
+          "title": "non-finite values produce visible disclosure and exact missing-value inspection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 769,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:53.131Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d68d06cf89477466321-9db6103cee83d0eaa647",
+          "file": "observatory.spec.ts",
+          "line": 104,
+          "column": 1
+        },
+        {
+          "title": "duplicate, unordered and missing-step observations remain discoverable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1119,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:53.908Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d68d06cf89477466321-135ea9fb4026caf7b2e0",
+          "file": "observatory.spec.ts",
+          "line": 127,
+          "column": 1
+        },
+        {
+          "title": "log scale discloses zero exclusions and linear restores the measured zero",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 681,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:55.036Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d68d06cf89477466321-3af4ff746b0c7af62fbc",
+          "file": "observatory.spec.ts",
+          "line": 139,
+          "column": 1
+        },
+        {
+          "title": "rapid run switching never paints previous run measurements under the next run title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 879,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:55.726Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d68d06cf89477466321-a83eec2e0fa68bd757f7",
+          "file": "observatory.spec.ts",
+          "line": 152,
+          "column": 1
+        },
+        {
+          "title": "keyboard search opens a run and chart keyboard inspection reveals measured values",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1807,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:56.612Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d68d06cf89477466321-3e56c7fe1e0504092f6b",
+          "file": "observatory.spec.ts",
+          "line": 167,
+          "column": 1
+        },
+        {
+          "title": "export identifies a sampled viewport and retains spike numeric value",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 947,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:58.427Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d68d06cf89477466321-09e2ef0393f899abcc90",
+          "file": "observatory.spec.ts",
+          "line": 190,
+          "column": 1
+        },
+        {
+          "title": "mobile layout fits viewport and navigation remains reachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1185,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:04:59.381Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d68d06cf89477466321-15d5160e3976e200e336",
+          "file": "observatory.spec.ts",
+          "line": 206,
+          "column": 1
+        },
+        {
+          "title": "unknown run fails clearly with a working recovery route",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 521,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:05:00.575Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d68d06cf89477466321-88f897a9b658533f2c7a",
+          "file": "observatory.spec.ts",
+          "line": 222,
+          "column": 1
+        },
+        {
+          "title": "a worker failure never substitutes fabricated values and has a working retry path",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 979,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:05:01.105Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d68d06cf89477466321-4253aed437fdae946df9",
+          "file": "observatory.spec.ts",
+          "line": 230,
+          "column": 1
+        },
+        {
+          "title": "an entirely invalid viewport shows unavailable values and never fabricates a zero curve",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 638,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:05:02.092Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d68d06cf89477466321-f5e5ffb5862b7c494585",
+          "file": "observatory.spec.ts",
+          "line": 248,
+          "column": 1
+        },
+        {
+          "title": "initial worker loading exposes a reserved loading view before any chart is drawn",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 798,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T11:05:02.739Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2d68d06cf89477466321-9d2c9ac00d3226693833",
+          "file": "observatory.spec.ts",
+          "line": 262,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-10T11:04:06.943Z",
+    "duration": 57107.085,
+    "expected": 46,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

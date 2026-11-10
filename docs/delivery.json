@@ -1,7 +1,7 @@
 {
   "status": "public-github-pages-verified",
   "applicationBundle": "assets/app-pYEMV88W.js",
-  "localCandidateCommit": "18e142564cc1b44069bae58a84a13d98f661db34",
+  "localCandidateCommit": "cdbfcf86b1ba31531cf1611e217e7d60ae299544",
   "repositoryUrl": "https://github.com/akenoowww/soup-training-observatory",
   "deployedUrl": "https://akenoowww.github.io/soup-training-observatory/",
   "hostedSmokePassed": true,
@@ -12,11 +12,11 @@
   "performanceResults": "evidence/final-build-measurements/performance/results.json",
   "sustainedUse": "evidence/final-build-measurements/soak/latest.json",
   "linuxCi": {
-    "url": "https://github.com/akenoowww/soup-training-observatory/actions/runs/42761775159",
-    "commit": "18e142564cc1b44069bae58a84a13d98f661db34",
+    "url": "https://github.com/akenoowww/soup-training-observatory/actions/runs/42803764078",
+    "commit": "cdbfcf86b1ba31531cf1611e217e7d60ae299544",
     "conclusion": "success",
     "browserExecutions": 138,
-    "reports": "evidence/followup-log-scale/linux-ci/final/summary.json"
+    "reports": "evidence/final-build-measurements/linux-ci/summary.json"
   },
   "exportApproval": "explicit-user-public-github-and-pages-akenoowww",
   "hostedSmokeResults": "evidence/followup-log-scale/hosted/results.json",
