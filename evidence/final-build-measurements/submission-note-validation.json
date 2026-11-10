@@ -10,7 +10,7 @@
     {
       "height": 1123,
       "scrollHeight": 1123,
-      "footerGap": 59.46875
+      "footerGap": 32.890625
     }
   ],
   "performancePath": "evidence/final-build-measurements/performance/results.json",
@@ -88,6 +88,19 @@
   },
   "checkedAgainstRawRecords": true,
   "visuallyInspectedBothRenderedPages": true,
-  "pdfSha256": "535609722083c54a00a3b475cd64af188d9b4d24ed328c53ffd673ff6f1ae82c",
-  "directReviewAttribution": "Codex; source/PDF/raw-evidence review distinguished from automated suites"
+  "pdfSha256": "9c5f101a0eb90671ac48101a675415ce366aaa01b9e7ac27d84bc0965fcc1946",
+  "directReviewAttribution": "Candidate manual app walkthrough; separate Codex source/PDF/raw-evidence review and automated regression suites",
+  "documentReviewActor": "Codex",
+  "candidateManualReview": {
+    "basis": "Candidate confirmed completing all six manual checklist items in the conversation",
+    "confirmedOnDate": "2026-11-11",
+    "scope": [
+      "Run search, sorting and switching",
+      "run-001 spike at step500000 loss9.4, hover and synchronized three-chart zoom/reset",
+      "run-003 missing-data range4200-4210",
+      "run-008 range590-615, linear/log/linear gap and value restoration",
+      "Run/range persistence through reload and back/forward",
+      "Tab navigation, search/Escape and390px layout"
+    ]
+  }
 }

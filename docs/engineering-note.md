@@ -60,7 +60,11 @@ A retained outlier was still invisible when it was the only finite point between
 
 Codex with Frontend Workbench authored the implementation and independent agent reviews. Accepted suggestions included uPlot, worker ownership, extrema sampling, explicit fixture provenance and native dialogs. Corrected suggestions included invented trends, mixed-scope summaries, collapsed labels, invisible singleton/zero rendering and mistaken CPU/memory attribution.
 
-**Direct review:** Codex directly inspected the sampling and Canvas-regression source, visually reviewed both rendered PDF pages, reconciled raw counts and memory/soak records, and parsed four timing plus four memory traces to verify Paint/EventDispatch events and recompute attributed renderer-private bytes. Automated unit, three-engine browser and Canvas suites provided the regression results separately from those direct source, document and evidence reviews. Human acceptance and physical-device/assistive-technology studies remain separate evidence.
+**My manual review (candidate):** I manually exercised run search, sorting and switching; checked hover at the million-point run's step 500,000 spike (loss 9.4), synchronized zoom/reset across all three charts, and run-003's unavailable interval 4,200-4,210. I also checked run-008's 590-615 range through linear/log/linear switching, run/range persistence through reload and browser back/forward, Tab navigation, search/Escape behavior and the 390 px layout.
+
+**Codex review:** Codex directly inspected the sampling and Canvas-regression source, visually reviewed both rendered PDF pages, reconciled raw counts and memory/soak records, and parsed four timing plus four memory traces to verify Paint/EventDispatch events and recompute attributed renderer-private bytes.
+
+**Automated verification:** The unit, three-engine browser and Canvas suites supplied the regression results recorded above. The candidate confirmed completing the six manual checklist items on 11 November 2026, in addition to those tool-assisted reviews and automated tests; physical-device and assistive-technology studies remain outside the recorded verification.
 
 ## Delivery and independent platform evidence
 
