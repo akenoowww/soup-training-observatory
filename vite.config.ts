@@ -9,5 +9,11 @@ export default defineConfig({
     sourcemap: true,
     rollupOptions: { input: { app: resolve('index.html'), benchmark: resolve('benchmark.html') } },
   },
-  test: { include: ['src/**/*.test.ts', 'src/**/*.test.tsx'], environment: 'node' },
+  test: {
+    include: ['src/**/*.test.ts', 'src/**/*.test.tsx'],
+    environment: 'node',
+    // CPU-heavy independent oracles share the runner; keep their full corpus
+    // and default per-test deadline without competing across test files.
+    fileParallelism: false,
+  },
 });
