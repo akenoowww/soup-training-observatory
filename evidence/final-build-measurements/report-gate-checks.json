@@ -1,0 +1,46 @@
+{
+  "completeCurrentEvidenceAccepted": true,
+  "negativeCases": [
+    {
+      "case": "stale measured app SHA",
+      "rejected": true,
+      "expectedDiagnostic": "fingerprint disagrees"
+    },
+    {
+      "case": "stale soak worker SHA",
+      "rejected": true,
+      "expectedDiagnostic": "fingerprint disagrees"
+    },
+    {
+      "case": "stale hosted app SHA",
+      "rejected": true,
+      "expectedDiagnostic": "fingerprint disagrees"
+    },
+    {
+      "case": "fixture zoom falsely counted as15",
+      "rejected": true,
+      "expectedDiagnostic": "Measurement observations disagree"
+    },
+    {
+      "case": "missing canonical worker memory",
+      "rejected": true,
+      "expectedDiagnostic": "Incomplete or malformed retained-memory snapshot"
+    },
+    {
+      "case": "worker CDP error retained as valid memory",
+      "rejected": true,
+      "expectedDiagnostic": "Incomplete or malformed retained-memory snapshot"
+    },
+    {
+      "case": "unattributed renderer included",
+      "rejected": true,
+      "expectedDiagnostic": "Attributed renderer PIDs disagree"
+    },
+    {
+      "case": "calibration from different browser",
+      "rejected": true,
+      "expectedDiagnostic": "CPU scope must have a matching-browser calibration"
+    }
+  ],
+  "scope": "Actual report generator executed against temporary copies of public synthetic evidence; canonical observations were never modified."
+}

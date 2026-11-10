@@ -1,0 +1,32 @@
+{
+  "servedBuild": {
+    "indexSha256": "32a18af8b216dc364fb7a304278964235edc9ae9e47f2e7e2ac4012bccb630e2",
+    "benchmarkIndexSha256": "96e1ca8b418b38afc0f1c11479742376efd8a46b155d7733e39dfa7f084fc39a",
+    "application": {
+      "filename": "assets/app-pYEMV88W.js",
+      "sha256": "67a08b9a7f8e221727ee09a74231dd8b010e3bfd1ff824badbabbbc75f0051d7",
+      "bytes": 348771
+    },
+    "worker": {
+      "filename": "assets/data.worker-pg0qDgzo.js",
+      "sha256": "bf1595d98be8e7f31da13faf50b2d043165c7cfdfb11a809dee69934a803f69c",
+      "bytes": 7558
+    },
+    "scope": "SHA256 of actual HTTP response bytes, checked against the frozen local production build before timed browser work."
+  },
+  "deliveryMatches": true,
+  "checks": [
+    {
+      "filename": "index.html",
+      "tamperedResponseRejected": true
+    },
+    {
+      "filename": "assets/app-pYEMV88W.js",
+      "tamperedResponseRejected": true
+    },
+    {
+      "filename": "assets/data.worker-pg0qDgzo.js",
+      "tamperedResponseRejected": true
+    }
+  ]
+}

@@ -4,8 +4,8 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
-import { createHash } from 'node:crypto';
 import { resolve } from 'node:path';
+import { captureBuildFingerprint } from './build-fingerprint.mjs';
 
 const baseURL = process.argv[2] ?? 'http://127.0.0.1:4173';
 const repetitions = Number(process.argv[3] ?? 5);
@@ -27,8 +27,7 @@ await mkdir(outputDirectory, { recursive: true });
 const sourceIndex = await readFile(resolve('dist/index.html'));
 const benchmarkIndex = await readFile(resolve('dist/benchmark.html'));
 const build = {
-  indexSha256: createHash('sha256').update(sourceIndex).digest('hex'),
-  benchmarkIndexSha256: createHash('sha256').update(benchmarkIndex).digest('hex'),
+  ...(await captureBuildFingerprint(baseURL)),
   benchmarkAssets: benchmarkIndex.toString().match(/\.\/assets\/[^"\s]+/gu) ?? [],
   assets: sourceIndex.toString().match(/\.\/assets\/[^"\s]+/gu) ?? [],
 };
@@ -44,7 +43,7 @@ const executablePath = existsSync(defaultExecutable)
 const memoryScope =
   'V8 total includes measured page+dedicated-worker JS heap and backing stores after explicit GC in both contexts; excludes native/GPU allocations. RSS sums renderer processes in an isolated one-page browser and may include spare renderers; browser/GPU/utility processes are excluded. RSS is an approximation of tab footprint, not the browser Task Manager private-memory number.';
 const cpuScope =
-  'Emulation.setCPUThrottlingRate(rate:4) applies to the page. Dedicated workers are not equivalently throttled in the measured Chrome 156 calibration: about 121 ms at page x1 and 119 ms at page x4 for identical work; the worker-target command reports pages-only. See ../cpu-scope-calibration.json. The sampled-main control separates same-thread reduction from off-thread placement. No low-end-device extrapolation is asserted.';
+  'Emulation.setCPUThrottlingRate(rate:4) applies to the page. The same-browser page/worker x1/x4/x1 calibration is recorded separately in ../cpu-scope-calibration.json. Worker-backed timings must be interpreted using that observed scope, not as a globally slowed machine. The sampled-main control separates same-thread reduction from off-thread placement. No low-end-device extrapolation is asserted.';
 let nestedSequence = 0;
 async function nestedCommand(session, sessionId, method, params = {}) {
   const id = ++nestedSequence;

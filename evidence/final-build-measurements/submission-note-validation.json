@@ -1,0 +1,92 @@
+{
+  "verdict": "SHIP",
+  "pages": 2,
+  "layout": [
+    {
+      "height": 1123,
+      "scrollHeight": 1123,
+      "footerGap": 193.375
+    },
+    {
+      "height": 1123,
+      "scrollHeight": 1123,
+      "footerGap": 141.78125
+    }
+  ],
+  "performancePath": "evidence/final-build-measurements/performance/results.json",
+  "soakIndexPath": "evidence/final-build-measurements/soak/latest.json",
+  "hostedPath": "evidence/followup-log-scale/hosted/results.json",
+  "calibrationPath": "evidence/final-build-measurements/cpu-scope-calibration.json",
+  "performanceBundle": "app-pYEMV88W.js",
+  "buildIdentity": {
+    "application": {
+      "filename": "app-pYEMV88W.js",
+      "sha256": "67a08b9a7f8e221727ee09a74231dd8b010e3bfd1ff824badbabbbc75f0051d7"
+    },
+    "worker": {
+      "filename": "data.worker-pg0qDgzo.js",
+      "sha256": "bf1595d98be8e7f31da13faf50b2d043165c7cfdfb11a809dee69934a803f69c"
+    }
+  },
+  "observationCounts": {
+    "current": {
+      "fixtures": {
+        "baseline": {
+          "firstRender": 5,
+          "zoom": 5,
+          "hover": 15
+        },
+        "sampled-main": {
+          "firstRender": 5,
+          "zoom": 5,
+          "hover": 15
+        },
+        "optimized": {
+          "firstRender": 5,
+          "zoom": 5,
+          "hover": 15
+        }
+      },
+      "application": {
+        "firstRender": 5,
+        "zoom": 15,
+        "hover": 15
+      }
+    },
+    "historicalOriginal": {
+      "fixtures": {},
+      "application": {
+        "firstRender": 5,
+        "zoom": 15,
+        "hover": 15
+      }
+    },
+    "previousBaseline": {
+      "fixtures": {
+        "baseline": {
+          "firstRender": 5,
+          "zoom": 5,
+          "hover": 15
+        },
+        "sampled-main": {
+          "firstRender": 5,
+          "zoom": 5,
+          "hover": 15
+        },
+        "optimized": {
+          "firstRender": 5,
+          "zoom": 5,
+          "hover": 15
+        }
+      },
+      "application": {
+        "firstRender": 5,
+        "zoom": 15,
+        "hover": 15
+      }
+    }
+  },
+  "checkedAgainstRawRecords": true,
+  "visuallyInspectedBothRenderedPages": true,
+  "pdfSha256": "ce9b35dab76cdfd8cd374e58f608118d8b5f0c2a7dc38c982ad204daa9d82372"
+}

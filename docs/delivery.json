@@ -5,12 +5,12 @@
   "repositoryUrl": "https://github.com/akenoowww/soup-training-observatory",
   "deployedUrl": "https://akenoowww.github.io/soup-training-observatory/",
   "hostedSmokePassed": true,
-  "checks": "evidence/followup-log-scale/checks-serial.txt",
+  "checks": "evidence/final-build-measurements/checks.txt",
   "browserResults": "evidence/followup-log-scale/e2e-results.json",
   "browserScenarios": 46,
   "browserExecutions": 138,
-  "performanceResults": "evidence/round2/performance-fixed/results.json",
-  "sustainedUse": "evidence/round2/soak/final-native-gc/latest.json",
+  "performanceResults": "evidence/final-build-measurements/performance/results.json",
+  "sustainedUse": "evidence/final-build-measurements/soak/latest.json",
   "linuxCi": {
     "url": "https://github.com/akenoowww/soup-training-observatory/actions/runs/42761775159",
     "commit": "18e142564cc1b44069bae58a84a13d98f661db34",
@@ -20,7 +20,7 @@
   },
   "exportApproval": "explicit-user-public-github-and-pages-akenoowww",
   "hostedSmokeResults": "evidence/followup-log-scale/hosted/results.json",
-  "unitResults": "evidence/followup-log-scale/unit-serial-results.json",
+  "unitResults": "evidence/final-build-measurements/unit-results.json",
   "deployment": {
     "workflowUrl": "https://github.com/akenoowww/soup-training-observatory/actions/runs/42761802036",
     "commit": "18e142564cc1b44069bae58a84a13d98f661db34",
@@ -29,5 +29,7 @@
   "applicationSha256": "67a08b9a7f8e221727ee09a74231dd8b010e3bfd1ff824badbabbbc75f0051d7",
   "workerBundle": "assets/data.worker-pg0qDgzo.js",
   "workerSha256": "bf1595d98be8e7f31da13faf50b2d043165c7cfdfb11a809dee69934a803f69c",
-  "performanceScope": "Historical app-DsJyw_oe.js baseline before the log-gap correction; current app-pYEMV88W.js timing/memory was not remeasured."
+  "performanceScope": "Current app-pYEMV88W.js and data.worker-pg0qDgzo.js, served SHA256 verified against local build and hosted evidence; five repetitions per mode, page CPUx4 timing, separate MemoryInfra snapshots and CPUx1 forced-GC retained-memory soak. Historical baselines are separate, cross-browser-version comparisons are descriptive.",
+  "cpuScopeCalibration": "evidence/final-build-measurements/cpu-scope-calibration.json",
+  "publishedBuildCheck": "evidence/final-build-measurements/published-build-check.json"
 }

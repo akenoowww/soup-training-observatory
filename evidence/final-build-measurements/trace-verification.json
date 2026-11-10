@@ -1,0 +1,128 @@
+{
+  "pass": true,
+  "traces": [
+    {
+      "mode": "baseline",
+      "kind": "timing",
+      "file": "baseline.trace.json",
+      "events": 9209,
+      "paintEvents": 25,
+      "inputEvents": 59,
+      "userTimingNames": [
+        "soup:benchmark:data-ready",
+        "soup:benchmark:first-paint",
+        "soup:benchmark:first-render",
+        "soup:benchmark:hover",
+        "soup:benchmark:hover-painted",
+        "soup:benchmark:hover-start",
+        "soup:benchmark:start",
+        "soup:benchmark:zoom",
+        "soup:benchmark:zoom-painted",
+        "soup:benchmark:zoom-start"
+      ]
+    },
+    {
+      "mode": "sampled-main",
+      "kind": "timing",
+      "file": "sampled-main.trace.json",
+      "events": 9031,
+      "paintEvents": 23,
+      "inputEvents": 59,
+      "userTimingNames": [
+        "soup:benchmark:data-ready",
+        "soup:benchmark:first-paint",
+        "soup:benchmark:first-render",
+        "soup:benchmark:hover",
+        "soup:benchmark:hover-painted",
+        "soup:benchmark:hover-start",
+        "soup:benchmark:start",
+        "soup:benchmark:zoom",
+        "soup:benchmark:zoom-painted",
+        "soup:benchmark:zoom-start"
+      ]
+    },
+    {
+      "mode": "optimized",
+      "kind": "timing",
+      "file": "optimized.trace.json",
+      "events": 8553,
+      "paintEvents": 26,
+      "inputEvents": 59,
+      "userTimingNames": [
+        "soup:benchmark:data-ready",
+        "soup:benchmark:first-paint",
+        "soup:benchmark:first-render",
+        "soup:benchmark:hover",
+        "soup:benchmark:hover-painted",
+        "soup:benchmark:hover-start",
+        "soup:benchmark:start",
+        "soup:benchmark:zoom",
+        "soup:benchmark:zoom-painted",
+        "soup:benchmark:zoom-start"
+      ]
+    },
+    {
+      "mode": "application",
+      "kind": "timing",
+      "file": "application.trace.json",
+      "events": 18252,
+      "paintEvents": 83,
+      "inputEvents": 165,
+      "userTimingNames": [
+        "soup:app:first-render",
+        "soup:app:first-settled",
+        "soup:app:hover",
+        "soup:app:hover-painted",
+        "soup:app:hover-start",
+        "soup:app:zoom",
+        "soup:app:zoom-painted",
+        "soup:app:zoom-start",
+        "soup:run-rendered"
+      ]
+    },
+    {
+      "mode": "baseline",
+      "kind": "memory",
+      "file": "baseline.memory.trace.json",
+      "events": 4860,
+      "deduplicatedRendererPids": [
+        8245
+      ],
+      "privateFootprintBytes": 78956544,
+      "matchesReportedAttribution": true
+    },
+    {
+      "mode": "sampled-main",
+      "kind": "memory",
+      "file": "sampled-main.memory.trace.json",
+      "events": 4476,
+      "deduplicatedRendererPids": [
+        8329
+      ],
+      "privateFootprintBytes": 54675456,
+      "matchesReportedAttribution": true
+    },
+    {
+      "mode": "optimized",
+      "kind": "memory",
+      "file": "optimized.memory.trace.json",
+      "events": 6074,
+      "deduplicatedRendererPids": [
+        8396
+      ],
+      "privateFootprintBytes": 58509312,
+      "matchesReportedAttribution": true
+    },
+    {
+      "mode": "application",
+      "kind": "memory",
+      "file": "application.memory.trace.json",
+      "events": 4861,
+      "deduplicatedRendererPids": [
+        8477
+      ],
+      "privateFootprintBytes": 87934976,
+      "matchesReportedAttribution": true
+    }
+  ]
+}

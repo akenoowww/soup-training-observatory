@@ -80,7 +80,7 @@ The benchmark page is a labeled engineering fixture, not an alternative product 
 
 The hardened candidate passes **80 unit tests** and **46 browser scenarios across three engines: 138 executions**, with zero skipped or flaky scenarios in the recorded run. The suite tests actual Canvas pixels, drawn axis labels and coordinates, deliberately reordered real Worker deliveries, unavailable/error recovery, source revisions, keyboard focus, viewport/touch/DPR adaptation, and optional browser storage failures.
 
-- [Final types/lint/unit/build output](evidence/followup-log-scale/checks-serial.txt)
+- [Final types/lint/unit/build output](evidence/final-build-measurements/checks.txt)
 - [Final Chromium / Firefox / WebKit output](evidence/followup-log-scale/e2e-results.txt)
 - [Independent sampling oracle and correctness argument](docs/sampling-correctness.md)
 - [Browser test methods and limits](tests/e2e/README.md)
@@ -93,3 +93,5 @@ Original failed tests and the original performance results remain in `evidence/`
 ## Evidence and delivery limits
 
 The [engineering note](docs/engineering-note.md) gives the release verdict, test boundaries, measured performance, silent-failure checks and AI assistance disclosure. Local browser evidence is distinct from deployment, real-cluster integration and human acceptance. Failed runs of checks are retained rather than rewritten as passes.
+
+The final log-fix build was remeasured on Chromium 157: [current timing, memory and sustained-use evidence](evidence/final-build-measurements/README.md). Its actual HTTP app/worker SHA256 agrees with the published build. Older Chromium 156 observations remain separate historical comparisons, with the browser-version/run-order limits stated explicitly.

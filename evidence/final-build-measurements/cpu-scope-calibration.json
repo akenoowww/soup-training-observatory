@@ -1,0 +1,76 @@
+{
+  "generatedAt": "2026-11-10T09:15:02.466Z",
+  "browser": "157.0.8103.50",
+  "machine": "darwin/arm64",
+  "workload": "100,000,000 Math.imul(hash ^ i, 16777619) iterations, initial hash2166136261; one warmup in each context; internal performance.now() excludes automation transport.",
+  "phases": [
+    {
+      "label": "initial-x1",
+      "pageThrottleRate": 1,
+      "samples": [
+        {
+          "pageMs": 135.89999999850988,
+          "workerMs": 136.29999999701977,
+          "hash": -446695227
+        },
+        {
+          "pageMs": 136.30000000447035,
+          "workerMs": 135.19999999552965,
+          "hash": -446695227
+        },
+        {
+          "pageMs": 135.29999999701977,
+          "workerMs": 135.19999999552965,
+          "hash": -446695227
+        }
+      ]
+    },
+    {
+      "label": "page-x4",
+      "pageThrottleRate": 4,
+      "samples": [
+        {
+          "pageMs": 530.3000000044703,
+          "workerMs": 116.40000000596046,
+          "hash": -446695227
+        },
+        {
+          "pageMs": 537.2000000029802,
+          "workerMs": 116.30000000447035,
+          "hash": -446695227
+        },
+        {
+          "pageMs": 534.8999999985099,
+          "workerMs": 116.39999999850988,
+          "hash": -446695227
+        }
+      ]
+    },
+    {
+      "label": "restored-x1",
+      "pageThrottleRate": 1,
+      "samples": [
+        {
+          "pageMs": 113.69999999552965,
+          "workerMs": 133.19999999552965,
+          "hash": -446695227
+        },
+        {
+          "pageMs": 112,
+          "workerMs": 112.19999999552965,
+          "hash": -446695227
+        },
+        {
+          "pageMs": 116,
+          "workerMs": 111.90000000596046,
+          "hash": -446695227
+        }
+      ]
+    }
+  ],
+  "workerTargetThrottle": {
+    "supported": false,
+    "error": "Operation is only supported for pages, not workers"
+  },
+  "scope": "One local browser and machine; observed page and dedicated-worker durations under page-target x1/x4/x1. This calibration does not establish whole-machine throttling or device equivalence."
+}

@@ -1,0 +1,30 @@
+{"fixture":"baseline","iteration":1,"renderMs":829.1999999955297,"zoomMs":18.799999997019768,"hoverMs":[12.5,15.5,17.200000002980232],"bytes":57122451}
+{"fixture":"baseline","iteration":2,"renderMs":601.7999999970198,"zoomMs":9.5,"hoverMs":[5.899999998509884,15,15.200000002980232],"bytes":57064761}
+{"fixture":"baseline","iteration":3,"renderMs":597.3000000044703,"zoomMs":9.899999998509884,"hoverMs":[4.399999998509884,15.700000002980232,17.100000001490116],"bytes":57066293}
+{"fixture":"baseline","iteration":4,"renderMs":583.3999999985099,"zoomMs":23.600000001490116,"hoverMs":[4.100000001490116,15.799999997019768,16.600000001490116],"bytes":57064733}
+{"fixture":"baseline","iteration":5,"renderMs":588.6000000014901,"zoomMs":27.299999997019768,"hoverMs":[7.200000002980232,16.69999999552965,16],"bytes":57066293}
+{"fixture":"sampled-main","iteration":1,"renderMs":466.20000000298023,"zoomMs":17.599999994039536,"hoverMs":[6.800000004470348,16.100000001490116,15.600000001490116],"bytes":33944060}
+{"fixture":"sampled-main","iteration":2,"renderMs":424,"zoomMs":35.5,"hoverMs":[5,15.899999998509884,16.799999997019768],"bytes":33885726}
+{"fixture":"sampled-main","iteration":3,"renderMs":428.5,"zoomMs":28.80000000447035,"hoverMs":[8.099999994039536,15.600000001490116,15.399999998509884],"bytes":33885542}
+{"fixture":"sampled-main","iteration":4,"renderMs":440.20000000298023,"zoomMs":15,"hoverMs":[6.399999998509884,15.5,18.700000002980232],"bytes":33885650}
+{"fixture":"sampled-main","iteration":5,"renderMs":424.5,"zoomMs":21.200000002980232,"hoverMs":[7,16,16.600000001490116],"bytes":33885650}
+{"fixture":"optimized","iteration":1,"renderMs":292.70000000298023,"zoomMs":25.5,"hoverMs":[5.5,17.200000002980232,16.200000002980232],"bytes":34273761}
+{"fixture":"optimized","iteration":2,"renderMs":232.60000000149012,"zoomMs":27.19999999552965,"hoverMs":[5.100000001490116,16.600000001490116,16.099999994039536],"bytes":34219706}
+{"fixture":"optimized","iteration":3,"renderMs":244.20000000298023,"zoomMs":32.79999999701977,"hoverMs":[9.5,17,17.100000001490116],"bytes":34219750}
+{"fixture":"optimized","iteration":4,"renderMs":240.40000000596046,"zoomMs":35,"hoverMs":[7.100000001490116,16.399999998509884,16.599999994039536],"bytes":34214382}
+{"fixture":"optimized","iteration":5,"renderMs":225.89999999850988,"zoomMs":33.399999998509884,"hoverMs":[8.5,16.399999998509884,16.399999998509884],"bytes":34218414}
+node:internal/fs/promises:745
+      (await PromisePrototypeThen(
+       ^
+
+Error: ENOSPC: no space left on device, write
+    at async write (node:internal/fs/promises:745:8)
+    at async writeFileHandle (node:internal/fs/promises:502:7)
+    at async stopTrace (file:///workspace/soup/scripts/performance.mjs:91:3)
+    at async file:///workspace/soup/scripts/performance.mjs:460:24 {
+  errno: -28,
+  code: 'ENOSPC',
+  syscall: 'write'
+}
+
+Node.js v24.3.0

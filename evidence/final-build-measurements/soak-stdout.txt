@@ -1,0 +1,9 @@
+{"checkpoint":"warmup-full-1M","elapsedSeconds":1,"combinedMB":38.931064,"workerBackingMB":32.31801,"rendererRssMB":403.832832}
+{"checkpoint":"active-31s","elapsedSeconds":32,"combinedMB":43.418311,"workerBackingMB":32.31801,"rendererRssMB":450.904064}
+{"checkpoint":"active-61s","elapsedSeconds":62,"combinedMB":43.737028,"workerBackingMB":32.31801,"rendererRssMB":459.030528}
+{"checkpoint":"active-91s","elapsedSeconds":91,"combinedMB":44.353827,"workerBackingMB":32.31801,"rendererRssMB":463.962112}
+{"checkpoint":"active-121s","elapsedSeconds":122,"combinedMB":44.796264,"workerBackingMB":32.31801,"rendererRssMB":468.353024}
+{"checkpoint":"active-151s","elapsedSeconds":151,"combinedMB":44.965896,"workerBackingMB":32.31801,"rendererRssMB":471.94112}
+{"checkpoint":"after-active","elapsedSeconds":182,"combinedMB":44.685743,"workerBackingMB":32.31801,"rendererRssMB":473.628672}
+{"checkpoint":"after-idle-recovery","elapsedSeconds":217,"combinedMB":41.440487,"workerBackingMB":32.31801,"rendererRssMB":469.106688}
+{"outputDirectory":"/workspace/soup/evidence/final-build-measurements/soak/2026-11-10T09-21-50-323Z","interactionCount":136,"visited":20,"browserErrors":0,"finalBytes":41440487}

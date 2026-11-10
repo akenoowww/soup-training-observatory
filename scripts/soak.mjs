@@ -5,6 +5,7 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { relative, resolve } from 'node:path';
+import { captureBuildFingerprint } from './build-fingerprint.mjs';
 
 // This is an interaction soak, not a throughput or multi-hour leak guarantee.
 // Args: base URL, active seconds, idle seconds, output root. Every invocation
@@ -21,6 +22,7 @@ const checkpointIntervalMs = diagnostic ? 10_000 : 30_000;
 const runId = new Date().toISOString().replaceAll(':', '-').replaceAll('.', '-');
 const outputDirectory = resolve(outputRoot, runId);
 await mkdir(outputDirectory, { recursive: true });
+const measuredBuild = await captureBuildFingerprint(baseURL);
 const execute = promisify(execFile);
 const pause = (milliseconds) =>
   new Promise((resolvePause) => setTimeout(resolvePause, milliseconds));
@@ -322,6 +324,8 @@ async function persist(status, error = null) {
     machine: `${process.platform}/${process.arch}`,
     viewport: { width: 1440, height: 1000 },
     cpuThrottle: 1,
+    application: measuredBuild.application,
+    worker: measuredBuild.worker,
     servedAssets,
     requestedActiveSeconds: activeSeconds,
     diagnostic,
@@ -363,7 +367,7 @@ async function persist(status, error = null) {
     JSON.stringify(
       {
         runId,
-        directory: outputDirectory,
+        directory: runId,
         relativeDirectory: relative(process.cwd(), outputDirectory),
         status,
       },
